@@ -1886,3 +1886,1341 @@ h6 {
 .section--light {
     background-color: var(--color-bg-primary);
 }
+
+/* ========================================
+   Creative Studio Network - Hero Section
+   ======================================== */
+
+.csn-hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: var(--space-16) 0 var(--space-12);
+    overflow: hidden;
+}
+
+.csn-hero__bg-pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+        radial-gradient(ellipse at 20% 20%, rgba(0, 0, 0, 0.02) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 80%, rgba(0, 0, 0, 0.015) 0%, transparent 50%),
+        radial-gradient(ellipse at 50% 60%, rgba(0, 0, 0, 0.01) 0%, transparent 40%);
+    pointer-events: none;
+}
+
+.csn-hero__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-8);
+    align-items: center;
+}
+
+.csn-hero__distinctions {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    margin-bottom: var(--space-6);
+}
+
+.csn-hero__distinction {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-size: 1.0625rem;
+    color: var(--color-text-secondary);
+    padding: var(--space-1) 0;
+}
+
+.csn-hero__distinction-cross {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: var(--radius-full);
+    background: var(--color-bg-tertiary);
+    font-size: 0.75rem;
+    color: var(--color-text-tertiary);
+    flex-shrink: 0;
+    font-weight: 600;
+}
+
+.csn-hero__distinction--highlight {
+    color: var(--color-text-primary);
+    font-weight: 500;
+}
+
+.csn-hero__distinction-check {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: var(--radius-full);
+    background: var(--gradient-primary);
+    color: var(--color-bg-primary);
+    font-size: 0.75rem;
+    flex-shrink: 0;
+    font-weight: 700;
+}
+
+.csn-hero__visual {
+    position: relative;
+    z-index: 1;
+}
+
+.csn-hero__image-container {
+    position: relative;
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-soft);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.csn-hero__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-slow);
+}
+
+.csn-hero__image:hover {
+    transform: scale(1.03);
+}
+
+.csn-hero__image-badge {
+    position: absolute;
+    bottom: var(--space-4);
+    right: var(--space-4);
+    background: var(--gradient-primary);
+    color: var(--color-bg-primary);
+    padding: var(--space-1) var(--space-3);
+    border-radius: var(--radius-full);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    box-shadow: var(--shadow-glow-black);
+}
+
+@media (max-width: 968px) {
+    .csn-hero__container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .csn-hero__visual {
+        order: -1;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .csn-hero__distinctions {
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .csn-hero__distinction {
+        font-size: 0.9375rem;
+    }
+}
+
+/* ========================================
+   Creative Studio Network - Journey Section
+   ======================================== */
+
+.csn-journey {
+    padding: var(--space-16) 0;
+    background: var(--color-bg-secondary);
+    position: relative;
+}
+
+.csn-journey::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--color-white), var(--color-medium-gray), var(--color-white), transparent);
+}
+
+.csn-journey__flow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    flex-wrap: wrap;
+}
+
+.csn-journey__step {
+    background: var(--color-bg-card);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: var(--radius-lg);
+    padding: var(--space-5);
+    text-align: center;
+    backdrop-filter: blur(10px);
+    transition: all var(--transition-base);
+    flex: 0 1 180px;
+    min-width: 160px;
+}
+
+.csn-journey__step:hover {
+    transform: translateY(-8px);
+    border-color: rgba(0, 0, 0, 0.12);
+    box-shadow: var(--shadow-glow-white);
+}
+
+.csn-journey__step-number {
+    font-family: var(--font-numbers);
+    font-size: 2rem;
+    font-weight: 700;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: var(--space-2);
+    line-height: 1;
+}
+
+.csn-journey__step-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: var(--space-1);
+}
+
+.csn-journey__step-text {
+    font-size: 0.8125rem;
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+}
+
+.csn-journey__connector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    flex-shrink: 0;
+    color: var(--color-text-tertiary);
+}
+
+.csn-journey__connector svg {
+    width: 20px;
+    height: 20px;
+}
+
+@media (max-width: 968px) {
+    .csn-journey__flow {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .csn-journey__step {
+        flex: 0 1 auto;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .csn-journey__connector {
+        transform: rotate(90deg);
+        width: auto;
+        height: 40px;
+    }
+}
+
+/* ========================================
+   Creative Studio Network - Difference Section
+   ======================================== */
+
+.csn-difference {
+    padding: var(--space-16) 0;
+    background: var(--color-bg-primary);
+    position: relative;
+    overflow: hidden;
+}
+
+.csn-difference__grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: var(--space-10);
+    align-items: center;
+}
+
+.csn-difference__description {
+    font-size: 1.0625rem;
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-6);
+    line-height: 1.8;
+}
+
+.csn-difference__features {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+}
+
+.csn-difference__feature {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-3);
+    padding: var(--space-3);
+    background: var(--color-bg-tertiary);
+    border-radius: var(--radius-md);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: all var(--transition-base);
+}
+
+.csn-difference__feature:hover {
+    border-color: rgba(0, 0, 0, 0.1);
+    transform: translateX(8px);
+}
+
+.csn-difference__feature-icon {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+}
+
+.csn-difference__feature-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.csn-difference__feature h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.csn-difference__feature p {
+    font-size: 0.8125rem;
+    color: var(--color-text-tertiary);
+}
+
+.csn-difference__visual {
+    position: relative;
+    z-index: 1;
+}
+
+.csn-difference__image-container {
+    position: relative;
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-soft);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.csn-difference__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-slow);
+}
+
+.csn-difference__image:hover {
+    transform: scale(1.05);
+}
+
+.csn-difference__image-badge {
+    position: absolute;
+    bottom: var(--space-4);
+    right: var(--space-4);
+    background: var(--gradient-primary);
+    color: var(--color-bg-primary);
+    padding: var(--space-1) var(--space-3);
+    border-radius: var(--radius-full);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    box-shadow: var(--shadow-glow-black);
+}
+
+@media (max-width: 968px) {
+    .csn-difference__grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-8);
+    }
+
+    .csn-difference__visual {
+        order: -1;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+
+/* ========================================
+   Creative Studio Network - Why It Matters Section
+   ======================================== */
+
+.csn-matters {
+    padding: var(--space-16) 0;
+    background: var(--color-bg-secondary);
+}
+
+.csn-matters__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-4);
+}
+
+.csn-matters__card {
+    background: var(--color-bg-card);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: var(--radius-lg);
+    padding: var(--space-6);
+    text-align: center;
+    backdrop-filter: blur(10px);
+    transition: all var(--transition-base);
+}
+
+.csn-matters__card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow-glow-white);
+}
+
+.csn-matters__card-icon {
+    font-size: 3rem;
+    margin-bottom: var(--space-4);
+    line-height: 1;
+}
+
+.csn-matters__card-title {
+    font-size: 1.375rem;
+    font-weight: 600;
+    margin-bottom: var(--space-2);
+}
+
+.csn-matters__card-text {
+    font-size: 0.9375rem;
+    color: var(--color-text-secondary);
+    line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+    .csn-matters__grid {
+        grid-template-columns: 1fr;
+        max-width: 480px;
+        margin: 0 auto;
+    }
+}
+
+/* ========================================
+   Creative Studio Network - Growth Section
+   ======================================== */
+
+.csn-growth {
+    padding: var(--space-16) 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.csn-growth__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-10);
+    align-items: center;
+}
+
+.csn-growth__visual {
+    position: relative;
+}
+
+.csn-growth__image-stack {
+    position: relative;
+    height: 500px;
+}
+
+.csn-growth__image {
+    position: absolute;
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-soft);
+    transition: transform var(--transition-slow);
+}
+
+.csn-growth__image--1 {
+    top: 0;
+    left: 0;
+    width: 70%;
+    z-index: 2;
+}
+
+.csn-growth__image--2 {
+    bottom: 0;
+    right: 0;
+    width: 70%;
+    z-index: 1;
+}
+
+.csn-growth__image:hover {
+    transform: scale(1.03);
+    z-index: 3;
+}
+
+.csn-growth__text {
+    font-size: 1.0625rem;
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-6);
+    line-height: 1.8;
+}
+
+.csn-growth__standards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-4);
+}
+
+.csn-growth__standard {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-3);
+    padding: var(--space-3);
+    background: var(--color-bg-tertiary);
+    border-radius: var(--radius-md);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: all var(--transition-base);
+}
+
+.csn-growth__standard:hover {
+    transform: translateX(8px);
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+.csn-growth__standard-icon {
+    font-size: 1.5rem;
+}
+
+.csn-growth__standard h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.csn-growth__standard p {
+    font-size: 0.8125rem;
+    color: var(--color-text-tertiary);
+}
+
+@media (max-width: 968px) {
+    .csn-growth__grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-8);
+    }
+
+    .csn-growth__image-stack {
+        height: 400px;
+    }
+
+    .csn-growth__image--1,
+    .csn-growth__image--2 {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .csn-growth__standards {
+        grid-template-columns: 1fr;
+    }
+
+    .csn-growth__image-stack {
+        height: 300px;
+    }
+}
+
+/* ========================================
+   Creative Studio Network - Belief / CTA Section
+   ======================================== */
+
+.csn-belief {
+    padding: var(--space-16) 0;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    background: var(--color-bg-secondary);
+}
+
+.csn-belief__bg-pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+        radial-gradient(ellipse at 30% 50%, rgba(0, 0, 0, 0.02) 0%, transparent 50%),
+        radial-gradient(ellipse at 70% 50%, rgba(0, 0, 0, 0.015) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.csn-belief__content {
+    position: relative;
+    z-index: 1;
+}
+
+.csn-belief__title {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: var(--space-6);
+}
+
+.csn-belief__statements {
+    margin-bottom: var(--space-8);
+}
+
+.csn-belief__statement {
+    font-family: var(--font-display);
+    font-size: clamp(1.25rem, 3vw, 1.75rem);
+    font-style: italic;
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-2);
+    line-height: 1.4;
+}
+
+.csn-belief__actions {
+    display: flex;
+    gap: var(--space-3);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* ========================================
+   Creative Studio Network - Monthly Themes
+   ======================================== */
+
+.csn-themes {
+    padding: var(--space-16) 0;
+    background: var(--color-bg-primary);
+    position: relative;
+    overflow: hidden;
+}
+
+.csn-themes__title-gradient {
+    background: linear-gradient(135deg, #ff6b6b, #ffa726, #66bb6a, #42a5f5, #ab47bc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.csn-themes__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-3);
+    margin-bottom: var(--space-10);
+}
+
+.csn-themes__card {
+    position: relative;
+    border-radius: var(--radius-lg);
+    padding: var(--space-4);
+    text-align: center;
+    transition: all var(--transition-base);
+    overflow: hidden;
+    border: 2px solid transparent;
+    cursor: default;
+}
+
+.csn-themes__card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.08;
+    border-radius: inherit;
+    transition: opacity var(--transition-base);
+    z-index: 0;
+}
+
+.csn-themes__card:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+}
+
+.csn-themes__card:hover::before {
+    opacity: 0.15;
+}
+
+.csn-themes__card-month {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    font-family: var(--font-numbers);
+    font-size: 0.6875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 2px var(--space-2);
+    border-radius: var(--radius-full);
+    margin-bottom: var(--space-2);
+    color: #fff;
+}
+
+.csn-themes__card-title {
+    position: relative;
+    z-index: 1;
+    font-size: 1.0625rem;
+    font-weight: 600;
+    margin-bottom: var(--space-2);
+    line-height: 1.3;
+}
+
+.csn-themes__card-emoji {
+    position: relative;
+    z-index: 1;
+    font-size: 2rem;
+    line-height: 1;
+    display: block;
+}
+
+/* Color variants for Monthly Themes */
+.csn-themes__card--green {
+    border-color: #66bb6a;
+    background: linear-gradient(135deg, #e8f5e9, #f1f8e9);
+}
+
+.csn-themes__card--green::before {
+    background: #66bb6a;
+}
+
+.csn-themes__card--green .csn-themes__card-month {
+    background: #66bb6a;
+}
+
+.csn-themes__card--purple {
+    border-color: #ab47bc;
+    background: linear-gradient(135deg, #f3e5f5, #ede7f6);
+}
+
+.csn-themes__card--purple::before {
+    background: #ab47bc;
+}
+
+.csn-themes__card--purple .csn-themes__card-month {
+    background: #ab47bc;
+}
+
+.csn-themes__card--orange {
+    border-color: #ffa726;
+    background: linear-gradient(135deg, #fff3e0, #fff8e1);
+}
+
+.csn-themes__card--orange::before {
+    background: #ffa726;
+}
+
+.csn-themes__card--orange .csn-themes__card-month {
+    background: #ffa726;
+}
+
+.csn-themes__card--teal {
+    border-color: #26a69a;
+    background: linear-gradient(135deg, #e0f2f1, #e0f7fa);
+}
+
+.csn-themes__card--teal::before {
+    background: #26a69a;
+}
+
+.csn-themes__card--teal .csn-themes__card-month {
+    background: #26a69a;
+}
+
+.csn-themes__card--blue {
+    border-color: #42a5f5;
+    background: linear-gradient(135deg, #e3f2fd, #e1f5fe);
+}
+
+.csn-themes__card--blue::before {
+    background: #42a5f5;
+}
+
+.csn-themes__card--blue .csn-themes__card-month {
+    background: #42a5f5;
+}
+
+.csn-themes__card--pink {
+    border-color: #ec407a;
+    background: linear-gradient(135deg, #fce4ec, #fff0f5);
+}
+
+.csn-themes__card--pink::before {
+    background: #ec407a;
+}
+
+.csn-themes__card--pink .csn-themes__card-month {
+    background: #ec407a;
+}
+
+.csn-themes__card--cyan {
+    border-color: #26c6da;
+    background: linear-gradient(135deg, #e0f7fa, #e1f5fe);
+}
+
+.csn-themes__card--cyan::before {
+    background: #26c6da;
+}
+
+.csn-themes__card--cyan .csn-themes__card-month {
+    background: #26c6da;
+}
+
+.csn-themes__card--slate {
+    border-color: #78909c;
+    background: linear-gradient(135deg, #eceff1, #f5f5f5);
+}
+
+.csn-themes__card--slate::before {
+    background: #78909c;
+}
+
+.csn-themes__card--slate .csn-themes__card-month {
+    background: #78909c;
+}
+
+.csn-themes__card--amber {
+    border-color: #ffb300;
+    background: linear-gradient(135deg, #fff8e1, #fffde7);
+}
+
+.csn-themes__card--amber::before {
+    background: #ffb300;
+}
+
+.csn-themes__card--amber .csn-themes__card-month {
+    background: #ffb300;
+}
+
+.csn-themes__card--indigo {
+    border-color: #5c6bc0;
+    background: linear-gradient(135deg, #e8eaf6, #ede7f6);
+}
+
+.csn-themes__card--indigo::before {
+    background: #5c6bc0;
+}
+
+.csn-themes__card--indigo .csn-themes__card-month {
+    background: #5c6bc0;
+}
+
+.csn-themes__card--lime {
+    border-color: #8bc34a;
+    background: linear-gradient(135deg, #f1f8e9, #f9fbe7);
+}
+
+.csn-themes__card--lime::before {
+    background: #8bc34a;
+}
+
+.csn-themes__card--lime .csn-themes__card-month {
+    background: #8bc34a;
+}
+
+.csn-themes__card--red {
+    border-color: #ef5350;
+    background: linear-gradient(135deg, #ffebee, #fce4ec);
+}
+
+.csn-themes__card--red::before {
+    background: #ef5350;
+}
+
+.csn-themes__card--red .csn-themes__card-month {
+    background: #ef5350;
+}
+
+/* Themes Poster */
+.csn-themes__poster {
+    text-align: center;
+}
+
+.csn-themes__poster-img {
+    max-width: 600px;
+    width: 100%;
+    border-radius: var(--radius-xl);
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.12);
+    transition: transform var(--transition-slow);
+}
+
+.csn-themes__poster-img:hover {
+    transform: scale(1.02);
+}
+
+.csn-themes__poster-caption {
+    margin-top: var(--space-3);
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    font-style: italic;
+    color: var(--color-text-tertiary);
+}
+
+@media (max-width: 968px) {
+    .csn-themes__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .csn-themes__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .csn-themes__grid {
+        grid-template-columns: 1fr 1fr;
+        gap: var(--space-2);
+    }
+
+    .csn-themes__card {
+        padding: var(--space-3);
+    }
+
+    .csn-themes__card-title {
+        font-size: 0.875rem;
+    }
+
+    .csn-themes__card-emoji {
+        font-size: 1.5rem;
+    }
+}
+
+/* ========================================
+   Creative Studio Network - Weekly Schedule
+   ======================================== */
+
+.csn-schedule {
+    padding: var(--space-16) 0;
+    background: var(--color-bg-secondary);
+    position: relative;
+}
+
+.csn-schedule__title-gradient {
+    background: linear-gradient(135deg, #42a5f5, #26a69a, #66bb6a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.csn-schedule__wrapper {
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+    gap: var(--space-8);
+    align-items: start;
+}
+
+.csn-schedule__grid {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+}
+
+.csn-schedule__day {
+    background: var(--color-bg-card);
+    border-radius: var(--radius-lg);
+    padding: var(--space-4);
+    border-left: 5px solid transparent;
+    transition: all var(--transition-base);
+    backdrop-filter: blur(10px);
+}
+
+.csn-schedule__day:hover {
+    transform: translateX(8px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.csn-schedule__day-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    margin-bottom: var(--space-2);
+}
+
+.csn-schedule__day-name {
+    font-family: var(--font-numbers);
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 2px var(--space-2);
+    border-radius: var(--radius-sm);
+    color: #fff;
+}
+
+.csn-schedule__day-emoji {
+    font-size: 1.25rem;
+}
+
+.csn-schedule__activity {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: var(--space-2);
+}
+
+.csn-schedule__slots {
+    display: flex;
+    gap: var(--space-2);
+    flex-wrap: wrap;
+}
+
+.csn-schedule__slot {
+    font-family: var(--font-numbers);
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 4px var(--space-2);
+    background: var(--color-bg-tertiary);
+    border-radius: var(--radius-full);
+    color: var(--color-text-secondary);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+/* Schedule Day Color Variants */
+.csn-schedule__day--red {
+    border-left-color: #ef5350;
+}
+
+.csn-schedule__day--red .csn-schedule__day-name {
+    background: #ef5350;
+}
+
+.csn-schedule__day--orange {
+    border-left-color: #ffa726;
+}
+
+.csn-schedule__day--orange .csn-schedule__day-name {
+    background: #ffa726;
+}
+
+.csn-schedule__day--green {
+    border-left-color: #66bb6a;
+}
+
+.csn-schedule__day--green .csn-schedule__day-name {
+    background: #66bb6a;
+}
+
+.csn-schedule__day--purple {
+    border-left-color: #ab47bc;
+}
+
+.csn-schedule__day--purple .csn-schedule__day-name {
+    background: #ab47bc;
+}
+
+.csn-schedule__day--teal {
+    border-left-color: #26a69a;
+}
+
+.csn-schedule__day--teal .csn-schedule__day-name {
+    background: #26a69a;
+}
+
+.csn-schedule__day--blue {
+    border-left-color: #42a5f5;
+}
+
+.csn-schedule__day--blue .csn-schedule__day-name {
+    background: #42a5f5;
+}
+
+.csn-schedule__day--amber {
+    border-left-color: #ffb300;
+}
+
+.csn-schedule__day--amber .csn-schedule__day-name {
+    background: #ffb300;
+}
+
+/* Weekend Special Styling */
+.csn-schedule__weekend-badge {
+    font-family: var(--font-numbers);
+    font-size: 0.625rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 2px var(--space-2);
+    border-radius: var(--radius-full);
+    background: linear-gradient(135deg, #ff6b6b, #ffa726);
+    color: #fff;
+}
+
+.csn-schedule__weekend-sessions {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
+
+.csn-schedule__weekend-row {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+}
+
+.csn-schedule__weekend-activity {
+    font-size: 0.9375rem;
+    font-weight: 500;
+}
+
+/* Schedule Poster */
+.csn-schedule__poster {
+    position: sticky;
+    top: 100px;
+}
+
+.csn-schedule__poster-img {
+    width: 100%;
+    border-radius: var(--radius-xl);
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.12);
+    transition: transform var(--transition-slow);
+}
+
+.csn-schedule__poster-img:hover {
+    transform: scale(1.02);
+}
+
+@media (max-width: 968px) {
+    .csn-schedule__wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .csn-schedule__poster {
+        position: static;
+        max-width: 500px;
+        margin: var(--space-8) auto 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .csn-schedule__day {
+        padding: var(--space-3);
+    }
+
+    .csn-schedule__activity {
+        font-size: 1rem;
+    }
+
+    .csn-schedule__weekend-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--space-1);
+    }
+}
+
+/* ========================================
+   Creative Studio Network - Upcoming Books
+   ======================================== */
+
+.csn-books {
+    padding: var(--space-16) 0;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(180deg, #0a0a2e 0%, #1a1a4e 50%, #0d0d35 100%);
+    color: #fff;
+}
+
+.csn-books__bg-glow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+        radial-gradient(ellipse at 20% 30%, rgba(66, 165, 245, 0.15) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 70%, rgba(171, 71, 188, 0.12) 0%, transparent 50%),
+        radial-gradient(ellipse at 50% 50%, rgba(255, 183, 77, 0.08) 0%, transparent 40%);
+    pointer-events: none;
+}
+
+.csn-books .section-tagline {
+    color: #ffb74d;
+}
+
+.csn-books .section-title {
+    color: #fff;
+}
+
+.csn-books .section-description {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.csn-books__title-gradient {
+    background: linear-gradient(135deg, #ffb74d, #ff8a65, #ef5350);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.csn-books__showcase {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-8);
+    align-items: center;
+}
+
+.csn-books__poster-img {
+    width: 100%;
+    border-radius: var(--radius-xl);
+    box-shadow: 0 24px 64px rgba(0, 0, 0, 0.4), 0 0 80px rgba(66, 165, 245, 0.15);
+    transition: transform var(--transition-slow);
+}
+
+.csn-books__poster-img:hover {
+    transform: scale(1.03) rotate(-1deg);
+}
+
+.csn-books__coming-badge {
+    display: inline-block;
+    font-family: var(--font-numbers);
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: var(--space-1) var(--space-4);
+    border-radius: var(--radius-full);
+    background: linear-gradient(135deg, #ffa726, #ff7043);
+    color: #fff;
+    margin-bottom: var(--space-6);
+    box-shadow: 0 4px 16px rgba(255, 167, 38, 0.4);
+    animation: csn-books-pulse 2s ease-in-out infinite;
+}
+
+@keyframes csn-books-pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        box-shadow: 0 4px 16px rgba(255, 167, 38, 0.4);
+    }
+
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 6px 24px rgba(255, 167, 38, 0.6);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    @keyframes csn-books-pulse {
+
+        0%,
+        100% {
+            transform: none;
+            box-shadow: 0 4px 16px rgba(255, 167, 38, 0.4);
+        }
+    }
+}
+
+.csn-books__list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+}
+
+.csn-books__book {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    padding: var(--space-3) var(--space-4);
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: var(--radius-md);
+    border-left: 4px solid transparent;
+    transition: all var(--transition-base);
+    backdrop-filter: blur(8px);
+}
+
+.csn-books__book:hover {
+    transform: translateX(8px);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.csn-books__book-number {
+    font-family: var(--font-numbers);
+    font-size: 1.25rem;
+    font-weight: 700;
+    opacity: 0.5;
+    min-width: 32px;
+}
+
+.csn-books__book-title {
+    font-size: 1.0625rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Book Color Variants */
+.csn-books__book--sky {
+    border-left-color: #64b5f6;
+}
+
+.csn-books__book--sky:hover {
+    border-left-color: #90caf9;
+}
+
+.csn-books__book--violet {
+    border-left-color: #b39ddb;
+}
+
+.csn-books__book--violet:hover {
+    border-left-color: #ce93d8;
+}
+
+.csn-books__book--slate {
+    border-left-color: #90a4ae;
+}
+
+.csn-books__book--slate:hover {
+    border-left-color: #b0bec5;
+}
+
+.csn-books__book--ember {
+    border-left-color: #ff8a65;
+}
+
+.csn-books__book--ember:hover {
+    border-left-color: #ffab91;
+}
+
+.csn-books__book--forest {
+    border-left-color: #81c784;
+}
+
+.csn-books__book--forest:hover {
+    border-left-color: #a5d6a7;
+}
+
+.csn-books__book--golden {
+    border-left-color: #ffd54f;
+}
+
+.csn-books__book--golden:hover {
+    border-left-color: #ffe082;
+}
+
+@media (max-width: 968px) {
+    .csn-books__showcase {
+        grid-template-columns: 1fr;
+    }
+
+    .csn-books__poster {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .csn-books__book {
+        padding: var(--space-2) var(--space-3);
+    }
+
+    .csn-books__book-title {
+        font-size: 0.9375rem;
+    }
+}

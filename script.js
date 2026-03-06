@@ -297,7 +297,7 @@ function initScrollAnimations() {
     }
 
     const animatedElements = document.querySelectorAll(
-        '.feature-card, .testimonial-card, .sdg__goal, .impact__result-card, .story__content, .story__visual, .product-card-preview, .product-card'
+        '.feature-card, .testimonial-card, .sdg__goal, .impact__result-card, .story__content, .story__visual, .product-card-preview, .product-card, .csn-journey__step, .csn-difference__feature, .csn-matters__card, .csn-growth__standard, .csn-difference__visual, .csn-growth__visual, .csn-themes__card, .csn-schedule__day, .csn-books__book, .csn-themes__poster, .csn-schedule__poster, .csn-books__poster'
     );
 
     const observerOptions = {
