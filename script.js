@@ -174,22 +174,30 @@ function initDropdownNav() {
         closeAllDropdowns();
     });
 
-    // Desktop hover behavior
-    if (window.matchMedia('(min-width: 769px)').matches) {
+    // Desktop hover behavior with hover-intent delay
+    const mq = window.matchMedia('(min-width: 769px)');
+    const applyHoverBehavior = () => {
+        if (!mq.matches) return;
         dropdownItems.forEach(item => {
+            let closeTimer;
             item.addEventListener('mouseenter', () => {
+                clearTimeout(closeTimer);
                 closeAllDropdowns();
                 item.classList.add('is-open');
                 const trigger = item.querySelector('.nav__dropdown-trigger');
                 if (trigger) trigger.setAttribute('aria-expanded', 'true');
             });
             item.addEventListener('mouseleave', () => {
-                item.classList.remove('is-open');
-                const trigger = item.querySelector('.nav__dropdown-trigger');
-                if (trigger) trigger.setAttribute('aria-expanded', 'false');
+                closeTimer = setTimeout(() => {
+                    item.classList.remove('is-open');
+                    const trigger = item.querySelector('.nav__dropdown-trigger');
+                    if (trigger) trigger.setAttribute('aria-expanded', 'false');
+                }, 120);
             });
         });
-    }
+    };
+    applyHoverBehavior();
+    mq.addEventListener('change', applyHoverBehavior);
 }
 
 /**
@@ -454,23 +462,32 @@ function showMessage(form, message, type) {
 
 /**
  * Scroll Animations with Intersection Observer
+ * Note: elements inside .stagger-children are excluded — they animate via CSS stagger.
  */
 function initScrollAnimations() {
-    // Check for reduced motion preference
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-        return;
-    }
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
-    // Common selectors for cards and sections across all pages
-    const animatedElements = document.querySelectorAll(
-        '.feature-card, .testimonial-card, .sdg__goal, .impact__result-card, .story__content, .story__visual, .product-card-preview, .product-card, .csn-journey__step, .csn-difference__feature, .csn-matters__card, .csn-growth__standard, .csn-difference__visual, .csn-growth__visual, .csn-themes__card, .csn-schedule__day, .csn-books__book, .csn-themes__poster, .csn-schedule__poster, .csn-books__poster, .section-title, .section-tagline, .section-description, .card, .cycle-step, .box-item, .activity-node, .craft-pillar, .involvement-card, .pub-card, .pub-featured, .gallery-item, .sdg-badge, .journey-step, .stat-highlight, .prog-showcase'
-    );
+    const selector = [
+        '.feature-card',
+        '.testimonial-card',
+        '.product-card-preview',
+        '.product-card',
+        '.sdg-badge',
+        '.journey-step',
+        '.stat-highlight',
+        '.pub-card',
+        '.pub-featured',
+        '.gallery-item',
+        '.involvement-card',
+        '.csn-journey__step',
+        '.csn-difference__feature',
+        '.csn-matters__card',
+        '.csn-growth__standard',
+    ].join(', ');
 
-    const observerOptions = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.1
-    };
+    // Skip elements already handled by initStaggerObserver
+    const animatedElements = Array.from(document.querySelectorAll(selector))
+        .filter(el => !el.closest('.stagger-children'));
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -480,12 +497,14 @@ function initScrollAnimations() {
                 observer.unobserve(entry.target);
             }
         });
-    }, observerOptions);
+    }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
 
     animatedElements.forEach((element, index) => {
         element.style.opacity = '0';
-        element.style.transform = 'translateY(40px)';
-        element.style.transition = `all 0.6s ease ${index * 0.1}s`;
+        element.style.transform = 'translateY(24px)';
+        // Cap delay at 400ms so later elements don't wait too long
+        const delay = Math.min(index * 0.07, 0.4);
+        element.style.transition = `opacity 0.5s ease ${delay}s, transform 0.5s ease ${delay}s`;
         observer.observe(element);
     });
 }
@@ -578,8 +597,6 @@ function initHeroAnimation() {
     window.addEventListener('resize', render);
 }
 
-// Initialize parallax after page load
-window.addEventListener('load', initParallax);
 
 /**
  * Count-up animation for [data-countup] stat numbers

@@ -497,7 +497,7 @@ h6 {
     .nav__link {
         display: block;
         padding: var(--space-2) 0;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        border-bottom: 1px solid var(--color-bg-card);
     }
 
     .nav__link::after {
@@ -3364,8 +3364,10 @@ h6 {
     padding: var(--space-2) var(--space-4);
     font-size: 0.875rem;
     color: var(--color-text-secondary);
-    transition: color var(--transition-fast), background-color var(--transition-fast);
     text-decoration: none;
+    transform: translateX(0);
+    transition: color var(--transition-fast), background-color var(--transition-fast),
+                transform var(--transition-fast);
 }
 
 .nav__dropdown-link:hover,
@@ -3534,12 +3536,9 @@ h6 {
    ======================================== */
 
 /* Dropdown item slide on hover */
-.nav__dropdown-link {
-    transform: translateX(0);
-}
 .nav__dropdown-link:hover,
 .nav__dropdown-link:focus {
-    transform: translateX(var(--space-1));
+    transform: translateX(6px);
 }
 
 /* Button letter-spacing expansion */
@@ -4527,4 +4526,98 @@ h6 {
     font-size: 0.9375rem;
     color: var(--color-text-secondary);
     letter-spacing: 0.04em;
+}
+
+/* ========================================
+   UTILITY CLASSES (used across all pages)
+   ======================================== */
+
+.text-center { text-align: center; }
+.text-left  { text-align: left; }
+
+/* Grid alignment */
+.align-center { align-items: center; }
+
+/* Image utilities — used as class="radius-lg shadow-soft" inline */
+.radius-lg  { border-radius: var(--radius-lg); }
+.shadow-soft { box-shadow: var(--shadow-soft); }
+
+/* Section body text */
+.section-text {
+    font-size: 1.0625rem;
+    color: var(--color-text-secondary);
+    line-height: 1.75;
+}
+
+/* Section layout helpers */
+.section__content { }
+
+.section__visual { display: flex; flex-direction: column; justify-content: center; }
+
+.section__visual img {
+    width: 100%;
+    border-radius: var(--radius-lg);
+}
+
+/* ========================================
+   HEADER — SCROLLED COMPACT STATE
+   ======================================== */
+
+.header.scrolled {
+    padding: var(--space-2) 0;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+    border-bottom-color: rgba(0, 0, 0, 0.08);
+}
+
+/* ========================================
+   MOBILE NAV — Z-INDEX FIX
+   ======================================== */
+
+@media (max-width: 768px) {
+    .nav__menu {
+        z-index: 999;
+    }
+}
+
+/* ========================================
+   RESPONSIVE — IMG STACK ON MOBILE
+   ======================================== */
+
+@media (max-width: 768px) {
+    .img-stack {
+        padding: 0 var(--space-3) var(--space-3) 0;
+    }
+    .img-stack__float {
+        width: 38%;
+    }
+}
+
+/* ========================================
+   RESPONSIVE — SECTION GRIDS
+   ======================================== */
+
+@media (max-width: 768px) {
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+    .stat-row {
+        grid-template-columns: 1fr 1fr;
+    }
+    .stat-highlight:nth-child(2) {
+        border-right: none;
+    }
+    .stat-highlight:nth-child(3) {
+        border-right: 1px solid var(--color-bg-card);
+        border-top: 1px solid var(--color-bg-card);
+    }
+    .stat-highlight:nth-child(4) {
+        border-top: 1px solid var(--color-bg-card);
+    }
+    .activity-track {
+        grid-template-columns: 1fr 1fr;
+    }
+    .activity-track::before { display: none; }
+    .craft-pillars {
+        grid-template-columns: 1fr;
+    }
 }
