@@ -4621,3 +4621,15 @@ h6 {
         grid-template-columns: 1fr;
     }
 }
+
+/* ========================================
+   UTILITY — RADIUS, CARD, PADDING
+   ======================================== */
+
+.radius-xl  { border-radius: var(--radius-xl); }
+
+.card { }
+
+.p-4 { padding: var(--space-4); }
+.p-5 { padding: var(--space-5); }
+.p-6 { padding: var(--space-6); }
