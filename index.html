@@ -47,23 +47,72 @@
             </button>
 
             <ul class="nav__menu" id="nav-menu">
-                <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                <li class="nav__item"><a href="products.html" class="nav__link">Experiences</a></li>
-                <li class="nav__item"><a href="creative-studio-network.html" class="nav__link">Creative Studio</a></li>
-                <li class="nav__item"><a href="team.html" class="nav__link">Our Team</a></li>
-                <li class="nav__item"><a href="#features" class="nav__link">Philosophy</a></li>
-                <li class="nav__item"><a href="#makers" class="nav__link">The Makers</a></li>
-                <li class="nav__item"><a href="#story" class="nav__link">Our Story</a></li>
-                <li class="nav__item"><a href="#impact" class="nav__link">Impact</a></li>
-                <li class="nav__item"><a href="#testimonials" class="nav__link">Stories</a></li>
-                <li class="nav__item"><a href="#partnerships" class="nav__link">Partnerships</a></li>
-                <li class="nav__item"><a href="https://www.facebook.com/goppoguro" target="_blank"
-                        class="nav__link nav__link--social">
-                        <svg class="nav__icon" viewBox="0 0 24 24" fill="currentColor">
-                            <path
-                                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                <li class="nav__item">
+                    <a href="index.html" class="nav__link active">Home</a>
+                </li>
+                <li class="nav__item nav__item--dropdown" id="nav-dropdown-programme">
+                    <button class="nav__link nav__dropdown-trigger" aria-haspopup="true" aria-expanded="false"
+                        aria-controls="dropdown-programme">
+                        Programme
+                        <svg class="nav__dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" aria-hidden="true">
+                            <path d="M6 9l6 6 6-6" />
                         </svg>
-                    </a></li>
+                    </button>
+                                        <ul class="nav__dropdown" id="dropdown-programme" role="menu">
+                        <li class="nav__dropdown-item" role="none">
+                            <a href="programme.html" class="nav__dropdown-link" role="menuitem">All Programmes</a>
+                        </li>
+                        <li class="nav__dropdown-item" role="none">
+                            <a href="gclp.html" class="nav__dropdown-link" role="menuitem">Creative Learning Programme</a>
+                        </li>
+                        <li class="nav__dropdown-item" role="none">
+                            <a href="women-empowerment.html" class="nav__dropdown-link" role="menuitem">Women Makers Empowerment</a>
+                        </li>
+                        <li class="nav__dropdown-item" role="none">
+                            <a href="golpoka-club.html" class="nav__dropdown-link" role="menuitem">Golpoka Club</a>
+                        </li>
+                        <li class="nav__dropdown-item" role="none">
+                            <a href="podcast.html" class="nav__dropdown-link" role="menuitem">Podcast</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav__item nav__item--dropdown" id="nav-dropdown-project">
+                    <button class="nav__link nav__dropdown-trigger" aria-haspopup="true" aria-expanded="false"
+                        aria-controls="dropdown-project">
+                        Project
+                        <svg class="nav__dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" aria-hidden="true">
+                            <path d="M6 9l6 6 6-6" />
+                        </svg>
+                    </button>
+                    <ul class="nav__dropdown" id="dropdown-project" role="menu">
+                        <li class="nav__dropdown-item" role="none">
+                            <a href="creative-studio-network.html" class="nav__dropdown-link" role="menuitem">Goppoguro Studio</a>
+                        </li>
+                        <li class="nav__dropdown-item" role="none">
+                            <a href="golpoka-club.html" class="nav__dropdown-link" role="menuitem">Golpoka Club</a>
+                        </li>
+                        <li class="nav__dropdown-item" role="none">
+                            <a href="little-joys.html" class="nav__dropdown-link" role="menuitem">Little Joys</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav__item">
+                    <a href="products.html" class="nav__link">Product</a>
+                </li>
+                <li class="nav__item">
+                    <a href="publications.html" class="nav__link">Publications</a>
+                </li>
+                <li class="nav__item">
+                    <a href="about.html" class="nav__link">About Us</a>
+                </li>
+                <li class="nav__item">
+                    <a href="gallery.html" class="nav__link">Gallery</a>
+                </li>
+                <li class="nav__item">
+                    <a href="contact.html" class="nav__link">Contact</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -99,12 +148,12 @@
                     </div>
                     <div class="hero__actions">
                         <a href="products.html" class="btn btn--primary">
-                            <span>Shop with Purpose</span>
+                            <span>Explore Products</span>
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M5 12h14M12 5l7 7-7 7" />
                             </svg>
                         </a>
-                        <a href="#story" class="btn btn--outline">Discover Our Story</a>
+                        <a href="about.html" class="btn btn--outline">Our Story</a>
                     </div>
                 </article>
 
@@ -115,6 +164,91 @@
             <div class="hero__scroll">
                 <span>Scroll to explore</span>
                 <div class="hero__scroll-line"></div>
+            </div>
+        </section>
+
+        <!-- What is Goppoguro Section -->
+        <section class="section section--light" id="about">
+            <div class="container">
+                <div class="grid-2 align-center">
+                    <div class="section__content">
+                        <span class="section-tagline">About Us</span>
+                        <h2 class="section-title">What is <span class="gradient-text">Goppoguro</span>?</h2>
+                        <p class="section-description" style="margin-left: 0; text-align: left;">
+                            Goppoguro is a creative learning initiative designed to nurture curiosity and foster human connection. 
+                            We believe that small stories (গপ্পো) and gentle beginnings (গুঁড়ো) can spark lifelong journeys of discovery.
+                        </p>
+                        <p class="section-text" style="margin-top: var(--space-4); color: var(--color-text-secondary);">
+                            Through handcrafted paper experiences and storytelling, we create a space where imagination knows no bounds. 
+                            Our mission is to bring play, paper, and pause back into our high-speed lives.
+                        </p>
+                    </div>
+                    <div class="section__visual">
+                        <img src="goppoguro images/WhatsApp Image 2026-02-07 at 12.49.04 AM.jpeg" alt="GOPPOGURO Experience" class="radius-lg">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Creative Learning Cycle Section -->
+        <section class="section" id="cycle">
+            <div class="container">
+                <header class="section-header">
+                    <span class="section-tagline">The Process</span>
+                    <h2 class="section-title">Creative <span class="gradient-text">Learning Cycle</span></h2>
+                    <p class="section-description">
+                        Our framework follows a natural progression of curiosity and creation.
+                    </p>
+                </header>
+                <div class="grid-4">
+                    <div class="feature-card text-center">
+                        <div class="feature-card__number">01</div>
+                        <h3 class="feature-card__title">Spark</h3>
+                        <p class="feature-card__description">A moment of wonder or a simple question that ignites interest.</p>
+                    </div>
+                    <div class="feature-card text-center">
+                        <div class="feature-card__number">02</div>
+                        <h3 class="feature-card__title">Explore</h3>
+                        <p class="feature-card__description">Diving deep into paper, story, and play without expectations.</p>
+                    </div>
+                    <div class="feature-card text-center">
+                        <div class="feature-card__number">03</div>
+                        <h3 class="feature-card__title">Create</h3>
+                        <p class="feature-card__description">Building, folding, and shaping thoughts into tangible forms.</p>
+                    </div>
+                    <div class="feature-card text-center">
+                        <div class="feature-card__number">04</div>
+                        <h3 class="feature-card__title">Connect</h3>
+                        <p class="feature-card__description">Sharing the journey and its outcomes with the community.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4P Framework Section -->
+        <section class="section section--dim" id="framework">
+            <div class="container">
+                <div class="grid-2 align-center">
+                    <div class="section__visual">
+                        <div class="framework-diagram">
+                            <!-- Diagram placeholder or visual representation -->
+                            <div class="feature-card" style="border: 2px solid var(--color-gold);">
+                                <h3 class="gradient-text" style="font-size: 2.5rem; text-align: center;">4P</h3>
+                                <p style="text-align: center; font-weight: 600;">Projects • Passion • Peers • Play</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section__content">
+                        <span class="section-tagline">Our Methodology</span>
+                        <h2 class="section-title">Introduction to the <span class="gradient-text">4P Framework</span></h2>
+                        <ul class="feature-list" style="margin-top: var(--space-4);">
+                            <li style="margin-bottom: var(--space-3);"><strong>Projects:</strong> Learning through meaningful, long-term creation.</li>
+                            <li style="margin-bottom: var(--space-3);"><strong>Passion:</strong> Fueling growth through individual interests.</li>
+                            <li style="margin-bottom: var(--space-3);"><strong>Peers:</strong> Collaborating and sharing in a social context.</li>
+                            <li style="margin-bottom: var(--space-3);"><strong>Play:</strong> Experimenting and taking risks in a safe space.</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -645,25 +779,33 @@
                 </div>
 
                 <nav class="footer__nav">
-                    <h4 class="footer__nav-title">Quick Links</h4>
+                    <h4 class="footer__nav-title">Navigate</h4>
                     <ul class="footer__nav-list">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#features">Our Craft</a></li>
-                        <li><a href="creative-studio-network.html">Creative Studio</a></li>
-                        <li><a href="team.html">Our Team</a></li>
-                        <li><a href="#makers">Makers</a></li>
-                        <li><a href="#story">Our Story</a></li>
-                        <li><a href="#impact">Impact</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="programme.html">Programme</a></li>
+                        <li><a href="creative-studio-network.html">Project</a></li>
+                        <li><a href="products.html">Product</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
 
                 <nav class="footer__nav">
-                    <h4 class="footer__nav-title">Get Involved</h4>
+                    <h4 class="footer__nav-title">Explore</h4>
+                                        <p class="footer__nav-subheader">Programme</p>
                     <ul class="footer__nav-list">
-                        <li><a href="#">Shop</a></li>
-                        <li><a href="#partnerships">Partner With Us</a></li>
-                        <li><a href="#">Volunteer</a></li>
-                        <li><a href="#">Donate</a></li>
+                        <li><a href="gclp.html">Creative Learning (GCLP)</a></li>
+                        <li><a href="women-empowerment.html">Women Makers</a></li>
+                        <li><a href="golpoka-club.html">Golpoka Club</a></li>
+                        <li><a href="podcast.html">Podcast</a></li>
+                    </ul>
+                    <p class="footer__nav-subheader" style="margin-top: var(--space-3);">Project</p>
+                    <ul class="footer__nav-list">
+                        <li><a href="creative-studio-network.html">Goppoguro Studio</a></li>
+                        <li><a href="golpoka-club.html">Golpoka Club</a></li>
+                        <li><a href="little-joys.html">Little Joys</a></li>
                     </ul>
                 </nav>
 
@@ -677,8 +819,15 @@
                 </div>
             </div>
 
+            <div class="footer__sdg">
+                <span class="footer__sdg-badge">SDG 1</span>
+                <span class="footer__sdg-badge">SDG 4</span>
+                <span class="footer__sdg-badge">SDG 8</span>
+                <span class="footer__sdg-badge">SDG 12</span>
+            </div>
+
             <div class="footer__bottom">
-                <p>&copy; 2026 Goppo Guro. All rights reserved. Made with ❤️ in Bangladesh.</p>
+                <p>Handmade in Bangladesh &middot; &copy; 2026 Goppo Guro. All rights reserved.</p>
                 <p>Every purchase supports children's welfare.</p>
             </div>
         </div>

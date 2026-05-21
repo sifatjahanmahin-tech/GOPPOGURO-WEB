@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Little Joys by Goppo Guro — handcrafted origami jars folded by women artisans in Bangladesh. Every purchase funds a child's education.">
+    <meta name="keywords"
+        content="Little Joys, origami jars, handmade gifts Bangladesh, creative gifting, social enterprise, Goppo Guro shop">
+    <title>Little Joys | Goppo Guro</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&family=Outfit:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                <img src="goppoguro images/WhatsApp Image 2026-02-07 at 12.48.10 AM.jpeg" alt="Goppo Guro Logo"
+                    class="nav__logo-img">
+                <span class="nav__logo-text">Goppo Guro</span>
+            </a>
+
+            <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span class="nav__toggle-line"></span>
+                <span class="nav__toggle-line"></span>
+                <span class="nav__toggle-line"></span>
+            </button>
+
+            <ul class="nav__menu" id="nav-menu">
+                <li class="nav__item">
+                    <a href="index.html" class="nav__link">Home</a>
+                </li>
+                <li class="nav__item nav__item--dropdown" id="nav-dropdown-programme">
+                    <button class="nav__link nav__dropdown-trigger" aria-haspopup="true" aria-expanded="false"
+                        aria-controls="dropdown-programme">
+                        Programme
+                        <svg class="nav__dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" aria-hidden="true">
+                            <path d="M6 9l6 6 6-6" />
+                        </svg>
+                    </button>
+                                        <ul class="nav__dropdown" id="dropdown-programme" role="menu">
+                        <li class="nav__dropdown-item" role="none">
+                            <a href="programme.html" class="nav__dropdown-link" role="menuitem">All Programmes</a>
+                        </li>
+                        <li class="nav__dropdown-item" role="none">
+                            <a href="gclp.html" class="nav__dropdown-link" role="menuitem">Creative Learning Programme</a>
+                        </li>
+                        <li class="nav__dropdown-item" role="none">
+                            <a href="women-empowerment.html" class="nav__dropdown-link" role="menuitem">Women Makers Empowerment</a>
+                        </li>
+                        <li class="nav__dropdown-item" role="none">
+                            <a href="golpoka-club.html" class="nav__dropdown-link" role="menuitem">Golpoka Club</a>
+                        </li>
+                        <li class="nav__dropdown-item" role="none">
+                            <a href="podcast.html" class="nav__dropdown-link" role="menuitem">Podcast</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav__item nav__item--dropdown" id="nav-dropdown-project">
+                    <button class="nav__link nav__dropdown-trigger" aria-haspopup="true" aria-expanded="false"
+                        aria-controls="dropdown-project">
+                        Project
+                        <svg class="nav__dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" aria-hidden="true">
+                            <path d="M6 9l6 6 6-6" />
+                        </svg>
+                    </button>
+                    <ul class="nav__dropdown" id="dropdown-project" role="menu">
+                        <li class="nav__dropdown-item" role="none">
+                            <a href="creative-studio-network.html" class="nav__dropdown-link" role="menuitem">Goppoguro Studio</a>
+                        </li>
+                        <li class="nav__dropdown-item" role="none">
+                            <a href="golpoka-club.html" class="nav__dropdown-link" role="menuitem">Golpoka Club</a>
+                        </li>
+                        <li class="nav__dropdown-item" role="none">
+                            <a href="little-joys.html" class="nav__dropdown-link nav__dropdown-link--active" role="menuitem">Little Joys</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav__item">
+                    <a href="products.html" class="nav__link">Product</a>
+                </li>
+                <li class="nav__item">
+                    <a href="publications.html" class="nav__link">Publications</a>
+                </li>
+                <li class="nav__item">
+                    <a href="about.html" class="nav__link">About Us</a>
+                </li>
+                <li class="nav__item">
+                    <a href="gallery.html" class="nav__link">Gallery</a>
+                </li>
+                <li class="nav__item">
+                    <a href="contact.html" class="nav__link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="section section--light" style="padding-top: var(--space-16);">
+            <div class="container">
+                <div class="grid-2 align-center">
+                    <div class="section__content">
+                        <span class="section-tagline">Handcrafted with Purpose</span>
+                        <h1 class="section-title">A Little <span class="gradient-text">Joy</span> in Every Jar</h1>
+                        <p class="section-description" style="text-align: left;">
+                            Each Little Joys origami jar is folded by hand by a woman artisan in Bangladesh.
+                            Inside: a paper origami figure and a handwritten message. Outside: the knowledge
+                            that a child's education is one purchase closer.
+                        </p>
+                        <div class="hero__actions" style="margin-top: var(--space-6);">
+                            <a href="products.html" class="btn btn--primary btn--large">Shop Now</a>
+                            <a href="women-empowerment.html" class="btn btn--outline btn--large">Meet the Makers</a>
+                        </div>
+                    </div>
+                    <div class="section__visual">
+                        <img src="goppoguro images/WhatsApp Image 2026-02-07 at 12.49.08 AM (1).jpeg"
+                            alt="Little Joys origami jar" class="radius-lg shadow-soft">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- What is a Little Joy -->
+        <section class="section">
+            <div class="container">
+                <div class="grid-2 align-center">
+                    <div class="section__visual">
+                        <img src="goppoguro images/WhatsApp Image 2026-02-07 at 12.49.06 AM.jpeg"
+                            alt="Inside a Little Joys jar" class="radius-lg shadow-soft">
+                    </div>
+                    <div class="section__content">
+                        <span class="section-tagline">What's Inside</span>
+                        <h2 class="section-title">More Than a <span class="gradient-text">Gift</span></h2>
+                        <p class="section-text">
+                            A Little Joy is a small glass jar containing hand-folded origami figures and
+                            slips of paper with messages to spark imagination, kindness, and connection.
+                            No instructions. No outcomes. Just presence.
+                        </p>
+                        <p class="section-text" style="margin-top: var(--space-4);">
+                            "Keep it or pass it on" — every jar comes with heartfelt messages encouraging
+                            the chain of kindness to continue spreading joy wherever it travels.
+                        </p>
+                        <blockquote class="pull-quote" style="margin-top: var(--space-6);">
+                            <p class="pull-quote__text">"There are no timers, no expectations — only moments of presence, imagination, and shared discovery."</p>
+                            <cite class="pull-quote__attribution">— Goppo Guro</cite>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Making -->
+        <section class="section section--dim">
+            <div class="container">
+                <div class="grid-2 align-center">
+                    <div class="section__content">
+                        <span class="section-tagline">The Story Behind It</span>
+                        <h2 class="section-title">Folded by <span class="gradient-text">Real Hands</span></h2>
+                        <p class="section-text">
+                            Every single Little Joys jar is crafted by a woman artisan working from her
+                            home in Bangladesh. No factory. No machine. Just patience, paper, and skill
+                            passed from hand to hand.
+                        </p>
+                        <p class="section-text" style="margin-top: var(--space-4);">
+                            When you buy a Little Joy, you are paying a fair wage to the woman who made it —
+                            and contributing to the welfare fund that sends a child to school.
+                        </p>
+                        <a href="women-empowerment.html" class="btn btn--outline" style="margin-top: var(--space-6);">
+                            Meet the Artisans →
+                        </a>
+                    </div>
+                    <div class="section__visual">
+                        <img src="goppoguro images/WhatsApp Image 2026-02-07 at 12.49.05 AM.jpeg"
+                            alt="Artisan folding origami by hand" class="radius-lg shadow-soft">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Preview -->
+        <section class="section section--light">
+            <div class="container">
+                <header class="section-header text-center">
+                    <span class="section-tagline">The Collection</span>
+                    <h2 class="section-title">Choose Your <span class="gradient-text">Little Joy</span></h2>
+                </header>
+                <div class="grid-3">
+                    <article class="product-card-preview">
+                        <div class="product-card-preview__image">
+                            <img src="goppoguro images/WhatsApp Image 2026-02-07 at 12.49.07 AM.jpeg"
+                                alt="Classic Joy Jar">
+                            <div class="product-card-preview__overlay">
+                                <a href="products.html" class="btn btn--small btn--primary">View Details</a>
+                            </div>
+                        </div>
+                        <div class="product-card-preview__content">
+                            <h3 class="product-card-preview__title">Classic Joy Jar</h3>
+                            <p class="product-card-preview__price">৳ 450</p>
+                        </div>
+                    </article>
+
+                    <article class="product-card-preview">
+                        <div class="product-card-preview__image">
+                            <img src="goppoguro images/WhatsApp Image 2026-02-07 at 12.49.06 AM.jpeg"
+                                alt="Signature Crane Collection">
+                            <div class="product-card-preview__overlay">
+                                <a href="products.html" class="btn btn--small btn--primary">View Details</a>
+                            </div>
+                        </div>
+                        <div class="product-card-preview__content">
+                            <h3 class="product-card-preview__title">Signature Crane Set</h3>
+                            <p class="product-card-preview__price">৳ 850</p>
+                        </div>
+                    </article>
+
+                    <article class="product-card-preview">
+                        <div class="product-card-preview__image">
+                            <img src="goppoguro images/WhatsApp Image 2026-02-07 at 12.49.08 AM (1).jpeg"
+                                alt="Sustainable Gift Box">
+                            <div class="product-card-preview__overlay">
+                                <a href="products.html" class="btn btn--small btn--primary">View Details</a>
+                            </div>
+                        </div>
+                        <div class="product-card-preview__content">
+                            <h3 class="product-card-preview__title">Sustainable Gift Box</h3>
+                            <p class="product-card-preview__price">৳ 1,200</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="text-center" style="margin-top: var(--space-8);">
+                    <a href="products.html" class="btn btn--outline btn--large">View Full Collection</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Impact Calculator -->
+        <section class="impact" id="impact">
+            <div class="container">
+                <header class="section-header text-center">
+                    <span class="section-tagline">Your Impact</span>
+                    <h2 class="section-title">See the <span class="gradient-text">Ripple Effect</span></h2>
+                    <p class="section-description">
+                        Every Little Joy you buy creates a chain reaction of positive change.
+                        Use our calculator to see the difference you're making.
+                    </p>
+                </header>
+
+                <div class="impact__calculator">
+                    <div class="impact__input-group">
+                        <label for="jar-count" class="impact__label">How many jars would you like to gift?</label>
+                        <div class="impact__slider-container">
+                            <input type="range" id="jar-count" class="impact__slider" min="1" max="50" value="5">
+                            <div class="impact__slider-value"><span id="jar-display">5</span> Jars</div>
+                        </div>
+                    </div>
+
+                    <div class="impact__results">
+                        <div class="impact__result-card">
+                            <div class="impact__result-icon">📚</div>
+                            <div class="impact__result-number" id="education-days">15</div>
+                            <div class="impact__result-label">Days of Education Funded</div>
+                        </div>
+                        <div class="impact__result-card">
+                            <div class="impact__result-icon">🍱</div>
+                            <div class="impact__result-number" id="meals-provided">10</div>
+                            <div class="impact__result-label">Nutritious Meals Provided</div>
+                        </div>
+                        <div class="impact__result-card">
+                            <div class="impact__result-icon">😊</div>
+                            <div class="impact__result-number" id="smiles-spread">25</div>
+                            <div class="impact__result-label">Smiles Spread</div>
+                        </div>
+                        <div class="impact__result-card">
+                            <div class="impact__result-icon">🌱</div>
+                            <div class="impact__result-number" id="trees-helped">1</div>
+                            <div class="impact__result-label">Trees Worth of Paper Offset</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SDG Alignment -->
+        <section class="section section--light">
+            <div class="container">
+                <header class="section-header text-center">
+                    <span class="section-tagline">Global Goals</span>
+                    <h2 class="section-title">One Jar, Four <span class="gradient-text">SDGs</span></h2>
+                </header>
+                <div class="sdg-section__grid">
+                    <div class="sdg-badge">
+                        <span class="sdg-badge__number">SDG 1</span>
+                        <h3 class="sdg-badge__title">No Poverty</h3>
+                        <p class="sdg-badge__desc">Revenue directly funds education and welfare for children in need across Bangladesh.</p>
+                    </div>
+                    <div class="sdg-badge">
+                        <span class="sdg-badge__number">SDG 4</span>
+                        <h3 class="sdg-badge__title">Quality Education</h3>
+                        <p class="sdg-badge__desc">Little Joys purchases fund school days, materials, and meals for children who need them.</p>
+                    </div>
+                    <div class="sdg-badge">
+                        <span class="sdg-badge__number">SDG 8</span>
+                        <h3 class="sdg-badge__title">Decent Work</h3>
+                        <p class="sdg-badge__desc">Women artisans earn fair, flexible income crafting every jar at home, on their own schedule.</p>
+                    </div>
+                    <div class="sdg-badge">
+                        <span class="sdg-badge__number">SDG 12</span>
+                        <h3 class="sdg-badge__title">Responsible Consumption</h3>
+                        <p class="sdg-badge__desc">Handcrafted from sustainable, minimal materials — each piece is made to be cherished, not discarded.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="section section--dim">
+            <div class="container text-center">
+                <span class="section-tagline">Ready?</span>
+                <h2 class="section-title">Start the <span class="gradient-text">Chain</span></h2>
+                <p class="section-description">Buy a Little Joy. One fold. One story. One life touched.</p>
+                <div class="hero__actions" style="justify-content: center; margin-top: var(--space-6);">
+                    <a href="products.html" class="btn btn--primary btn--large">Shop Little Joys</a>
+                    <a href="about.html" class="btn btn--outline btn--large">Our Story</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <img src="goppoguro images/WhatsApp Image 2026-02-07 at 12.48.10 AM.jpeg" alt="Goppo Guro"
+                        class="footer__logo">
+                    <p class="footer__tagline">A Space for Play, Paper, and Pause</p>
+                    <p class="footer__description">
+                        Creating space for curiosity, connection, and shared discovery through handcrafted paper
+                        experiences.
+                    </p>
+                    <div class="footer__social">
+                        <a href="https://www.facebook.com/goppoguro" target="_blank" class="footer__social-link"
+                            aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <nav class="footer__nav">
+                    <h4 class="footer__nav-title">Navigate</h4>
+                    <ul class="footer__nav-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="programme.html">Programme</a></li>
+                        <li><a href="creative-studio-network.html">Project</a></li>
+                        <li><a href="products.html">Product</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <nav class="footer__nav">
+                    <h4 class="footer__nav-title">Explore</h4>
+                                        <p class="footer__nav-subheader">Programme</p>
+                    <ul class="footer__nav-list">
+                        <li><a href="gclp.html">Creative Learning (GCLP)</a></li>
+                        <li><a href="women-empowerment.html">Women Makers</a></li>
+                        <li><a href="golpoka-club.html">Golpoka Club</a></li>
+                        <li><a href="podcast.html">Podcast</a></li>
+                    </ul>
+                    <p class="footer__nav-subheader" style="margin-top: var(--space-3);">Project</p>
+                    <ul class="footer__nav-list">
+                        <li><a href="creative-studio-network.html">Goppoguro Studio</a></li>
+                        <li><a href="golpoka-club.html">Golpoka Club</a></li>
+                        <li><a href="little-joys.html">Little Joys</a></li>
+                    </ul>
+                </nav>
+
+                <div class="footer__newsletter">
+                    <h4 class="footer__nav-title">Stay Connected</h4>
+                    <p>Get updates on new products and impact stories.</p>
+                    <form class="footer__form" id="newsletter-form">
+                        <input type="email" placeholder="Your email" class="footer__input" required>
+                        <button type="submit" class="btn btn--primary btn--small">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer__sdg">
+                <span class="footer__sdg-badge">SDG 1</span>
+                <span class="footer__sdg-badge">SDG 4</span>
+                <span class="footer__sdg-badge">SDG 8</span>
+                <span class="footer__sdg-badge">SDG 12</span>
+            </div>
+
+            <div class="footer__bottom">
+                <p>Handmade in Bangladesh &middot; &copy; 2026 Goppo Guro. All rights reserved.</p>
+                <p>Every purchase supports children's welfare.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

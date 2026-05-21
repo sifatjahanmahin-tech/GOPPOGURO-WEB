@@ -48,21 +48,72 @@
             </button>
 
             <ul class="nav__menu" id="nav-menu">
-                <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
-                <li class="nav__item"><a href="products.html" class="nav__link">Experiences</a></li>
-                <li class="nav__item"><a href="creative-studio-network.html" class="nav__link active">Creative
-                        Studio</a></li>
-                <li class="nav__item"><a href="team.html" class="nav__link">Our Team</a></li>
-                <li class="nav__item"><a href="index.html#features" class="nav__link">Philosophy</a></li>
-                <li class="nav__item"><a href="index.html#makers" class="nav__link">The Makers</a></li>
-                <li class="nav__item"><a href="index.html#story" class="nav__link">Our Story</a></li>
-                <li class="nav__item"><a href="https://www.facebook.com/goppoguro" target="_blank"
-                        class="nav__link nav__link--social">
-                        <svg class="nav__icon" viewBox="0 0 24 24" fill="currentColor">
-                            <path
-                                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                <li class="nav__item">
+                    <a href="index.html" class="nav__link">Home</a>
+                </li>
+                <li class="nav__item nav__item--dropdown" id="nav-dropdown-programme">
+                    <button class="nav__link nav__dropdown-trigger" aria-haspopup="true" aria-expanded="false"
+                        aria-controls="dropdown-programme">
+                        Programme
+                        <svg class="nav__dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" aria-hidden="true">
+                            <path d="M6 9l6 6 6-6" />
                         </svg>
-                    </a></li>
+                    </button>
+                                        <ul class="nav__dropdown" id="dropdown-programme" role="menu">
+                        <li class="nav__dropdown-item" role="none">
+                            <a href="programme.html" class="nav__dropdown-link" role="menuitem">All Programmes</a>
+                        </li>
+                        <li class="nav__dropdown-item" role="none">
+                            <a href="gclp.html" class="nav__dropdown-link" role="menuitem">Creative Learning Programme</a>
+                        </li>
+                        <li class="nav__dropdown-item" role="none">
+                            <a href="women-empowerment.html" class="nav__dropdown-link" role="menuitem">Women Makers Empowerment</a>
+                        </li>
+                        <li class="nav__dropdown-item" role="none">
+                            <a href="golpoka-club.html" class="nav__dropdown-link" role="menuitem">Golpoka Club</a>
+                        </li>
+                        <li class="nav__dropdown-item" role="none">
+                            <a href="podcast.html" class="nav__dropdown-link" role="menuitem">Podcast</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav__item nav__item--dropdown" id="nav-dropdown-project">
+                    <button class="nav__link nav__dropdown-trigger" aria-haspopup="true" aria-expanded="false"
+                        aria-controls="dropdown-project">
+                        Project
+                        <svg class="nav__dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" aria-hidden="true">
+                            <path d="M6 9l6 6 6-6" />
+                        </svg>
+                    </button>
+                    <ul class="nav__dropdown" id="dropdown-project" role="menu">
+                        <li class="nav__dropdown-item" role="none">
+                            <a href="creative-studio-network.html" class="nav__dropdown-link" role="menuitem">Goppoguro Studio</a>
+                        </li>
+                        <li class="nav__dropdown-item" role="none">
+                            <a href="golpoka-club.html" class="nav__dropdown-link" role="menuitem">Golpoka Club</a>
+                        </li>
+                        <li class="nav__dropdown-item" role="none">
+                            <a href="little-joys.html" class="nav__dropdown-link" role="menuitem">Little Joys</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav__item">
+                    <a href="products.html" class="nav__link">Product</a>
+                </li>
+                <li class="nav__item">
+                    <a href="publications.html" class="nav__link">Publications</a>
+                </li>
+                <li class="nav__item">
+                    <a href="about.html" class="nav__link">About Us</a>
+                </li>
+                <li class="nav__item">
+                    <a href="gallery.html" class="nav__link">Gallery</a>
+                </li>
+                <li class="nav__item">
+                    <a href="contact.html" class="nav__link">Contact</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -675,6 +726,66 @@
             </div>
         </section>
 
+        <!-- School Collaboration Network -->
+        <section class="section section--light" id="csn-schools">
+            <div class="container">
+                <div class="grid-2 align-center">
+                    <div class="section__content">
+                        <span class="section-tagline">School Collaboration</span>
+                        <h2 class="section-title">Bringing Studios into <span class="gradient-text">Schools</span></h2>
+                        <p class="section-text">
+                            We partner directly with schools to bring the Goppoguro Creative Studio experience
+                            into the classroom. Our in-school pilots integrate the 4P Framework (Projects, Passion,
+                            Peers, Play) alongside existing curricula — without replacing it.
+                        </p>
+                        <p class="section-text" style="margin-top: var(--space-4);">
+                            Partner schools receive full facilitation support, curated materials, and access to
+                            our exhibition calendar. Children gain structured creative time; schools gain
+                            measurable engagement outcomes.
+                        </p>
+                        <a href="contact.html?subject=School%20Collaboration" class="btn btn--primary" style="margin-top: var(--space-6);">
+                            Bring a Studio to Your School
+                        </a>
+                    </div>
+                    <div class="section__visual">
+                        <img src="goppoguro images/creative studio network img/WhatsApp Image 2026-03-03 at 5.28.43 PM.jpeg"
+                            alt="Children in a school creative studio session" class="radius-lg shadow-soft">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Franchise Opportunities -->
+        <section class="section section--dim" id="csn-franchise">
+            <div class="container">
+                <header class="section-header text-center">
+                    <span class="section-tagline">Franchise</span>
+                    <h2 class="section-title">Start a Studio in <span class="gradient-text">Your City</span></h2>
+                    <p class="section-description">
+                        Become a Goppoguro Creative Studio operator. We provide everything you need to run
+                        a high-quality creative hub in your neighbourhood.
+                    </p>
+                </header>
+                <div class="grid-3">
+                    <div class="feature-card text-center">
+                        <h3 class="feature-card__title">Full Curriculum</h3>
+                        <p class="feature-card__description">Ready-to-run session plans, monthly themes, and activity materials developed by our team.</p>
+                    </div>
+                    <div class="feature-card text-center">
+                        <h3 class="feature-card__title">Brand & Training</h3>
+                        <p class="feature-card__description">Onboarding training, brand identity guidelines, and ongoing support from Goppoguro headquarters.</p>
+                    </div>
+                    <div class="feature-card text-center">
+                        <h3 class="feature-card__title">Community Network</h3>
+                        <p class="feature-card__description">Join a growing network of studio operators sharing resources, ideas, and exhibition opportunities.</p>
+                    </div>
+                </div>
+                <div class="text-center" style="margin-top: var(--space-8);">
+                    <a href="contact.html?subject=Start%20a%20Studio" class="btn btn--primary btn--large">Apply for Franchise</a>
+                </div>
+            </div>
+        </section>
+
         <!-- Belief / CTA Section -->
         <section class="csn-belief" id="csn-belief">
             <div class="csn-belief__bg-pattern"></div>
@@ -733,28 +844,39 @@
                 </div>
 
                 <nav class="footer__nav">
-                    <h4 class="footer__nav-title">Quick Links</h4>
+                    <h4 class="footer__nav-title">Navigate</h4>
                     <ul class="footer__nav-list">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="products.html">Experiences</a></li>
-                        <li><a href="creative-studio-network.html">Creative Studio</a></li>
-                        <li><a href="team.html">Our Team</a></li>
-                        <li><a href="index.html#story">Our Story</a></li>
+                        <li><a href="programme.html">Programme</a></li>
+                        <li><a href="creative-studio-network.html">Project</a></li>
+                        <li><a href="products.html">Product</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
 
                 <nav class="footer__nav">
-                    <h4 class="footer__nav-title">Get Involved</h4>
+                    <h4 class="footer__nav-title">Explore</h4>
+                                        <p class="footer__nav-subheader">Programme</p>
                     <ul class="footer__nav-list">
-                        <li><a href="products.html">Shop</a></li>
-                        <li><a href="index.html#partnerships">Partner With Us</a></li>
-                        <li><a href="#">Volunteer</a></li>
+                        <li><a href="gclp.html">Creative Learning (GCLP)</a></li>
+                        <li><a href="women-empowerment.html">Women Makers</a></li>
+                        <li><a href="golpoka-club.html">Golpoka Club</a></li>
+                        <li><a href="podcast.html">Podcast</a></li>
+                    </ul>
+                    <p class="footer__nav-subheader" style="margin-top: var(--space-3);">Project</p>
+                    <ul class="footer__nav-list">
+                        <li><a href="creative-studio-network.html">Goppoguro Studio</a></li>
+                        <li><a href="golpoka-club.html">Golpoka Club</a></li>
+                        <li><a href="little-joys.html">Little Joys</a></li>
                     </ul>
                 </nav>
 
                 <div class="footer__newsletter">
                     <h4 class="footer__nav-title">Stay Connected</h4>
-                    <p>Get updates on new studios and creative programs.</p>
+                    <p>Get updates on new products and impact stories.</p>
                     <form class="footer__form" id="newsletter-form">
                         <input type="email" placeholder="Your email" class="footer__input" required>
                         <button type="submit" class="btn btn--primary btn--small">Subscribe</button>
@@ -762,8 +884,15 @@
                 </div>
             </div>
 
+            <div class="footer__sdg">
+                <span class="footer__sdg-badge">SDG 1</span>
+                <span class="footer__sdg-badge">SDG 4</span>
+                <span class="footer__sdg-badge">SDG 8</span>
+                <span class="footer__sdg-badge">SDG 12</span>
+            </div>
+
             <div class="footer__bottom">
-                <p>&copy; 2026 Goppo Guro. All rights reserved. Made with ❤️ in Bangladesh.</p>
+                <p>Handmade in Bangladesh &middot; &copy; 2026 Goppo Guro. All rights reserved.</p>
                 <p>Every purchase supports children's welfare.</p>
             </div>
         </div>

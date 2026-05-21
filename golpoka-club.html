@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Golpoka Club — a creative membership programme for curious children aged 5+. Monthly boxes of storybooks, craft kits, and imagination challenges.">
+    <meta name="keywords"
+        content="Golpoka Club, children creative membership, monthly craft box, storybooks Bangladesh, Goppo Guro kids">
+    <title>Golpoka Club | Goppo Guro</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&family=Outfit:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                <img src="goppoguro images/WhatsApp Image 2026-02-07 at 12.48.10 AM.jpeg" alt="Goppo Guro Logo"
+                    class="nav__logo-img">
+                <span class="nav__logo-text">Goppo Guro</span>
+            </a>
+
+            <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span class="nav__toggle-line"></span>
+                <span class="nav__toggle-line"></span>
+                <span class="nav__toggle-line"></span>
+            </button>
+
+            <ul class="nav__menu" id="nav-menu">
+                <li class="nav__item">
+                    <a href="index.html" class="nav__link">Home</a>
+                </li>
+                <li class="nav__item nav__item--dropdown" id="nav-dropdown-programme">
+                    <button class="nav__link nav__dropdown-trigger" aria-haspopup="true" aria-expanded="false"
+                        aria-controls="dropdown-programme">
+                        Programme
+                        <svg class="nav__dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" aria-hidden="true">
+                            <path d="M6 9l6 6 6-6" />
+                        </svg>
+                    </button>
+                    <ul class="nav__dropdown" id="dropdown-programme" role="menu">
+                        <li class="nav__dropdown-item" role="none">
+                            <a href="programme.html" class="nav__dropdown-link" role="menuitem">All Programmes</a>
+                        </li>
+                        <li class="nav__dropdown-item" role="none">
+                            <a href="gclp.html" class="nav__dropdown-link" role="menuitem">Creative Learning Programme</a>
+                        </li>
+                        <li class="nav__dropdown-item" role="none">
+                            <a href="women-empowerment.html" class="nav__dropdown-link" role="menuitem">Women Makers Empowerment</a>
+                        </li>
+                        <li class="nav__dropdown-item" role="none">
+                            <a href="golpoka-club.html" class="nav__dropdown-link nav__dropdown-link--active" role="menuitem">Golpoka Club</a>
+                        </li>
+                        <li class="nav__dropdown-item" role="none">
+                            <a href="podcast.html" class="nav__dropdown-link" role="menuitem">Podcast</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav__item nav__item--dropdown" id="nav-dropdown-project">
+                    <button class="nav__link nav__dropdown-trigger" aria-haspopup="true" aria-expanded="false"
+                        aria-controls="dropdown-project">
+                        Project
+                        <svg class="nav__dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" aria-hidden="true">
+                            <path d="M6 9l6 6 6-6" />
+                        </svg>
+                    </button>
+                    <ul class="nav__dropdown" id="dropdown-project" role="menu">
+                        <li class="nav__dropdown-item" role="none">
+                            <a href="creative-studio-network.html" class="nav__dropdown-link" role="menuitem">Goppoguro Studio</a>
+                        </li>
+                        <li class="nav__dropdown-item" role="none">
+                            <a href="golpoka-club.html" class="nav__dropdown-link" role="menuitem">Golpoka Club</a>
+                        </li>
+                        <li class="nav__dropdown-item" role="none">
+                            <a href="little-joys.html" class="nav__dropdown-link" role="menuitem">Little Joys</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav__item">
+                    <a href="products.html" class="nav__link">Product</a>
+                </li>
+                <li class="nav__item">
+                    <a href="publications.html" class="nav__link">Publications</a>
+                </li>
+                <li class="nav__item">
+                    <a href="about.html" class="nav__link">About Us</a>
+                </li>
+                <li class="nav__item">
+                    <a href="gallery.html" class="nav__link">Gallery</a>
+                </li>
+                <li class="nav__item">
+                    <a href="contact.html" class="nav__link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="section section--light" style="padding-top: var(--space-16);">
+            <div class="container">
+                <div class="grid-2 align-center">
+                    <div class="section__content">
+                        <span class="section-tagline">A Creative Membership Club</span>
+                        <h1 class="section-title">The <span class="gradient-text">Golpoka</span> Club</h1>
+                        <p class="section-description" style="text-align: left;">
+                            A creative membership programme by Goppoguro for curious children aged 5+,
+                            where imagination grows through stories, playful learning, creative activities,
+                            and hands-on exploration.
+                        </p>
+                        <p class="section-text" style="margin-top: var(--space-3);">
+                            More than a subscription — Golpoka Club is a creative journey where children
+                            become makers, storytellers, dreamers, explorers, and young creators.
+                        </p>
+                        <div class="hero__actions" style="margin-top: var(--space-6);">
+                            <a href="#join" class="btn btn--primary btn--large">Join the Club</a>
+                            <a href="#what-comes" class="btn btn--outline btn--large">See What's Inside</a>
+                        </div>
+                    </div>
+                    <div class="img-stack">
+                        <img class="img-stack__main"
+                            src="Golpoka Club/WhatsApp Image 2026-05-17 at 11.52.33 AM.jpeg"
+                            alt="Golpoka Club monthly creative box contents">
+                        <img class="img-stack__float"
+                            src="Golpoka Club/WhatsApp Image 2026-05-17 at 11.52.34 AM.jpeg"
+                            alt="Child engaged with Golpoka Club activities">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- What is Golpoka Club? -->
+        <section class="section section--dim">
+            <div class="container">
+                <div class="grid-2 align-center">
+                    <div class="section__visual">
+                        <img src="Golpoka Club/WhatsApp Image 2026-05-17 at 11.52.35 AM.jpeg"
+                            alt="Children exploring creative activities together" class="radius-lg shadow-soft">
+                    </div>
+                    <div class="section__content">
+                        <span class="section-tagline">What Is It?</span>
+                        <h2 class="section-title">A Monthly Creative <span class="gradient-text">Adventure</span></h2>
+                        <p class="section-text">
+                            Golpoka Club is designed for children who love stories, making things, and
+                            exploring the world through play. Each month follows a different theme — encouraging
+                            children to discover new ideas, stories, cultures, emotions, and ways of thinking.
+                        </p>
+                        <p class="section-text" style="margin-top: var(--space-4);">
+                            Every member receives a thoughtfully curated Goppoguro creative package filled
+                            with surprise, wonder, and activities designed to spark imagination, curiosity,
+                            and joyful learning.
+                        </p>
+                        <p class="section-text" style="margin-top: var(--space-4);">
+                            No special skills needed. Only curiosity.
+                        </p>
+                        <div class="feature-card" style="margin-top: var(--space-5); display: inline-flex; align-items: center; gap: var(--space-4); padding: var(--space-3) var(--space-5);">
+                            <div>
+                                <span style="font-family: var(--font-numbers); font-size: 1.5rem; font-weight: 700; display: block; line-height: 1;">5+</span>
+                                <span style="font-size: 0.75rem; color: var(--color-text-secondary);">Years Old</span>
+                            </div>
+                            <span style="width: 1px; height: 2rem; background: var(--color-bg-card);"></span>
+                            <div>
+                                <span style="font-family: var(--font-numbers); font-size: 1.5rem; font-weight: 700; display: block; line-height: 1;">12</span>
+                                <span style="font-size: 0.75rem; color: var(--color-text-secondary);">Themes per Year</span>
+                            </div>
+                            <span style="width: 1px; height: 2rem; background: var(--color-bg-card);"></span>
+                            <div>
+                                <span style="font-family: var(--font-numbers); font-size: 1.5rem; font-weight: 700; display: block; line-height: 1;">∞</span>
+                                <span style="font-size: 0.75rem; color: var(--color-text-secondary);">Imagination</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- What Comes in the Box? -->
+        <section class="section" id="what-comes">
+            <div class="container">
+                <header class="section-header text-center">
+                    <span class="section-tagline">Monthly Creative Box</span>
+                    <h2 class="section-title">What's <span class="gradient-text">Inside?</span></h2>
+                    <p class="section-description">Every Golpoka Club box is filled with surprise, wonder, and activities.</p>
+                </header>
+                <div class="box-contents stagger-children">
+                    <div class="box-item">
+                        <span class="box-item__emoji">📚</span>
+                        <span class="box-item__label">Goppoguro Storybooks</span>
+                    </div>
+                    <div class="box-item">
+                        <span class="box-item__emoji">🎨</span>
+                        <span class="box-item__label">Creative Activity Books</span>
+                    </div>
+                    <div class="box-item">
+                        <span class="box-item__emoji">✂️</span>
+                        <span class="box-item__label">DIY Craft Kits</span>
+                    </div>
+                    <div class="box-item">
+                        <span class="box-item__emoji">🎭</span>
+                        <span class="box-item__label">Storytelling Games</span>
+                    </div>
+                    <div class="box-item">
+                        <span class="box-item__emoji">💡</span>
+                        <span class="box-item__label">Imagination Challenges</span>
+                    </div>
+                    <div class="box-item">
+                        <span class="box-item__emoji">🧩</span>
+                        <span class="box-item__label">Hands-On Activities</span>
+                    </div>
+                    <div class="box-item">
+                        <span class="box-item__emoji">✨</span>
+                        <span class="box-item__label">Seasonal Surprises</span>
+                    </div>
+                    <div class="box-item">
+                        <span class="box-item__emoji">🗺️</span>
+                        <span class="box-item__label">Creative Missions</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Member Activities -->
+        <section class="section section--light">
+            <div class="container">
+                <header class="section-header text-center">
+                    <span class="section-tagline">More Than a Box</span>
+                    <h2 class="section-title">A Platform to <span class="gradient-text">Create &amp; Share</span></h2>
+                    <p class="section-description">Members can actively participate, create, and be celebrated. Golpoka Club is a growing community, not just a product.</p>
+                </header>
+                <div class="activity-track stagger-children">
+                    <div class="activity-node">
+                        <div class="activity-node__icon">🏆</div>
+                        <h3 class="activity-node__title">Competitions</h3>
+                        <p class="activity-node__text">Fun and inspiring challenges in storytelling, drawing, making, and creative thinking — where effort is celebrated as much as outcome.</p>
+                    </div>
+                    <div class="activity-node">
+                        <div class="activity-node__icon">🖼️</div>
+                        <h3 class="activity-node__title">Exhibitions</h3>
+                        <p class="activity-node__text">Selected works are showcased through exhibitions where children celebrate their creativity with peers, parents, and communities.</p>
+                    </div>
+                    <div class="activity-node">
+                        <div class="activity-node__icon">📖</div>
+                        <h3 class="activity-node__title">Publications</h3>
+                        <p class="activity-node__text">Children's artworks, stories, poems, and creations may be featured in Goppoguro books, magazines, exhibitions, or digital publications.</p>
+                    </div>
+                    <div class="activity-node">
+                        <div class="activity-node__icon">🎉</div>
+                        <h3 class="activity-node__title">Creative Events</h3>
+                        <p class="activity-node__text">Story circles, workshops, festivals, play sessions, and community gatherings that bring young creators together in shared joy.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Golpoka Club? -->
+        <section class="section section--dim">
+            <div class="container">
+                <div class="grid-2 align-center">
+                    <div class="section__content">
+                        <span class="section-tagline">Why It Matters</span>
+                        <h2 class="section-title">Why <span class="gradient-text">Golpoka Club?</span></h2>
+                        <p class="section-text">
+                            In a world filled with screens and passive entertainment, children need spaces
+                            where they can imagine, make, explore, and express. Golpoka Club creates that space —
+                            at home, every month, in their own way.
+                        </p>
+                        <p class="section-text" style="margin-top: var(--space-4);">
+                            We believe every child deserves the opportunity to explore their own creative world —
+                            to feel proud of their ideas, to build confidence through making, and to know
+                            that their imagination matters.
+                        </p>
+                    </div>
+                    <div class="section__content">
+                        <span class="section-tagline">Children Learn To</span>
+                        <ul style="list-style: none; padding: 0; margin-top: var(--space-6);">
+                            <li style="display: flex; align-items: flex-start; gap: var(--space-3); padding: var(--space-3) 0; border-bottom: 1px solid var(--color-bg-card);">
+                                <span style="font-size: 1.25rem; flex-shrink: 0;">✦</span>
+                                <div>
+                                    <strong style="font-family: var(--font-display); font-size: 1.05rem;">Think Creatively</strong>
+                                    <p style="font-size: 0.875rem; color: var(--color-text-secondary); margin-top: var(--space-1);">Approach problems with imagination and open curiosity</p>
+                                </div>
+                            </li>
+                            <li style="display: flex; align-items: flex-start; gap: var(--space-3); padding: var(--space-3) 0; border-bottom: 1px solid var(--color-bg-card);">
+                                <span style="font-size: 1.25rem; flex-shrink: 0;">✦</span>
+                                <div>
+                                    <strong style="font-family: var(--font-display); font-size: 1.05rem;">Build Confidence</strong>
+                                    <p style="font-size: 0.875rem; color: var(--color-text-secondary); margin-top: var(--space-1);">Feel proud of their creations and trust their own ideas</p>
+                                </div>
+                            </li>
+                            <li style="display: flex; align-items: flex-start; gap: var(--space-3); padding: var(--space-3) 0; border-bottom: 1px solid var(--color-bg-card);">
+                                <span style="font-size: 1.25rem; flex-shrink: 0;">✦</span>
+                                <div>
+                                    <strong style="font-family: var(--font-display); font-size: 1.05rem;">Develop Expression</strong>
+                                    <p style="font-size: 0.875rem; color: var(--color-text-secondary); margin-top: var(--space-1);">Improve communication through storytelling and making</p>
+                                </div>
+                            </li>
+                            <li style="display: flex; align-items: flex-start; gap: var(--space-3); padding: var(--space-3) 0; border-bottom: 1px solid var(--color-bg-card);">
+                                <span style="font-size: 1.25rem; flex-shrink: 0;">✦</span>
+                                <div>
+                                    <strong style="font-family: var(--font-display); font-size: 1.05rem;">Learn through Play</strong>
+                                    <p style="font-size: 0.875rem; color: var(--color-text-secondary); margin-top: var(--space-1);">Explore ideas through hands-on discovery and joyful making</p>
+                                </div>
+                            </li>
+                            <li style="display: flex; align-items: flex-start; gap: var(--space-3); padding: var(--space-3) 0;">
+                                <span style="font-size: 1.25rem; flex-shrink: 0;">✦</span>
+                                <div>
+                                    <strong style="font-family: var(--font-display); font-size: 1.05rem;">Play Positively</strong>
+                                    <p style="font-size: 0.875rem; color: var(--color-text-secondary); margin-top: var(--space-1);">Engage with others through shared creative experiences</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quote Banner -->
+        <div class="quote-banner">
+            <div class="container">
+                <p class="quote-banner__text">"Small stories can grow big imaginations."</p>
+                <span class="quote-banner__attr">— Golpoka Club</span>
+            </div>
+        </div>
+
+        <!-- Our Vision -->
+        <section class="section section--light">
+            <div class="container text-center" style="max-width: 760px;">
+                <span class="section-tagline">Our Dream</span>
+                <h2 class="section-title">A Generation of <span class="gradient-text">Young Creators</span></h2>
+                <p class="section-description">
+                    We dream of building a generation of children who are curious, creative, confident,
+                    kind, and playful thinkers. Golpoka Club is a small beginning toward a larger culture
+                    of imagination — where creativity is not reserved for art class, but woven into
+                    everyday life.
+                </p>
+                <p class="section-text" style="margin-top: var(--space-4);">
+                    Because creativity grows stronger when shared.
+                </p>
+            </div>
+        </section>
+
+        <!-- Join CTA -->
+        <section class="section section--dim" id="join">
+            <div class="container text-center">
+                <span class="section-tagline">Become a Golpoka</span>
+                <h2 class="section-title">Let Imagination Arrive at <span class="gradient-text">Your Doorstep</span></h2>
+                <p class="section-description">
+                    Every month. A new theme. A new adventure. A new reason to create.
+                    Sign up to be notified when the first box is ready.
+                </p>
+                <form class="footer__form" id="golpoka-notify-form"
+                    style="max-width: 420px; margin: var(--space-8) auto 0;">
+                    <input type="email" placeholder="Your child's guardian email" class="footer__input" required>
+                    <button type="submit" class="btn btn--primary">Join the Club</button>
+                </form>
+                <p style="margin-top: var(--space-4); font-size: 0.875rem; color: var(--color-text-secondary);">
+                    For curious children aged 5+ &middot; Monthly creative adventure &middot; No spam, ever
+                </p>
+                <div style="margin-top: var(--space-6);">
+                    <a href="contact.html?subject=Golpoka%20Club%20Enquiry" class="btn btn--outline">Talk to Us Instead</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <img src="goppoguro images/WhatsApp Image 2026-02-07 at 12.48.10 AM.jpeg" alt="Goppo Guro"
+                        class="footer__logo">
+                    <p class="footer__tagline">A Space for Play, Paper, and Pause</p>
+                    <p class="footer__description">
+                        Creating space for curiosity, connection, and shared discovery through handcrafted paper
+                        experiences.
+                    </p>
+                    <div class="footer__social">
+                        <a href="https://www.facebook.com/goppoguro" target="_blank" class="footer__social-link"
+                            aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <nav class="footer__nav">
+                    <h4 class="footer__nav-title">Navigate</h4>
+                    <ul class="footer__nav-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="programme.html">Programme</a></li>
+                        <li><a href="creative-studio-network.html">Project</a></li>
+                        <li><a href="products.html">Product</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <nav class="footer__nav">
+                    <h4 class="footer__nav-title">Explore</h4>
+                    <p class="footer__nav-subheader">Programme</p>
+                    <ul class="footer__nav-list">
+                        <li><a href="gclp.html">Creative Learning (GCLP)</a></li>
+                        <li><a href="women-empowerment.html">Women Makers</a></li>
+                        <li><a href="golpoka-club.html">Golpoka Club</a></li>
+                        <li><a href="podcast.html">Podcast</a></li>
+                    </ul>
+                    <p class="footer__nav-subheader" style="margin-top: var(--space-3);">Project</p>
+                    <ul class="footer__nav-list">
+                        <li><a href="creative-studio-network.html">Goppoguro Studio</a></li>
+                        <li><a href="golpoka-club.html">Golpoka Club</a></li>
+                        <li><a href="little-joys.html">Little Joys</a></li>
+                    </ul>
+                </nav>
+
+                <div class="footer__newsletter">
+                    <h4 class="footer__nav-title">Stay Connected</h4>
+                    <p>Get updates on new products and impact stories.</p>
+                    <form class="footer__form" id="newsletter-form">
+                        <input type="email" placeholder="Your email" class="footer__input" required>
+                        <button type="submit" class="btn btn--primary btn--small">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer__sdg">
+                <span class="footer__sdg-badge">SDG 1</span>
+                <span class="footer__sdg-badge">SDG 4</span>
+                <span class="footer__sdg-badge">SDG 8</span>
+                <span class="footer__sdg-badge">SDG 12</span>
+            </div>
+
+            <div class="footer__bottom">
+                <p>Handmade in Bangladesh &middot; &copy; 2026 Goppo Guro. All rights reserved.</p>
+                <p>Every purchase supports children's welfare.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
