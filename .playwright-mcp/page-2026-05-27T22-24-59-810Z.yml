@@ -1,0 +1,158 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - link "Goppo Guro Logo Goppo Guro" [ref=e4] [cursor=pointer]:
+        - /url: index.html
+        - img "Goppo Guro Logo" [ref=e5]
+        - generic [ref=e6]: Goppo Guro
+      - button "Toggle navigation" [ref=e7] [cursor=pointer]
+  - main [ref=e11]:
+    - generic [ref=e13]:
+      - generic [ref=e14]: — Why We Exist
+      - heading "About Goppo Guro" [level=1] [ref=e15]
+      - paragraph [ref=e16]: A creative learning initiative dedicated to making space for play, paper, and pause in a world that moves too fast.
+    - generic [ref=e19]:
+      - generic [ref=e20]:
+        - heading "Our Vision" [level=2] [ref=e21]
+        - paragraph [ref=e22]: To create a world where curiosity is nurtured, creativity is a fundamental right, and every individual has the space to pause and reconnect with themselves and others through the magic of stories and simple paper experiences.
+      - generic [ref=e23]:
+        - heading "Our Mission" [level=2] [ref=e24]
+        - paragraph [ref=e25]: Our mission is to foster a creative ecosystem in Bangladesh and beyond by designing handcrafted learning tools, building community networks, and providing platforms for imaginative discovery for all ages.
+    - generic [ref=e28]:
+      - img "Salman Oshan, Founder of Goppo Guro" [ref=e30]
+      - generic [ref=e31]:
+        - generic [ref=e32]: — The Inspiration
+        - heading "Born from a Quiet Concern" [level=2] [ref=e33]
+        - paragraph [ref=e34]: Goppo Guro was created from a quiet concern — that we are losing our relationship with play, with paper, and with pause. In a world driven by speed, screens, and outcomes, we wanted to create space for something more human.
+        - paragraph [ref=e35]: At the heart of Goppo Guro is story. Our name "গপ্পো গুঁড়ো" means small stories — sparks of stories. Gentle beginnings that invite curiosity and connection. Goppo Guro is not only for children. It is for anyone who believes that stories, play, and pause are essential to being human.
+        - blockquote [ref=e36]:
+          - paragraph [ref=e37]: "\"There are no right answers here, no timers, no expectations — only moments of presence, imagination, and shared discovery.\""
+          - generic [ref=e38]: — Salman Oshan, Founder
+    - generic [ref=e41]:
+      - generic [ref=e42]:
+        - generic [ref=e43]: — Our Community
+        - heading "A Small but Loud Bunch" [level=2] [ref=e44]
+        - paragraph [ref=e45]: GoppoGuro was built by people who believe that a folded piece of paper can change the energy in a room. Our team is a mix of storytellers, designers, educators, and dreamers.
+        - paragraph [ref=e46]: We work closely with women artisans, schools, and children who remind us why none of this needs to be complicated.
+      - img "The Goppo Guro Team" [ref=e48]
+    - generic [ref=e50]:
+      - generic [ref=e51]:
+        - generic [ref=e52]: — Global Goals
+        - heading "Aligned with the UN SDGs" [level=2] [ref=e53]
+        - paragraph [ref=e54]: Every jar sold, every workshop run, every story told moves us closer to a more equitable world.
+      - generic [ref=e55]:
+        - generic [ref=e56]:
+          - text: SDG 1
+          - heading "No Poverty" [level=3] [ref=e57]
+          - paragraph [ref=e58]: Revenue from Little Joys directly funds education and welfare for children in need.
+        - generic [ref=e59]:
+          - text: SDG 4
+          - heading "Quality Education" [level=3] [ref=e60]
+          - paragraph [ref=e61]: Our 4P creative learning framework runs in partner schools across Bangladesh.
+        - generic [ref=e62]:
+          - text: SDG 8
+          - heading "Decent Work" [level=3] [ref=e63]
+          - paragraph [ref=e64]: Women artisans earn fair, flexible income crafting every Little Joy by hand.
+        - generic [ref=e65]:
+          - text: SDG 12
+          - heading "Responsible Consumption" [level=3] [ref=e66]
+          - paragraph [ref=e67]: Handcrafted from sustainable materials — each piece is made to be kept, gifted, or passed on.
+    - generic [ref=e69]:
+      - generic [ref=e70]:
+        - generic [ref=e71]: — Collaboration
+        - heading "Built with Partners" [level=2] [ref=e72]
+        - paragraph [ref=e73]: We grow through the generous support of schools, organisations, and individuals who share our belief in the power of play.
+      - generic [ref=e74]:
+        - generic [ref=e75]:
+          - heading "School Partners" [level=3] [ref=e76]
+          - paragraph [ref=e77]: Partner institutions piloting the Goppoguro Creative Learning framework in their classrooms.
+          - link "Partner with us" [ref=e78] [cursor=pointer]:
+            - /url: contact.html?subject=School%20Partnership
+        - generic [ref=e79]:
+          - heading "NGO & Development" [level=3] [ref=e80]
+          - paragraph [ref=e81]: Social organisations co-running welfare programmes and community workshops with Goppo Guro.
+          - link "Get in touch" [ref=e82] [cursor=pointer]:
+            - /url: contact.html?subject=NGO%20Partnership
+        - generic [ref=e83]:
+          - heading "Individual Supporters" [level=3] [ref=e84]
+          - paragraph [ref=e85]: Volunteers, donors, and advocates who believe a folded piece of paper can change a room.
+          - link "Join us" [ref=e86] [cursor=pointer]:
+            - /url: contact.html?subject=Volunteer%20Inquiry
+  - contentinfo [ref=e87]:
+    - generic [ref=e88]:
+      - generic [ref=e89]:
+        - generic [ref=e90]:
+          - img "Goppo Guro" [ref=e91]
+          - paragraph [ref=e92]: A Space for Play, Paper, and Pause
+          - paragraph [ref=e93]: Creating space for curiosity, connection, and shared discovery through handcrafted paper experiences.
+          - link "Facebook" [ref=e95] [cursor=pointer]:
+            - /url: https://www.facebook.com/goppoguro
+            - img [ref=e96]
+        - navigation [ref=e98]:
+          - heading "Navigate" [level=4] [ref=e99]
+          - list [ref=e100]:
+            - listitem [ref=e101]:
+              - link "Home" [ref=e102] [cursor=pointer]:
+                - /url: index.html
+            - listitem [ref=e103]:
+              - link "Programme" [ref=e104] [cursor=pointer]:
+                - /url: programme.html
+            - listitem [ref=e105]:
+              - link "Project" [ref=e106] [cursor=pointer]:
+                - /url: projects.html
+            - listitem [ref=e107]:
+              - link "Product" [ref=e108] [cursor=pointer]:
+                - /url: products.html
+            - listitem [ref=e109]:
+              - link "Publications" [ref=e110] [cursor=pointer]:
+                - /url: publications.html
+            - listitem [ref=e111]:
+              - link "About Us" [ref=e112] [cursor=pointer]:
+                - /url: about.html
+            - listitem [ref=e113]:
+              - link "Gallery" [ref=e114] [cursor=pointer]:
+                - /url: gallery.html
+            - listitem [ref=e115]:
+              - link "Contact" [ref=e116] [cursor=pointer]:
+                - /url: contact.html
+        - navigation [ref=e117]:
+          - heading "Explore" [level=4] [ref=e118]
+          - paragraph [ref=e119]: Programme
+          - list [ref=e120]:
+            - listitem [ref=e121]:
+              - link "Creative Learning (GCLP)" [ref=e122] [cursor=pointer]:
+                - /url: gclp.html
+            - listitem [ref=e123]:
+              - link "Women Makers" [ref=e124] [cursor=pointer]:
+                - /url: women-empowerment.html
+            - listitem [ref=e125]:
+              - link "Golpoka Club" [ref=e126] [cursor=pointer]:
+                - /url: golpoka-club.html
+            - listitem [ref=e127]:
+              - link "Podcast" [ref=e128] [cursor=pointer]:
+                - /url: podcast.html
+          - paragraph [ref=e129]: Project
+          - list [ref=e130]:
+            - listitem [ref=e131]:
+              - link "Goppoguro Studio" [ref=e132] [cursor=pointer]:
+                - /url: creative-studio-network.html
+            - listitem [ref=e133]:
+              - link "Golpoka Club" [ref=e134] [cursor=pointer]:
+                - /url: golpoka-club.html
+            - listitem [ref=e135]:
+              - link "Little Joys" [ref=e136] [cursor=pointer]:
+                - /url: little-joys.html
+        - generic [ref=e137]:
+          - heading "Stay Connected" [level=4] [ref=e138]
+          - paragraph [ref=e139]: Get updates on new products and impact stories.
+          - generic [ref=e140]:
+            - textbox "Your email" [ref=e141]
+            - button "Subscribe" [ref=e142] [cursor=pointer]
+      - generic [ref=e143]:
+        - generic [ref=e144]: SDG 1
+        - generic [ref=e145]: SDG 4
+        - generic [ref=e146]: SDG 8
+        - generic [ref=e147]: SDG 12
+      - generic [ref=e148]:
+        - paragraph [ref=e149]: Handmade in Bangladesh · © 2026 Goppo Guro. All rights reserved.
+        - paragraph [ref=e150]: Every purchase supports children's welfare.

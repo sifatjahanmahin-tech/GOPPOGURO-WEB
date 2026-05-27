@@ -1,0 +1,434 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - link "Goppo Guro Logo Goppo Guro" [ref=e4] [cursor=pointer]:
+        - /url: index.html
+        - img "Goppo Guro Logo" [ref=e5]
+        - generic [ref=e6]: Goppo Guro
+      - list [ref=e7]:
+        - listitem [ref=e8]:
+          - link "Home" [ref=e9] [cursor=pointer]:
+            - /url: index.html
+        - listitem [ref=e10]:
+          - generic [ref=e11]:
+            - link "Programme" [ref=e12] [cursor=pointer]:
+              - /url: programme.html
+            - button "Open Programme submenu" [ref=e13] [cursor=pointer]:
+              - img [ref=e14]
+          - menu:
+            - menuitem "All Programmes"
+            - menuitem "Creative Learning Programme"
+            - menuitem "Women Makers Empowerment"
+            - menuitem "Golpoka Club"
+            - menuitem "Podcast"
+        - listitem [ref=e16]:
+          - generic [ref=e17]:
+            - link "Project" [ref=e18] [cursor=pointer]:
+              - /url: projects.html
+            - button "Open Project submenu" [ref=e19] [cursor=pointer]:
+              - img [ref=e20]
+          - menu:
+            - menuitem "Goppoguro Studio"
+            - menuitem "Golpoka Club"
+            - menuitem "Little Joys"
+        - listitem [ref=e22]:
+          - link "Product" [ref=e23] [cursor=pointer]:
+            - /url: products.html
+        - listitem [ref=e24]:
+          - link "Publications" [ref=e25] [cursor=pointer]:
+            - /url: publications.html
+        - listitem [ref=e26]:
+          - link "About Us" [ref=e27] [cursor=pointer]:
+            - /url: about.html
+        - listitem [ref=e28]:
+          - link "Gallery" [ref=e29] [cursor=pointer]:
+            - /url: gallery.html
+        - listitem [ref=e30]:
+          - link "Contact" [ref=e31] [cursor=pointer]:
+            - /url: contact.html
+  - main [ref=e32]:
+    - region "Projects hero" [ref=e33]:
+      - generic:
+        - img
+        - img
+        - img
+        - img
+        - img
+        - img
+        - img
+        - img
+      - generic [ref=e34]:
+        - generic [ref=e35]: — What We Build
+        - heading "Every Project. One Purpose." [level=1] [ref=e36]:
+          - generic [ref=e37]: Every
+          - generic [ref=e38]: Project.
+          - generic [ref=e39]: One
+          - generic [ref=e40]: Purpose.
+        - paragraph [ref=e41]: "From origami jars to adventure books to studio networks — each project is a new way to ask the same question: how can we make creativity more accessible in Bangladesh?"
+        - generic [ref=e42]:
+          - link "Explore Our Projects" [ref=e43] [cursor=pointer]:
+            - /url: "#projects"
+          - link "Partner With Us" [ref=e44] [cursor=pointer]:
+            - /url: contact.html?subject=Project%20Partnership
+      - generic [ref=e46]: Scroll
+    - generic "Our origin story" [ref=e48]:
+      - region "Beat 01 — It started with paper" [ref=e49]:
+        - generic [ref=e50]:
+          - generic [ref=e51]: 01 — Origin
+          - separator [ref=e52]
+          - heading "It Started With Paper" [level=2] [ref=e53]:
+            - text: It Started
+            - text: With Paper
+          - separator [ref=e54]
+          - paragraph [ref=e55]: A single piece of paper. Folded once. Then again. The act of folding is where Goppo Guro began — not in an office, not with a plan, but with a quiet belief that something beautiful was possible.
+      - region "Beat 02 — A studio was born" [ref=e56]:
+        - generic [ref=e57]:
+          - generic [ref=e58]: 02 — Studio
+          - separator [ref=e59]
+          - heading "A Studio Was Born" [level=2] [ref=e60]:
+            - text: A Studio
+            - text: Was Born
+          - separator [ref=e61]
+          - paragraph [ref=e62]: From a home corner, the Goppoguro Studio Network grew. What began as one creative space became a living network — bringing workshops, tools, and the permission to make into communities that needed it.
+      - region "Beat 03 — Stories needed telling" [ref=e63]:
+        - generic [ref=e64]:
+          - generic [ref=e65]: 03 — Stories
+          - separator [ref=e66]
+          - heading "Stories Needed Telling" [level=2] [ref=e67]:
+            - text: Stories
+            - text: Needed
+            - text: Telling
+          - separator [ref=e68]
+          - paragraph [ref=e69]: Children were creating. Drawing. Imagining. But their stories had nowhere to go. Golpoka Club changed that — giving every curious child a box full of materials and a community to share with.
+      - region "Beat 04 — Hands found purpose" [ref=e70]:
+        - generic [ref=e71]:
+          - generic [ref=e72]: 04 — Craft
+          - separator [ref=e73]
+          - heading "Hands Found Purpose" [level=2] [ref=e74]:
+            - text: Hands
+            - text: Found
+            - text: Purpose
+          - separator [ref=e75]
+          - paragraph [ref=e76]: Women in the community picked up paper. And found not just a craft — but a livelihood. Every fold became income. Every jar became a child's education day. Little Joys was born.
+      - region "Beat 05 — Still beginning" [ref=e77]:
+        - generic [ref=e78]:
+          - generic [ref=e79]: 05 — Now
+          - separator [ref=e80]
+          - heading "And We're Still Beginning" [level=2] [ref=e81]:
+            - text: And We're
+            - text: Still
+            - text: Beginning
+          - separator [ref=e82]
+          - paragraph [ref=e83]: The paper keeps folding. New projects are forming. The question was never "how much?" — it was always "what's next?" Every project you see here is an answer to that question.
+    - generic [ref=e85]:
+      - generic [ref=e86]:
+        - generic [ref=e87]: — What We've Built
+        - heading "Our Projects" [level=2] [ref=e88]
+        - paragraph [ref=e89]: Three distinct projects. One connected thread — making creativity tangible for people across Bangladesh.
+      - group "Filter projects by category" [ref=e90]:
+        - button "All" [ref=e91] [cursor=pointer]
+        - button "Education" [ref=e92] [cursor=pointer]
+        - button "Publishing" [ref=e93] [cursor=pointer]
+        - button "Social Enterprise" [ref=e94] [cursor=pointer]
+      - article [ref=e95]:
+        - generic: "01"
+        - generic [ref=e96]:
+          - generic [ref=e97]:
+            - generic [ref=e98]:
+              - img "Goppoguro Studio workshop with participants" [ref=e99]
+              - paragraph [ref=e100]: “A studio is not a room. It is a permission to create.”
+            - generic [ref=e101]:
+              - generic [ref=e102]:
+                - generic [ref=e103]: "01"
+                - generic [ref=e104]: Education
+              - heading "Goppo Guro Studio Network" [level=2] [ref=e105]:
+                - text: Goppo Guro
+                - text: Studio Network
+              - paragraph [ref=e106]: A distributed network of community-based creative studios — bringing paper craft, origami workshops, and hands-on learning into schools, community spaces, and neighbourhoods across Bangladesh.
+              - paragraph [ref=e107]: Each studio is a hub where children, educators, and community members learn to see paper differently — not as waste, but as possibility.
+              - generic [ref=e108]:
+                - generic [ref=e109]:
+                  - generic [ref=e110]: "6"
+                  - generic [ref=e111]: Active Studios
+                - generic [ref=e112]:
+                  - generic [ref=e113]: 2,000
+                  - generic [ref=e114]: Participants Reached
+              - button "Learn More" [ref=e115] [cursor=pointer]:
+                - text: Learn More
+                - img [ref=e116]
+          - generic [ref=e119]:
+            - generic [ref=e120]:
+              - generic [ref=e121]: What it is
+              - paragraph [ref=e122]: The Goppoguro Studio Network establishes creative workspaces within existing community institutions — schools, cultural centres, and neighbourhood spaces. Each studio is equipped with paper, tools, and facilitated programming to run creative sessions year-round.
+              - generic [ref=e123]: Who it's for
+              - paragraph [ref=e124]: Children aged 5–16, educators looking to bring creative learning into their classrooms, youth groups, and community organisations in underserved neighbourhoods.
+              - blockquote [ref=e125]: “A studio is not a room. It is a permission to create.”
+              - generic [ref=e126]:
+                - generic [ref=e127]: SDG 4
+                - generic [ref=e128]: SDG 8
+                - generic [ref=e129]: SDG 11
+            - generic [ref=e130]:
+              - generic [ref=e131]: How it works
+              - generic [ref=e132]:
+                - generic [ref=e133]:
+                  - generic [ref=e134]: "01"
+                  - generic [ref=e135]: Partner
+                  - generic [ref=e136]: A school or community space applies to host a Goppoguro Studio.
+                - generic [ref=e137]:
+                  - generic [ref=e138]: "02"
+                  - generic [ref=e139]: Set Up
+                  - generic [ref=e140]: We supply materials, training, and facilitation support to get the studio running.
+                - generic [ref=e141]:
+                  - generic [ref=e142]: "03"
+                  - generic [ref=e143]: Run & Grow
+                  - generic [ref=e144]: Weekly workshops run in the space. The studio becomes a permanent creative resource.
+              - generic [ref=e145]: Impact so far
+              - generic [ref=e146]:
+                - generic [ref=e147]:
+                  - generic [ref=e148]: "6"
+                  - generic [ref=e149]: Studios Running
+                - generic [ref=e150]:
+                  - generic [ref=e151]: "20"
+                  - generic [ref=e152]: Sessions Monthly
+              - link [ref=e154] [cursor=pointer]:
+                - /url: creative-studio-network.html
+                - text: Explore the Studio Network
+      - article [ref=e159]:
+        - generic: "02"
+        - generic [ref=e160]:
+          - generic [ref=e161]:
+            - generic [ref=e162]:
+              - generic [ref=e163]:
+                - generic [ref=e164]: "02"
+                - generic [ref=e165]: Publishing
+              - heading "Golpoka Club" [level=2] [ref=e166]:
+                - text: Golpoka
+                - text: Club
+              - paragraph [ref=e167]: A monthly creative subscription for curious children aged 5+. Every month, members receive a thoughtfully curated box — storybooks, craft kits, activity materials, and imagination challenges — delivered to their door.
+              - paragraph [ref=e168]: More than a subscription box, Golpoka Club is a growing community where children become makers, storytellers, and young published authors.
+              - generic [ref=e169]:
+                - generic [ref=e170]:
+                  - generic [ref=e171]: 5+
+                  - generic [ref=e172]: Ages Served
+                - generic [ref=e173]:
+                  - generic [ref=e174]: Monthly
+                  - generic [ref=e175]: Creative Deliveries
+              - button "Learn More" [ref=e176] [cursor=pointer]:
+                - text: Learn More
+                - img [ref=e177]
+            - generic [ref=e179]:
+              - img "Golpoka Club monthly creative box" [ref=e180]
+              - paragraph [ref=e181]: “Every child is already a storyteller. We just give them the paper.”
+          - generic [ref=e183]:
+            - generic [ref=e184]:
+              - generic [ref=e185]: What it is
+              - paragraph [ref=e186]: Golpoka Club is a children's creative membership programme. Each monthly box is curated around a theme — adventure, nature, family, dreams — and includes original storybooks, origami kits, drawing challenges, and storytelling games.
+              - generic [ref=e187]: Who it's for
+              - paragraph [ref=e188]: Children aged 5 to 14 and their families. Golpoka Club welcomes all curious minds — whether they love to draw, write, fold, or simply listen to a good story.
+              - blockquote [ref=e189]: “Every child is already a storyteller. We just give them the paper.”
+              - generic [ref=e190]:
+                - generic [ref=e191]: SDG 4
+                - generic [ref=e192]: SDG 17
+            - generic [ref=e193]:
+              - generic [ref=e194]: How it works
+              - generic [ref=e195]:
+                - generic [ref=e196]:
+                  - generic [ref=e197]: "01"
+                  - generic [ref=e198]: Subscribe
+                  - generic [ref=e199]: Families sign up for monthly or quarterly membership online.
+                - generic [ref=e200]:
+                  - generic [ref=e201]: "02"
+                  - generic [ref=e202]: Receive
+                  - generic [ref=e203]: A curated creative box arrives each month with a surprise theme.
+                - generic [ref=e204]:
+                  - generic [ref=e205]: "03"
+                  - generic [ref=e206]: Create & Share
+                  - generic [ref=e207]: Children make and share their creations with the Golpoka Club community.
+              - generic [ref=e208]: What's in the box
+              - generic [ref=e209]:
+                - generic [ref=e210]:
+                  - generic [ref=e211]: —
+                  - generic [ref=e212]: Original storybooks
+                - generic [ref=e213]:
+                  - generic [ref=e214]: —
+                  - generic [ref=e215]: Origami craft kit
+                - generic [ref=e216]:
+                  - generic [ref=e217]: —
+                  - generic [ref=e218]: Activity challenges
+              - link [ref=e220] [cursor=pointer]:
+                - /url: golpoka-club.html
+                - text: Join the Club
+      - article [ref=e225]:
+        - generic: "03"
+        - generic [ref=e226]:
+          - generic [ref=e227]:
+            - generic [ref=e228]:
+              - img "Women artisan hand-folding Little Joys origami jar" [ref=e229]
+              - paragraph [ref=e230]: “Small folds. Meaningful work. Quiet empowerment.”
+            - generic [ref=e231]:
+              - generic [ref=e232]:
+                - generic [ref=e233]: "03"
+                - generic [ref=e234]: Social Enterprise
+              - heading "Little Joys" [level=2] [ref=e235]
+              - paragraph [ref=e236]: Handcrafted origami jars made entirely by women artisans. Each jar is folded by hand — hearts, stars, birds, butterflies — and sold to fund both the maker's livelihood and a child's education.
+              - paragraph [ref=e237]: No factories. No machines. Only time, patience, and human hands — creating something beautiful that does something meaningful.
+              - generic [ref=e238]:
+                - generic [ref=e239]:
+                  - generic [ref=e240]: "28"
+                  - generic [ref=e241]: Women Artisans
+                - generic [ref=e242]:
+                  - generic [ref=e243]: 1,200
+                  - generic [ref=e244]: Jars Handcrafted
+              - button "Learn More" [ref=e245] [cursor=pointer]:
+                - text: Learn More
+                - img [ref=e246]
+          - generic [ref=e249]:
+            - generic [ref=e250]:
+              - generic [ref=e251]: What it is
+              - paragraph [ref=e252]: Little Joys is a handcraft commerce initiative. Women in the Goppo Guro network fold tiny paper objects — hearts, stars, birds — and seal them inside small glass jars. Each jar is a product, a livelihood, and a story about dignity and skill.
+              - generic [ref=e253]: Who it's for
+              - paragraph [ref=e254]: Anyone who wants beautiful things that do beautiful things. Little Joys jars make thoughtful gifts, desk companions, and gentle reminders that craft has real value.
+              - blockquote [ref=e255]: “Small folds. Meaningful work. Quiet empowerment.”
+              - generic [ref=e256]:
+                - generic [ref=e257]: SDG 1
+                - generic [ref=e258]: SDG 8
+                - generic [ref=e259]: SDG 12
+            - generic [ref=e260]:
+              - generic [ref=e261]: How it works
+              - generic [ref=e262]:
+                - generic [ref=e263]:
+                  - generic [ref=e264]: "01"
+                  - generic [ref=e265]: Women Fold
+                  - generic [ref=e266]: Artisans hand-fold tiny paper shapes at home, earning fair flexible income.
+                - generic [ref=e267]:
+                  - generic [ref=e268]: "02"
+                  - generic [ref=e269]: You Buy
+                  - generic [ref=e270]: Each jar purchase directly funds the artisan and contributes to education.
+                - generic [ref=e271]:
+                  - generic [ref=e272]: "03"
+                  - generic [ref=e273]: Children Learn
+                  - generic [ref=e274]: A portion of every sale funds learning materials and programme sessions.
+              - generic [ref=e275]: Impact so far
+              - generic [ref=e276]:
+                - generic [ref=e277]:
+                  - generic [ref=e278]: "28"
+                  - generic [ref=e279]: Artisans Earning
+                - generic [ref=e280]:
+                  - generic [ref=e281]: 1,200
+                  - generic [ref=e282]: Jars Sold
+              - link [ref=e284] [cursor=pointer]:
+                - /url: little-joys.html
+                - text: Shop Little Joys
+    - generic [ref=e286]:
+      - generic [ref=e287]:
+        - generic [ref=e288]: — Across All Projects
+        - heading "Our Collective Impact" [level=2] [ref=e289]
+        - paragraph [ref=e290]: Numbers that stand for real hands, real children, real change.
+      - generic [ref=e291]:
+        - generic [ref=e292]:
+          - generic [ref=e293]: "6"
+          - generic [ref=e294]: Creative Studios
+        - generic [ref=e295]:
+          - generic [ref=e296]: 2,000
+          - generic [ref=e297]: Children Reached
+        - generic [ref=e298]:
+          - generic [ref=e299]: "28"
+          - generic [ref=e300]: Women Artisans
+        - generic [ref=e301]:
+          - generic [ref=e302]: 1,200
+          - generic [ref=e303]: Jars Handcrafted
+    - generic [ref=e305]:
+      - paragraph [ref=e306]: "“Every project we build asks the same question: how can a single fold of paper change someone's world?”"
+      - text: — Goppo Guro
+    - generic [ref=e308]:
+      - generic [ref=e309]: — What's Next
+      - heading "More Is Being Made." [level=2] [ref=e310]:
+        - text: More Is Being
+        - text: Made.
+      - paragraph [ref=e311]:
+        - text: A new adventure book series. A travelling origami exhibition.
+        - text: A platform for young Bangladeshi makers to publish and be seen.
+      - paragraph [ref=e312]: Every new project starts with an idea. If you have one, we want to hear it.
+      - generic [ref=e313]:
+        - link "Share an Idea" [ref=e314] [cursor=pointer]:
+          - /url: contact.html?subject=project-idea
+        - link "Ways to Get Involved" [ref=e315] [cursor=pointer]:
+          - /url: get-involved.html
+  - contentinfo [ref=e316]:
+    - generic [ref=e317]:
+      - generic [ref=e318]:
+        - generic [ref=e319]:
+          - img "Goppo Guro" [ref=e320]
+          - paragraph [ref=e321]: A Space for Play, Paper, and Pause
+          - paragraph [ref=e322]: Creating space for curiosity, connection, and shared discovery through handcrafted paper experiences.
+          - link "Facebook" [ref=e324] [cursor=pointer]:
+            - /url: https://www.facebook.com/goppoguro
+            - img [ref=e325]
+        - navigation [ref=e327]:
+          - heading "Navigate" [level=4] [ref=e328]
+          - list [ref=e329]:
+            - listitem [ref=e330]:
+              - link "Home" [ref=e331] [cursor=pointer]:
+                - /url: index.html
+            - listitem [ref=e332]:
+              - link "Programme" [ref=e333] [cursor=pointer]:
+                - /url: programme.html
+            - listitem [ref=e334]:
+              - link "Project" [ref=e335] [cursor=pointer]:
+                - /url: projects.html
+            - listitem [ref=e336]:
+              - link "Product" [ref=e337] [cursor=pointer]:
+                - /url: products.html
+            - listitem [ref=e338]:
+              - link "Publications" [ref=e339] [cursor=pointer]:
+                - /url: publications.html
+            - listitem [ref=e340]:
+              - link "About Us" [ref=e341] [cursor=pointer]:
+                - /url: about.html
+            - listitem [ref=e342]:
+              - link "Gallery" [ref=e343] [cursor=pointer]:
+                - /url: gallery.html
+            - listitem [ref=e344]:
+              - link "Contact" [ref=e345] [cursor=pointer]:
+                - /url: contact.html
+        - navigation [ref=e346]:
+          - heading "Explore" [level=4] [ref=e347]
+          - paragraph [ref=e348]: Programme
+          - list [ref=e349]:
+            - listitem [ref=e350]:
+              - link "Creative Learning (GCLP)" [ref=e351] [cursor=pointer]:
+                - /url: gclp.html
+            - listitem [ref=e352]:
+              - link "Women Makers" [ref=e353] [cursor=pointer]:
+                - /url: women-empowerment.html
+            - listitem [ref=e354]:
+              - link "Golpoka Club" [ref=e355] [cursor=pointer]:
+                - /url: golpoka-club.html
+            - listitem [ref=e356]:
+              - link "Podcast" [ref=e357] [cursor=pointer]:
+                - /url: podcast.html
+          - paragraph [ref=e358]: Project
+          - list [ref=e359]:
+            - listitem [ref=e360]:
+              - link "Goppoguro Studio" [ref=e361] [cursor=pointer]:
+                - /url: creative-studio-network.html
+            - listitem [ref=e362]:
+              - link "Golpoka Club" [ref=e363] [cursor=pointer]:
+                - /url: golpoka-club.html
+            - listitem [ref=e364]:
+              - link "Little Joys" [ref=e365] [cursor=pointer]:
+                - /url: little-joys.html
+        - generic [ref=e366]:
+          - heading "Stay Connected" [level=4] [ref=e367]
+          - paragraph [ref=e368]: Get updates on new products and impact stories.
+          - generic [ref=e369]:
+            - textbox "Your email" [ref=e370]
+            - button "Subscribe" [ref=e371] [cursor=pointer]
+      - generic [ref=e372]:
+        - generic [ref=e373]: SDG 1
+        - generic [ref=e374]: SDG 4
+        - generic [ref=e375]: SDG 8
+        - generic [ref=e376]: SDG 12
+      - generic [ref=e377]:
+        - paragraph [ref=e378]: Handmade in Bangladesh · © 2026 Goppo Guro. All rights reserved.
+        - paragraph [ref=e379]: Every purchase supports children's welfare.

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sifatjahanmahin-tech.github.io/GOPPOGURO-WEB/sitemap.xml

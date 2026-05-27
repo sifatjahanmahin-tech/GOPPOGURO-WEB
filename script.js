@@ -857,7 +857,7 @@ function initLightbox() {
     function closeLightbox() {
         lightbox.classList.remove('is-open');
         document.body.style.overflow = '';
-        img.src = '';
+        img.removeAttribute('src');
     }
 
     close.addEventListener('click', closeLightbox);
@@ -1050,9 +1050,9 @@ function initProductCatalogue() {
         const wideClass = p.wide ? ' catalogue__card-wide' : '';
         const badgeText = p.badge ? `${p.badge} · ${p.type}` : p.type;
         const isExternal = p.cardLink.startsWith('http');
-        const externalAttr = isExternal ? ' target="_blank" rel="noopener"' : '';
+        const externalAttr = isExternal ? ' target="_blank" rel="noopener noreferrer"' : '';
         const orderMeta = p.wide
-            ? `<a href="${p.orderLink}" target="_blank" rel="noopener" class="catalogue-card__link">Order on Facebook ${arrowSvg}</a>`
+            ? `<a href="${p.orderLink}" target="_blank" rel="noopener noreferrer" class="catalogue-card__link">Order on Facebook ${arrowSvg}</a>`
             : '';
 
         return `

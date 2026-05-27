@@ -1,0 +1,354 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - link "Goppo Guro Logo Goppo Guro" [ref=e4] [cursor=pointer]:
+        - /url: index.html
+        - img "Goppo Guro Logo" [ref=e5]
+        - generic [ref=e6]: Goppo Guro
+      - list [ref=e7]:
+        - listitem [ref=e8]:
+          - link "Home" [ref=e9] [cursor=pointer]:
+            - /url: index.html
+        - listitem [ref=e10]:
+          - generic [ref=e11]:
+            - link "Programme" [ref=e12] [cursor=pointer]:
+              - /url: programme.html
+            - button "Open Programme submenu" [ref=e13] [cursor=pointer]:
+              - img [ref=e14]
+          - menu:
+            - menuitem "All Programmes"
+            - menuitem "Creative Learning Programme"
+            - menuitem "Women Makers Empowerment"
+            - menuitem "Golpoka Club"
+            - menuitem "Podcast"
+        - listitem [ref=e16]:
+          - generic [ref=e17]:
+            - link "Project" [ref=e18] [cursor=pointer]:
+              - /url: projects.html
+            - button "Open Project submenu" [ref=e19] [cursor=pointer]:
+              - img [ref=e20]
+          - menu:
+            - menuitem "Goppoguro Studio"
+            - menuitem "Golpoka Club"
+            - menuitem "Little Joys"
+        - listitem [ref=e22]:
+          - link "Product" [ref=e23] [cursor=pointer]:
+            - /url: products.html
+        - listitem [ref=e24]:
+          - link "Publications" [ref=e25] [cursor=pointer]:
+            - /url: publications.html
+        - listitem [ref=e26]:
+          - link "About Us" [ref=e27] [cursor=pointer]:
+            - /url: about.html
+        - listitem [ref=e28]:
+          - link "Gallery" [ref=e29] [cursor=pointer]:
+            - /url: gallery.html
+        - listitem [ref=e30]:
+          - link "Contact" [ref=e31] [cursor=pointer]:
+            - /url: contact.html
+  - main [ref=e32]:
+    - region "Products" [ref=e33]:
+      - generic:
+        - img
+        - img
+        - img
+        - img
+        - img
+        - img
+        - img
+        - img
+      - generic [ref=e34]:
+        - paragraph [ref=e35]: The Collection
+        - heading "Paper Experiences for Every Heart." [level=1] [ref=e36]:
+          - generic [ref=e37]: Paper
+          - generic [ref=e38]: Experiences
+          - generic [ref=e39]: for
+          - generic [ref=e40]: Every
+          - generic [ref=e41]: Heart.
+        - paragraph [ref=e42]: Handcrafted with love. Designed for play, pause, and connection.
+        - generic [ref=e43]:
+          - link "Featured Product" [ref=e44] [cursor=pointer]:
+            - /url: "#featured"
+          - link "Browse All" [ref=e45] [cursor=pointer]:
+            - /url: "#catalogue"
+    - generic [ref=e49]:
+      - generic [ref=e50]:
+        - generic [ref=e51]: Little Joys
+        - generic [ref=e53]: Handcrafted
+        - generic [ref=e55]: RolGol
+        - generic [ref=e57]: Made by Hands
+        - generic [ref=e59]: Golpoka Club Kit
+        - generic [ref=e61]: Shared by Hearts
+        - generic [ref=e63]: Boner Majhe Bonvojon
+        - generic [ref=e65]: Birpurush
+        - generic [ref=e67]: Play · Paper · Pause
+      - generic [ref=e69]:
+        - generic [ref=e70]: Little Joys
+        - generic [ref=e72]: Handcrafted
+        - generic [ref=e74]: RolGol
+        - generic [ref=e76]: Made by Hands
+        - generic [ref=e78]: Golpoka Club Kit
+        - generic [ref=e80]: Shared by Hearts
+        - generic [ref=e82]: Boner Majhe Bonvojon
+        - generic [ref=e84]: Birpurush
+        - generic [ref=e86]: Play · Paper · Pause
+    - 'region "Featured product: Little Joys" [ref=e88]':
+      - generic [ref=e89]:
+        - navigation "Breadcrumb" [ref=e90]:
+          - link "Home" [ref=e91] [cursor=pointer]:
+            - /url: index.html
+          - generic [ref=e92]: ›
+          - link "Products" [ref=e93] [cursor=pointer]:
+            - /url: products.html
+          - generic [ref=e94]: ›
+          - generic [ref=e95]: Little Joys
+        - generic [ref=e96]:
+          - generic [ref=e97]:
+            - generic [ref=e98]:
+              - 'img "Little Joys — the full collection: glass jar, gift box, and individual paper treasures" [ref=e99]'
+              - img "Little Joys — cork-lid glass jar filled with colourful origami hearts, stars and frogs"
+              - img "Little Joys — a handfolded origami crane gifted with love"
+              - button "Previous image" [ref=e100] [cursor=pointer]:
+                - img [ref=e101]
+              - button "Next image" [ref=e103] [cursor=pointer]:
+                - img [ref=e104]
+            - generic [ref=e106]:
+              - tablist "Product images" [ref=e107]:
+                - tab "Image 1" [selected] [ref=e108] [cursor=pointer]
+                - tab "Image 2" [ref=e109] [cursor=pointer]
+                - tab "Image 3" [ref=e110] [cursor=pointer]
+              - generic [ref=e111]: 1 / 3
+          - generic [ref=e112]:
+            - paragraph [ref=e113]: Little Joys Collection
+            - heading "Little Joys" [level=1] [ref=e114]
+            - paragraph [ref=e115]: Tiny Folded Happiness
+            - generic [ref=e116]:
+              - generic [ref=e117]:
+                - img [ref=e118]
+                - text: Best Seller
+              - generic [ref=e120]: Handmade
+              - generic [ref=e121]: Origami
+              - generic [ref=e122]: Gift-Ready
+              - generic [ref=e123]: Sustainable
+            - generic [ref=e125]:
+              - paragraph [ref=e126]: Little Joys is a collection of tiny handcrafted paper treasures designed to spread kindness, imagination, and emotional connection through simple acts of giving.
+              - paragraph [ref=e127]: A folded star. A paper heart. A tiny bird shared with someone you care about. Sometimes the smallest things carry the biggest feelings.
+            - blockquote [ref=e128]: "\"Each fold becomes a small emotional experience.\""
+            - paragraph [ref=e130]: What's Inside
+            - generic [ref=e131]:
+              - generic [ref=e132]: Origami hearts
+              - generic [ref=e133]: Tiny stars
+              - generic [ref=e134]: Birds & butterflies
+              - generic [ref=e135]: Pocket messages
+              - generic [ref=e136]: Mini story cards
+              - generic [ref=e137]: Giftable surprises
+            - paragraph [ref=e138]: Perfect For
+            - generic [ref=e139]:
+              - generic [ref=e140]:
+                - img [ref=e141]
+                - text: Gifts
+              - generic [ref=e143]:
+                - img [ref=e144]
+                - text: Cafés & Homes
+              - generic [ref=e147]:
+                - img [ref=e148]
+                - text: Schools
+              - generic [ref=e151]:
+                - img [ref=e152]
+                - text: Creative Events
+              - generic [ref=e155]:
+                - img [ref=e156]
+                - text: Parent–Child Bonding
+            - generic [ref=e162]:
+              - img [ref=e164]
+              - generic [ref=e166]:
+                - strong [ref=e167]: Made by Women Artisans
+                - text: Every Little Joy is handcrafted through our Women Makers Programme — supporting flexible, meaningful creative work. Made by Hands. Shared by Hearts.
+            - generic [ref=e168]:
+              - link "Order on Facebook" [ref=e169] [cursor=pointer]:
+                - /url: https://www.facebook.com/goppoguro
+                - text: Order on Facebook
+                - img [ref=e170]
+              - link "Contact Us" [ref=e172] [cursor=pointer]:
+                - /url: contact.html
+    - region "Full product catalogue" [ref=e174]:
+      - generic [ref=e175]:
+        - generic [ref=e176]:
+          - generic [ref=e177]: — All Products
+          - heading "The Full Collection" [level=2] [ref=e178]
+          - paragraph [ref=e179]: Stories, experiences, and objects designed to bring play, pause, and imagination back into everyday life.
+        - generic [ref=e180]:
+          - generic [ref=e181]:
+            - link "Little Joys" [ref=e182] [cursor=pointer]:
+              - /url: "#featured"
+              - img "Little Joys — Little Joys Collection" [ref=e183]
+              - generic [ref=e184]:
+                - generic [ref=e185]: Best Seller · Little Joys Collection
+                - heading "Little Joys" [level=3] [ref=e186]
+                - generic [ref=e187]:
+                  - text: View Detail
+                  - img [ref=e188]
+            - generic [ref=e190]:
+              - generic [ref=e191]:
+                - generic [ref=e192]: Little Joys
+                - generic [ref=e193]: Tiny Folded Happiness — Handcrafted origami paper treasures
+              - link "Order on Facebook" [ref=e194] [cursor=pointer]:
+                - /url: https://www.facebook.com/goppoguro
+                - text: Order on Facebook
+                - img [ref=e195]
+          - generic [ref=e197]:
+            - link "বনের মাঝে বনভোজন (Boner Majhe Bonvojon)" [ref=e198] [cursor=pointer]:
+              - /url: https://www.facebook.com/goppoguro
+              - img "বনের মাঝে বনভোজন (Boner Majhe Bonvojon) — Story Playbook" [ref=e199]
+              - generic [ref=e200]:
+                - generic [ref=e201]: Story Playbook
+                - heading "বনের মাঝে বনভোজন (Boner Majhe Bonvojon)" [level=3] [ref=e202]
+                - generic [ref=e203]:
+                  - text: Enquire
+                  - img [ref=e204]
+            - generic [ref=e207]:
+              - generic [ref=e208]: বনের মাঝে বনভোজন (Boner Majhe Bonvojon)
+              - generic [ref=e209]: Cut out the animals, build the forest, tell the story — screen-free hands-on storytelling
+          - generic [ref=e210]:
+            - link "RolGol" [ref=e211] [cursor=pointer]:
+              - /url: https://www.facebook.com/goppoguro
+              - img "RolGol — Comic Scroll" [ref=e212]
+              - generic [ref=e213]:
+                - generic [ref=e214]: Comic Scroll
+                - heading "RolGol" [level=3] [ref=e215]
+                - generic [ref=e216]:
+                  - text: Enquire
+                  - img [ref=e217]
+            - generic [ref=e220]:
+              - generic [ref=e221]: RolGol
+              - generic [ref=e222]: Scroll. Draw. Finish the Comic — A wooden comic scroll maker
+          - generic [ref=e223]:
+            - link "Golpoka Club Kit" [ref=e224] [cursor=pointer]:
+              - /url: golpoka-club.html
+              - img "Golpoka Club Kit — Monthly Subscription Box" [ref=e225]
+              - generic [ref=e226]:
+                - generic [ref=e227]: Monthly Subscription Box
+                - heading "Golpoka Club Kit" [level=3] [ref=e228]
+                - generic [ref=e229]:
+                  - text: Learn More
+                  - img [ref=e230]
+            - generic [ref=e233]:
+              - generic [ref=e234]: Golpoka Club Kit
+              - generic [ref=e235]: "Every month: a storybook, activity book, DIY craft kit & a Little Joys gift — for ages 5–12"
+          - generic [ref=e236]:
+            - link "খেলাপুর অভিযান! (Play Town Adventure)" [ref=e237] [cursor=pointer]:
+              - /url: https://www.facebook.com/goppoguro
+              - img "খেলাপুর অভিযান! (Play Town Adventure) — Activity Book Series" [ref=e238]
+              - generic [ref=e239]:
+                - generic [ref=e240]: Activity Book Series
+                - heading "খেলাপুর অভিযান! (Play Town Adventure)" [level=3] [ref=e241]
+                - generic [ref=e242]:
+                  - text: Enquire
+                  - img [ref=e243]
+            - generic [ref=e246]:
+              - generic [ref=e247]: খেলাপুর অভিযান! (Play Town Adventure)
+              - generic [ref=e248]: Join Upu & Mini on a Play Town adventure — activity books for ages 5+
+          - generic [ref=e249]:
+            - link "বীরপুরুষ (Birpurush)" [ref=e250] [cursor=pointer]:
+              - /url: https://www.facebook.com/goppoguro
+              - img "বীরপুরুষ (Birpurush) — Graphic Novel" [ref=e251]
+              - generic [ref=e252]:
+                - generic [ref=e253]: New · Graphic Novel
+                - heading "বীরপুরুষ (Birpurush)" [level=3] [ref=e254]
+                - generic [ref=e255]:
+                  - text: Enquire
+                  - img [ref=e256]
+            - generic [ref=e259]:
+              - generic [ref=e260]: বীরপুরুষ (Birpurush)
+              - generic [ref=e261]: Tagore's timeless poem reimagined as a Goppoguro Graphic Tale
+    - region "Women Makers Programme" [ref=e262]:
+      - generic [ref=e264]:
+        - generic [ref=e265]:
+          - paragraph [ref=e266]: Women Makers Programme
+          - heading "Made by Hands. Shared by Hearts." [level=2] [ref=e267]:
+            - text: Made by Hands.
+            - text: Shared by Hearts.
+          - paragraph [ref=e268]: Every Little Joy is handcrafted by women who turn simple paper into moments of care. This work offers flexible income, creative focus, and dignity — without factories or machines. When you pick a piece, you are participating in a system where care is created by hands that matter.
+          - link "Learn About Our Makers" [ref=e269] [cursor=pointer]:
+            - /url: women-empowerment.html
+            - text: Learn About Our Makers
+            - img [ref=e270]
+        - img "Women artisans hand-folding Little Joys with care" [ref=e273]
+  - contentinfo [ref=e274]:
+    - generic [ref=e275]:
+      - generic [ref=e276]:
+        - generic [ref=e277]:
+          - img "Goppo Guro" [ref=e278]
+          - paragraph [ref=e279]: A Space for Play, Paper, and Pause
+          - paragraph [ref=e280]: Creating space for curiosity, connection, and shared discovery through handcrafted paper experiences.
+          - link "Facebook" [ref=e282] [cursor=pointer]:
+            - /url: https://www.facebook.com/goppoguro
+            - img [ref=e283]
+        - navigation [ref=e285]:
+          - heading "Navigate" [level=4] [ref=e286]
+          - list [ref=e287]:
+            - listitem [ref=e288]:
+              - link "Home" [ref=e289] [cursor=pointer]:
+                - /url: index.html
+            - listitem [ref=e290]:
+              - link "Programme" [ref=e291] [cursor=pointer]:
+                - /url: programme.html
+            - listitem [ref=e292]:
+              - link "Project" [ref=e293] [cursor=pointer]:
+                - /url: projects.html
+            - listitem [ref=e294]:
+              - link "Product" [ref=e295] [cursor=pointer]:
+                - /url: products.html
+            - listitem [ref=e296]:
+              - link "Publications" [ref=e297] [cursor=pointer]:
+                - /url: publications.html
+            - listitem [ref=e298]:
+              - link "About Us" [ref=e299] [cursor=pointer]:
+                - /url: about.html
+            - listitem [ref=e300]:
+              - link "Gallery" [ref=e301] [cursor=pointer]:
+                - /url: gallery.html
+            - listitem [ref=e302]:
+              - link "Contact" [ref=e303] [cursor=pointer]:
+                - /url: contact.html
+        - navigation [ref=e304]:
+          - heading "Explore" [level=4] [ref=e305]
+          - paragraph [ref=e306]: Programme
+          - list [ref=e307]:
+            - listitem [ref=e308]:
+              - link "Creative Learning (GCLP)" [ref=e309] [cursor=pointer]:
+                - /url: gclp.html
+            - listitem [ref=e310]:
+              - link "Women Makers" [ref=e311] [cursor=pointer]:
+                - /url: women-empowerment.html
+            - listitem [ref=e312]:
+              - link "Golpoka Club" [ref=e313] [cursor=pointer]:
+                - /url: golpoka-club.html
+            - listitem [ref=e314]:
+              - link "Podcast" [ref=e315] [cursor=pointer]:
+                - /url: podcast.html
+          - paragraph [ref=e316]: Project
+          - list [ref=e317]:
+            - listitem [ref=e318]:
+              - link "Goppoguro Studio" [ref=e319] [cursor=pointer]:
+                - /url: creative-studio-network.html
+            - listitem [ref=e320]:
+              - link "Golpoka Club" [ref=e321] [cursor=pointer]:
+                - /url: golpoka-club.html
+            - listitem [ref=e322]:
+              - link "Little Joys" [ref=e323] [cursor=pointer]:
+                - /url: little-joys.html
+        - generic [ref=e324]:
+          - heading "Stay Connected" [level=4] [ref=e325]
+          - paragraph [ref=e326]: Get updates on new products and impact stories.
+          - generic [ref=e327]:
+            - textbox "Your email" [ref=e328]
+            - button "Subscribe" [ref=e329] [cursor=pointer]
+      - generic [ref=e330]:
+        - generic [ref=e331]: SDG 1
+        - generic [ref=e332]: SDG 4
+        - generic [ref=e333]: SDG 8
+        - generic [ref=e334]: SDG 12
+      - generic [ref=e335]:
+        - paragraph [ref=e336]: Handmade in Bangladesh · © 2026 Goppo Guro. All rights reserved.
+        - paragraph [ref=e337]: Every purchase supports children's welfare.

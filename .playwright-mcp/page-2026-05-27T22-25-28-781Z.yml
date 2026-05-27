@@ -1,0 +1,144 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - link "Goppo Guro Logo Goppo Guro" [ref=e4] [cursor=pointer]:
+        - /url: index.html
+        - img "Goppo Guro Logo" [ref=e5]
+        - generic [ref=e6]: Goppo Guro
+      - button "Toggle navigation" [ref=e7] [cursor=pointer]
+  - main [ref=e11]:
+    - generic [ref=e13]:
+      - generic [ref=e14]: — Start a Conversation
+      - heading "Get in Touch" [level=1] [ref=e15]
+      - paragraph [ref=e16]: Reach out for collaborations, studio inquiries, or simply to share your creative journey.
+    - generic [ref=e18]:
+      - generic [ref=e19]:
+        - generic [ref=e20]: — Ways to Engage
+        - heading "How Would You Like to Contribute?" [level=2] [ref=e21]
+      - generic [ref=e22]:
+        - generic [ref=e23]:
+          - img [ref=e25]
+          - heading "Volunteer with Us" [level=3] [ref=e28]
+          - paragraph [ref=e29]: Bring your skills to our workshops, events, and community programmes. We welcome educators, designers, and storytellers.
+          - link "I Want to Volunteer" [ref=e30] [cursor=pointer]:
+            - /url: contact.html?subject=Volunteer%20Inquiry
+        - generic [ref=e31]:
+          - img [ref=e33]
+          - heading "Work with Us" [level=3] [ref=e36]
+          - paragraph [ref=e37]: Partner with Goppo Guro for school collaborations, corporate gifting, or creative education initiatives.
+          - link "Let's Collaborate" [ref=e38] [cursor=pointer]:
+            - /url: contact.html?subject=Work%20With%20Us
+        - generic [ref=e39]:
+          - img [ref=e41]
+          - heading "Start a Studio" [level=3] [ref=e46]
+          - paragraph [ref=e47]: Bring a Goppoguro Creative Studio to your city. Franchise opportunities are available for passionate community builders.
+          - link "Explore Franchise" [ref=e48] [cursor=pointer]:
+            - /url: contact.html?subject=Start%20a%20Studio
+    - generic [ref=e51]:
+      - generic [ref=e52]:
+        - generic [ref=e53]: — Information
+        - heading "Where to Find Us" [level=2] [ref=e54]
+        - generic [ref=e55]:
+          - generic [ref=e56]:
+            - heading "Email" [level=3] [ref=e57]
+            - paragraph [ref=e58]: hello@goppoguro.com
+          - generic [ref=e59]:
+            - heading "Phone" [level=3] [ref=e60]
+            - paragraph [ref=e61]: +880 1716 822 400
+          - generic [ref=e62]:
+            - heading "Social Media" [level=3] [ref=e63]
+            - link [ref=e65] [cursor=pointer]:
+              - /url: https://www.facebook.com/goppoguro
+              - img [ref=e66]
+      - generic [ref=e69]:
+        - generic [ref=e70]:
+          - generic [ref=e71]: Name
+          - textbox "Name" [ref=e72]
+        - generic [ref=e73]:
+          - generic [ref=e74]: Email
+          - textbox "Email" [ref=e75]
+        - generic [ref=e76]:
+          - generic [ref=e77]: Subject
+          - textbox "Subject" [ref=e78]
+        - generic [ref=e79]:
+          - generic [ref=e80]: Message
+          - textbox "Message" [ref=e81]
+        - button "Send Message" [ref=e82] [cursor=pointer]
+  - contentinfo [ref=e83]:
+    - generic [ref=e84]:
+      - generic [ref=e85]:
+        - generic [ref=e86]:
+          - img "Goppo Guro" [ref=e87]
+          - paragraph [ref=e88]: A Space for Play, Paper, and Pause
+          - paragraph [ref=e89]: Creating space for curiosity, connection, and shared discovery through handcrafted paper experiences.
+          - link "Facebook" [ref=e91] [cursor=pointer]:
+            - /url: https://www.facebook.com/goppoguro
+            - img [ref=e92]
+        - navigation [ref=e94]:
+          - heading "Navigate" [level=4] [ref=e95]
+          - list [ref=e96]:
+            - listitem [ref=e97]:
+              - link "Home" [ref=e98] [cursor=pointer]:
+                - /url: index.html
+            - listitem [ref=e99]:
+              - link "Programme" [ref=e100] [cursor=pointer]:
+                - /url: programme.html
+            - listitem [ref=e101]:
+              - link "Project" [ref=e102] [cursor=pointer]:
+                - /url: projects.html
+            - listitem [ref=e103]:
+              - link "Product" [ref=e104] [cursor=pointer]:
+                - /url: products.html
+            - listitem [ref=e105]:
+              - link "Publications" [ref=e106] [cursor=pointer]:
+                - /url: publications.html
+            - listitem [ref=e107]:
+              - link "About Us" [ref=e108] [cursor=pointer]:
+                - /url: about.html
+            - listitem [ref=e109]:
+              - link "Gallery" [ref=e110] [cursor=pointer]:
+                - /url: gallery.html
+            - listitem [ref=e111]:
+              - link "Contact" [ref=e112] [cursor=pointer]:
+                - /url: contact.html
+        - navigation [ref=e113]:
+          - heading "Explore" [level=4] [ref=e114]
+          - paragraph [ref=e115]: Programme
+          - list [ref=e116]:
+            - listitem [ref=e117]:
+              - link "Creative Learning (GCLP)" [ref=e118] [cursor=pointer]:
+                - /url: gclp.html
+            - listitem [ref=e119]:
+              - link "Women Makers" [ref=e120] [cursor=pointer]:
+                - /url: women-empowerment.html
+            - listitem [ref=e121]:
+              - link "Golpoka Club" [ref=e122] [cursor=pointer]:
+                - /url: golpoka-club.html
+            - listitem [ref=e123]:
+              - link "Podcast" [ref=e124] [cursor=pointer]:
+                - /url: podcast.html
+          - paragraph [ref=e125]: Project
+          - list [ref=e126]:
+            - listitem [ref=e127]:
+              - link "Goppoguro Studio" [ref=e128] [cursor=pointer]:
+                - /url: creative-studio-network.html
+            - listitem [ref=e129]:
+              - link "Golpoka Club" [ref=e130] [cursor=pointer]:
+                - /url: golpoka-club.html
+            - listitem [ref=e131]:
+              - link "Little Joys" [ref=e132] [cursor=pointer]:
+                - /url: little-joys.html
+        - generic [ref=e133]:
+          - heading "Stay Connected" [level=4] [ref=e134]
+          - paragraph [ref=e135]: Get updates on new products and impact stories.
+          - generic [ref=e136]:
+            - textbox "Your email" [ref=e137]
+            - button "Subscribe" [ref=e138] [cursor=pointer]
+      - generic [ref=e139]:
+        - generic [ref=e140]: SDG 1
+        - generic [ref=e141]: SDG 4
+        - generic [ref=e142]: SDG 8
+        - generic [ref=e143]: SDG 12
+      - generic [ref=e144]:
+        - paragraph [ref=e145]: Handmade in Bangladesh · © 2026 Goppo Guro. All rights reserved.
+        - paragraph [ref=e146]: Every purchase supports children's welfare.

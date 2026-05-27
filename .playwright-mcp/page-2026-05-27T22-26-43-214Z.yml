@@ -1,0 +1,196 @@
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - link "Goppo Guro Logo Goppo Guro" [ref=e4] [cursor=pointer]:
+        - /url: index.html
+        - img "Goppo Guro Logo" [ref=e5]
+        - generic [ref=e6]: Goppo Guro
+      - button "Toggle navigation" [expanded] [active] [ref=e7] [cursor=pointer]
+  - main [ref=e11]:
+    - generic [ref=e13]:
+      - generic [ref=e14]: — Thought Leadership & Field Notes
+      - heading "Publications" [level=1] [ref=e15]
+      - paragraph [ref=e16]: Slow writing on creativity, learning, and the human need for play.
+    - article [ref=e19]:
+      - img "The Case for Slow Learning" [ref=e21]
+      - generic [ref=e22]:
+        - generic [ref=e23]: Featured · Research
+        - heading "The Case for Slow Learning" [level=2] [ref=e24]
+        - paragraph [ref=e25]: In a culture that rewards speed and output, we make the research-backed argument for slowing down in education. Drawing on 200+ workshop observations and the 4P Framework, this is our most complete statement on what creative learning requires.
+        - time [ref=e27]: March 2026
+        - link "Read the Full Essay" [ref=e28] [cursor=pointer]:
+          - /url: "#"
+    - generic [ref=e30]:
+      - group "Filter publications by category" [ref=e31]:
+        - button "All" [ref=e32] [cursor=pointer]
+        - button "Research" [ref=e33] [cursor=pointer]
+        - button "Stories" [ref=e34] [cursor=pointer]
+        - button "Press" [ref=e35] [cursor=pointer]
+        - button "Zines" [ref=e36] [cursor=pointer]
+      - generic [ref=e37]:
+        - article [ref=e38]:
+          - img "Creativity in childhood" [ref=e40]
+          - generic [ref=e41]:
+            - generic [ref=e42]: Research
+            - heading "Creativity in Childhood Education" [level=3] [ref=e43]
+            - paragraph [ref=e44]: Why fostering imagination early is more critical than traditional textbook learning.
+            - time [ref=e46]: February 2026
+            - link "Read" [ref=e47] [cursor=pointer]:
+              - /url: "#"
+        - article [ref=e48]:
+          - img "Storytelling as learning" [ref=e50]
+          - generic [ref=e51]:
+            - generic [ref=e52]: Stories
+            - heading "Storytelling as a Learning Tool" [level=3] [ref=e53]
+            - paragraph [ref=e54]: How narratives bridge the gap between abstract concepts and real-world understanding.
+            - time [ref=e56]: January 2026
+            - link "Read" [ref=e57] [cursor=pointer]:
+              - /url: "#"
+        - article [ref=e58]:
+          - img "Observations from workshops" [ref=e60]
+          - generic [ref=e61]:
+            - generic [ref=e62]: Research
+            - heading "Observations from Workshops" [level=3] [ref=e63]
+            - paragraph [ref=e64]: What we've learned from watching children play and explore in different settings.
+            - time [ref=e66]: December 2025
+            - link "Read" [ref=e67] [cursor=pointer]:
+              - /url: "#"
+        - article [ref=e68]:
+          - img "Creative parenting" [ref=e70]
+          - generic [ref=e71]:
+            - generic [ref=e72]: Stories
+            - heading "Creative Parenting" [level=3] [ref=e73]
+            - paragraph [ref=e74]: Simple ways to nurture your child's innate creativity in everyday life.
+            - time [ref=e76]: November 2025
+            - link "Read" [ref=e77] [cursor=pointer]:
+              - /url: "#"
+        - article [ref=e78]:
+          - img "Goppo Guro journey" [ref=e80]
+          - generic [ref=e81]:
+            - generic [ref=e82]: Press
+            - heading "Goppo Guro Journey" [level=3] [ref=e83]
+            - paragraph [ref=e84]: Reflections on our growth and what's next for the Goppo Guro initiative.
+            - time [ref=e86]: October 2025
+            - link "Read" [ref=e87] [cursor=pointer]:
+              - /url: "#"
+        - article [ref=e88]:
+          - img "Paper People zine" [ref=e90]
+          - generic [ref=e91]:
+            - generic [ref=e92]: Zines
+            - heading "Paper People Vol. 1" [level=3] [ref=e93]
+            - paragraph [ref=e94]: Our first community zine — photos, notes, and folded things from workshops across Bangladesh.
+            - time [ref=e96]: September 2025
+            - link "Read" [ref=e97] [cursor=pointer]:
+              - /url: "#"
+        - article [ref=e98]:
+          - img "4P Framework deep dive" [ref=e100]
+          - generic [ref=e101]:
+            - generic [ref=e102]: Research
+            - heading "The 4P Framework Explained" [level=3] [ref=e103]
+            - paragraph [ref=e104]: A deep dive into Projects, Passion, Peers, and Play — the methodology behind our creative learning programme.
+            - time [ref=e106]: August 2025
+            - link "Read" [ref=e107] [cursor=pointer]:
+              - /url: "#"
+        - article [ref=e108]:
+          - img "Women artisan feature" [ref=e110]
+          - generic [ref=e111]:
+            - generic [ref=e112]: Press
+            - heading "The Women Who Make the Joy" [level=3] [ref=e113]
+            - paragraph [ref=e114]: A feature on our artisan network — their stories, their work, and what the Little Joys programme means to them.
+            - time [ref=e116]: July 2025
+            - link "Read" [ref=e117] [cursor=pointer]:
+              - /url: "#"
+        - article [ref=e118]:
+          - img "Field Notes from Schools" [ref=e120]
+          - generic [ref=e121]:
+            - generic [ref=e122]: Zines
+            - heading "Field Notes from Schools" [level=3] [ref=e123]
+            - paragraph [ref=e124]: Raw observations, sketches, and reflections collected during our first school pilot programmes.
+            - time [ref=e126]: June 2025
+            - link "Read" [ref=e127] [cursor=pointer]:
+              - /url: "#"
+    - generic [ref=e129]:
+      - generic [ref=e130]: — Stay Informed
+      - heading "Never Miss a New Piece" [level=2] [ref=e131]
+      - paragraph [ref=e132]: Slow updates — we only write when we have something worth saying.
+      - generic [ref=e133]:
+        - textbox "Your email" [ref=e134]
+        - button "Subscribe" [ref=e135] [cursor=pointer]
+  - contentinfo [ref=e136]:
+    - generic [ref=e137]:
+      - generic [ref=e138]:
+        - generic [ref=e139]:
+          - img "Goppo Guro" [ref=e140]
+          - paragraph [ref=e141]: A Space for Play, Paper, and Pause
+          - paragraph [ref=e142]: Creating space for curiosity, connection, and shared discovery through handcrafted paper experiences.
+          - link "Facebook" [ref=e144] [cursor=pointer]:
+            - /url: https://www.facebook.com/goppoguro
+            - img [ref=e145]
+        - navigation [ref=e147]:
+          - heading "Navigate" [level=4] [ref=e148]
+          - list [ref=e149]:
+            - listitem [ref=e150]:
+              - link "Home" [ref=e151] [cursor=pointer]:
+                - /url: index.html
+            - listitem [ref=e152]:
+              - link "Programme" [ref=e153] [cursor=pointer]:
+                - /url: programme.html
+            - listitem [ref=e154]:
+              - link "Project" [ref=e155] [cursor=pointer]:
+                - /url: projects.html
+            - listitem [ref=e156]:
+              - link "Product" [ref=e157] [cursor=pointer]:
+                - /url: products.html
+            - listitem [ref=e158]:
+              - link "Publications" [ref=e159] [cursor=pointer]:
+                - /url: publications.html
+            - listitem [ref=e160]:
+              - link "About Us" [ref=e161] [cursor=pointer]:
+                - /url: about.html
+            - listitem [ref=e162]:
+              - link "Gallery" [ref=e163] [cursor=pointer]:
+                - /url: gallery.html
+            - listitem [ref=e164]:
+              - link "Contact" [ref=e165] [cursor=pointer]:
+                - /url: contact.html
+        - navigation [ref=e166]:
+          - heading "Explore" [level=4] [ref=e167]
+          - paragraph [ref=e168]: Programme
+          - list [ref=e169]:
+            - listitem [ref=e170]:
+              - link "Creative Learning (GCLP)" [ref=e171] [cursor=pointer]:
+                - /url: gclp.html
+            - listitem [ref=e172]:
+              - link "Women Makers" [ref=e173] [cursor=pointer]:
+                - /url: women-empowerment.html
+            - listitem [ref=e174]:
+              - link "Golpoka Club" [ref=e175] [cursor=pointer]:
+                - /url: golpoka-club.html
+            - listitem [ref=e176]:
+              - link "Podcast" [ref=e177] [cursor=pointer]:
+                - /url: podcast.html
+          - paragraph [ref=e178]: Project
+          - list [ref=e179]:
+            - listitem [ref=e180]:
+              - link "Goppoguro Studio" [ref=e181] [cursor=pointer]:
+                - /url: creative-studio-network.html
+            - listitem [ref=e182]:
+              - link "Golpoka Club" [ref=e183] [cursor=pointer]:
+                - /url: golpoka-club.html
+            - listitem [ref=e184]:
+              - link "Little Joys" [ref=e185] [cursor=pointer]:
+                - /url: little-joys.html
+        - generic [ref=e186]:
+          - heading "Stay Connected" [level=4] [ref=e187]
+          - paragraph [ref=e188]: Get updates on new products and impact stories.
+          - generic [ref=e189]:
+            - textbox "Your email" [ref=e190]
+            - button "Subscribe" [ref=e191] [cursor=pointer]
+      - generic [ref=e192]:
+        - generic [ref=e193]: SDG 1
+        - generic [ref=e194]: SDG 4
+        - generic [ref=e195]: SDG 8
+        - generic [ref=e196]: SDG 12
+      - generic [ref=e197]:
+        - paragraph [ref=e198]: Handmade in Bangladesh · © 2026 Goppo Guro. All rights reserved.
+        - paragraph [ref=e199]: Every purchase supports children's welfare.

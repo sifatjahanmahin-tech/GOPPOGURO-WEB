@@ -512,6 +512,7 @@ h6 {
 .hero {
     position: relative;
     min-height: 100vh;
+    min-height: 100dvh;
     display: flex;
     align-items: center;
     padding: var(--space-16) 0 var(--space-12);
@@ -6649,4 +6650,179 @@ h6 {
     .fourp__pillar-head {
         min-height: 180px;
     }
+}
+
+/* ========================================
+   MOBILE OPTIMIZATIONS
+   ======================================== */
+
+/* Fluid section padding — reduces from 8rem on desktop to 4rem on phone */
+@media (max-width: 768px) {
+    .section {
+        padding: var(--space-10) 0;
+    }
+    .section-header {
+        margin-bottom: var(--space-6);
+    }
+}
+
+@media (max-width: 480px) {
+    .section {
+        padding: var(--space-8) 0;
+    }
+    .section-header {
+        margin-bottom: var(--space-5);
+    }
+}
+
+/* Touch targets — all interactive elements ≥ 44px */
+.btn,
+.nav__link,
+.nav__dropdown-link,
+.nav__toggle,
+.nav__dropdown-toggle,
+.footer__social-link,
+.scroll-top {
+    min-height: 44px;
+}
+
+.nav__link,
+.nav__dropdown-link {
+    display: inline-flex;
+    align-items: center;
+}
+
+.footer__social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+}
+
+/* Prevent text overflow on small screens */
+@media (max-width: 480px) {
+    .section-title {
+        word-break: break-word;
+        hyphens: auto;
+    }
+
+    .hero__title {
+        font-size: clamp(2.4rem, 11vw, 4rem);
+    }
+
+    .container {
+        padding-inline: var(--space-4);
+    }
+}
+
+/* 4P infographic — stack on small tablets */
+@media (max-width: 700px) {
+    .fourp__infographic {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Hero mobile — prevent overflow, tighter layout */
+@media (max-width: 768px) {
+    .hero {
+        padding: calc(var(--space-10) + 64px) 0 var(--space-8);
+        min-height: 100dvh;
+        align-items: flex-start;
+    }
+
+    .hero__container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero__visual {
+        display: none;
+    }
+}
+
+/* Nav mobile — larger tap areas */
+@media (max-width: 768px) {
+    .nav__menu {
+        padding: var(--space-4) var(--space-4) var(--space-6);
+    }
+
+    .nav__item {
+        border-bottom: 1px solid var(--color-bg-tertiary);
+    }
+
+    .nav__link {
+        padding: var(--space-3) 0;
+        font-size: 1rem;
+    }
+
+    .nav__dropdown-link {
+        padding: var(--space-2) var(--space-4);
+        font-size: 0.9rem;
+    }
+}
+
+/* Bento grid mobile */
+@media (max-width: 600px) {
+    .bento__grid {
+        grid-template-columns: 1fr;
+    }
+    .bento__cell--mission,
+    .bento__cell--stat1,
+    .bento__cell--stat2,
+    .bento__cell--tagline,
+    .bento__cell--stat3,
+    .bento__cell--stat4 {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+}
+
+/* Feature cards — single column on phone */
+@media (max-width: 480px) {
+    .features__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Story section — stack on mobile */
+@media (max-width: 768px) {
+    .story__grid,
+    .makers__grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Products preview — 2-col on mobile */
+@media (max-width: 480px) {
+    .products-preview__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-3);
+    }
+}
+
+/* Footer — single column on phone */
+@media (max-width: 480px) {
+    .footer__grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-6);
+    }
+}
+
+/* Testimonials — single col on phone */
+@media (max-width: 600px) {
+    .testimonials__grid {
+        columns: 1;
+    }
+}
+
+/* Prevent horizontal scroll globally */
+html {
+    overflow-x: hidden;
 }
