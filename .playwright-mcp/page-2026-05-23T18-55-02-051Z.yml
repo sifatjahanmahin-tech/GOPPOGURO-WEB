@@ -1,0 +1,184 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - link "Goppo Guro Logo Goppo Guro" [ref=e4] [cursor=pointer]:
+        - /url: index.html
+        - img "Goppo Guro Logo" [ref=e5]
+        - generic [ref=e6]: Goppo Guro
+      - list [ref=e7]:
+        - listitem [ref=e8]:
+          - link "Home" [ref=e9] [cursor=pointer]:
+            - /url: index.html
+        - listitem [ref=e10]:
+          - generic [ref=e11]:
+            - link "Programme" [ref=e12] [cursor=pointer]:
+              - /url: programme.html
+            - button "Open Programme submenu" [ref=e13] [cursor=pointer]:
+              - img [ref=e14]
+          - menu:
+            - menuitem "All Programmes"
+            - menuitem "Creative Learning Programme"
+            - menuitem "Women Makers Empowerment"
+            - menuitem "Golpoka Club"
+            - menuitem "Podcast"
+        - listitem [ref=e16]:
+          - generic [ref=e17]:
+            - link "Project" [ref=e18] [cursor=pointer]:
+              - /url: projects.html
+            - button "Open Project submenu" [ref=e19] [cursor=pointer]:
+              - img [ref=e20]
+          - menu:
+            - menuitem "Goppoguro Studio"
+            - menuitem "Golpoka Club"
+            - menuitem "Little Joys"
+        - listitem [ref=e22]:
+          - link "Product" [ref=e23] [cursor=pointer]:
+            - /url: products.html
+        - listitem [ref=e24]:
+          - link "Publications" [ref=e25] [cursor=pointer]:
+            - /url: publications.html
+        - listitem [ref=e26]:
+          - link "About Us" [ref=e27] [cursor=pointer]:
+            - /url: about.html
+        - listitem [ref=e28]:
+          - link "Gallery" [ref=e29] [cursor=pointer]:
+            - /url: gallery.html
+        - listitem [ref=e30]:
+          - link "Contact" [ref=e31] [cursor=pointer]:
+            - /url: contact.html
+  - main [ref=e32]:
+    - generic [ref=e34]:
+      - generic [ref=e35]: Our Shop
+      - heading "The Paper Experiences" [level=1] [ref=e36]
+      - paragraph [ref=e37]: Every piece is a unique story, folded with love and care. Discover experiences designed to help you pause, play, and connect.
+    - generic [ref=e40]:
+      - article [ref=e41]:
+        - generic [ref=e42]:
+          - img "Classic Joy Jar" [ref=e43]
+          - generic [ref=e44]: Best Seller
+        - generic [ref=e45]:
+          - heading "Classic Joy Jar" [level=3] [ref=e46]
+          - paragraph [ref=e47]: A beautiful jar containing 30 hand-folded origami hearts and stars.
+          - generic [ref=e48]:
+            - generic [ref=e49]: ৳ 450
+            - button "Add to Cart" [ref=e50] [cursor=pointer]
+      - article [ref=e51]:
+        - img "Signature Crane Set" [ref=e53]
+        - generic [ref=e54]:
+          - heading "Signature Crane Set" [level=3] [ref=e55]
+          - paragraph [ref=e56]: Twelve meticulously folded cranes symbolizing peace and longevity.
+          - generic [ref=e57]:
+            - generic [ref=e58]: ৳ 850
+            - button "Add to Cart" [ref=e59] [cursor=pointer]
+      - article [ref=e60]:
+        - img "Sustainable Gift Box" [ref=e62]
+        - generic [ref=e63]:
+          - heading "Sustainable Gift Box" [level=3] [ref=e64]
+          - paragraph [ref=e65]: Premium gift set with recycled paper origami and a bamboo display tray.
+          - generic [ref=e66]:
+            - generic [ref=e67]: ৳ 1,200
+            - button "Add to Cart" [ref=e68] [cursor=pointer]
+      - article [ref=e69]:
+        - img "Custom Message Frog" [ref=e71]
+        - generic [ref=e72]:
+          - heading "Hidden Message Frog" [level=3] [ref=e73]
+          - paragraph [ref=e74]: A playful origami frog that reveals a hidden message when unfolded.
+          - generic [ref=e75]:
+            - generic [ref=e76]: ৳ 350
+            - button "Add to Cart" [ref=e77] [cursor=pointer]
+      - article [ref=e78]:
+        - img "Little Joys Magnet Set" [ref=e80]
+        - generic [ref=e81]:
+          - heading "Joy Magnets (Set of 5)" [level=3] [ref=e82]
+          - paragraph [ref=e83]: Hand-folded origami treats equipped with strong magnets for your fridge.
+          - generic [ref=e84]:
+            - generic [ref=e85]: ৳ 600
+            - button "Add to Cart" [ref=e86] [cursor=pointer]
+      - article [ref=e87]:
+        - generic [ref=e88]:
+          - img "Workshop Kit" [ref=e89]
+          - generic [ref=e90]: New
+        - generic [ref=e91]:
+          - heading "DIY Joy Kit" [level=3] [ref=e92]
+          - paragraph [ref=e93]: Learn the art of origami with our curated paper and video guide.
+          - generic [ref=e94]:
+            - generic [ref=e95]: ৳ 1,500
+            - button "Add to Cart" [ref=e96] [cursor=pointer]
+  - contentinfo [ref=e97]:
+    - generic [ref=e98]:
+      - generic [ref=e99]:
+        - generic [ref=e100]:
+          - img "Goppo Guro" [ref=e101]
+          - paragraph [ref=e102]: A Space for Play, Paper, and Pause
+          - paragraph [ref=e103]: Creating space for curiosity, connection, and shared discovery through handcrafted paper experiences.
+          - link "Facebook" [ref=e105] [cursor=pointer]:
+            - /url: https://www.facebook.com/goppoguro
+            - img [ref=e106]
+        - navigation [ref=e108]:
+          - heading "Navigate" [level=4] [ref=e109]
+          - list [ref=e110]:
+            - listitem [ref=e111]:
+              - link "Home" [ref=e112] [cursor=pointer]:
+                - /url: index.html
+            - listitem [ref=e113]:
+              - link "Programme" [ref=e114] [cursor=pointer]:
+                - /url: programme.html
+            - listitem [ref=e115]:
+              - link "Project" [ref=e116] [cursor=pointer]:
+                - /url: creative-studio-network.html
+            - listitem [ref=e117]:
+              - link "Product" [ref=e118] [cursor=pointer]:
+                - /url: products.html
+            - listitem [ref=e119]:
+              - link "Publications" [ref=e120] [cursor=pointer]:
+                - /url: publications.html
+            - listitem [ref=e121]:
+              - link "About Us" [ref=e122] [cursor=pointer]:
+                - /url: about.html
+            - listitem [ref=e123]:
+              - link "Gallery" [ref=e124] [cursor=pointer]:
+                - /url: gallery.html
+            - listitem [ref=e125]:
+              - link "Contact" [ref=e126] [cursor=pointer]:
+                - /url: contact.html
+        - navigation [ref=e127]:
+          - heading "Explore" [level=4] [ref=e128]
+          - paragraph [ref=e129]: Programme
+          - list [ref=e130]:
+            - listitem [ref=e131]:
+              - link "Creative Learning (GCLP)" [ref=e132] [cursor=pointer]:
+                - /url: gclp.html
+            - listitem [ref=e133]:
+              - link "Women Makers" [ref=e134] [cursor=pointer]:
+                - /url: women-empowerment.html
+            - listitem [ref=e135]:
+              - link "Golpoka Club" [ref=e136] [cursor=pointer]:
+                - /url: golpoka-club.html
+            - listitem [ref=e137]:
+              - link "Podcast" [ref=e138] [cursor=pointer]:
+                - /url: podcast.html
+          - paragraph [ref=e139]: Project
+          - list [ref=e140]:
+            - listitem [ref=e141]:
+              - link "Goppoguro Studio" [ref=e142] [cursor=pointer]:
+                - /url: creative-studio-network.html
+            - listitem [ref=e143]:
+              - link "Golpoka Club" [ref=e144] [cursor=pointer]:
+                - /url: golpoka-club.html
+            - listitem [ref=e145]:
+              - link "Little Joys" [ref=e146] [cursor=pointer]:
+                - /url: little-joys.html
+        - generic [ref=e147]:
+          - heading "Stay Connected" [level=4] [ref=e148]
+          - paragraph [ref=e149]: Get updates on new products and impact stories.
+          - generic [ref=e150]:
+            - textbox "Your email" [ref=e151]
+            - button "Subscribe" [ref=e152] [cursor=pointer]
+      - generic [ref=e153]:
+        - generic [ref=e154]: SDG 1
+        - generic [ref=e155]: SDG 4
+        - generic [ref=e156]: SDG 8
+        - generic [ref=e157]: SDG 12
+      - generic [ref=e158]:
+        - paragraph [ref=e159]: Handmade in Bangladesh · © 2026 Goppo Guro. All rights reserved.
+        - paragraph [ref=e160]: Every purchase supports children's welfare.

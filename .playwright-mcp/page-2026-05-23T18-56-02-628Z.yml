@@ -1,0 +1,246 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - link "Goppo Guro Logo Goppo Guro" [ref=e4] [cursor=pointer]:
+        - /url: index.html
+        - img "Goppo Guro Logo" [ref=e5]
+        - generic [ref=e6]: Goppo Guro
+      - list [ref=e7]:
+        - listitem [ref=e8]:
+          - link "Home" [ref=e9] [cursor=pointer]:
+            - /url: index.html
+        - listitem [ref=e10]:
+          - generic [ref=e11]:
+            - link "Programme" [ref=e12] [cursor=pointer]:
+              - /url: programme.html
+            - button "Open Programme submenu" [ref=e13] [cursor=pointer]:
+              - img [ref=e14]
+          - menu:
+            - menuitem "All Programmes"
+            - menuitem "Creative Learning Programme"
+            - menuitem "Women Makers Empowerment"
+            - menuitem "Golpoka Club"
+            - menuitem "Podcast"
+        - listitem [ref=e16]:
+          - generic [ref=e17]:
+            - link "Project" [ref=e18] [cursor=pointer]:
+              - /url: projects.html
+            - button "Open Project submenu" [ref=e19] [cursor=pointer]:
+              - img [ref=e20]
+          - menu:
+            - menuitem "Goppoguro Studio"
+            - menuitem "Golpoka Club"
+            - menuitem "Little Joys"
+        - listitem [ref=e22]:
+          - link "Product" [ref=e23] [cursor=pointer]:
+            - /url: products.html
+        - listitem [ref=e24]:
+          - link "Publications" [ref=e25] [cursor=pointer]:
+            - /url: publications.html
+        - listitem [ref=e26]:
+          - link "About Us" [ref=e27] [cursor=pointer]:
+            - /url: about.html
+        - listitem [ref=e28]:
+          - link "Gallery" [ref=e29] [cursor=pointer]:
+            - /url: gallery.html
+        - listitem [ref=e30]:
+          - link "Contact" [ref=e31] [cursor=pointer]:
+            - /url: contact.html
+  - main [ref=e32]:
+    - generic [ref=e35]:
+      - generic [ref=e36]:
+        - generic [ref=e37]: Handcrafted with Purpose
+        - heading "A Little Joy in Every Jar" [level=1] [ref=e38]
+        - paragraph [ref=e39]: "Each Little Joys origami jar is folded by hand by a woman artisan in Bangladesh. Inside: a paper origami figure and a handwritten message. Outside: the knowledge that a child's education is one purchase closer."
+        - generic [ref=e40]:
+          - link "Shop Now" [ref=e41] [cursor=pointer]:
+            - /url: products.html
+          - link "Meet the Makers" [ref=e42] [cursor=pointer]:
+            - /url: women-empowerment.html
+      - img "Little Joys origami jar" [ref=e44]
+    - generic [ref=e47]:
+      - img "Inside a Little Joys jar" [ref=e49]
+      - generic [ref=e50]:
+        - generic [ref=e51]: What's Inside
+        - heading "More Than a Gift" [level=2] [ref=e52]
+        - paragraph [ref=e53]: A Little Joy is a small glass jar containing hand-folded origami figures and slips of paper with messages to spark imagination, kindness, and connection. No instructions. No outcomes. Just presence.
+        - paragraph [ref=e54]: "\"Keep it or pass it on\" — every jar comes with heartfelt messages encouraging the chain of kindness to continue spreading joy wherever it travels."
+        - blockquote [ref=e55]:
+          - paragraph [ref=e56]: "\"There are no timers, no expectations — only moments of presence, imagination, and shared discovery.\""
+          - generic [ref=e57]: — Goppo Guro
+    - generic [ref=e60]:
+      - generic [ref=e61]:
+        - generic [ref=e62]: The Story Behind It
+        - heading "Folded by Real Hands" [level=2] [ref=e63]
+        - paragraph [ref=e64]: Every single Little Joys jar is crafted by a woman artisan working from her home in Bangladesh. No factory. No machine. Just patience, paper, and skill passed from hand to hand.
+        - paragraph [ref=e65]: When you buy a Little Joy, you are paying a fair wage to the woman who made it — and contributing to the welfare fund that sends a child to school.
+        - link "Meet the Artisans →" [ref=e66] [cursor=pointer]:
+          - /url: women-empowerment.html
+      - img "Artisan folding origami by hand" [ref=e68]
+    - generic [ref=e70]:
+      - generic [ref=e71]:
+        - generic [ref=e72]: The Collection
+        - heading "Choose Your Little Joy" [level=2] [ref=e73]
+      - generic [ref=e74]:
+        - article [ref=e75]:
+          - generic [ref=e76]:
+            - img "Classic Joy Jar" [ref=e77]
+            - link "View Details" [ref=e79] [cursor=pointer]:
+              - /url: products.html
+          - generic [ref=e80]:
+            - heading "Classic Joy Jar" [level=3] [ref=e81]
+            - paragraph [ref=e82]: ৳ 450
+        - article [ref=e83]:
+          - generic [ref=e84]:
+            - img "Signature Crane Collection" [ref=e85]
+            - link "View Details" [ref=e87] [cursor=pointer]:
+              - /url: products.html
+          - generic [ref=e88]:
+            - heading "Signature Crane Set" [level=3] [ref=e89]
+            - paragraph [ref=e90]: ৳ 850
+        - article [ref=e91]:
+          - generic [ref=e92]:
+            - img "Sustainable Gift Box" [ref=e93]
+            - link "View Details" [ref=e95] [cursor=pointer]:
+              - /url: products.html
+          - generic [ref=e96]:
+            - heading "Sustainable Gift Box" [level=3] [ref=e97]
+            - paragraph [ref=e98]: ৳ 1,200
+      - link "View Full Collection" [ref=e100] [cursor=pointer]:
+        - /url: products.html
+    - generic [ref=e102]:
+      - generic [ref=e103]:
+        - generic [ref=e104]: Your Impact
+        - heading "See the Ripple Effect" [level=2] [ref=e105]
+        - paragraph [ref=e106]: Every Little Joy you buy creates a chain reaction of positive change. Use our calculator to see the difference you're making.
+      - generic [ref=e107]:
+        - generic [ref=e108]:
+          - generic [ref=e109]: How many jars would you like to gift?
+          - generic [ref=e110]:
+            - slider "How many jars would you like to gift?" [ref=e111]: "5"
+            - generic [ref=e112]: 5 Jars
+        - generic [ref=e113]:
+          - generic [ref=e114]:
+            - generic [ref=e115]: 📚
+            - generic [ref=e116]: "15"
+            - generic [ref=e117]: Days of Education Funded
+          - generic [ref=e118]:
+            - generic [ref=e119]: 🍱
+            - generic [ref=e120]: "10"
+            - generic [ref=e121]: Nutritious Meals Provided
+          - generic [ref=e122]:
+            - generic [ref=e123]: 😊
+            - generic [ref=e124]: "25"
+            - generic [ref=e125]: Smiles Spread
+          - generic [ref=e126]:
+            - generic [ref=e127]: 🌱
+            - generic [ref=e128]: "1"
+            - generic [ref=e129]: Trees Worth of Paper Offset
+    - generic [ref=e131]:
+      - generic [ref=e132]:
+        - generic [ref=e133]: Global Goals
+        - heading "One Jar, Four SDGs" [level=2] [ref=e134]
+      - generic [ref=e135]:
+        - generic [ref=e136]:
+          - text: SDG 1
+          - heading "No Poverty" [level=3] [ref=e137]
+          - paragraph [ref=e138]: Revenue directly funds education and welfare for children in need across Bangladesh.
+        - generic [ref=e139]:
+          - text: SDG 4
+          - heading "Quality Education" [level=3] [ref=e140]
+          - paragraph [ref=e141]: Little Joys purchases fund school days, materials, and meals for children who need them.
+        - generic [ref=e142]:
+          - text: SDG 8
+          - heading "Decent Work" [level=3] [ref=e143]
+          - paragraph [ref=e144]: Women artisans earn fair, flexible income crafting every jar at home, on their own schedule.
+        - generic [ref=e145]:
+          - text: SDG 12
+          - heading "Responsible Consumption" [level=3] [ref=e146]
+          - paragraph [ref=e147]: Handcrafted from sustainable, minimal materials — each piece is made to be cherished, not discarded.
+    - generic [ref=e149]:
+      - generic [ref=e150]: Ready?
+      - heading "Start the Chain" [level=2] [ref=e151]
+      - paragraph [ref=e152]: Buy a Little Joy. One fold. One story. One life touched.
+      - generic [ref=e153]:
+        - link "Shop Little Joys" [ref=e154] [cursor=pointer]:
+          - /url: products.html
+        - link "Our Story" [ref=e155] [cursor=pointer]:
+          - /url: about.html
+  - contentinfo [ref=e156]:
+    - generic [ref=e157]:
+      - generic [ref=e158]:
+        - generic [ref=e159]:
+          - img "Goppo Guro" [ref=e160]
+          - paragraph [ref=e161]: A Space for Play, Paper, and Pause
+          - paragraph [ref=e162]: Creating space for curiosity, connection, and shared discovery through handcrafted paper experiences.
+          - link "Facebook" [ref=e164] [cursor=pointer]:
+            - /url: https://www.facebook.com/goppoguro
+            - img [ref=e165]
+        - navigation [ref=e167]:
+          - heading "Navigate" [level=4] [ref=e168]
+          - list [ref=e169]:
+            - listitem [ref=e170]:
+              - link "Home" [ref=e171] [cursor=pointer]:
+                - /url: index.html
+            - listitem [ref=e172]:
+              - link "Programme" [ref=e173] [cursor=pointer]:
+                - /url: programme.html
+            - listitem [ref=e174]:
+              - link "Project" [ref=e175] [cursor=pointer]:
+                - /url: creative-studio-network.html
+            - listitem [ref=e176]:
+              - link "Product" [ref=e177] [cursor=pointer]:
+                - /url: products.html
+            - listitem [ref=e178]:
+              - link "Publications" [ref=e179] [cursor=pointer]:
+                - /url: publications.html
+            - listitem [ref=e180]:
+              - link "About Us" [ref=e181] [cursor=pointer]:
+                - /url: about.html
+            - listitem [ref=e182]:
+              - link "Gallery" [ref=e183] [cursor=pointer]:
+                - /url: gallery.html
+            - listitem [ref=e184]:
+              - link "Contact" [ref=e185] [cursor=pointer]:
+                - /url: contact.html
+        - navigation [ref=e186]:
+          - heading "Explore" [level=4] [ref=e187]
+          - paragraph [ref=e188]: Programme
+          - list [ref=e189]:
+            - listitem [ref=e190]:
+              - link "Creative Learning (GCLP)" [ref=e191] [cursor=pointer]:
+                - /url: gclp.html
+            - listitem [ref=e192]:
+              - link "Women Makers" [ref=e193] [cursor=pointer]:
+                - /url: women-empowerment.html
+            - listitem [ref=e194]:
+              - link "Golpoka Club" [ref=e195] [cursor=pointer]:
+                - /url: golpoka-club.html
+            - listitem [ref=e196]:
+              - link "Podcast" [ref=e197] [cursor=pointer]:
+                - /url: podcast.html
+          - paragraph [ref=e198]: Project
+          - list [ref=e199]:
+            - listitem [ref=e200]:
+              - link "Goppoguro Studio" [ref=e201] [cursor=pointer]:
+                - /url: creative-studio-network.html
+            - listitem [ref=e202]:
+              - link "Golpoka Club" [ref=e203] [cursor=pointer]:
+                - /url: golpoka-club.html
+            - listitem [ref=e204]:
+              - link "Little Joys" [ref=e205] [cursor=pointer]:
+                - /url: little-joys.html
+        - generic [ref=e206]:
+          - heading "Stay Connected" [level=4] [ref=e207]
+          - paragraph [ref=e208]: Get updates on new products and impact stories.
+          - generic [ref=e209]:
+            - textbox "Your email" [ref=e210]
+            - button "Subscribe" [ref=e211] [cursor=pointer]
+      - generic [ref=e212]:
+        - generic [ref=e213]: SDG 1
+        - generic [ref=e214]: SDG 4
+        - generic [ref=e215]: SDG 8
+        - generic [ref=e216]: SDG 12
+      - generic [ref=e217]:
+        - paragraph [ref=e218]: Handmade in Bangladesh · © 2026 Goppo Guro. All rights reserved.
+        - paragraph [ref=e219]: Every purchase supports children's welfare.

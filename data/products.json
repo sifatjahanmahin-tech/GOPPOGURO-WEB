@@ -1,0 +1,77 @@
+{
+  "_note": "Product catalogue for products.html. Edit name/tagline/image/links here. Images go in the products/ folder. 'wide: true' makes the card span 2 columns.",
+  "catalogue": [
+    {
+      "id": "little-joys",
+      "name": "Little Joys",
+      "tagline": "Tiny Folded Happiness — Handcrafted origami paper treasures",
+      "type": "Little Joys Collection",
+      "badge": "Best Seller",
+      "image": "products/little-joys-main.jpg",
+      "cardLink": "#featured",
+      "orderLink": "https://www.facebook.com/goppoguro",
+      "orderLabel": "View Detail",
+      "wide": true
+    },
+    {
+      "id": "boner-majhe",
+      "name": "বনের মাঝে বনভোজন (Boner Majhe Bonvojon)",
+      "tagline": "Cut out the animals, build the forest, tell the story — screen-free hands-on storytelling",
+      "type": "Story Playbook",
+      "badge": "",
+      "image": "products/boner-majhe.jpg",
+      "cardLink": "https://www.facebook.com/goppoguro",
+      "orderLink": "https://www.facebook.com/goppoguro",
+      "orderLabel": "Enquire"
+    },
+    {
+      "id": "rolgol",
+      "name": "RolGol",
+      "tagline": "Scroll. Draw. Finish the Comic — A wooden comic scroll maker",
+      "type": "Comic Scroll",
+      "badge": "",
+      "image": "products/rolgol.jpg",
+      "cardLink": "https://www.facebook.com/goppoguro",
+      "orderLink": "https://www.facebook.com/goppoguro",
+      "orderLabel": "Enquire"
+    },
+    {
+      "id": "golpoka-kit",
+      "name": "Golpoka Club Kit",
+      "tagline": "Every month: a storybook, activity book, DIY craft kit & a Little Joys gift — for ages 5–12",
+      "type": "Monthly Subscription Box",
+      "badge": "",
+      "image": "products/golpoka-kit.jpg",
+      "cardLink": "golpoka-club.html",
+      "orderLink": "https://www.facebook.com/goppoguro",
+      "orderLabel": "Learn More"
+    },
+    {
+      "id": "upo-mini",
+      "name": "খেলাপুর অভিযান! (Play Town Adventure)",
+      "tagline": "Join Upu & Mini on a Play Town adventure — activity books for ages 5+",
+      "type": "Activity Book Series",
+      "badge": "",
+      "image": "products/upo-mini.jpg",
+      "cardLink": "https://www.facebook.com/goppoguro",
+      "orderLink": "https://www.facebook.com/goppoguro",
+      "orderLabel": "Enquire"
+    },
+    {
+      "id": "birpurush",
+      "name": "বীরপুরুষ (Birpurush)",
+      "tagline": "Tagore's timeless poem reimagined as a Goppoguro Graphic Tale",
+      "type": "Graphic Novel",
+      "badge": "New",
+      "image": "products/birpurush.jpg",
+      "cardLink": "https://www.facebook.com/goppoguro",
+      "orderLink": "https://www.facebook.com/goppoguro",
+      "orderLabel": "Enquire"
+    }
+  ],
+  "featured_gallery": [
+    { "src": "products/little-joys-1.jpg", "alt": "Little Joys — the full collection: glass jar, gift box, and individual paper treasures" },
+    { "src": "products/little-joys-2.jpg", "alt": "Little Joys — cork-lid glass jar filled with colourful origami hearts, stars and frogs" },
+    { "src": "products/little-joys-3.jpg", "alt": "Little Joys — a handfolded origami crane gifted with love" }
+  ]
+}

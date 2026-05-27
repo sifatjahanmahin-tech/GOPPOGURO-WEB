@@ -1,0 +1,8 @@
+[     690ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:4102/products/little-joys-1.jpg:0
+[     691ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:4102/products/little-joys-2.jpg:0
+[     692ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:4102/products/little-joys-3.jpg:0
+[   51769ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:4102/products/little-joys-main.jpg:0
+[   51770ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:4102/products/boner-majhe.jpg:0
+[   51770ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:4102/products/upo-mini.jpg:0
+[   51771ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:4102/products/rolgol.jpg:0
+[   51774ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:4102/products/birpurush.jpg:0

@@ -36,9 +36,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Count-up stat numbers
     initCountUp();
 
-    // Publications category filter
-    initPublicationsFilter();
-
     // Gallery lightbox
     initLightbox();
 
@@ -47,6 +44,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Women Makers canvas animation
     initWomenMakersAnimation();
+
+    // Project accordion
+    initProjectAccordion();
+
+    // Project filter bar
+    initProjectFilter();
+
+    // Story scroll entry animations
+    initStoryScroll();
+
+    // Scroll-to-top button
+    initScrollTop();
+
+    // 3D hover tilt on cards
+    initCardTilt();
+
+    // JSON-driven sections
+    initStatsFromData();
+    initPublicationsFromData();
+    initTeamFromData();
+    initProductsFromData();
 });
 
 /**
@@ -95,8 +113,8 @@ function initMobileNav() {
 function closeAllDropdowns() {
     document.querySelectorAll('.nav__item--dropdown.is-open').forEach(item => {
         item.classList.remove('is-open');
-        const trigger = item.querySelector('.nav__dropdown-trigger');
-        if (trigger) trigger.setAttribute('aria-expanded', 'false');
+        const toggle = item.querySelector('.nav__dropdown-toggle');
+        if (toggle) toggle.setAttribute('aria-expanded', 'false');
     });
 }
 
@@ -108,40 +126,37 @@ function initDropdownNav() {
     if (!dropdownItems.length) return;
 
     dropdownItems.forEach(item => {
-        const trigger = item.querySelector('.nav__dropdown-trigger');
+        const toggle = item.querySelector('.nav__dropdown-toggle');
         const dropdown = item.querySelector('.nav__dropdown');
-        if (!trigger || !dropdown) return;
+        if (!toggle || !dropdown) return;
 
         const dropdownLinks = dropdown.querySelectorAll('.nav__dropdown-link');
 
-        // Toggle on trigger click
-        trigger.addEventListener('click', (e) => {
+        // Chevron-only toggle — the label <a> navigates normally
+        toggle.addEventListener('click', (e) => {
             e.stopPropagation();
             const isOpen = item.classList.contains('is-open');
-
-            // Close all other dropdowns
             closeAllDropdowns();
-
             if (!isOpen) {
                 item.classList.add('is-open');
-                trigger.setAttribute('aria-expanded', 'true');
+                toggle.setAttribute('aria-expanded', 'true');
             }
         });
 
-        // Keyboard: ArrowDown from trigger → focus first link
-        trigger.addEventListener('keydown', (e) => {
+        // Keyboard: ArrowDown from toggle → open and focus first link
+        toggle.addEventListener('keydown', (e) => {
             if (e.key === 'ArrowDown') {
                 e.preventDefault();
                 if (!item.classList.contains('is-open')) {
                     closeAllDropdowns();
                     item.classList.add('is-open');
-                    trigger.setAttribute('aria-expanded', 'true');
+                    toggle.setAttribute('aria-expanded', 'true');
                 }
                 if (dropdownLinks.length) dropdownLinks[0].focus();
             }
             if (e.key === 'Escape') {
                 closeAllDropdowns();
-                trigger.focus();
+                toggle.focus();
             }
         });
 
@@ -156,14 +171,14 @@ function initDropdownNav() {
                 if (e.key === 'ArrowUp') {
                     e.preventDefault();
                     if (index === 0) {
-                        trigger.focus();
+                        toggle.focus();
                     } else {
                         dropdownLinks[index - 1].focus();
                     }
                 }
                 if (e.key === 'Escape') {
                     closeAllDropdowns();
-                    trigger.focus();
+                    toggle.focus();
                 }
             });
         });
@@ -184,14 +199,14 @@ function initDropdownNav() {
                 clearTimeout(closeTimer);
                 closeAllDropdowns();
                 item.classList.add('is-open');
-                const trigger = item.querySelector('.nav__dropdown-trigger');
-                if (trigger) trigger.setAttribute('aria-expanded', 'true');
+                const toggle = item.querySelector('.nav__dropdown-toggle');
+                if (toggle) toggle.setAttribute('aria-expanded', 'true');
             });
             item.addEventListener('mouseleave', () => {
                 closeTimer = setTimeout(() => {
                     item.classList.remove('is-open');
-                    const trigger = item.querySelector('.nav__dropdown-trigger');
-                    if (trigger) trigger.setAttribute('aria-expanded', 'false');
+                    const toggle = item.querySelector('.nav__dropdown-toggle');
+                    if (toggle) toggle.setAttribute('aria-expanded', 'false');
                 }, 120);
             });
         });
@@ -207,8 +222,8 @@ function highlightActiveNavLink() {
     const currentPath = window.location.pathname;
     const currentFile = currentPath.split('/').pop() || 'index.html';
 
-    // Match regular nav links
-    document.querySelectorAll('.nav__link:not(.nav__dropdown-trigger)').forEach(link => {
+    // Match regular nav links (including dropdown parent <a> links)
+    document.querySelectorAll('.nav__link').forEach(link => {
         link.classList.remove('active');
         const linkHref = link.getAttribute('href');
         if (linkHref === currentFile) {
@@ -228,12 +243,18 @@ function highlightActiveNavLink() {
         }
     });
 
-    // Mark parent dropdown trigger active if a child page is current
+    // Mark parent dropdown <a> link active if a child page is current.
+    // Only the first matching dropdown parent is activated — prevents dual
+    // active state on pages (e.g. golpoka-club.html) that appear in multiple dropdowns.
+    let parentActivated = false;
     document.querySelectorAll('.nav__item--dropdown').forEach(item => {
         const activeChild = item.querySelector('.nav__dropdown-link--active');
-        if (activeChild) {
-            const trigger = item.querySelector('.nav__dropdown-trigger');
-            if (trigger) trigger.classList.add('nav__dropdown-trigger--active');
+        if (activeChild && !parentActivated) {
+            const parentLink = item.querySelector('.nav__link');
+            if (parentLink) {
+                parentLink.classList.add('active');
+                parentActivated = true;
+            }
         }
     });
 
@@ -461,51 +482,101 @@ function showMessage(form, message, type) {
 }
 
 /**
- * Scroll Animations with Intersection Observer
- * Note: elements inside .stagger-children are excluded — they animate via CSS stagger.
+ * Creative scroll animations — each element type gets its own motion treatment.
+ * Elements inside .stagger-children are excluded (handled by initStaggerObserver).
  */
 function initScrollAnimations() {
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
-    const selector = [
-        '.feature-card',
-        '.testimonial-card',
-        '.product-card-preview',
-        '.product-card',
-        '.sdg-badge',
-        '.journey-step',
-        '.stat-highlight',
-        '.pub-card',
-        '.pub-featured',
-        '.gallery-item',
-        '.involvement-card',
-        '.csn-journey__step',
-        '.csn-difference__feature',
-        '.csn-matters__card',
-        '.csn-growth__standard',
-    ].join(', ');
+    // [selector, animClass, staggerPerElement]
+    // stagger=0 means no inline delay; CSS handles fixed delays for header cascade.
+    const ANIM_GROUPS = [
+        ['.section-tagline',         'anim-ink-reveal',    0    ],
+        ['.section-title',           'anim-title-rise',    0    ],
+        ['.section-description',     'anim-blur-fade',     0    ],
+        ['.story__text',             'anim-blur-fade',     0.1  ],
+        ['.story__quote',            'anim-title-rise',    0    ],
+        ['.fourp__pillar',            'anim-stamp',         0.1  ],
+        ['.feature-card',            'anim-paper-fold',    0.07 ],
+        ['.involvement-card',        'anim-paper-fold',    0.07 ],
+        ['.testimonial-card',        'anim-paper-fold',    0.08 ],
+        ['.pub-card',                'anim-paper-fold',    0.07 ],
+        ['.pub-featured',            'anim-paper-fold',    0    ],
+        ['.gallery-item',            'anim-paper-fold',    0.04 ],
+        ['.product-card-preview',    'anim-scale-reveal',  0.08 ],
+        ['.product-card',            'anim-scale-reveal',  0.08 ],
+        ['.product-card--cinematic', 'anim-scale-reveal',  0.1  ],
+        ['.bento__cell',             'anim-stamp',         0.08 ],
+        ['.sdg__goal',               'anim-stamp',         0.1  ],
+        ['.makers__stat',            'anim-stamp',         0.15 ],
+        ['.story__visual',           'anim-slide-left',    0    ],
+        ['.sdg__image',              'anim-scale-reveal',  0.12 ],
+        ['.section__visual img',     'anim-scale-reveal',  0    ],
+        ['.makers__image',           'anim-scale-reveal',  0    ],
+        ['.sdg-badge',               'anim-stamp',         0.07 ],
+        ['.stat-highlight',          'anim-stamp',         0.07 ],
+        ['.journey-step',            'anim-paper-fold',    0.08 ],
+        ['.csn-journey__step',       'anim-paper-fold',    0.06 ],
+        ['.csn-difference__feature', 'anim-paper-fold',    0.06 ],
+        ['.csn-matters__card',       'anim-paper-fold',    0.06 ],
+        ['.csn-growth__standard',    'anim-paper-fold',    0.06 ],
+        ['.cta__title',              'anim-title-rise',    0    ],
+        ['.cta__description',        'anim-blur-fade',     0    ],
+    ];
 
-    // Skip elements already handled by initStaggerObserver
-    const animatedElements = Array.from(document.querySelectorAll(selector))
-        .filter(el => !el.closest('.stagger-children'));
-
-    const observer = new IntersectionObserver((entries) => {
+    const obs = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0)';
-                observer.unobserve(entry.target);
+                entry.target.classList.add('anim-enter');
+                obs.unobserve(entry.target);
             }
         });
-    }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+    }, { threshold: 0.08, rootMargin: '0px 0px -20px 0px' });
 
-    animatedElements.forEach((element, index) => {
-        element.style.opacity = '0';
-        element.style.transform = 'translateY(24px)';
-        // Cap delay at 400ms so later elements don't wait too long
-        const delay = Math.min(index * 0.07, 0.4);
-        element.style.transition = `opacity 0.5s ease ${delay}s, transform 0.5s ease ${delay}s`;
-        observer.observe(element);
+    ANIM_GROUPS.forEach(([selector, animClass, stagger]) => {
+        document.querySelectorAll(selector).forEach((el, i) => {
+            if (el.closest('.stagger-children')) return;
+            el.classList.add(animClass);
+            if (stagger > 0) {
+                el.style.animationDelay = `${Math.min(i * stagger, 0.5)}s`;
+            }
+            obs.observe(el);
+        });
+    });
+
+    // Section dividers — line-draw reveal
+    const dividerObs = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                dividerObs.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.5 });
+    document.querySelectorAll('.section-divider').forEach(el => dividerObs.observe(el));
+}
+
+/**
+ * 3D magnetic tilt on hover for feature cards and testimonials.
+ * Follows the cursor position to create a tactile paper-like effect.
+ */
+function initCardTilt() {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+    document.querySelectorAll('.feature-card, .testimonial-card').forEach(card => {
+        card.addEventListener('mousemove', e => {
+            const r = card.getBoundingClientRect();
+            const x = ((e.clientX - r.left) / r.width  - 0.5) * 16;
+            const y = ((e.clientY - r.top)  / r.height - 0.5) * -16;
+            card.style.transform = `perspective(600px) rotateY(${x}deg) rotateX(${y}deg) translateZ(8px)`;
+            card.style.transition = 'transform 0.08s ease, box-shadow 0.08s ease';
+            card.style.boxShadow  = '0 16px 48px rgba(0,0,0,0.14)';
+        });
+        card.addEventListener('mouseleave', () => {
+            card.style.transform   = '';
+            card.style.transition  = 'transform 0.4s ease, box-shadow 0.4s ease';
+            card.style.boxShadow   = '';
+        });
     });
 }
 
@@ -540,27 +611,35 @@ function initHeroAnimation() {
 
     let frameIndex = 0;
     let direction = 1;
+    let rafId = null;
+    let lastTime = 0;
 
     function startAnimation() {
-        requestAnimationFrame(updateFrame);
+        if (!rafId) rafId = requestAnimationFrame(updateFrame);
     }
 
-    function updateFrame() {
-        render();
+    function stopAnimation() {
+        if (rafId) { cancelAnimationFrame(rafId); rafId = null; }
+    }
 
-        frameIndex += direction;
-
-        // Loop back and forth for a "smooth" transition feel
-        if (frameIndex >= frameCount - 1) {
-            direction = -1;
-        } else if (frameIndex <= 0) {
-            direction = 1;
+    function updateFrame(ts) {
+        if (ts - lastTime >= 40) { // ~25 FPS
+            lastTime = ts;
+            render();
+            frameIndex += direction;
+            if (frameIndex >= frameCount - 1) direction = -1;
+            else if (frameIndex <= 0) direction = 1;
         }
-
-        setTimeout(() => {
-            requestAnimationFrame(updateFrame);
-        }, 40); // ~25 FPS
+        rafId = requestAnimationFrame(updateFrame);
     }
+
+    const visibilityObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) startAnimation();
+            else stopAnimation();
+        });
+    }, { threshold: 0 });
+    visibilityObserver.observe(canvas);
 
     function render() {
         const img = images[frameIndex];
@@ -712,26 +791,34 @@ function initWomenMakersAnimation() {
         ctx.drawImage(img, dx, dy, dw, dh);
     }
 
+    let makersRafId = null;
+    let makersLastTime = 0;
+
+    function tick(ts) {
+        if (ts - makersLastTime > 40) {
+            makersLastTime = ts;
+            render(frameIndex);
+            frameIndex += direction;
+            if (frameIndex >= frameCount - 1) direction = -1;
+            if (frameIndex <= 0) direction = 1;
+        }
+        makersRafId = requestAnimationFrame(tick);
+    }
+
+    function startMakers() { if (!makersRafId) makersRafId = requestAnimationFrame(tick); }
+    function stopMakers() { if (makersRafId) { cancelAnimationFrame(makersRafId); makersRafId = null; } }
+
+    const makersObserver = new IntersectionObserver(entries => {
+        entries.forEach(e => { if (e.isIntersecting) startMakers(); else stopMakers(); });
+    }, { threshold: 0 });
+    makersObserver.observe(canvas);
+
     for (let i = 0; i < frameCount; i++) {
         const img = new Image();
         img.src = framePath(i);
         img.onload = () => {
             loaded++;
-            if (loaded === frameCount) {
-                resize();
-                let lastTime = 0;
-                function tick(ts) {
-                    if (ts - lastTime > 40) {
-                        lastTime = ts;
-                        render(frameIndex);
-                        frameIndex += direction;
-                        if (frameIndex >= frameCount - 1) direction = -1;
-                        if (frameIndex <= 0) direction = 1;
-                    }
-                    requestAnimationFrame(tick);
-                }
-                requestAnimationFrame(tick);
-            }
+            if (loaded === frameCount) resize();
         };
         images.push(img);
     }
@@ -791,4 +878,407 @@ function initContactForm() {
         const subjectField = form.querySelector('#subject');
         if (subjectField) subjectField.value = subject;
     }
+}
+
+/**
+ * Project accordion — one-at-a-time, aria-expanded, max-height, keyboard accessible
+ */
+function initProjectAccordion() {
+    const triggers = document.querySelectorAll('.project-card__accordion-trigger');
+    if (!triggers.length) return;
+
+    const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    function openPanel(trigger, panel) {
+        trigger.setAttribute('aria-expanded', 'true');
+        panel.setAttribute('aria-hidden', 'false');
+        if (prefersReduced) {
+            panel.style.maxHeight = 'none';
+        } else {
+            panel.style.maxHeight = panel.scrollHeight + 'px';
+        }
+    }
+
+    function closePanel(trigger, panel) {
+        trigger.setAttribute('aria-expanded', 'false');
+        panel.setAttribute('aria-hidden', 'true');
+        panel.style.maxHeight = '0';
+    }
+
+    function closeAll() {
+        triggers.forEach(t => {
+            const p = t.closest('.project-card').querySelector('.project-card__panel');
+            if (p) closePanel(t, p);
+        });
+    }
+
+    triggers.forEach(trigger => {
+        const card = trigger.closest('.project-card');
+        const panel = card && card.querySelector('.project-card__panel');
+        if (!panel) return;
+
+        trigger.addEventListener('click', () => {
+            const isOpen = trigger.getAttribute('aria-expanded') === 'true';
+            closeAll();
+            if (!isOpen) openPanel(trigger, panel);
+        });
+
+        trigger.addEventListener('keydown', e => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                trigger.click();
+            }
+        });
+    });
+}
+
+/**
+ * Project filter bar — data-category matching, hides unmatched cards
+ */
+function initProjectFilter() {
+    const filterBtns = document.querySelectorAll('.proj-filter__btn');
+    if (!filterBtns.length) return;
+
+    const cards = document.querySelectorAll('.project-card[data-category]');
+    const threads = document.querySelectorAll('.project-thread');
+
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            filterBtns.forEach(b => b.classList.remove('is-active'));
+            btn.classList.add('is-active');
+
+            const filter = btn.getAttribute('data-filter');
+            cards.forEach(card => {
+                if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                    card.removeAttribute('hidden');
+                    card.style.display = '';
+                } else {
+                    card.setAttribute('hidden', '');
+                    card.style.display = 'none';
+                }
+            });
+
+            threads.forEach(t => {
+                t.style.display = filter === 'all' ? '' : 'none';
+            });
+        });
+    });
+}
+
+/**
+ * Product Detail Gallery — built from LITTLE_JOYS_GALLERY data, with dots + arrows
+ */
+function initProductGallery() {
+    const main = document.getElementById('pd-gallery-main');
+    const dotsContainer = document.getElementById('pd-gallery-dots');
+    const counter = document.getElementById('pd-gallery-counter');
+    if (!main || !dotsContainer) return;
+
+    const galleryData = window.LITTLE_JOYS_GALLERY || [];
+    if (!galleryData.length) return;
+
+    // Inject images into the main container (before the nav buttons)
+    const prevBtn = document.getElementById('pd-prev');
+    const nextBtn = document.getElementById('pd-next');
+
+    galleryData.forEach((item, i) => {
+        const img = document.createElement('img');
+        img.src = item.src;
+        img.alt = item.alt;
+        if (i === 0) img.classList.add('is-active');
+        main.insertBefore(img, prevBtn);
+    });
+
+    // Build dots
+    galleryData.forEach((_, i) => {
+        const dot = document.createElement('button');
+        dot.className = 'pd__gallery-dot' + (i === 0 ? ' is-active' : '');
+        dot.setAttribute('role', 'tab');
+        dot.setAttribute('aria-selected', i === 0 ? 'true' : 'false');
+        dot.setAttribute('aria-label', `Image ${i + 1}`);
+        dot.dataset.index = i;
+        dotsContainer.appendChild(dot);
+    });
+
+    const images = Array.from(main.querySelectorAll('img'));
+    const dots = Array.from(dotsContainer.querySelectorAll('.pd__gallery-dot'));
+    let current = 0;
+
+    if (counter) counter.textContent = `1 / ${images.length}`;
+
+    function goTo(index) {
+        images[current].classList.remove('is-active');
+        dots[current].classList.remove('is-active');
+        dots[current].setAttribute('aria-selected', 'false');
+        current = (index + images.length) % images.length;
+        images[current].classList.add('is-active');
+        dots[current].classList.add('is-active');
+        dots[current].setAttribute('aria-selected', 'true');
+        if (counter) counter.textContent = `${current + 1} / ${images.length}`;
+    }
+
+    dots.forEach((dot, i) => dot.addEventListener('click', () => goTo(i)));
+    if (prevBtn) prevBtn.addEventListener('click', () => goTo(current - 1));
+    if (nextBtn) nextBtn.addEventListener('click', () => goTo(current + 1));
+
+    // Auto-advance, pause on hover
+    let autoTimer = setInterval(() => goTo(current + 1), 4000);
+    main.addEventListener('pointerenter', () => clearInterval(autoTimer));
+    main.addEventListener('pointerleave', () => {
+        autoTimer = setInterval(() => goTo(current + 1), 4000);
+    });
+
+    // Swipe support on touch
+    let touchStartX = 0;
+    main.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; }, { passive: true });
+    main.addEventListener('touchend', e => {
+        const diff = touchStartX - e.changedTouches[0].clientX;
+        if (Math.abs(diff) > 40) goTo(diff > 0 ? current + 1 : current - 1);
+    }, { passive: true });
+}
+
+/**
+ * Product Catalogue — renders grid from window.PRODUCTS
+ */
+function initProductCatalogue() {
+    const grid = document.getElementById('catalogue-grid');
+    if (!grid || !window.PRODUCTS) return;
+
+    const arrowSvg = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>`;
+
+    grid.innerHTML = window.PRODUCTS.map(p => {
+        const wideClass = p.wide ? ' catalogue__card-wide' : '';
+        const badgeText = p.badge ? `${p.badge} · ${p.type}` : p.type;
+        const isExternal = p.cardLink.startsWith('http');
+        const externalAttr = isExternal ? ' target="_blank" rel="noopener"' : '';
+        const orderMeta = p.wide
+            ? `<a href="${p.orderLink}" target="_blank" rel="noopener" class="catalogue-card__link">Order on Facebook ${arrowSvg}</a>`
+            : '';
+
+        return `
+        <div class="${wideClass.trim()}">
+            <a href="${p.cardLink}" class="product-card--cinematic" aria-label="${p.name}"${externalAttr}>
+                <img src="${p.image}" alt="${p.name} — ${p.type}" class="product-card__img" loading="lazy">
+                <div class="product-card__overlay">
+                    <div class="product-card__tag">${badgeText}</div>
+                    <h3 class="product-card__name">${p.name}</h3>
+                    <span class="product-card__cta">${p.orderLabel} ${arrowSvg}</span>
+                </div>
+            </a>
+            <div class="catalogue-card__meta">
+                <div>
+                    <div class="catalogue-card__name">${p.name}</div>
+                    <div class="catalogue-card__sub">${p.tagline}</div>
+                </div>
+                ${orderMeta}
+            </div>
+        </div>`;
+    }).join('');
+}
+
+/**
+ * Scroll-to-top button — appears after 400px scroll
+ */
+function initScrollTop() {
+    const btn = document.getElementById('scroll-top');
+    if (!btn) return;
+    window.addEventListener('scroll', () => {
+        btn.classList.toggle('scroll-top--visible', window.scrollY > 400);
+    }, { passive: true });
+    btn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+}
+
+/**
+ * Story scroll — entry animation for sticky beat sections
+ */
+function initStoryScroll() {
+    const beats = document.querySelectorAll('.story-beat:not(:first-child)');
+    if (!beats.length) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-entering');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.15 });
+
+    beats.forEach(beat => observer.observe(beat));
+}
+
+/* ========================================
+   JSON-DRIVEN CONTENT
+   NOTE: fetch() requires a web server.
+   Local dev: run  npx serve .  or  python -m http.server 8080
+   Opening index.html directly as file:// will NOT load JSON data.
+   ======================================== */
+
+/**
+ * Shared fetch helper — returns parsed JSON or null on failure.
+ */
+function loadData(url) {
+    return fetch(url)
+        .then(r => {
+            if (!r.ok) throw new Error(`HTTP ${r.status}`);
+            return r.json();
+        })
+        .catch(err => {
+            console.warn(
+                `[Goppo Guro] Could not load ${url}: ${err.message}\n` +
+                'Run the site through a server (npx serve .) — file:// does not support fetch.'
+            );
+            return null;
+        });
+}
+
+/**
+ * Hero stats — index.html
+ * Renders <div class="hero__stat"> elements into #hero-stats from data/stats.json
+ */
+function initStatsFromData() {
+    const container = document.getElementById('hero-stats');
+    if (!container) return;
+
+    loadData('data/stats.json').then(data => {
+        if (!data) return;
+        container.innerHTML = data.hero.map(s => `
+            <div class="hero__stat">
+                <span class="hero__stat-number">${s.number}</span>
+                <span class="hero__stat-label">${s.label}</span>
+            </div>`).join('');
+    });
+}
+
+/**
+ * Publications page — publications.html
+ * Renders featured article into #pub-featured-container and
+ * grid cards into #pub-grid from data/publications.json.
+ * Re-wires the filter buttons after render.
+ */
+function initPublicationsFromData() {
+    const featuredWrap = document.getElementById('pub-featured-container');
+    const grid = document.getElementById('pub-grid');
+    if (!featuredWrap && !grid) return;
+
+    loadData('data/publications.json').then(data => {
+        if (!data) return;
+
+        // Featured article
+        if (featuredWrap && data.featured) {
+            const f = data.featured;
+            featuredWrap.innerHTML = `
+                <article class="pub-featured">
+                    <div class="pub-featured__image">
+                        <img src="${f.image}" alt="${f.imageAlt}" loading="lazy">
+                    </div>
+                    <div class="pub-featured__content">
+                        <span class="pub-card__category">${f.category}</span>
+                        <h2 class="pub-featured__title">${f.title}</h2>
+                        <p class="pub-featured__excerpt">${f.excerpt}</p>
+                        <div class="pub-card__meta">
+                            <time class="pub-card__date">${f.date}</time>
+                        </div>
+                        <a href="${f.url}" class="btn btn--primary" style="margin-top: var(--space-4);">Read the Full Essay</a>
+                    </div>
+                </article>`;
+        }
+
+        // Grid cards
+        if (grid && data.articles) {
+            grid.innerHTML = data.articles.map(a => `
+                <article class="pub-card product-card-preview" data-category="${a.category}">
+                    <div class="product-card-preview__image">
+                        <img src="${a.image}" alt="${a.imageAlt}" loading="lazy">
+                    </div>
+                    <div class="product-card-preview__content">
+                        <span class="pub-card__category">${a.category.charAt(0).toUpperCase() + a.category.slice(1)}</span>
+                        <h3 class="product-card-preview__title">${a.title}</h3>
+                        <p class="pub-card__excerpt">${a.excerpt}</p>
+                        <div class="pub-card__meta">
+                            <time class="pub-card__date">${a.date}</time>
+                        </div>
+                        <a href="${a.url}" class="btn btn--text">Read</a>
+                    </div>
+                </article>`).join('');
+
+            // Re-wire filter buttons now that cards exist
+            initPublicationsFilter();
+        }
+    });
+}
+
+/**
+ * Team / Founder sections — about.html
+ * Renders founder bio into #founder-content and team description into #team-content.
+ * Also updates #founder-photo and #team-photo src/alt.
+ */
+function initTeamFromData() {
+    const founderContent = document.getElementById('founder-content');
+    const teamContent = document.getElementById('team-content');
+    if (!founderContent && !teamContent) return;
+
+    loadData('data/team.json').then(data => {
+        if (!data) return;
+
+        if (founderContent && data.founder) {
+            const f = data.founder;
+            const founderPhoto = document.getElementById('founder-photo');
+            if (founderPhoto) {
+                founderPhoto.src = f.image;
+                founderPhoto.alt = f.imageAlt;
+            }
+            founderContent.innerHTML = `
+                <span class="section-tagline">${f.tagline}</span>
+                <h2 class="section-title">${f.heading.replace('Quiet Concern', '<span class="gradient-text">Quiet Concern</span>')}</h2>
+                ${f.bio.map((p, i) => `<p class="section-text"${i > 0 ? ' style="margin-top: var(--space-4);"' : ''}>${p}</p>`).join('')}
+                <blockquote class="pull-quote" style="margin-top: var(--space-6);">
+                    <p class="pull-quote__text">"${f.quote}"</p>
+                    <cite class="pull-quote__attribution">— ${f.name}, ${f.role}</cite>
+                </blockquote>`;
+        }
+
+        if (teamContent && data.team) {
+            const t = data.team;
+            const teamPhoto = document.getElementById('team-photo');
+            if (teamPhoto) {
+                teamPhoto.src = t.image;
+                teamPhoto.alt = t.imageAlt;
+            }
+            teamContent.innerHTML = `
+                <span class="section-tagline">${t.tagline}</span>
+                <h2 class="section-title">${t.heading.replace('Loud Bunch', '<span class="gradient-text">Loud Bunch</span>')}</h2>
+                ${t.description.map((p, i) => `<p class="section-text"${i > 0 ? ' style="margin-top: var(--space-4);"' : ''}>${p}</p>`).join('')}`;
+        }
+    });
+}
+
+/**
+ * Products page — products.html
+ * Fetches data/products.json, passes to gallery and catalogue renderers.
+ * Replaces the old window.PRODUCTS / window.LITTLE_JOYS_GALLERY approach.
+ */
+function initProductsFromData() {
+    const catalogueGrid = document.getElementById('catalogue-grid');
+    const galleryMain = document.getElementById('pd-gallery-main');
+    if (!catalogueGrid && !galleryMain) return;
+
+    loadData('data/products.json').then(data => {
+        if (!data) return;
+
+        // Gallery — inject data into globals and init
+        if (galleryMain && data.featured_gallery) {
+            window.LITTLE_JOYS_GALLERY = data.featured_gallery;
+        }
+        initProductGallery();
+
+        // Catalogue grid
+        if (catalogueGrid && data.catalogue) {
+            window.PRODUCTS = data.catalogue;
+        }
+        initProductCatalogue();
+    });
 }

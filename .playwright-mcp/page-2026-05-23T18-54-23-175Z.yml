@@ -1,0 +1,248 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - link "Goppo Guro Logo Goppo Guro" [ref=e4] [cursor=pointer]:
+        - /url: index.html
+        - img "Goppo Guro Logo" [ref=e5]
+        - generic [ref=e6]: Goppo Guro
+      - list [ref=e7]:
+        - listitem [ref=e8]:
+          - link "Home" [ref=e9] [cursor=pointer]:
+            - /url: index.html
+        - listitem [ref=e10]:
+          - generic [ref=e11]:
+            - link "Programme" [ref=e12] [cursor=pointer]:
+              - /url: programme.html
+            - button "Open Programme submenu" [ref=e13] [cursor=pointer]:
+              - img [ref=e14]
+          - menu:
+            - menuitem "All Programmes"
+            - menuitem "Creative Learning Programme"
+            - menuitem "Women Makers Empowerment"
+            - menuitem "Golpoka Club"
+            - menuitem "Podcast"
+        - listitem [ref=e16]:
+          - generic [ref=e17]:
+            - link "Project" [ref=e18] [cursor=pointer]:
+              - /url: projects.html
+            - button "Open Project submenu" [ref=e19] [cursor=pointer]:
+              - img [ref=e20]
+          - menu:
+            - menuitem "Goppoguro Studio"
+            - menuitem "Golpoka Club"
+            - menuitem "Little Joys"
+        - listitem [ref=e22]:
+          - link "Product" [ref=e23] [cursor=pointer]:
+            - /url: products.html
+        - listitem [ref=e24]:
+          - link "Publications" [ref=e25] [cursor=pointer]:
+            - /url: publications.html
+        - listitem [ref=e26]:
+          - link "About Us" [ref=e27] [cursor=pointer]:
+            - /url: about.html
+        - listitem [ref=e28]:
+          - link "Gallery" [ref=e29] [cursor=pointer]:
+            - /url: gallery.html
+        - listitem [ref=e30]:
+          - link "Contact" [ref=e31] [cursor=pointer]:
+            - /url: contact.html
+  - main [ref=e32]:
+    - generic [ref=e34]:
+      - generic [ref=e35]: What We Do
+      - heading "Different Programmes. One Purpose." [level=1] [ref=e36]:
+        - text: Different Programmes.
+        - text: One Purpose.
+      - paragraph [ref=e37]: "At Goppo Guro, every programme is rooted in the same belief: creativity is not a talent — it is a right. We build spaces where children learn, women create, and communities flourish."
+      - generic [ref=e38]:
+        - link "Partner with Us" [ref=e39] [cursor=pointer]:
+          - /url: contact.html?subject=Programme%20Partnership
+        - link "See Our Impact" [ref=e40] [cursor=pointer]:
+          - /url: "#impact"
+    - generic [ref=e43]:
+      - generic [ref=e44]:
+        - img "GCLP workshop session with children" [ref=e45]
+        - img "Children engaged in storytelling activity" [ref=e46]
+      - generic [ref=e47]:
+        - generic [ref=e48]:
+          - generic [ref=e49]: "01"
+          - generic [ref=e50]: Education
+        - heading "Creative Learning Programme" [level=2] [ref=e51]
+        - paragraph [ref=e52]: The Goppoguro Creative Learning Programme (GCLP) brings weekly paper-based workshops into schools — turning classrooms into spaces of storytelling, creative making, and joyful expression. Children don't just learn about creativity; they live it.
+        - paragraph [ref=e53]: Built on the 4P Framework — Projects, Passion, Peers, Play — GCLP equips educators and children with the tools, materials, and confidence to explore their inner worlds through paper. Each session ends with a creative exhibition where children celebrate what they have made.
+        - generic [ref=e54]:
+          - generic [ref=e55]:
+            - generic [ref=e56]: "6"
+            - generic [ref=e57]: Schools Piloted
+          - generic [ref=e58]:
+            - generic [ref=e59]: "20"
+            - generic [ref=e60]: Sessions Run
+          - generic [ref=e61]:
+            - generic [ref=e62]: 2,000
+            - generic [ref=e63]: Students Reached
+          - generic [ref=e64]:
+            - generic [ref=e65]: "4"
+            - generic [ref=e66]: Pilot Schools Continuing
+        - link "Learn About GCLP" [ref=e68] [cursor=pointer]:
+          - /url: gclp.html
+    - generic [ref=e71]:
+      - generic [ref=e72]:
+        - generic [ref=e73]:
+          - generic [ref=e74]: "02"
+          - generic [ref=e75]: Empowerment
+        - heading "Women Makers" [level=2] [ref=e76]
+        - paragraph [ref=e77]: The Women Makers Programme is the heartbeat behind Little Joys. Women artisans across communities fold tiny paper objects by hand — hearts, stars, birds, butterflies — earning flexible, fair income from their homes while building craftsmanship and quiet confidence.
+        - paragraph [ref=e78]: Every fold is an act of care. Every purchase funds both the maker's livelihood and a child's education. No factories. No machines. Only time, patience, and human hands.
+        - blockquote [ref=e79]:
+          - paragraph [ref=e80]: "\"Small folds. Meaningful work. Quiet empowerment.\""
+        - generic [ref=e81]:
+          - generic [ref=e82]:
+            - generic [ref=e83]: "28"
+            - generic [ref=e84]: Artisans in the Network
+          - generic [ref=e85]:
+            - generic [ref=e86]: 1,200
+            - generic [ref=e87]: Jars Handcrafted
+        - link "Meet the Makers" [ref=e89] [cursor=pointer]:
+          - /url: women-empowerment.html
+      - generic [ref=e90]:
+        - img "Woman artisan folding origami by hand" [ref=e91]
+        - img "Handcrafted Little Joys paper objects" [ref=e92]
+    - generic [ref=e95]:
+      - generic [ref=e96]:
+        - img "Golpoka Club monthly creative box" [ref=e97]
+        - img "Child exploring Golpoka Club activities" [ref=e98]
+      - generic [ref=e99]:
+        - generic [ref=e100]:
+          - generic [ref=e101]: "03"
+          - generic [ref=e102]: Children
+        - heading "Golpoka Club" [level=2] [ref=e103]
+        - paragraph [ref=e104]: Golpoka Club is a creative membership programme for curious children aged 5+. Every month, members receive a thoughtfully curated box filled with storybooks, craft kits, activity materials, storytelling games, and imagination challenges.
+        - paragraph [ref=e105]: More than a subscription — Golpoka Club is a growing community where children become makers, storytellers, dreamers, and young creators. Members join competitions, exhibitions, and publications that celebrate their imagination.
+        - paragraph [ref=e106]: "\"Small stories can grow big imaginations.\""
+        - generic [ref=e107]:
+          - generic [ref=e108]: Ages 5+
+          - generic [ref=e110]: Monthly Creative Box
+          - generic [ref=e112]: Community Events
+        - link "Join the Club" [ref=e114] [cursor=pointer]:
+          - /url: golpoka-club.html
+    - generic [ref=e116]:
+      - generic [ref=e117]:
+        - generic [ref=e118]: Across All Programmes
+        - heading "Our Collective Impact" [level=2] [ref=e119]
+        - paragraph [ref=e120]: Numbers that represent real people, real change.
+      - generic [ref=e121]:
+        - generic [ref=e122]:
+          - generic [ref=e123]: "20"
+          - generic [ref=e124]: Schools & Communities
+        - generic [ref=e125]:
+          - generic [ref=e126]: 2,000
+          - generic [ref=e127]: Students Reached
+        - generic [ref=e128]:
+          - generic [ref=e129]: "28"
+          - generic [ref=e130]: Women Artisans
+        - generic [ref=e131]:
+          - generic [ref=e132]: 1,200
+          - generic [ref=e133]: Jars Handcrafted & Sold
+    - generic [ref=e135]:
+      - paragraph [ref=e136]: "\"Play, Paper, and Pause — a philosophy that quietly changes how we learn, create, and connect.\""
+      - text: — Goppo Guro
+    - generic [ref=e138]:
+      - generic [ref=e139]:
+        - generic [ref=e140]: Our Philosophy
+        - heading "Why These Programmes Exist" [level=2] [ref=e141]
+      - generic [ref=e142]:
+        - generic [ref=e143]:
+          - heading "Creativity is a Right" [level=3] [ref=e144]
+          - paragraph [ref=e145]: We believe every child deserves access to creative expression, not just those in well-resourced schools. GCLP takes paper and play directly into classrooms that need it most.
+        - generic [ref=e146]:
+          - heading "Dignity through Making" [level=3] [ref=e147]
+          - paragraph [ref=e148]: Handcraft is not a lesser form of work. The Women Makers Programme recognizes patience, skill, and care as the foundations of meaningful livelihood.
+        - generic [ref=e149]:
+          - heading "Imagination Shapes the Future" [level=3] [ref=e150]
+          - paragraph [ref=e151]: Golpoka Club exists because the children who imagine boldly today become the curious, creative, and confident humans the world needs tomorrow.
+    - generic [ref=e153]:
+      - generic [ref=e154]: Get Involved
+      - heading "Ready to be Part of This?" [level=2] [ref=e155]
+      - paragraph [ref=e156]: Whether you're a school, a parent, a community partner, a donor, or someone who simply believes in creativity as a force for good — there is a place for you here.
+      - generic [ref=e157]:
+        - link "Partner with Us" [ref=e158] [cursor=pointer]:
+          - /url: contact.html?subject=Programme%20Partnership
+        - link "Ways to Get Involved" [ref=e159] [cursor=pointer]:
+          - /url: get-involved.html
+  - contentinfo [ref=e160]:
+    - generic [ref=e161]:
+      - generic [ref=e162]:
+        - generic [ref=e163]:
+          - img "Goppo Guro" [ref=e164]
+          - paragraph [ref=e165]: A Space for Play, Paper, and Pause
+          - paragraph [ref=e166]: Creating space for curiosity, connection, and shared discovery through handcrafted paper experiences.
+          - link "Facebook" [ref=e168] [cursor=pointer]:
+            - /url: https://www.facebook.com/goppoguro
+            - img [ref=e169]
+        - navigation [ref=e171]:
+          - heading "Navigate" [level=4] [ref=e172]
+          - list [ref=e173]:
+            - listitem [ref=e174]:
+              - link "Home" [ref=e175] [cursor=pointer]:
+                - /url: index.html
+            - listitem [ref=e176]:
+              - link "Programme" [ref=e177] [cursor=pointer]:
+                - /url: programme.html
+            - listitem [ref=e178]:
+              - link "Project" [ref=e179] [cursor=pointer]:
+                - /url: creative-studio-network.html
+            - listitem [ref=e180]:
+              - link "Product" [ref=e181] [cursor=pointer]:
+                - /url: products.html
+            - listitem [ref=e182]:
+              - link "Publications" [ref=e183] [cursor=pointer]:
+                - /url: publications.html
+            - listitem [ref=e184]:
+              - link "About Us" [ref=e185] [cursor=pointer]:
+                - /url: about.html
+            - listitem [ref=e186]:
+              - link "Gallery" [ref=e187] [cursor=pointer]:
+                - /url: gallery.html
+            - listitem [ref=e188]:
+              - link "Contact" [ref=e189] [cursor=pointer]:
+                - /url: contact.html
+        - navigation [ref=e190]:
+          - heading "Explore" [level=4] [ref=e191]
+          - paragraph [ref=e192]: Programme
+          - list [ref=e193]:
+            - listitem [ref=e194]:
+              - link "Creative Learning (GCLP)" [ref=e195] [cursor=pointer]:
+                - /url: gclp.html
+            - listitem [ref=e196]:
+              - link "Women Makers" [ref=e197] [cursor=pointer]:
+                - /url: women-empowerment.html
+            - listitem [ref=e198]:
+              - link "Golpoka Club" [ref=e199] [cursor=pointer]:
+                - /url: golpoka-club.html
+            - listitem [ref=e200]:
+              - link "Podcast" [ref=e201] [cursor=pointer]:
+                - /url: podcast.html
+          - paragraph [ref=e202]: Project
+          - list [ref=e203]:
+            - listitem [ref=e204]:
+              - link "Goppoguro Studio" [ref=e205] [cursor=pointer]:
+                - /url: creative-studio-network.html
+            - listitem [ref=e206]:
+              - link "Golpoka Club" [ref=e207] [cursor=pointer]:
+                - /url: golpoka-club.html
+            - listitem [ref=e208]:
+              - link "Little Joys" [ref=e209] [cursor=pointer]:
+                - /url: little-joys.html
+        - generic [ref=e210]:
+          - heading "Stay Connected" [level=4] [ref=e211]
+          - paragraph [ref=e212]: Get updates on new products and impact stories.
+          - generic [ref=e213]:
+            - textbox "Your email" [ref=e214]
+            - button "Subscribe" [ref=e215] [cursor=pointer]
+      - generic [ref=e216]:
+        - generic [ref=e217]: SDG 1
+        - generic [ref=e218]: SDG 4
+        - generic [ref=e219]: SDG 8
+        - generic [ref=e220]: SDG 12
+      - generic [ref=e221]:
+        - paragraph [ref=e222]: Handmade in Bangladesh · © 2026 Goppo Guro. All rights reserved.
+        - paragraph [ref=e223]: Every purchase supports children's welfare.

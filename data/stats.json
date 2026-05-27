@@ -1,0 +1,8 @@
+{
+  "_note": "Hero impact stats shown on the index.html homepage. Edit numbers and labels here.",
+  "hero": [
+    { "number": "500+", "label": "Children Supported" },
+    { "number": "10K+", "label": "Joys Shared" },
+    { "number": "50+",  "label": "Partner Schools" }
+  ]
+}

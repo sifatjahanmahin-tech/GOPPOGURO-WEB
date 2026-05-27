@@ -1,0 +1,471 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - link "Goppo Guro Logo Goppo Guro" [ref=e4] [cursor=pointer]:
+        - /url: index.html
+        - img "Goppo Guro Logo" [ref=e5]
+        - generic [ref=e6]: Goppo Guro
+      - list [ref=e7]:
+        - listitem [ref=e8]:
+          - link "Home" [ref=e9] [cursor=pointer]:
+            - /url: index.html
+        - listitem [ref=e10]:
+          - generic [ref=e11]:
+            - link "Programme" [ref=e12] [cursor=pointer]:
+              - /url: programme.html
+            - button "Open Programme submenu" [ref=e13] [cursor=pointer]:
+              - img [ref=e14]
+          - menu:
+            - menuitem "All Programmes"
+            - menuitem "Creative Learning Programme"
+            - menuitem "Women Makers Empowerment"
+            - menuitem "Golpoka Club"
+            - menuitem "Podcast"
+        - listitem [ref=e16]:
+          - generic [ref=e17]:
+            - link "Project" [ref=e18] [cursor=pointer]:
+              - /url: projects.html
+            - button "Open Project submenu" [ref=e19] [cursor=pointer]:
+              - img [ref=e20]
+          - menu:
+            - menuitem "Goppoguro Studio"
+            - menuitem "Golpoka Club"
+            - menuitem "Little Joys"
+        - listitem [ref=e22]:
+          - link "Product" [ref=e23] [cursor=pointer]:
+            - /url: products.html
+        - listitem [ref=e24]:
+          - link "Publications" [ref=e25] [cursor=pointer]:
+            - /url: publications.html
+        - listitem [ref=e26]:
+          - link "About Us" [ref=e27] [cursor=pointer]:
+            - /url: about.html
+        - listitem [ref=e28]:
+          - link "Gallery" [ref=e29] [cursor=pointer]:
+            - /url: gallery.html
+        - listitem [ref=e30]:
+          - link "Contact" [ref=e31] [cursor=pointer]:
+            - /url: contact.html
+  - main [ref=e32]:
+    - generic [ref=e34]:
+      - article [ref=e35]:
+        - generic [ref=e36]: Structured Creative Development
+        - heading "Creative Studio Network" [level=1] [ref=e37]:
+          - text: Creative Studio
+          - text: Network
+        - paragraph [ref=e38]: Where Imagination Becomes Action — a growing chain of neighborhood creative hubs designed to help children think, create, and express beyond textbooks.
+        - generic [ref=e39]:
+          - generic [ref=e40]:
+            - generic [ref=e41]: ✕
+            - generic [ref=e42]: This is not tuition.
+          - generic [ref=e43]:
+            - generic [ref=e44]: ✕
+            - generic [ref=e45]: This is not daycare.
+          - generic [ref=e46]:
+            - generic [ref=e47]: ✓
+            - generic [ref=e48]: This is structured creative development.
+        - generic [ref=e49]:
+          - link "Learn More" [ref=e50] [cursor=pointer]:
+            - /url: https://www.facebook.com/goppoguro
+            - generic [ref=e51]: Learn More
+            - img [ref=e52]
+          - link "Back to Home" [ref=e54] [cursor=pointer]:
+            - /url: index.html
+      - figure [ref=e55]:
+        - generic [ref=e56]:
+          - img "Children engaged in creative activities at a Goppoguro Creative Studio" [ref=e57]
+          - generic [ref=e58]: Creative Hub
+    - generic [ref=e60]:
+      - generic [ref=e61]:
+        - generic [ref=e62]: What Happens Inside
+        - heading "The Creative Journey" [level=2] [ref=e63]
+        - paragraph [ref=e64]: Every studio follows a simple but powerful journey — a path from imagination to exhibition.
+      - generic [ref=e65]:
+        - article [ref=e66]:
+          - generic [ref=e67]: "01"
+          - generic [ref=e68]:
+            - heading "Storytelling" [level=3] [ref=e69]
+            - paragraph [ref=e70]: Children listen and imagine — sparks of story light up curiosity.
+        - img [ref=e72]
+        - article [ref=e74]:
+          - generic [ref=e75]: "02"
+          - generic [ref=e76]:
+            - heading "Expression" [level=3] [ref=e77]
+            - paragraph [ref=e78]: They share ideas confidently — finding their voice through creativity.
+        - img [ref=e80]
+        - article [ref=e82]:
+          - generic [ref=e83]: "03"
+          - generic [ref=e84]:
+            - heading "Reflection" [level=3] [ref=e85]
+            - paragraph [ref=e86]: Solving creative challenges — building with hands and minds together.
+        - img [ref=e88]
+        - article [ref=e90]:
+          - generic [ref=e91]: "04"
+          - generic [ref=e92]:
+            - heading "Workshop" [level=3] [ref=e93]
+            - paragraph [ref=e94]: Hands-on making sessions — where ideas become tangible creations.
+        - img [ref=e96]
+        - article [ref=e98]:
+          - generic [ref=e99]: "05"
+          - generic [ref=e100]:
+            - heading "Exhibition" [level=3] [ref=e101]
+            - paragraph [ref=e102]: Showcasing work publicly — creativity becomes visible, confidence becomes natural.
+    - generic [ref=e105]:
+      - article [ref=e106]:
+        - generic [ref=e107]: What Makes It Different
+        - heading "We Build Creators" [level=2] [ref=e108]
+        - paragraph [ref=e109]: We don't just sell supplies. We build creators. Every studio is a space where creativity meets structure, and children grow through guided experiences.
+        - generic [ref=e110]:
+          - generic [ref=e111]:
+            - img [ref=e113]
+            - generic [ref=e116]:
+              - heading "Guided Creative Workshops" [level=4] [ref=e117]
+              - paragraph [ref=e118]: Structured sessions that channel imagination into action
+          - generic [ref=e119]:
+            - img [ref=e121]
+            - generic [ref=e124]:
+              - heading "Activity-Based Learning" [level=4] [ref=e125]
+              - paragraph [ref=e126]: Learning by doing — hands and minds working together
+          - generic [ref=e127]:
+            - img [ref=e129]
+            - generic [ref=e132]:
+              - heading "Exhibition-Driven Motivation" [level=4] [ref=e133]
+              - paragraph [ref=e134]: Public showcases that celebrate every child's creative work
+          - generic [ref=e135]:
+            - img [ref=e137]
+            - generic [ref=e140]:
+              - heading "Curated Creative Stationery" [level=4] [ref=e141]
+              - paragraph [ref=e142]: Premium Goppoguro product experience in every session
+      - figure [ref=e143]:
+        - generic [ref=e144]:
+          - img "Creative stationery and workshop materials at a Goppoguro studio" [ref=e145]
+          - generic [ref=e146]: Studio Experience
+    - generic [ref=e148]:
+      - generic [ref=e149]:
+        - generic [ref=e150]: Why It Matters
+        - heading "Beyond Academics" [level=2] [ref=e151]
+        - paragraph [ref=e152]: Children today need more than academic success. They need imagination, confidence, and problem-solving skills.
+      - generic [ref=e153]:
+        - article [ref=e154]:
+          - generic [ref=e155]: 💡
+          - heading "Imagination" [level=3] [ref=e156]
+          - paragraph [ref=e157]: Safe spaces where ideas flow freely, and every child's perspective is celebrated and explored.
+        - article [ref=e158]:
+          - generic [ref=e159]: 🌟
+          - heading "Confidence" [level=3] [ref=e160]
+          - paragraph [ref=e161]: Through making, sharing, and exhibiting, children discover their voice and learn to trust it.
+        - article [ref=e162]:
+          - generic [ref=e163]: 🧠
+          - heading "Problem-Solving" [level=3] [ref=e164]
+          - paragraph [ref=e165]: Creative challenges teach children to think critically, adapt, and find solutions through making.
+    - generic [ref=e168]:
+      - figure [ref=e169]:
+        - generic [ref=e170]:
+          - img "Children's creative workshop in action" [ref=e171]
+          - img "Studio materials and creative outputs" [ref=e172]
+      - article [ref=e173]:
+        - generic [ref=e174]: Growing Across Communities
+        - heading "A National Culture of Creativity" [level=2] [ref=e175]
+        - paragraph [ref=e176]: From one studio to many — we are building a national culture of creativity. Each studio operates under a standardized Goppoguro framework, ensuring consistent, high-quality creative experiences for every child.
+        - generic [ref=e177]:
+          - generic [ref=e178]:
+            - generic [ref=e179]: ✨
+            - generic [ref=e180]:
+              - heading "Quality Facilitation" [level=4] [ref=e181]
+              - paragraph [ref=e182]: Expert-led creative sessions
+          - generic [ref=e183]:
+            - generic [ref=e184]: 🛡️
+            - generic [ref=e185]:
+              - heading "Child-Safe Environment" [level=4] [ref=e186]
+              - paragraph [ref=e187]: Every space designed for safety
+          - generic [ref=e188]:
+            - generic [ref=e189]: 👩‍🏫
+            - generic [ref=e190]:
+              - heading "Trained Instructors" [level=4] [ref=e191]
+              - paragraph [ref=e192]: Certified creative facilitators
+          - generic [ref=e193]:
+            - generic [ref=e194]: 🎨
+            - generic [ref=e195]:
+              - heading "Consistent Experience" [level=4] [ref=e196]
+              - paragraph [ref=e197]: Standardized creative curriculum
+    - generic [ref=e199]:
+      - generic [ref=e200]:
+        - generic [ref=e201]: Year-Round Creativity
+        - heading "Monthly Themes" [level=2] [ref=e202]
+        - paragraph [ref=e203]: Every month brings a new world to explore. From nature to space, stories to robotics — our curriculum keeps curiosity alive all year long.
+      - generic [ref=e204]:
+        - article [ref=e205]:
+          - generic [ref=e206]: January
+          - heading "Nature & Environment" [level=3] [ref=e207]
+          - generic [ref=e208]: 🌿
+        - article [ref=e209]:
+          - generic [ref=e210]: February
+          - heading "My Dream World" [level=3] [ref=e211]
+          - generic [ref=e212]: 🌈
+        - article [ref=e213]:
+          - generic [ref=e214]: March
+          - heading "Innovation & Building" [level=3] [ref=e215]
+          - generic [ref=e216]: 💡
+        - article [ref=e217]:
+          - generic [ref=e218]: April
+          - heading "Stories of Bangladesh" [level=3] [ref=e219]
+          - generic [ref=e220]: 🏞️
+        - article [ref=e221]:
+          - generic [ref=e222]: May
+          - heading "Map & Nation" [level=3] [ref=e223]
+          - generic [ref=e224]: 🌍
+        - article [ref=e225]:
+          - generic [ref=e226]: June
+          - heading "Festival of Imagination" [level=3] [ref=e227]
+          - generic [ref=e228]: 🎨
+        - article [ref=e229]:
+          - generic [ref=e230]: July
+          - heading "Underwater Adventure" [level=3] [ref=e231]
+          - generic [ref=e232]: 🐠
+        - article [ref=e233]:
+          - generic [ref=e234]: August
+          - heading "Fun Robotics" [level=3] [ref=e235]
+          - generic [ref=e236]: 🤖
+        - article [ref=e237]:
+          - generic [ref=e238]: September
+          - heading "Puzzle & Game Lab" [level=3] [ref=e239]
+          - generic [ref=e240]: 🧩
+        - article [ref=e241]:
+          - generic [ref=e242]: October
+          - heading "Space Exploration" [level=3] [ref=e243]
+          - generic [ref=e244]: 🚀
+        - article [ref=e245]:
+          - generic [ref=e246]: November
+          - heading "Creative Storyboards" [level=3] [ref=e247]
+          - generic [ref=e248]: 📖
+        - article [ref=e249]:
+          - generic [ref=e250]: December
+          - heading "Year-End Carnival" [level=3] [ref=e251]
+          - generic [ref=e252]: 🎪
+      - figure "Learn · Create · Inspire" [ref=e253]:
+        - img "Goppoguro Creative Studio Monthly Themes — all 12 months illustrated"
+        - generic [ref=e254]: Learn · Create · Inspire
+    - generic [ref=e256]:
+      - generic [ref=e257]:
+        - generic [ref=e258]: Weekly Sessions
+        - heading "Session Schedule" [level=2] [ref=e259]
+        - paragraph [ref=e260]: Every day brings a different creative experience. Structured sessions designed to nurture imagination, logic, and expression.
+      - generic [ref=e261]:
+        - generic [ref=e262]:
+          - article [ref=e263]:
+            - generic [ref=e264]:
+              - generic [ref=e265]: Sunday
+              - generic [ref=e266]: 🎨
+            - heading "Coloring Lab" [level=3] [ref=e267]
+            - generic [ref=e268]:
+              - generic [ref=e269]: 3:30 – 4:30
+              - generic [ref=e270]: 4:45 – 5:45
+              - generic [ref=e271]: 6:00 – 7:00
+          - article [ref=e272]:
+            - generic [ref=e273]:
+              - generic [ref=e274]: Monday
+              - generic [ref=e275]: 🦢
+            - heading "Origami & Paper Craft" [level=3] [ref=e276]
+            - generic [ref=e277]:
+              - generic [ref=e278]: 3:30 – 4:30
+              - generic [ref=e279]: 4:45 – 5:45
+              - generic [ref=e280]: 6:00 – 7:00
+          - article [ref=e281]:
+            - generic [ref=e282]:
+              - generic [ref=e283]: Tuesday
+              - generic [ref=e284]: 🧩
+            - heading "Puzzle & Logic Hour" [level=3] [ref=e285]
+            - generic [ref=e286]:
+              - generic [ref=e287]: 3:30 – 4:30
+              - generic [ref=e288]: 4:45 – 5:45
+              - generic [ref=e289]: 6:00 – 7:00
+          - article [ref=e290]:
+            - generic [ref=e291]:
+              - generic [ref=e292]: Wednesday
+              - generic [ref=e293]: 📖
+            - heading "Story Finish Board" [level=3] [ref=e294]
+            - generic [ref=e295]:
+              - generic [ref=e296]: 3:30 – 4:30
+              - generic [ref=e297]: 4:45 – 5:45
+              - generic [ref=e298]: 6:00 – 7:00
+          - article [ref=e299]:
+            - generic [ref=e300]:
+              - generic [ref=e301]: Thursday
+              - generic [ref=e302]: 🏗️
+            - heading "Creative Builder Day" [level=3] [ref=e303]
+            - generic [ref=e304]:
+              - generic [ref=e305]: 3:30 – 4:30
+              - generic [ref=e306]: 4:45 – 5:45
+              - generic [ref=e307]: 6:00 – 7:00
+          - article [ref=e308]:
+            - generic [ref=e309]:
+              - generic [ref=e310]: Friday
+              - generic [ref=e311]: Weekend
+            - generic [ref=e312]:
+              - generic [ref=e313]:
+                - generic [ref=e314]: 11:00 – 12:30
+                - generic [ref=e315]: Story & Art Workshop
+              - generic [ref=e316]:
+                - generic [ref=e317]: 3:00 – 4:30
+                - generic [ref=e318]: Themed Workshop 🚀
+          - article [ref=e319]:
+            - generic [ref=e320]:
+              - generic [ref=e321]: Saturday
+              - generic [ref=e322]: Weekend
+            - generic [ref=e323]:
+              - generic [ref=e324]:
+                - generic [ref=e325]: 11:00 – 12:30
+                - generic [ref=e326]: Origami Masterclass
+              - generic [ref=e327]:
+                - generic [ref=e328]: 3:00 – 4:30
+                - generic [ref=e329]: Creative Challenge 💡
+        - figure:
+          - img "Goppoguro Creative Studio Weekly Session Schedule poster"
+    - generic [ref=e331]:
+      - generic [ref=e332]:
+        - generic [ref=e333]: Coming Soon
+        - heading "Golpoka Adventure-Activity Books" [level=2] [ref=e334]
+        - paragraph [ref=e335]: 6 new magical journeys for curious minds. Follow Golpoka and explore toy towns, magic, mystery, and beyond!
+      - generic [ref=e336]:
+        - figure:
+          - img "Golpoka Adventure-Activity Book Series — 6 upcoming books for curious minds"
+        - generic [ref=e337]:
+          - generic [ref=e338]: Expected This Year!
+          - generic [ref=e339]:
+            - article [ref=e340]:
+              - generic [ref=e341]: "01"
+              - heading "Toy Town Adventure" [level=3] [ref=e342]
+            - article [ref=e343]:
+              - generic [ref=e344]: "02"
+              - heading "The Magic City Quest" [level=3] [ref=e345]
+            - article [ref=e346]:
+              - generic [ref=e347]: "03"
+              - heading "Haunted Playhouse" [level=3] [ref=e348]
+            - article [ref=e349]:
+              - generic [ref=e350]: "04"
+              - heading "Color Treasure Mine" [level=3] [ref=e351]
+            - article [ref=e352]:
+              - generic [ref=e353]: "05"
+              - heading "Mystery Forest Mission" [level=3] [ref=e354]
+            - article [ref=e355]:
+              - generic [ref=e356]: "06"
+              - heading "Toy Town Adventure II" [level=3] [ref=e357]
+    - generic [ref=e360]:
+      - generic [ref=e361]:
+        - generic [ref=e362]: School Collaboration
+        - heading "Bringing Studios into Schools" [level=2] [ref=e363]
+        - paragraph [ref=e364]: We partner directly with schools to bring the Goppoguro Creative Studio experience into the classroom. Our in-school pilots integrate the 4P Framework (Projects, Passion, Peers, Play) alongside existing curricula — without replacing it.
+        - paragraph [ref=e365]: Partner schools receive full facilitation support, curated materials, and access to our exhibition calendar. Children gain structured creative time; schools gain measurable engagement outcomes.
+        - link "Bring a Studio to Your School" [ref=e366] [cursor=pointer]:
+          - /url: contact.html?subject=School%20Collaboration
+      - img "Children in a school creative studio session" [ref=e368]
+    - generic [ref=e370]:
+      - generic [ref=e371]:
+        - generic [ref=e372]: Franchise
+        - heading "Start a Studio in Your City" [level=2] [ref=e373]
+        - paragraph [ref=e374]: Become a Goppoguro Creative Studio operator. We provide everything you need to run a high-quality creative hub in your neighbourhood.
+      - generic [ref=e375]:
+        - generic [ref=e376]:
+          - heading "Full Curriculum" [level=3] [ref=e377]
+          - paragraph [ref=e378]: Ready-to-run session plans, monthly themes, and activity materials developed by our team.
+        - generic [ref=e379]:
+          - heading "Brand & Training" [level=3] [ref=e380]
+          - paragraph [ref=e381]: Onboarding training, brand identity guidelines, and ongoing support from Goppoguro headquarters.
+        - generic [ref=e382]:
+          - heading "Community Network" [level=3] [ref=e383]
+          - paragraph [ref=e384]: Join a growing network of studio operators sharing resources, ideas, and exhibition opportunities.
+      - link "Apply for Franchise" [ref=e386] [cursor=pointer]:
+        - /url: contact.html?subject=Start%20a%20Studio
+    - generic [ref=e389]:
+      - generic [ref=e390]: Our Belief
+      - heading "Every child is a creator." [level=2] [ref=e391]
+      - generic [ref=e392]:
+        - paragraph [ref=e393]: Creativity builds confidence.
+        - paragraph [ref=e394]: Confidence builds the future.
+      - generic [ref=e395]:
+        - link "Connect With Us" [ref=e396] [cursor=pointer]:
+          - /url: https://www.facebook.com/goppoguro
+          - generic [ref=e397]: Connect With Us
+          - img [ref=e398]
+        - link "Explore Goppo Guro" [ref=e400] [cursor=pointer]:
+          - /url: index.html
+          - text: Explore Goppo Guro
+          - img [ref=e401]
+  - contentinfo [ref=e403]:
+    - generic [ref=e404]:
+      - generic [ref=e405]:
+        - generic [ref=e406]:
+          - img "Goppo Guro" [ref=e407]
+          - paragraph [ref=e408]: A Space for Play, Paper, and Pause
+          - paragraph [ref=e409]: Creating space for curiosity, connection, and shared discovery through handcrafted paper experiences.
+          - link "Facebook" [ref=e411] [cursor=pointer]:
+            - /url: https://www.facebook.com/goppoguro
+            - img [ref=e412]
+        - navigation [ref=e414]:
+          - heading "Navigate" [level=4] [ref=e415]
+          - list [ref=e416]:
+            - listitem [ref=e417]:
+              - link "Home" [ref=e418] [cursor=pointer]:
+                - /url: index.html
+            - listitem [ref=e419]:
+              - link "Programme" [ref=e420] [cursor=pointer]:
+                - /url: programme.html
+            - listitem [ref=e421]:
+              - link "Project" [ref=e422] [cursor=pointer]:
+                - /url: creative-studio-network.html
+            - listitem [ref=e423]:
+              - link "Product" [ref=e424] [cursor=pointer]:
+                - /url: products.html
+            - listitem [ref=e425]:
+              - link "Publications" [ref=e426] [cursor=pointer]:
+                - /url: publications.html
+            - listitem [ref=e427]:
+              - link "About Us" [ref=e428] [cursor=pointer]:
+                - /url: about.html
+            - listitem [ref=e429]:
+              - link "Gallery" [ref=e430] [cursor=pointer]:
+                - /url: gallery.html
+            - listitem [ref=e431]:
+              - link "Contact" [ref=e432] [cursor=pointer]:
+                - /url: contact.html
+        - navigation [ref=e433]:
+          - heading "Explore" [level=4] [ref=e434]
+          - paragraph [ref=e435]: Programme
+          - list [ref=e436]:
+            - listitem [ref=e437]:
+              - link "Creative Learning (GCLP)" [ref=e438] [cursor=pointer]:
+                - /url: gclp.html
+            - listitem [ref=e439]:
+              - link "Women Makers" [ref=e440] [cursor=pointer]:
+                - /url: women-empowerment.html
+            - listitem [ref=e441]:
+              - link "Golpoka Club" [ref=e442] [cursor=pointer]:
+                - /url: golpoka-club.html
+            - listitem [ref=e443]:
+              - link "Podcast" [ref=e444] [cursor=pointer]:
+                - /url: podcast.html
+          - paragraph [ref=e445]: Project
+          - list [ref=e446]:
+            - listitem [ref=e447]:
+              - link "Goppoguro Studio" [ref=e448] [cursor=pointer]:
+                - /url: creative-studio-network.html
+            - listitem [ref=e449]:
+              - link "Golpoka Club" [ref=e450] [cursor=pointer]:
+                - /url: golpoka-club.html
+            - listitem [ref=e451]:
+              - link "Little Joys" [ref=e452] [cursor=pointer]:
+                - /url: little-joys.html
+        - generic [ref=e453]:
+          - heading "Stay Connected" [level=4] [ref=e454]
+          - paragraph [ref=e455]: Get updates on new products and impact stories.
+          - generic [ref=e456]:
+            - textbox "Your email" [ref=e457]
+            - button "Subscribe" [ref=e458] [cursor=pointer]
+      - generic [ref=e459]:
+        - generic [ref=e460]: SDG 1
+        - generic [ref=e461]: SDG 4
+        - generic [ref=e462]: SDG 8
+        - generic [ref=e463]: SDG 12
+      - generic [ref=e464]:
+        - paragraph [ref=e465]: Handmade in Bangladesh · © 2026 Goppo Guro. All rights reserved.
+        - paragraph [ref=e466]: Every purchase supports children's welfare.

@@ -4,11 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="0;url=creative-studio-network.html">
     <meta name="description"
-        content="Goppo Guro Projects - Discover our school pilot projects, community workshops, creative exhibitions, and festivals.">
+        content="Goppo Guro Projects — Goppoguro Studio Network, Golpoka Club, and Little Joys. Each project is a new way to make creativity more accessible in Bangladesh.">
     <meta name="keywords"
-        content="School Pilot projects, community workshops, art exhibitions, creative festivals, Goppo Guro projects">
+        content="Goppo Guro projects, Goppoguro Studio, Golpoka Club, Little Joys, origami Bangladesh, creative projects">
+    <meta property="og:title" content="Projects | Goppo Guro">
+    <meta property="og:description"
+        content="From origami jars to adventure books to studio networks — every project asks how creativity can reach more hands.">
+    <meta property="og:type" content="website">
     <title>Projects | Goppo Guro</title>
 
     <!-- Google Fonts -->
@@ -20,6 +23,7 @@
 
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
+<link rel="icon" href="goppoguro%20images/WhatsApp%20Image%202026-02-07%20at%2012.48.10%20AM.jpeg" type="image/jpeg">
 </head>
 
 <body>
@@ -27,7 +31,7 @@
     <header class="header" id="header">
         <nav class="nav container">
             <a href="index.html" class="nav__logo">
-                <img src="goppoguro images/WhatsApp Image 2026-02-07 at 12.48.10 AM.jpeg" alt="Goppo Guro Logo"
+                <img src="goppoguro%20images/WhatsApp%20Image%202026-02-07%20at%2012.48.10%20AM.jpeg" alt="Goppo Guro Logo"
                     class="nav__logo-img">
                 <span class="nav__logo-text">Goppo Guro</span>
             </a>
@@ -38,19 +42,21 @@
                 <span class="nav__toggle-line"></span>
             </button>
 
-                        <ul class="nav__menu" id="nav-menu">
+            <ul class="nav__menu" id="nav-menu">
                 <li class="nav__item">
                     <a href="index.html" class="nav__link">Home</a>
                 </li>
                 <li class="nav__item nav__item--dropdown" id="nav-dropdown-programme">
-                    <button class="nav__link nav__dropdown-trigger" aria-haspopup="true" aria-expanded="false"
-                        aria-controls="dropdown-programme">
-                        Programme
-                        <svg class="nav__dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" aria-hidden="true">
-                            <path d="M6 9l6 6 6-6" />
-                        </svg>
-                    </button>
+                    <div class="nav__dropdown-wrapper">
+                        <a href="programme.html" class="nav__link">Programme</a>
+                        <button class="nav__dropdown-toggle" aria-expanded="false"
+                            aria-controls="dropdown-programme" aria-label="Open Programme submenu">
+                            <svg class="nav__dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" aria-hidden="true">
+                                <path d="M6 9l6 6 6-6" />
+                            </svg>
+                        </button>
+                    </div>
                     <ul class="nav__dropdown" id="dropdown-programme" role="menu">
                         <li class="nav__dropdown-item" role="none">
                             <a href="programme.html" class="nav__dropdown-link" role="menuitem">All Programmes</a>
@@ -70,14 +76,16 @@
                     </ul>
                 </li>
                 <li class="nav__item nav__item--dropdown" id="nav-dropdown-project">
-                    <button class="nav__link nav__dropdown-trigger" aria-haspopup="true" aria-expanded="false"
-                        aria-controls="dropdown-project">
-                        Project
-                        <svg class="nav__dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" aria-hidden="true">
-                            <path d="M6 9l6 6 6-6" />
-                        </svg>
-                    </button>
+                    <div class="nav__dropdown-wrapper">
+                        <a href="projects.html" class="nav__link active">Project</a>
+                        <button class="nav__dropdown-toggle" aria-expanded="false"
+                            aria-controls="dropdown-project" aria-label="Open Project submenu">
+                            <svg class="nav__dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" aria-hidden="true">
+                                <path d="M6 9l6 6 6-6" />
+                            </svg>
+                        </button>
+                    </div>
                     <ul class="nav__dropdown" id="dropdown-project" role="menu">
                         <li class="nav__dropdown-item" role="none">
                             <a href="creative-studio-network.html" class="nav__dropdown-link" role="menuitem">Goppoguro Studio</a>
@@ -110,91 +118,656 @@
     </header>
 
     <main>
-        <!-- Page Header -->
-        <section class="section section--light" style="padding-top: var(--space-16);">
-            <div class="container text-center">
-                <span class="section-tagline">Real Impact</span>
-                <h1 class="section-title">Our <span class="gradient-text">Projects</span></h1>
-                <p class="section-description">
-                    From classrooms to public festivals, we bring play and paper to the forefront of community engagement.
+
+        <!-- ============================================================
+             SECTION 1 — Animated Hero
+        ============================================================ -->
+        <section class="proj-hero" id="proj-hero" aria-label="Projects hero">
+
+            <!-- Floating origami shapes -->
+            <div class="proj-hero__canvas" aria-hidden="true">
+                <svg class="proj-hero__shape ph-s1" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="0.8"><polygon points="50,4 96,50 50,96 4,50"/></svg>
+                <svg class="proj-hero__shape ph-s2" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="0.6"><polygon points="50,4 96,50 50,96 4,50"/></svg>
+                <svg class="proj-hero__shape ph-s3" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1"><polygon points="50,8 92,92 8,92"/></svg>
+                <svg class="proj-hero__shape ph-s4" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="0.7"><rect x="15" y="15" width="70" height="70" transform="rotate(45 50 50)"/></svg>
+                <svg class="proj-hero__shape ph-s5" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.2"><polygon points="50,4 96,50 50,96 4,50"/></svg>
+                <svg class="proj-hero__shape ph-s6" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="0.5"><polygon points="50,4 96,50 50,96 4,50"/></svg>
+                <!-- Origami crane outline (simplified) -->
+                <svg class="proj-hero__shape ph-s7" viewBox="0 0 120 80" fill="none" stroke="currentColor" stroke-width="0.8">
+                    <path d="M60,10 L90,40 L60,30 L30,40 Z"/>
+                    <path d="M60,30 L60,65"/>
+                    <path d="M60,65 L40,80 M60,65 L80,80"/>
+                    <path d="M60,10 L50,0 M60,10 L70,0"/>
+                </svg>
+                <svg class="proj-hero__shape ph-s8" viewBox="0 0 120 80" fill="none" stroke="currentColor" stroke-width="0.8">
+                    <path d="M60,10 L90,40 L60,30 L30,40 Z"/>
+                    <path d="M60,30 L60,65"/>
+                    <path d="M60,65 L40,80 M60,65 L80,80"/>
+                    <path d="M60,10 L50,0 M60,10 L70,0"/>
+                </svg>
+                <!-- Subtle grid lines -->
+                <div class="proj-hero__line proj-hero__line--v"></div>
+            </div>
+
+            <!-- Content -->
+            <div class="container proj-hero__content">
+                <span class="section-tagline proj-hero__tagline">What We Build</span>
+                <h1 class="proj-hero__title">
+                    <span class="proj-hero__word">Every</span>&#8202;<span class="proj-hero__word">Project.</span>
+                    <br>
+                    <span class="proj-hero__word proj-hero__word--light">One</span>&#8202;<span class="proj-hero__word proj-hero__word--light">Purpose.</span>
+                </h1>
+                <p class="proj-hero__desc">
+                    From origami jars to adventure books to studio networks — each project is a new way
+                    to ask the same question: how can we make creativity more accessible in Bangladesh?
                 </p>
-            </div>
-        </section>
-
-        <!-- Projects Overview -->
-        <section class="section">
-            <div class="container">
-                <div class="grid-2 align-center">
-                    <div class="section__content">
-                        <span class="section-tagline">Overview</span>
-                        <h2 class="section-title">Impact Through <span class="gradient-text">Implementation</span></h2>
-                        <p class="section-text">
-                            We don't just design theories; we implement them in the real world. 
-                            Each project is an opportunity to learn, iterate, and connect with people from all walks of life.
-                        </p>
-                    </div>
-                    <div class="section__visual">
-                        <img src="goppoguro images/WhatsApp Image 2026-02-07 at 12.49.07 AM (1).jpeg" alt="Project Overview" class="radius-lg shadow-soft">
-                    </div>
+                <div class="proj-hero__actions">
+                    <a href="#projects" class="btn btn--primary btn--large">Explore Our Projects</a>
+                    <a href="contact.html?subject=Project%20Partnership" class="btn btn--outline btn--large proj-hero__btn-outline">Partner With Us</a>
                 </div>
             </div>
-        </section>
 
-        <!-- School Pilot Projects -->
-        <section class="section section--dim" id="school-pilots">
-            <div class="container">
-                <div class="grid-2 align-center">
-                    <div class="section__visual">
-                        <img src="goppoguro images/WhatsApp Image 2026-02-07 at 12.49.07 AM.jpeg" alt="School Pilots" class="radius-lg shadow-soft">
-                    </div>
-                    <div class="section__content">
-                        <span class="section-tagline">Collaboration</span>
-                        <h2 class="section-title">School <span class="gradient-text">Pilot Projects</span></h2>
-                        <p class="section-text">
-                            Our pilots integrate our 4P framework into school curricula. These projects aim to foster collaborative play and creative confidence in students.
-                        </p>
-                    </div>
-                </div>
+            <!-- Scroll hint -->
+            <div class="proj-hero__scroll-hint" aria-hidden="true">
+                <span>Scroll</span>
+                <div class="proj-hero__scroll-line"></div>
             </div>
         </section>
 
-        <!-- Community Workshops -->
-        <section class="section" id="workshops">
-            <div class="container">
-                <div class="grid-2 align-center">
-                    <div class="section__content">
-                        <span class="section-tagline">Engagement</span>
-                        <h2 class="section-title">Community <span class="gradient-text">Workshops</span></h2>
-                        <p class="section-text">
-                            Open to all ages, our workshops are spaces where people can explore storytelling and paper-folding in a low-pressure environment.
-                        </p>
-                    </div>
-                    <div class="section__visual">
-                        <img src="goppoguro images/WhatsApp Image 2026-02-07 at 12.49.09 AM.jpeg" alt="Workshops" class="radius-lg shadow-soft">
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <!-- Creative Exhibitions & Festivals -->
-        <section class="section section--light">
+        <!-- ============================================================
+             SECTION 2 — Story Scroll (5 beats, vanilla sticky)
+        ============================================================ -->
+        <div class="story-scroll" aria-label="Our origin story">
+
+            <section class="story-beat story-beat--dim" aria-label="Beat 01 — It started with paper">
+                <div class="story-beat__inner">
+                    <span class="story-beat__beat-num">01 &mdash; Origin</span>
+                    <hr class="story-beat__hr">
+                    <h2 class="story-beat__heading">
+                        It Started<br>With Paper
+                    </h2>
+                    <hr class="story-beat__hr">
+                    <p class="story-beat__body">
+                        A single piece of paper. Folded once. Then again. The act of folding is where
+                        Goppo Guro began &mdash; not in an office, not with a plan, but with a quiet belief
+                        that something beautiful was possible.
+                    </p>
+                </div>
+            </section>
+
+            <section class="story-beat story-beat--dark" aria-label="Beat 02 — A studio was born">
+                <div class="story-beat__inner">
+                    <span class="story-beat__beat-num">02 &mdash; Studio</span>
+                    <hr class="story-beat__hr">
+                    <h2 class="story-beat__heading">
+                        A Studio<br>Was Born
+                    </h2>
+                    <hr class="story-beat__hr">
+                    <p class="story-beat__body">
+                        From a home corner, the Goppoguro Studio Network grew. What began as one
+                        creative space became a living network &mdash; bringing workshops, tools, and the
+                        permission to make into communities that needed it.
+                    </p>
+                </div>
+            </section>
+
+            <section class="story-beat story-beat--light" aria-label="Beat 03 — Stories needed telling">
+                <div class="story-beat__inner">
+                    <span class="story-beat__beat-num">03 &mdash; Stories</span>
+                    <hr class="story-beat__hr">
+                    <h2 class="story-beat__heading">
+                        Stories<br>Needed<br>Telling
+                    </h2>
+                    <hr class="story-beat__hr">
+                    <p class="story-beat__body">
+                        Children were creating. Drawing. Imagining. But their stories had nowhere to
+                        go. Golpoka Club changed that &mdash; giving every curious child a box full of
+                        materials and a community to share with.
+                    </p>
+                </div>
+            </section>
+
+            <section class="story-beat story-beat--dark" aria-label="Beat 04 — Hands found purpose">
+                <div class="story-beat__inner">
+                    <span class="story-beat__beat-num">04 &mdash; Craft</span>
+                    <hr class="story-beat__hr">
+                    <h2 class="story-beat__heading">
+                        Hands<br>Found<br>Purpose
+                    </h2>
+                    <hr class="story-beat__hr">
+                    <p class="story-beat__body">
+                        Women in the community picked up paper. And found not just a craft &mdash; but a
+                        livelihood. Every fold became income. Every jar became a child's education day.
+                        Little Joys was born.
+                    </p>
+                </div>
+            </section>
+
+            <section class="story-beat story-beat--dim" aria-label="Beat 05 — Still beginning">
+                <div class="story-beat__inner">
+                    <span class="story-beat__beat-num">05 &mdash; Now</span>
+                    <hr class="story-beat__hr">
+                    <h2 class="story-beat__heading">
+                        And We're<br>Still<br>Beginning
+                    </h2>
+                    <hr class="story-beat__hr">
+                    <p class="story-beat__body">
+                        The paper keeps folding. New projects are forming. The question was never
+                        "how much?" &mdash; it was always "what's next?" Every project you see here is
+                        an answer to that question.
+                    </p>
+                </div>
+            </section>
+
+        </div>
+
+
+        <!-- ============================================================
+             SECTION 3 — Filter bar + Project cards
+        ============================================================ -->
+        <section class="section" id="projects">
             <div class="container">
-                <header class="section-header">
-                    <span class="section-tagline">Public Arts</span>
-                    <h2 class="section-title">Exhibitions & <span class="gradient-text">Festivals</span></h2>
+
+                <header class="section-header" style="margin-bottom: var(--space-8);">
+                    <span class="section-tagline">What We've Built</span>
+                    <h2 class="section-title">Our <span class="gradient-text">Projects</span></h2>
+                    <p class="section-description" style="max-width: 560px;">
+                        Three distinct projects. One connected thread &mdash; making creativity tangible
+                        for people across Bangladesh.
+                    </p>
                 </header>
-                <div class="grid-2">
-                    <div class="card p-5" style="background: var(--color-bg-secondary); border-radius: var(--radius-lg);">
-                        <h3 class="feature-card__title">Creative Exhibitions</h3>
-                        <p>Showcasing the output of our workshops and collaborative projects to celebrate local creativity.</p>
+
+                <!-- Filter Bar -->
+                <div class="proj-filter" role="group" aria-label="Filter projects by category">
+                    <button class="proj-filter__btn is-active" data-filter="all">All</button>
+                    <button class="proj-filter__btn" data-filter="education">Education</button>
+                    <button class="proj-filter__btn" data-filter="publishing">Publishing</button>
+                    <button class="proj-filter__btn" data-filter="social-enterprise">Social Enterprise</button>
+                </div>
+
+                <!-- ——————————————————————
+                     Project 01: Studio Network
+                ——————————————————————— -->
+                <article class="project-card" data-category="education">
+                    <span class="project-card__watermark" aria-hidden="true">01</span>
+                    <div class="project-card__body">
+                        <div class="grid-2 align-center">
+                            <div class="project-card__img-wrap">
+                                <img
+                                    src="goppoguro%20images/WhatsApp%20Image%202026-02-07%20at%2012.49.07%20AM.jpeg"
+                                    alt="Goppoguro Studio workshop with participants"
+                                    class="project-card__img"
+                                    loading="lazy">
+                                <p class="project-card__tagline">
+                                    &ldquo;A studio is not a room. It is a permission to create.&rdquo;
+                                </p>
+                            </div>
+                            <div class="section__content">
+                                <div style="display: flex; align-items: baseline; gap: var(--space-4); margin-bottom: var(--space-4);">
+                                    <span class="prog-num">01</span>
+                                    <span class="prog-tag">Education</span>
+                                </div>
+                                <h2 class="section-title">Goppo Guro<br><span class="gradient-text">Studio Network</span></h2>
+                                <p class="section-text">
+                                    A distributed network of community-based creative studios &mdash; bringing paper craft,
+                                    origami workshops, and hands-on learning into schools, community spaces, and
+                                    neighbourhoods across Bangladesh.
+                                </p>
+                                <p class="section-text" style="margin-top: var(--space-3);">
+                                    Each studio is a hub where children, educators, and community members learn
+                                    to see paper differently &mdash; not as waste, but as possibility.
+                                </p>
+                                <div class="stat-row"
+                                    style="margin-top: var(--space-6); border-radius: var(--radius-lg); grid-template-columns: repeat(2, 1fr);">
+                                    <div class="stat-highlight">
+                                        <span class="stat-highlight__number" data-countup="6">6</span>
+                                        <span class="stat-highlight__label">Active Studios</span>
+                                    </div>
+                                    <div class="stat-highlight">
+                                        <span class="stat-highlight__number" data-countup="2000">2,000</span>
+                                        <span class="stat-highlight__label">Participants Reached</span>
+                                    </div>
+                                </div>
+                                <button
+                                    class="project-card__accordion-trigger"
+                                    aria-expanded="false"
+                                    aria-controls="panel-studio">
+                                    Learn More
+                                    <svg class="accordion-arrow" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                        <path d="M6 9l6 6 6-6" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Accordion Panel -->
+                        <div class="project-card__panel" id="panel-studio" aria-hidden="true">
+                            <div class="project-card__panel-inner">
+                                <div class="grid-2" style="gap: var(--space-8);">
+                                    <div>
+                                        <span class="panel-section-title">What it is</span>
+                                        <p class="section-text">
+                                            The Goppoguro Studio Network establishes creative workspaces within
+                                            existing community institutions &mdash; schools, cultural centres, and
+                                            neighbourhood spaces. Each studio is equipped with paper, tools,
+                                            and facilitated programming to run creative sessions year-round.
+                                        </p>
+
+                                        <span class="panel-section-title" style="margin-top: var(--space-6);">Who it's for</span>
+                                        <p class="section-text">
+                                            Children aged 5&ndash;16, educators looking to bring creative learning
+                                            into their classrooms, youth groups, and community organisations
+                                            in underserved neighbourhoods.
+                                        </p>
+
+                                        <blockquote class="panel-pull-quote">
+                                            &ldquo;A studio is not a room. It is a permission to create.&rdquo;
+                                        </blockquote>
+
+                                        <div style="margin-top: var(--space-3);">
+                                            <span class="sdg-badge">SDG 4</span>
+                                            <span class="sdg-badge">SDG 8</span>
+                                            <span class="sdg-badge">SDG 11</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span class="panel-section-title">How it works</span>
+                                        <div class="panel-steps">
+                                            <div class="panel-step">
+                                                <span class="panel-step__num">01</span>
+                                                <span class="panel-step__label">Partner</span>
+                                                <span class="panel-step__desc">A school or community space applies to host a Goppoguro Studio.</span>
+                                            </div>
+                                            <div class="panel-step">
+                                                <span class="panel-step__num">02</span>
+                                                <span class="panel-step__label">Set Up</span>
+                                                <span class="panel-step__desc">We supply materials, training, and facilitation support to get the studio running.</span>
+                                            </div>
+                                            <div class="panel-step">
+                                                <span class="panel-step__num">03</span>
+                                                <span class="panel-step__label">Run &amp; Grow</span>
+                                                <span class="panel-step__desc">Weekly workshops run in the space. The studio becomes a permanent creative resource.</span>
+                                            </div>
+                                        </div>
+
+                                        <span class="panel-section-title" style="margin-top: var(--space-6);">Impact so far</span>
+                                        <div class="stat-row"
+                                            style="grid-template-columns: repeat(2, 1fr); border-radius: var(--radius-md);">
+                                            <div class="stat-highlight">
+                                                <span class="stat-highlight__number" data-countup="6">6</span>
+                                                <span class="stat-highlight__label">Studios Running</span>
+                                            </div>
+                                            <div class="stat-highlight">
+                                                <span class="stat-highlight__number" data-countup="20">20</span>
+                                                <span class="stat-highlight__label">Sessions Monthly</span>
+                                            </div>
+                                        </div>
+
+                                        <div style="margin-top: var(--space-6);">
+                                            <a href="creative-studio-network.html" class="btn btn--primary">
+                                                Explore the Studio Network
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card p-5" style="background: var(--color-bg-secondary); border-radius: var(--radius-lg);">
-                        <h3 class="feature-card__title">Creative Festivals</h3>
-                        <p>Scaling our impact through large-scale community events that combine art, story, and play.</p>
+                </article>
+
+                <!-- Connected Thread -->
+                <div class="project-thread" aria-hidden="true">
+                    <div class="project-thread__line"></div>
+                    <div class="project-thread__node"></div>
+                    <div class="project-thread__line"></div>
+                </div>
+
+                <!-- ——————————————————————
+                     Project 02: Golpoka Club
+                ——————————————————————— -->
+                <article class="project-card" data-category="publishing">
+                    <span class="project-card__watermark" aria-hidden="true">02</span>
+                    <div class="project-card__body">
+                        <div class="grid-2 align-center">
+                            <!-- Reversed: content left, image right -->
+                            <div class="section__content">
+                                <div style="display: flex; align-items: baseline; gap: var(--space-4); margin-bottom: var(--space-4);">
+                                    <span class="prog-num">02</span>
+                                    <span class="prog-tag">Publishing</span>
+                                </div>
+                                <h2 class="section-title">Golpoka<br><span class="gradient-text">Club</span></h2>
+                                <p class="section-text">
+                                    A monthly creative subscription for curious children aged 5+. Every month,
+                                    members receive a thoughtfully curated box &mdash; storybooks, craft kits, activity
+                                    materials, and imagination challenges &mdash; delivered to their door.
+                                </p>
+                                <p class="section-text" style="margin-top: var(--space-3);">
+                                    More than a subscription box, Golpoka Club is a growing community where children
+                                    become makers, storytellers, and young published authors.
+                                </p>
+                                <div class="stat-row"
+                                    style="margin-top: var(--space-6); border-radius: var(--radius-lg); grid-template-columns: repeat(2, 1fr);">
+                                    <div class="stat-highlight">
+                                        <span class="stat-highlight__number">5+</span>
+                                        <span class="stat-highlight__label">Ages Served</span>
+                                    </div>
+                                    <div class="stat-highlight">
+                                        <span class="stat-highlight__number">Monthly</span>
+                                        <span class="stat-highlight__label">Creative Deliveries</span>
+                                    </div>
+                                </div>
+                                <button
+                                    class="project-card__accordion-trigger"
+                                    aria-expanded="false"
+                                    aria-controls="panel-golpoka">
+                                    Learn More
+                                    <svg class="accordion-arrow" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                        <path d="M6 9l6 6 6-6" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="project-card__img-wrap">
+                                <img
+                                    src="Golpoka%20Club/WhatsApp%20Image%202026-05-17%20at%2011.52.33%20AM.jpeg"
+                                    alt="Golpoka Club monthly creative box"
+                                    class="project-card__img"
+                                    loading="lazy">
+                                <p class="project-card__tagline">
+                                    &ldquo;Every child is already a storyteller. We just give them the paper.&rdquo;
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Accordion Panel -->
+                        <div class="project-card__panel" id="panel-golpoka" aria-hidden="true">
+                            <div class="project-card__panel-inner">
+                                <div class="grid-2" style="gap: var(--space-8);">
+                                    <div>
+                                        <span class="panel-section-title">What it is</span>
+                                        <p class="section-text">
+                                            Golpoka Club is a children's creative membership programme. Each monthly
+                                            box is curated around a theme &mdash; adventure, nature, family, dreams &mdash; and
+                                            includes original storybooks, origami kits, drawing challenges, and
+                                            storytelling games.
+                                        </p>
+
+                                        <span class="panel-section-title" style="margin-top: var(--space-6);">Who it's for</span>
+                                        <p class="section-text">
+                                            Children aged 5 to 14 and their families. Golpoka Club welcomes
+                                            all curious minds &mdash; whether they love to draw, write, fold, or
+                                            simply listen to a good story.
+                                        </p>
+
+                                        <blockquote class="panel-pull-quote">
+                                            &ldquo;Every child is already a storyteller. We just give them the paper.&rdquo;
+                                        </blockquote>
+
+                                        <div style="margin-top: var(--space-3);">
+                                            <span class="sdg-badge">SDG 4</span>
+                                            <span class="sdg-badge">SDG 17</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span class="panel-section-title">How it works</span>
+                                        <div class="panel-steps">
+                                            <div class="panel-step">
+                                                <span class="panel-step__num">01</span>
+                                                <span class="panel-step__label">Subscribe</span>
+                                                <span class="panel-step__desc">Families sign up for monthly or quarterly membership online.</span>
+                                            </div>
+                                            <div class="panel-step">
+                                                <span class="panel-step__num">02</span>
+                                                <span class="panel-step__label">Receive</span>
+                                                <span class="panel-step__desc">A curated creative box arrives each month with a surprise theme.</span>
+                                            </div>
+                                            <div class="panel-step">
+                                                <span class="panel-step__num">03</span>
+                                                <span class="panel-step__label">Create &amp; Share</span>
+                                                <span class="panel-step__desc">Children make and share their creations with the Golpoka Club community.</span>
+                                            </div>
+                                        </div>
+
+                                        <span class="panel-section-title" style="margin-top: var(--space-6);">What's in the box</span>
+                                        <div class="panel-steps">
+                                            <div class="panel-step">
+                                                <span class="panel-step__num">&mdash;</span>
+                                                <span class="panel-step__label">Original storybooks</span>
+                                            </div>
+                                            <div class="panel-step">
+                                                <span class="panel-step__num">&mdash;</span>
+                                                <span class="panel-step__label">Origami craft kit</span>
+                                            </div>
+                                            <div class="panel-step">
+                                                <span class="panel-step__num">&mdash;</span>
+                                                <span class="panel-step__label">Activity challenges</span>
+                                            </div>
+                                        </div>
+
+                                        <div style="margin-top: var(--space-6);">
+                                            <a href="golpoka-club.html" class="btn btn--primary">
+                                                Join the Club
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Connected Thread -->
+                <div class="project-thread" aria-hidden="true">
+                    <div class="project-thread__line"></div>
+                    <div class="project-thread__node"></div>
+                    <div class="project-thread__line"></div>
+                </div>
+
+                <!-- ——————————————————————
+                     Project 03: Little Joys
+                ——————————————————————— -->
+                <article class="project-card" data-category="social-enterprise" style="border-bottom: none;">
+                    <span class="project-card__watermark" aria-hidden="true">03</span>
+                    <div class="project-card__body">
+                        <div class="grid-2 align-center">
+                            <div class="project-card__img-wrap">
+                                <img
+                                    src="Women%20Makers%20Empowerment/WhatsApp%20Image%202026-05-17%20at%202.57.37%20AM.jpeg"
+                                    alt="Women artisan hand-folding Little Joys origami jar"
+                                    class="project-card__img"
+                                    loading="lazy">
+                                <p class="project-card__tagline">
+                                    &ldquo;Small folds. Meaningful work. Quiet empowerment.&rdquo;
+                                </p>
+                            </div>
+                            <div class="section__content">
+                                <div style="display: flex; align-items: baseline; gap: var(--space-4); margin-bottom: var(--space-4);">
+                                    <span class="prog-num">03</span>
+                                    <span class="prog-tag">Social Enterprise</span>
+                                </div>
+                                <h2 class="section-title">Little <span class="gradient-text">Joys</span></h2>
+                                <p class="section-text">
+                                    Handcrafted origami jars made entirely by women artisans. Each jar is folded
+                                    by hand &mdash; hearts, stars, birds, butterflies &mdash; and sold to fund both the
+                                    maker's livelihood and a child's education.
+                                </p>
+                                <p class="section-text" style="margin-top: var(--space-3);">
+                                    No factories. No machines. Only time, patience, and human hands &mdash; creating
+                                    something beautiful that does something meaningful.
+                                </p>
+                                <div class="stat-row"
+                                    style="margin-top: var(--space-6); border-radius: var(--radius-lg); grid-template-columns: repeat(2, 1fr);">
+                                    <div class="stat-highlight">
+                                        <span class="stat-highlight__number" data-countup="28">28</span>
+                                        <span class="stat-highlight__label">Women Artisans</span>
+                                    </div>
+                                    <div class="stat-highlight">
+                                        <span class="stat-highlight__number" data-countup="1200">1,200</span>
+                                        <span class="stat-highlight__label">Jars Handcrafted</span>
+                                    </div>
+                                </div>
+                                <button
+                                    class="project-card__accordion-trigger"
+                                    aria-expanded="false"
+                                    aria-controls="panel-joys">
+                                    Learn More
+                                    <svg class="accordion-arrow" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                        <path d="M6 9l6 6 6-6" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Accordion Panel -->
+                        <div class="project-card__panel" id="panel-joys" aria-hidden="true">
+                            <div class="project-card__panel-inner">
+                                <div class="grid-2" style="gap: var(--space-8);">
+                                    <div>
+                                        <span class="panel-section-title">What it is</span>
+                                        <p class="section-text">
+                                            Little Joys is a handcraft commerce initiative. Women in the Goppo Guro
+                                            network fold tiny paper objects &mdash; hearts, stars, birds &mdash; and seal them
+                                            inside small glass jars. Each jar is a product, a livelihood, and a
+                                            story about dignity and skill.
+                                        </p>
+
+                                        <span class="panel-section-title" style="margin-top: var(--space-6);">Who it's for</span>
+                                        <p class="section-text">
+                                            Anyone who wants beautiful things that do beautiful things. Little Joys
+                                            jars make thoughtful gifts, desk companions, and gentle reminders that
+                                            craft has real value.
+                                        </p>
+
+                                        <blockquote class="panel-pull-quote">
+                                            &ldquo;Small folds. Meaningful work. Quiet empowerment.&rdquo;
+                                        </blockquote>
+
+                                        <div style="margin-top: var(--space-3);">
+                                            <span class="sdg-badge">SDG 1</span>
+                                            <span class="sdg-badge">SDG 8</span>
+                                            <span class="sdg-badge">SDG 12</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span class="panel-section-title">How it works</span>
+                                        <div class="panel-steps">
+                                            <div class="panel-step">
+                                                <span class="panel-step__num">01</span>
+                                                <span class="panel-step__label">Women Fold</span>
+                                                <span class="panel-step__desc">Artisans hand-fold tiny paper shapes at home, earning fair flexible income.</span>
+                                            </div>
+                                            <div class="panel-step">
+                                                <span class="panel-step__num">02</span>
+                                                <span class="panel-step__label">You Buy</span>
+                                                <span class="panel-step__desc">Each jar purchase directly funds the artisan and contributes to education.</span>
+                                            </div>
+                                            <div class="panel-step">
+                                                <span class="panel-step__num">03</span>
+                                                <span class="panel-step__label">Children Learn</span>
+                                                <span class="panel-step__desc">A portion of every sale funds learning materials and programme sessions.</span>
+                                            </div>
+                                        </div>
+
+                                        <span class="panel-section-title" style="margin-top: var(--space-6);">Impact so far</span>
+                                        <div class="stat-row"
+                                            style="grid-template-columns: repeat(2, 1fr); border-radius: var(--radius-md);">
+                                            <div class="stat-highlight">
+                                                <span class="stat-highlight__number" data-countup="28">28</span>
+                                                <span class="stat-highlight__label">Artisans Earning</span>
+                                            </div>
+                                            <div class="stat-highlight">
+                                                <span class="stat-highlight__number" data-countup="1200">1,200</span>
+                                                <span class="stat-highlight__label">Jars Sold</span>
+                                            </div>
+                                        </div>
+
+                                        <div style="margin-top: var(--space-6);">
+                                            <a href="little-joys.html" class="btn btn--primary">
+                                                Shop Little Joys
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- ============================================================
+             SECTION 4 — Impact stat bar
+        ============================================================ -->
+        <section class="section section--light" id="impact">
+            <div class="container">
+                <header class="section-header text-center">
+                    <span class="section-tagline">Across All Projects</span>
+                    <h2 class="section-title">Our Collective <span class="gradient-text">Impact</span></h2>
+                    <p class="section-description">Numbers that stand for real hands, real children, real change.</p>
+                </header>
+                <div class="stat-row" style="margin-top: var(--space-8);">
+                    <div class="stat-highlight">
+                        <span class="stat-highlight__number" data-countup="6">6</span>
+                        <span class="stat-highlight__label">Creative Studios</span>
+                    </div>
+                    <div class="stat-highlight">
+                        <span class="stat-highlight__number" data-countup="2000">2,000</span>
+                        <span class="stat-highlight__label">Children Reached</span>
+                    </div>
+                    <div class="stat-highlight">
+                        <span class="stat-highlight__number" data-countup="28">28</span>
+                        <span class="stat-highlight__label">Women Artisans</span>
+                    </div>
+                    <div class="stat-highlight">
+                        <span class="stat-highlight__number" data-countup="1200">1,200</span>
+                        <span class="stat-highlight__label">Jars Handcrafted</span>
                     </div>
                 </div>
             </div>
         </section>
+
+
+        <!-- ============================================================
+             SECTION 5 — Pull quote
+        ============================================================ -->
+        <div class="quote-banner">
+            <div class="container">
+                <p class="quote-banner__text">
+                    &ldquo;Every project we build asks the same question: how can a single fold of paper change someone's world?&rdquo;
+                </p>
+                <span class="quote-banner__attr">&mdash; Goppo Guro</span>
+            </div>
+        </div>
+
+
+        <!-- ============================================================
+             SECTION 6 — Coming Soon
+        ============================================================ -->
+        <section class="section section--dim">
+            <div class="container text-center">
+                <span class="section-tagline">What's Next</span>
+                <h2 class="section-title" style="font-size: clamp(2rem, 5vw, 3.75rem);">
+                    More Is Being<br><span class="gradient-text">Made.</span>
+                </h2>
+                <p class="coming-soon__teaser">
+                    A new adventure book series. A travelling origami exhibition.<br>
+                    A platform for young Bangladeshi makers to publish and be seen.
+                </p>
+                <p class="section-description" style="margin-top: var(--space-4);">
+                    Every new project starts with an idea. If you have one, we want to hear it.
+                </p>
+                <div class="hero__actions" style="justify-content: center; margin-top: var(--space-6);">
+                    <a href="contact.html?subject=project-idea" class="btn btn--primary btn--large">Share an Idea</a>
+                    <a href="get-involved.html" class="btn btn--outline btn--large">Ways to Get Involved</a>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <!-- Footer -->
@@ -202,9 +775,13 @@
         <div class="container">
             <div class="footer__grid">
                 <div class="footer__brand">
-                    <img src="goppoguro images/WhatsApp Image 2026-02-07 at 12.48.10 AM.jpeg" alt="Goppo Guro"
+                    <img src="goppoguro%20images/WhatsApp%20Image%202026-02-07%20at%2012.48.10%20AM.jpeg" alt="Goppo Guro"
                         class="footer__logo">
                     <p class="footer__tagline">A Space for Play, Paper, and Pause</p>
+                    <p class="footer__description">
+                        Creating space for curiosity, connection, and shared discovery through handcrafted paper
+                        experiences.
+                    </p>
                     <div class="footer__social">
                         <a href="https://www.facebook.com/goppoguro" target="_blank" class="footer__social-link"
                             aria-label="Facebook">
@@ -217,30 +794,39 @@
                 </div>
 
                 <nav class="footer__nav">
-                    <h4 class="footer__nav-title">Quick Links</h4>
+                    <h4 class="footer__nav-title">Navigate</h4>
                     <ul class="footer__nav-list">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
                         <li><a href="programme.html">Programme</a></li>
-                        <li><a href="projects.html">Projects</a></li>
-                        <li><a href="products.html">Products</a></li>
+                        <li><a href="projects.html">Project</a></li>
+                        <li><a href="products.html">Product</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
 
                 <nav class="footer__nav">
-                    <h4 class="footer__nav-title">Ecosystem</h4>
+                    <h4 class="footer__nav-title">Explore</h4>
+                    <p class="footer__nav-subheader">Programme</p>
                     <ul class="footer__nav-list">
-                        <li><a href="platform.html">Platform</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="partners.html">Partners</a></li>
-                        <li><a href="get-involved.html">Get Involved</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="gclp.html">Creative Learning (GCLP)</a></li>
+                        <li><a href="women-empowerment.html">Women Makers</a></li>
+                        <li><a href="golpoka-club.html">Golpoka Club</a></li>
+                        <li><a href="podcast.html">Podcast</a></li>
+                    </ul>
+                    <p class="footer__nav-subheader" style="margin-top: var(--space-3);">Project</p>
+                    <ul class="footer__nav-list">
+                        <li><a href="creative-studio-network.html">Goppoguro Studio</a></li>
+                        <li><a href="golpoka-club.html">Golpoka Club</a></li>
+                        <li><a href="little-joys.html">Little Joys</a></li>
                     </ul>
                 </nav>
 
                 <div class="footer__newsletter">
                     <h4 class="footer__nav-title">Stay Connected</h4>
+                    <p>Get updates on new products and impact stories.</p>
                     <form class="footer__form" id="newsletter-form">
                         <input type="email" placeholder="Your email" class="footer__input" required>
                         <button type="submit" class="btn btn--primary btn--small">Subscribe</button>
@@ -248,11 +834,24 @@
                 </div>
             </div>
 
+            <div class="footer__sdg">
+                <span class="footer__sdg-badge">SDG 1</span>
+                <span class="footer__sdg-badge">SDG 4</span>
+                <span class="footer__sdg-badge">SDG 8</span>
+                <span class="footer__sdg-badge">SDG 12</span>
+            </div>
+
             <div class="footer__bottom">
-                <p>&copy; 2026 Goppo Guro. All rights reserved. Made with ❤️ in Bangladesh.</p>
+                <p>Handmade in Bangladesh &middot; &copy; 2026 Goppo Guro. All rights reserved.</p>
+                <p>Every purchase supports children's welfare.</p>
             </div>
         </div>
     </footer>
+    <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M18 15l-6-6-6 6"/>
+        </svg>
+    </button>
 </body>
 
 </html>

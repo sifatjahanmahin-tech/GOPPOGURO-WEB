@@ -1,0 +1,256 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - link "Goppo Guro Logo Goppo Guro" [ref=e4] [cursor=pointer]:
+        - /url: index.html
+        - img "Goppo Guro Logo" [ref=e5]
+        - generic [ref=e6]: Goppo Guro
+      - list [ref=e7]:
+        - listitem [ref=e8]:
+          - link "Home" [ref=e9] [cursor=pointer]:
+            - /url: index.html
+        - listitem [ref=e10]:
+          - generic [ref=e11]:
+            - link "Programme" [ref=e12] [cursor=pointer]:
+              - /url: programme.html
+            - button "Open Programme submenu" [ref=e13] [cursor=pointer]:
+              - img [ref=e14]
+          - menu:
+            - menuitem "All Programmes"
+            - menuitem "Creative Learning Programme"
+            - menuitem "Women Makers Empowerment"
+            - menuitem "Golpoka Club"
+            - menuitem "Podcast"
+        - listitem [ref=e16]:
+          - generic [ref=e17]:
+            - link "Project" [ref=e18] [cursor=pointer]:
+              - /url: projects.html
+            - button "Open Project submenu" [ref=e19] [cursor=pointer]:
+              - img [ref=e20]
+          - menu:
+            - menuitem "Goppoguro Studio"
+            - menuitem "Golpoka Club"
+            - menuitem "Little Joys"
+        - listitem [ref=e22]:
+          - link "Product" [ref=e23] [cursor=pointer]:
+            - /url: products.html
+        - listitem [ref=e24]:
+          - link "Publications" [ref=e25] [cursor=pointer]:
+            - /url: publications.html
+        - listitem [ref=e26]:
+          - link "About Us" [ref=e27] [cursor=pointer]:
+            - /url: about.html
+        - listitem [ref=e28]:
+          - link "Gallery" [ref=e29] [cursor=pointer]:
+            - /url: gallery.html
+        - listitem [ref=e30]:
+          - link "Contact" [ref=e31] [cursor=pointer]:
+            - /url: contact.html
+  - main [ref=e32]:
+    - generic [ref=e35]:
+      - generic [ref=e36]:
+        - generic [ref=e37]: The Makers Behind Every Joy
+        - heading "Made by Hands, Shared by Hearts" [level=1] [ref=e38]:
+          - text: Made by Hands,
+          - text: Shared by Hearts
+        - paragraph [ref=e39]: The Women Makers Programme is a community-centred initiative where women artisans transform simple paper into handcrafted Little Joys — earning flexible, dignified income while their creativity funds a child's education.
+        - paragraph [ref=e40]: Each Little Joy is more than a folded paper object. It is a moment of care, patience, and human connection — made by hands that matter.
+        - generic [ref=e41]:
+          - link "See Little Joys" [ref=e42] [cursor=pointer]:
+            - /url: little-joys.html
+          - link "Partner with Us" [ref=e43] [cursor=pointer]:
+            - /url: contact.html?subject=Artisan%20Partnership
+      - generic [ref=e44]:
+        - img "Woman artisan folding paper with care" [ref=e45]
+        - img "Handcrafted Little Joys origami pieces" [ref=e46]
+    - generic [ref=e49]:
+      - generic [ref=e50]:
+        - generic [ref=e51]: 100% Handmade
+        - heading "Every Fold Tells a Story" [level=2] [ref=e52]
+        - paragraph [ref=e53]: No machines. No factories. Only time, patience, creativity, and human care. Watch as paper transforms through the hands of our makers into something small, beautiful, and full of meaning.
+        - paragraph [ref=e54]: Hearts. Stars. Birds. Flowers. Butterflies. Boats. Each fold carries intention — and when a Little Joy reaches you, it carries the story of the woman who made it.
+        - paragraph [ref=e55]: "\"Because every fold carries a story.\""
+      - paragraph [ref=e60]: Handcrafted, one fold at a time
+    - generic [ref=e63]:
+      - img "Women artisans working together in community" [ref=e65]
+      - generic [ref=e66]:
+        - generic [ref=e67]: Why This Exists
+        - heading "The Woman Behind the Fold" [level=2] [ref=e68]
+        - paragraph [ref=e69]: Many women possess extraordinary creativity, patience, and making skills — but often have limited access to flexible income opportunities that fit around their daily lives and responsibilities.
+        - paragraph [ref=e70]: The Women Makers Programme creates an accessible and dignified form of creative work where women participate from their own communities, developing craftsmanship, confidence, and financial independence — on their own terms.
+        - blockquote [ref=e71]:
+          - paragraph [ref=e72]: "\"We believe meaningful work does not always require factories, machines, or complicated systems. Sometimes, change begins with hands, patience, and care.\""
+    - generic [ref=e74]:
+      - generic [ref=e75]:
+        - generic [ref=e76]: More Than Craft
+        - heading "Five Pillars" [level=2] [ref=e77]
+        - paragraph [ref=e78]: The programme is not only about producing objects. It is about transformation.
+      - generic [ref=e79]:
+        - generic [ref=e80]:
+          - heading "Creative Dignity" [level=3] [ref=e81]
+          - paragraph [ref=e82]: Recognizing handcraft and patience as genuinely valuable skills — not lesser forms of work, but extraordinary ones.
+        - generic [ref=e83]:
+          - heading "Flexible Livelihood" [level=3] [ref=e84]
+          - paragraph [ref=e85]: Income opportunities that fit naturally around family life and daily responsibilities — no commute, no fixed hours.
+        - generic [ref=e86]:
+          - heading "Emotional Connection" [level=3] [ref=e87]
+          - paragraph [ref=e88]: Objects made with intention that carry kindness, encourage gifting, and strengthen human connection across distances.
+        - generic [ref=e89]:
+          - heading "Community Building" [level=3] [ref=e90]
+          - paragraph [ref=e91]: Supporting women through collaborative making, shared learning, and the quiet bond of working toward something meaningful together.
+        - generic [ref=e92]:
+          - heading "Slow, Meaningful Production" [level=3] [ref=e93]
+          - paragraph [ref=e94]: Celebrating handmade care over mass production — each piece is unique, unhurried, and made with full attention.
+    - generic [ref=e96]:
+      - generic [ref=e97]:
+        - generic [ref=e98]: The Process
+        - heading "How the Chain Works" [level=2] [ref=e99]
+        - paragraph [ref=e100]: From a woman's hands to a child's classroom — three steps, one ripple of change.
+      - generic [ref=e101]:
+        - generic [ref=e102]:
+          - generic [ref=e103]: "01"
+          - heading "A Maker Creates" [level=3] [ref=e104]
+          - paragraph [ref=e105]: A woman artisan carefully folds each Little Joy by hand through guided training and simple handcraft techniques — earning fair income on a flexible, home-based schedule.
+        - generic [ref=e106]:
+          - generic [ref=e107]: "02"
+          - heading "You Choose Joy" [level=3] [ref=e108]
+          - paragraph [ref=e109]: Your purchase directly funds the artisan's income and contributes to the Goppo Guro welfare fund. A small act of kindness, with deep consequences.
+        - generic [ref=e110]:
+          - generic [ref=e111]: "03"
+          - heading "A Child Learns" [level=3] [ref=e112]
+          - paragraph [ref=e113]: The welfare fund pays for school fees, learning materials, and meals for children who would otherwise go without. The fold becomes a future.
+    - generic [ref=e115]:
+      - generic [ref=e116]:
+        - generic [ref=e117]: The Story Behind It
+        - heading "Sometimes Joy Arrives Folded" [level=2] [ref=e118]
+      - generic [ref=e119]:
+        - paragraph [ref=e120]: A paper heart slipped across a café table.
+        - paragraph [ref=e121]: A tiny star gifted to someone having a difficult day.
+        - paragraph [ref=e122]:
+          - text: "A folded bird shared simply to say:"
+          - emphasis [ref=e123]: "\"I thought of you.\""
+        - paragraph [ref=e124]: Little Joys reminds us that kindness does not need to be expensive, grand, or complicated. Sometimes the smallest gestures carry the deepest meaning.
+    - generic [ref=e126]:
+      - generic [ref=e127]:
+        - generic [ref=e128]: The Numbers
+        - heading "Real Impact" [level=2] [ref=e129]
+      - generic [ref=e130]:
+        - generic [ref=e131]:
+          - generic [ref=e132]: "28"
+          - generic [ref=e133]: Artisans in Our Network
+        - generic [ref=e134]:
+          - generic [ref=e135]: 1,200
+          - generic [ref=e136]: Little Joys Folded & Sold
+        - generic [ref=e137]:
+          - generic [ref=e138]: "340"
+          - generic [ref=e139]: Education Days Funded
+        - generic [ref=e140]:
+          - generic [ref=e141]: "47"
+          - generic [ref=e142]: Children Supported
+    - generic [ref=e144]:
+      - generic [ref=e145]:
+        - generic [ref=e146]: Global Goals
+        - heading "Aligned with the SDGs" [level=2] [ref=e147]
+      - generic [ref=e148]:
+        - generic [ref=e149]:
+          - text: SDG 1
+          - heading "No Poverty" [level=3] [ref=e150]
+          - paragraph [ref=e151]: Artisan earnings provide a direct route out of financial vulnerability for women and their families.
+        - generic [ref=e152]:
+          - text: SDG 5
+          - heading "Gender Equality" [level=3] [ref=e153]
+          - paragraph [ref=e154]: Women-led production with fair pay and flexible hours — designed around their lives, not against them.
+        - generic [ref=e155]:
+          - text: SDG 8
+          - heading "Decent Work" [level=3] [ref=e156]
+          - paragraph [ref=e157]: Home-based artisan work with fair compensation and dignity — no factories, no exploitation, only craft.
+    - generic [ref=e159]:
+      - paragraph [ref=e160]: "\"We imagine a future where creativity becomes opportunity, handmade work becomes dignity, and small acts of kindness create meaningful social connection.\""
+      - text: — Women Makers Programme Vision
+    - generic [ref=e162]:
+      - generic [ref=e163]: Be Part of It
+      - heading "Every Purchase Is an Act of Care" [level=2] [ref=e164]
+      - paragraph [ref=e165]: Buy a Little Joy. Support an artisan. Fund a child's education. The chain is that simple.
+      - generic [ref=e166]:
+        - link "Shop Little Joys" [ref=e167] [cursor=pointer]:
+          - /url: little-joys.html
+        - link "Join the Programme" [ref=e168] [cursor=pointer]:
+          - /url: contact.html?subject=Women%20Makers%20Programme
+  - contentinfo [ref=e169]:
+    - generic [ref=e170]:
+      - generic [ref=e171]:
+        - generic [ref=e172]:
+          - img "Goppo Guro" [ref=e173]
+          - paragraph [ref=e174]: A Space for Play, Paper, and Pause
+          - paragraph [ref=e175]: Creating space for curiosity, connection, and shared discovery through handcrafted paper experiences.
+          - link "Facebook" [ref=e177] [cursor=pointer]:
+            - /url: https://www.facebook.com/goppoguro
+            - img [ref=e178]
+        - navigation [ref=e180]:
+          - heading "Navigate" [level=4] [ref=e181]
+          - list [ref=e182]:
+            - listitem [ref=e183]:
+              - link "Home" [ref=e184] [cursor=pointer]:
+                - /url: index.html
+            - listitem [ref=e185]:
+              - link "Programme" [ref=e186] [cursor=pointer]:
+                - /url: programme.html
+            - listitem [ref=e187]:
+              - link "Project" [ref=e188] [cursor=pointer]:
+                - /url: creative-studio-network.html
+            - listitem [ref=e189]:
+              - link "Product" [ref=e190] [cursor=pointer]:
+                - /url: products.html
+            - listitem [ref=e191]:
+              - link "Publications" [ref=e192] [cursor=pointer]:
+                - /url: publications.html
+            - listitem [ref=e193]:
+              - link "About Us" [ref=e194] [cursor=pointer]:
+                - /url: about.html
+            - listitem [ref=e195]:
+              - link "Gallery" [ref=e196] [cursor=pointer]:
+                - /url: gallery.html
+            - listitem [ref=e197]:
+              - link "Contact" [ref=e198] [cursor=pointer]:
+                - /url: contact.html
+        - navigation [ref=e199]:
+          - heading "Explore" [level=4] [ref=e200]
+          - paragraph [ref=e201]: Programme
+          - list [ref=e202]:
+            - listitem [ref=e203]:
+              - link "Creative Learning (GCLP)" [ref=e204] [cursor=pointer]:
+                - /url: gclp.html
+            - listitem [ref=e205]:
+              - link "Women Makers" [ref=e206] [cursor=pointer]:
+                - /url: women-empowerment.html
+            - listitem [ref=e207]:
+              - link "Golpoka Club" [ref=e208] [cursor=pointer]:
+                - /url: golpoka-club.html
+            - listitem [ref=e209]:
+              - link "Podcast" [ref=e210] [cursor=pointer]:
+                - /url: podcast.html
+          - paragraph [ref=e211]: Project
+          - list [ref=e212]:
+            - listitem [ref=e213]:
+              - link "Goppoguro Studio" [ref=e214] [cursor=pointer]:
+                - /url: creative-studio-network.html
+            - listitem [ref=e215]:
+              - link "Golpoka Club" [ref=e216] [cursor=pointer]:
+                - /url: golpoka-club.html
+            - listitem [ref=e217]:
+              - link "Little Joys" [ref=e218] [cursor=pointer]:
+                - /url: little-joys.html
+        - generic [ref=e219]:
+          - heading "Stay Connected" [level=4] [ref=e220]
+          - paragraph [ref=e221]: Get updates on new products and impact stories.
+          - generic [ref=e222]:
+            - textbox "Your email" [ref=e223]
+            - button "Subscribe" [ref=e224] [cursor=pointer]
+      - generic [ref=e225]:
+        - generic [ref=e226]: SDG 1
+        - generic [ref=e227]: SDG 4
+        - generic [ref=e228]: SDG 8
+        - generic [ref=e229]: SDG 12
+      - generic [ref=e230]:
+        - paragraph [ref=e231]: Handmade in Bangladesh · © 2026 Goppo Guro. All rights reserved.
+        - paragraph [ref=e232]: Every purchase supports children's welfare.

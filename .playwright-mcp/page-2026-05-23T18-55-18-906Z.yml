@@ -1,0 +1,159 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - link "Goppo Guro Logo Goppo Guro" [ref=e4] [cursor=pointer]:
+        - /url: index.html
+        - img "Goppo Guro Logo" [ref=e5]
+        - generic [ref=e6]: Goppo Guro
+      - list [ref=e7]:
+        - listitem [ref=e8]:
+          - link "Home" [ref=e9] [cursor=pointer]:
+            - /url: index.html
+        - listitem [ref=e10]:
+          - generic [ref=e11]:
+            - link "Programme" [ref=e12] [cursor=pointer]:
+              - /url: programme.html
+            - button "Open Programme submenu" [ref=e13] [cursor=pointer]:
+              - img [ref=e14]
+          - menu:
+            - menuitem "All Programmes"
+            - menuitem "Creative Learning Programme"
+            - menuitem "Women Makers Empowerment"
+            - menuitem "Golpoka Club"
+            - menuitem "Podcast"
+        - listitem [ref=e16]:
+          - generic [ref=e17]:
+            - link "Project" [ref=e18] [cursor=pointer]:
+              - /url: projects.html
+            - button "Open Project submenu" [ref=e19] [cursor=pointer]:
+              - img [ref=e20]
+          - menu:
+            - menuitem "Goppoguro Studio"
+            - menuitem "Golpoka Club"
+            - menuitem "Little Joys"
+        - listitem [ref=e22]:
+          - link "Product" [ref=e23] [cursor=pointer]:
+            - /url: products.html
+        - listitem [ref=e24]:
+          - link "Publications" [ref=e25] [cursor=pointer]:
+            - /url: publications.html
+        - listitem [ref=e26]:
+          - link "About Us" [ref=e27] [cursor=pointer]:
+            - /url: about.html
+        - listitem [ref=e28]:
+          - link "Gallery" [ref=e29] [cursor=pointer]:
+            - /url: gallery.html
+        - listitem [ref=e30]:
+          - link "Contact" [ref=e31] [cursor=pointer]:
+            - /url: contact.html
+  - main [ref=e32]:
+    - generic [ref=e34]:
+      - generic [ref=e35]: Visual Journey
+      - heading "Our Gallery" [level=1] [ref=e36]
+      - paragraph [ref=e37]: Capturing moments of discovery, creation, and connection.
+    - generic [ref=e40]:
+      - 'button "View full image: Workshop in session" [ref=e41] [cursor=pointer]':
+        - img "Workshop in session" [ref=e42]
+        - generic [ref=e43]: Workshop Session
+      - 'button "View full image: Exhibition day" [ref=e44] [cursor=pointer]':
+        - img "Exhibition day" [ref=e45]
+        - generic [ref=e46]: Exhibition Day
+      - 'button "View full image: Community event" [ref=e47] [cursor=pointer]':
+        - img "Community event" [ref=e48]
+        - generic [ref=e49]: Community Event
+      - 'button "View full image: Creative session" [ref=e50] [cursor=pointer]':
+        - img "Creative session" [ref=e51]
+        - generic [ref=e52]: Creative Session
+      - 'button "View full image: Artisan at work" [ref=e53] [cursor=pointer]':
+        - img "Artisan at work" [ref=e54]
+        - generic [ref=e55]: Artisan Highlight
+      - 'button "View full image: Storytelling moment" [ref=e56] [cursor=pointer]':
+        - img "Storytelling moment" [ref=e57]
+        - generic [ref=e58]: Storytelling Moment
+      - 'button "View full image: Handcrafted origami" [ref=e59] [cursor=pointer]':
+        - img "Handcrafted origami" [ref=e60]
+        - generic [ref=e61]: Handcrafted Origami
+      - 'button "View full image: Little Joys products" [ref=e62] [cursor=pointer]':
+        - img "Little Joys products" [ref=e63]
+        - generic [ref=e64]: Little Joys
+      - 'button "View full image: The Goppo Guro team" [ref=e65] [cursor=pointer]':
+        - img "The Goppo Guro team" [ref=e66]
+        - generic [ref=e67]: Our Team
+  - contentinfo [ref=e68]:
+    - generic [ref=e69]:
+      - generic [ref=e70]:
+        - generic [ref=e71]:
+          - img "Goppo Guro" [ref=e72]
+          - paragraph [ref=e73]: A Space for Play, Paper, and Pause
+          - paragraph [ref=e74]: Creating space for curiosity, connection, and shared discovery through handcrafted paper experiences.
+          - link "Facebook" [ref=e76] [cursor=pointer]:
+            - /url: https://www.facebook.com/goppoguro
+            - img [ref=e77]
+        - navigation [ref=e79]:
+          - heading "Navigate" [level=4] [ref=e80]
+          - list [ref=e81]:
+            - listitem [ref=e82]:
+              - link "Home" [ref=e83] [cursor=pointer]:
+                - /url: index.html
+            - listitem [ref=e84]:
+              - link "Programme" [ref=e85] [cursor=pointer]:
+                - /url: programme.html
+            - listitem [ref=e86]:
+              - link "Project" [ref=e87] [cursor=pointer]:
+                - /url: creative-studio-network.html
+            - listitem [ref=e88]:
+              - link "Product" [ref=e89] [cursor=pointer]:
+                - /url: products.html
+            - listitem [ref=e90]:
+              - link "Publications" [ref=e91] [cursor=pointer]:
+                - /url: publications.html
+            - listitem [ref=e92]:
+              - link "About Us" [ref=e93] [cursor=pointer]:
+                - /url: about.html
+            - listitem [ref=e94]:
+              - link "Gallery" [ref=e95] [cursor=pointer]:
+                - /url: gallery.html
+            - listitem [ref=e96]:
+              - link "Contact" [ref=e97] [cursor=pointer]:
+                - /url: contact.html
+        - navigation [ref=e98]:
+          - heading "Explore" [level=4] [ref=e99]
+          - paragraph [ref=e100]: Programme
+          - list [ref=e101]:
+            - listitem [ref=e102]:
+              - link "Creative Learning (GCLP)" [ref=e103] [cursor=pointer]:
+                - /url: gclp.html
+            - listitem [ref=e104]:
+              - link "Women Makers" [ref=e105] [cursor=pointer]:
+                - /url: women-empowerment.html
+            - listitem [ref=e106]:
+              - link "Golpoka Club" [ref=e107] [cursor=pointer]:
+                - /url: golpoka-club.html
+            - listitem [ref=e108]:
+              - link "Podcast" [ref=e109] [cursor=pointer]:
+                - /url: podcast.html
+          - paragraph [ref=e110]: Project
+          - list [ref=e111]:
+            - listitem [ref=e112]:
+              - link "Goppoguro Studio" [ref=e113] [cursor=pointer]:
+                - /url: creative-studio-network.html
+            - listitem [ref=e114]:
+              - link "Golpoka Club" [ref=e115] [cursor=pointer]:
+                - /url: golpoka-club.html
+            - listitem [ref=e116]:
+              - link "Little Joys" [ref=e117] [cursor=pointer]:
+                - /url: little-joys.html
+        - generic [ref=e118]:
+          - heading "Stay Connected" [level=4] [ref=e119]
+          - paragraph [ref=e120]: Get updates on new products and impact stories.
+          - generic [ref=e121]:
+            - textbox "Your email" [ref=e122]
+            - button "Subscribe" [ref=e123] [cursor=pointer]
+      - generic [ref=e124]:
+        - generic [ref=e125]: SDG 1
+        - generic [ref=e126]: SDG 4
+        - generic [ref=e127]: SDG 8
+        - generic [ref=e128]: SDG 12
+      - generic [ref=e129]:
+        - paragraph [ref=e130]: Handmade in Bangladesh · © 2026 Goppo Guro. All rights reserved.
+        - paragraph [ref=e131]: Every purchase supports children's welfare.

@@ -1,0 +1,204 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - link "Goppo Guro Logo Goppo Guro" [ref=e4] [cursor=pointer]:
+        - /url: index.html
+        - img "Goppo Guro Logo" [ref=e5]
+        - generic [ref=e6]: Goppo Guro
+      - list [ref=e7]:
+        - listitem [ref=e8]:
+          - link "Home" [ref=e9] [cursor=pointer]:
+            - /url: index.html
+        - listitem [ref=e10]:
+          - generic [ref=e11]:
+            - link "Programme" [ref=e12] [cursor=pointer]:
+              - /url: programme.html
+            - button "Open Programme submenu" [ref=e13] [cursor=pointer]:
+              - img [ref=e14]
+          - menu:
+            - menuitem "All Programmes"
+            - menuitem "Creative Learning Programme"
+            - menuitem "Women Makers Empowerment"
+            - menuitem "Golpoka Club"
+            - menuitem "Podcast"
+        - listitem [ref=e16]:
+          - generic [ref=e17]:
+            - link "Project" [ref=e18] [cursor=pointer]:
+              - /url: projects.html
+            - button "Open Project submenu" [ref=e19] [cursor=pointer]:
+              - img [ref=e20]
+          - menu:
+            - menuitem "Goppoguro Studio"
+            - menuitem "Golpoka Club"
+            - menuitem "Little Joys"
+        - listitem [ref=e22]:
+          - link "Product" [ref=e23] [cursor=pointer]:
+            - /url: products.html
+        - listitem [ref=e24]:
+          - link "Publications" [ref=e25] [cursor=pointer]:
+            - /url: publications.html
+        - listitem [ref=e26]:
+          - link "About Us" [ref=e27] [cursor=pointer]:
+            - /url: about.html
+        - listitem [ref=e28]:
+          - link "Gallery" [ref=e29] [cursor=pointer]:
+            - /url: gallery.html
+        - listitem [ref=e30]:
+          - link "Contact" [ref=e31] [cursor=pointer]:
+            - /url: contact.html
+  - main [ref=e32]:
+    - generic [ref=e34]:
+      - generic [ref=e35]: Listen & Reflect
+      - heading "Stories Folded in Sound" [level=1] [ref=e36]
+      - paragraph [ref=e37]: Slow conversations on creativity, childhood, and the human need for play. No rush. No agenda. Just stories worth sitting with.
+    - generic [ref=e40]:
+      - generic [ref=e41]:
+        - generic [ref=e42]: What It Is
+        - heading "A Different Kind of Conversation" [level=2] [ref=e43]
+        - paragraph [ref=e44]: The Goppo Guro Podcast is a space for unhurried thought. Each episode invites educators, parents, artists, and makers to reflect on how creativity shapes us — not just as children, but as human beings.
+        - paragraph [ref=e45]: We talk about paper, play, and pause. About what gets lost when we optimize everything. About the quiet wisdom of letting a child fold something and not asking if it's correct.
+        - blockquote [ref=e46]:
+          - paragraph [ref=e47]: "\"Some of the most important conversations happen slowly, with long pauses, and no conclusions.\""
+          - generic [ref=e48]: — Goppo Guro
+      - img "Thoughtful conversation setting" [ref=e50]
+    - generic [ref=e52]:
+      - generic [ref=e53]:
+        - generic [ref=e54]: Episodes
+        - heading "Coming Soon" [level=2] [ref=e55]
+        - paragraph [ref=e56]: Six conversations we can't wait to share.
+      - generic [ref=e57]:
+        - article [ref=e58]:
+          - generic [ref=e59]:
+            - generic [ref=e60]: Episode 01
+            - heading "Why Play is Not a Luxury" [level=3] [ref=e61]
+            - paragraph [ref=e62]: A conversation on how play became an afterthought in modern education — and why reclaiming it is urgent.
+            - time [ref=e64]: Coming Soon
+        - article [ref=e65]:
+          - generic [ref=e66]:
+            - generic [ref=e67]: Episode 02
+            - heading "The Paper Memory" [level=3] [ref=e68]
+            - paragraph [ref=e69]: What do we remember from childhood? Three makers share how paper shaped their earliest sense of wonder.
+            - time [ref=e71]: Coming Soon
+        - article [ref=e72]:
+          - generic [ref=e73]:
+            - generic [ref=e74]: Episode 03
+            - heading "Teaching Without Telling" [level=3] [ref=e75]
+            - paragraph [ref=e76]: Two educators discuss the difference between instruction and invitation — and why it changes everything.
+            - time [ref=e78]: Coming Soon
+        - article [ref=e79]:
+          - generic [ref=e80]:
+            - generic [ref=e81]: Episode 04
+            - heading "The Joy Economy" [level=3] [ref=e82]
+            - paragraph [ref=e83]: Can kindness scale? A look at how social enterprises like Goppo Guro try to build systems around human warmth.
+            - time [ref=e85]: Coming Soon
+        - article [ref=e86]:
+          - generic [ref=e87]:
+            - generic [ref=e88]: Episode 05
+            - heading "Hands Before Screens" [level=3] [ref=e89]
+            - paragraph [ref=e90]: A pediatric researcher shares what decades of data say about the developmental importance of tactile play.
+            - time [ref=e92]: Coming Soon
+        - article [ref=e93]:
+          - generic [ref=e94]:
+            - generic [ref=e95]: Episode 06
+            - heading "Slow is a Superpower" [level=3] [ref=e96]
+            - paragraph [ref=e97]: In a world optimized for speed, a craftsperson and a philosopher sit down to talk about what we lose in a hurry.
+            - time [ref=e99]: Coming Soon
+    - generic [ref=e101]:
+      - generic [ref=e102]: Listen On
+      - heading "Subscribe on Your Platform" [level=2] [ref=e103]
+      - paragraph [ref=e104]: Available when it launches. Subscribe now to be notified.
+      - generic [ref=e105]:
+        - generic [ref=e106]:
+          - img [ref=e107]
+          - text: Spotify
+        - generic [ref=e109]:
+          - img [ref=e110]
+          - text: Apple Podcasts
+        - generic [ref=e112]:
+          - img [ref=e113]
+          - text: YouTube
+    - generic [ref=e116]:
+      - generic [ref=e117]: First to Know
+      - heading "Be Notified When We Go Live" [level=2] [ref=e118]
+      - paragraph [ref=e119]: We'll send one email when the first episode drops. That's it.
+      - generic [ref=e120]:
+        - textbox "Your email address" [ref=e121]
+        - button "Notify Me" [ref=e122] [cursor=pointer]
+  - contentinfo [ref=e123]:
+    - generic [ref=e124]:
+      - generic [ref=e125]:
+        - generic [ref=e126]:
+          - img "Goppo Guro" [ref=e127]
+          - paragraph [ref=e128]: A Space for Play, Paper, and Pause
+          - paragraph [ref=e129]: Creating space for curiosity, connection, and shared discovery through handcrafted paper experiences.
+          - link "Facebook" [ref=e131] [cursor=pointer]:
+            - /url: https://www.facebook.com/goppoguro
+            - img [ref=e132]
+        - navigation [ref=e134]:
+          - heading "Navigate" [level=4] [ref=e135]
+          - list [ref=e136]:
+            - listitem [ref=e137]:
+              - link "Home" [ref=e138] [cursor=pointer]:
+                - /url: index.html
+            - listitem [ref=e139]:
+              - link "Programme" [ref=e140] [cursor=pointer]:
+                - /url: programme.html
+            - listitem [ref=e141]:
+              - link "Project" [ref=e142] [cursor=pointer]:
+                - /url: creative-studio-network.html
+            - listitem [ref=e143]:
+              - link "Product" [ref=e144] [cursor=pointer]:
+                - /url: products.html
+            - listitem [ref=e145]:
+              - link "Publications" [ref=e146] [cursor=pointer]:
+                - /url: publications.html
+            - listitem [ref=e147]:
+              - link "About Us" [ref=e148] [cursor=pointer]:
+                - /url: about.html
+            - listitem [ref=e149]:
+              - link "Gallery" [ref=e150] [cursor=pointer]:
+                - /url: gallery.html
+            - listitem [ref=e151]:
+              - link "Contact" [ref=e152] [cursor=pointer]:
+                - /url: contact.html
+        - navigation [ref=e153]:
+          - heading "Explore" [level=4] [ref=e154]
+          - paragraph [ref=e155]: Programme
+          - list [ref=e156]:
+            - listitem [ref=e157]:
+              - link "Creative Learning (GCLP)" [ref=e158] [cursor=pointer]:
+                - /url: gclp.html
+            - listitem [ref=e159]:
+              - link "Women Makers" [ref=e160] [cursor=pointer]:
+                - /url: women-empowerment.html
+            - listitem [ref=e161]:
+              - link "Golpoka Club" [ref=e162] [cursor=pointer]:
+                - /url: golpoka-club.html
+            - listitem [ref=e163]:
+              - link "Podcast" [ref=e164] [cursor=pointer]:
+                - /url: podcast.html
+          - paragraph [ref=e165]: Project
+          - list [ref=e166]:
+            - listitem [ref=e167]:
+              - link "Goppoguro Studio" [ref=e168] [cursor=pointer]:
+                - /url: creative-studio-network.html
+            - listitem [ref=e169]:
+              - link "Golpoka Club" [ref=e170] [cursor=pointer]:
+                - /url: golpoka-club.html
+            - listitem [ref=e171]:
+              - link "Little Joys" [ref=e172] [cursor=pointer]:
+                - /url: little-joys.html
+        - generic [ref=e173]:
+          - heading "Stay Connected" [level=4] [ref=e174]
+          - paragraph [ref=e175]: Get updates on new products and impact stories.
+          - generic [ref=e176]:
+            - textbox "Your email" [ref=e177]
+            - button "Subscribe" [ref=e178] [cursor=pointer]
+      - generic [ref=e179]:
+        - generic [ref=e180]: SDG 1
+        - generic [ref=e181]: SDG 4
+        - generic [ref=e182]: SDG 8
+        - generic [ref=e183]: SDG 12
+      - generic [ref=e184]:
+        - paragraph [ref=e185]: Handmade in Bangladesh · © 2026 Goppo Guro. All rights reserved.
+        - paragraph [ref=e186]: Every purchase supports children's welfare.

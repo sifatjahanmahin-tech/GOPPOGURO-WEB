@@ -19,6 +19,7 @@
 
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
+<link rel="icon" href="goppoguro%20images/WhatsApp%20Image%202026-02-07%20at%2012.48.10%20AM.jpeg" type="image/jpeg">
 </head>
 
 <body>
@@ -26,7 +27,7 @@
     <header class="header" id="header">
         <nav class="nav container">
             <a href="index.html" class="nav__logo">
-                <img src="goppoguro images/WhatsApp Image 2026-02-07 at 12.48.10 AM.jpeg" alt="Goppo Guro Logo"
+                <img src="goppoguro%20images/WhatsApp%20Image%202026-02-07%20at%2012.48.10%20AM.jpeg" alt="Goppo Guro Logo"
                     class="nav__logo-img">
                 <span class="nav__logo-text">Goppo Guro</span>
             </a>
@@ -42,14 +43,16 @@
                     <a href="index.html" class="nav__link">Home</a>
                 </li>
                 <li class="nav__item nav__item--dropdown" id="nav-dropdown-programme">
-                    <button class="nav__link nav__dropdown-trigger" aria-haspopup="true" aria-expanded="false"
-                        aria-controls="dropdown-programme">
-                        Programme
-                        <svg class="nav__dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" aria-hidden="true">
-                            <path d="M6 9l6 6 6-6" />
-                        </svg>
-                    </button>
+                    <div class="nav__dropdown-wrapper">
+                        <a href="programme.html" class="nav__link">Programme</a>
+                        <button class="nav__dropdown-toggle" aria-expanded="false"
+                            aria-controls="dropdown-programme" aria-label="Open Programme submenu">
+                            <svg class="nav__dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" aria-hidden="true">
+                                <path d="M6 9l6 6 6-6" />
+                            </svg>
+                        </button>
+                    </div>
                                         <ul class="nav__dropdown" id="dropdown-programme" role="menu">
                         <li class="nav__dropdown-item" role="none">
                             <a href="programme.html" class="nav__dropdown-link" role="menuitem">All Programmes</a>
@@ -69,14 +72,16 @@
                     </ul>
                 </li>
                 <li class="nav__item nav__item--dropdown" id="nav-dropdown-project">
-                    <button class="nav__link nav__dropdown-trigger" aria-haspopup="true" aria-expanded="false"
-                        aria-controls="dropdown-project">
-                        Project
-                        <svg class="nav__dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" aria-hidden="true">
-                            <path d="M6 9l6 6 6-6" />
-                        </svg>
-                    </button>
+                    <div class="nav__dropdown-wrapper">
+                        <a href="projects.html" class="nav__link">Project</a>
+                        <button class="nav__dropdown-toggle" aria-expanded="false"
+                            aria-controls="dropdown-project" aria-label="Open Project submenu">
+                            <svg class="nav__dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" aria-hidden="true">
+                                <path d="M6 9l6 6 6-6" />
+                            </svg>
+                        </button>
+                    </div>
                     <ul class="nav__dropdown" id="dropdown-project" role="menu">
                         <li class="nav__dropdown-item" role="none">
                             <a href="creative-studio-network.html" class="nav__dropdown-link" role="menuitem">Goppoguro Studio</a>
@@ -109,128 +114,279 @@
     </header>
 
     <main>
-        <!-- Products Header -->
-        <section class="section section--light" style="padding-top: var(--space-16);">
-            <div class="container text-center">
-                <span class="section-tagline">Our Shop</span>
-                <h1 class="section-title">The <span class="gradient-text">Paper Experiences</span></h1>
-                <p class="section-description">
-                    Every piece is a unique story, folded with love and care. Discover experiences designed to help
-                    you pause, play, and connect.
-                </p>
+
+        <!-- Products Hero -->
+        <section class="proj-hero" id="products-hero" aria-label="Products">
+            <!-- Floating origami shapes -->
+            <div class="proj-hero__canvas" aria-hidden="true">
+                <svg class="proj-hero__shape ph-s1" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="50,5 95,95 5,95"/></svg>
+                <svg class="proj-hero__shape ph-s2" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="15" y="15" width="70" height="70" transform="rotate(12,50,50)"/></svg>
+                <svg class="proj-hero__shape ph-s3" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="50,5 62,35 95,38 72,60 78,92 50,75 22,92 28,60 5,38 38,35"/></svg>
+                <svg class="proj-hero__shape ph-s4" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M50 10 L90 50 L50 90 L10 50 Z"/></svg>
+                <svg class="proj-hero__shape ph-s5" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="50" cy="50" r="40"/></svg>
+                <svg class="proj-hero__shape ph-s6" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="50,5 95,95 5,95"/></svg>
+                <svg class="proj-hero__shape ph-s7" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M50 5 L95 50 L50 95 L5 50Z M50 25 L75 50 L50 75 L25 50Z"/></svg>
+                <svg class="proj-hero__shape ph-s8" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="20" y="20" width="60" height="60"/></svg>
             </div>
-        </section>
-
-        <!-- Products Listing -->
-        <section class="products-listing section">
-            <div class="container">
-                <div class="grid-3">
-                    <!-- Product 1 -->
-                    <article class="product-card">
-                        <div class="product-card__image">
-                            <img src="goppoguro images/WhatsApp Image 2026-02-07 at 12.49.09 AM.jpeg"
-                                alt="Classic Joy Jar">
-                            <div class="product-card__tag">Best Seller</div>
-                        </div>
-                        <div class="product-card__content">
-                            <h3 class="product-card__title">Classic Joy Jar</h3>
-                            <p class="product-card__description">A beautiful jar containing 30 hand-folded origami
-                                hearts and stars.</p>
-                            <div class="product-card__footer">
-                                <span class="product-card__price">৳ 450</span>
-                                <button class="btn btn--primary btn--small">Add to Cart</button>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Product 2 -->
-                    <article class="product-card">
-                        <div class="product-card__image">
-                            <img src="goppoguro images/WhatsApp Image 2026-02-07 at 12.49.06 AM.jpeg"
-                                alt="Signature Crane Set" loading="lazy">
-                        </div>
-                        <div class="product-card__content">
-                            <h3 class="product-card__title">Signature Crane Set</h3>
-                            <p class="product-card__description">Twelve meticulously folded cranes symbolizing peace and
-                                longevity.</p>
-                            <div class="product-card__footer">
-                                <span class="product-card__price">৳ 850</span>
-                                <button class="btn btn--primary btn--small">Add to Cart</button>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Product 3 -->
-                    <article class="product-card">
-                        <div class="product-card__image">
-                            <img src="goppoguro images/WhatsApp Image 2026-02-07 at 12.49.08 AM (1).jpeg"
-                                alt="Sustainable Gift Box" loading="lazy">
-                        </div>
-                        <div class="product-card__content">
-                            <h3 class="product-card__title">Sustainable Gift Box</h3>
-                            <p class="product-card__description">Premium gift set with recycled paper origami and a
-                                bamboo display tray.</p>
-                            <div class="product-card__footer">
-                                <span class="product-card__price">৳ 1,200</span>
-                                <button class="btn btn--primary btn--small">Add to Cart</button>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Product 4 -->
-                    <article class="product-card">
-                        <div class="product-card__image">
-                            <img src="goppoguro images/WhatsApp Image 2026-02-07 at 12.49.04 AM.jpeg"
-                                alt="Custom Message Frog" loading="lazy">
-                        </div>
-                        <div class="product-card__content">
-                            <h3 class="product-card__title">Hidden Message Frog</h3>
-                            <p class="product-card__description">A playful origami frog that reveals a hidden message
-                                when unfolded.</p>
-                            <div class="product-card__footer">
-                                <span class="product-card__price">৳ 350</span>
-                                <button class="btn btn--primary btn--small">Add to Cart</button>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Product 5 -->
-                    <article class="product-card">
-                        <div class="product-card__image">
-                            <img src="goppoguro images/WhatsApp Image 2026-02-07 at 12.49.08 AM.jpeg"
-                                alt="Little Joys Magnet Set">
-                        </div>
-                        <div class="product-card__content">
-                            <h3 class="product-card__title">Joy Magnets (Set of 5)</h3>
-                            <p class="product-card__description">Hand-folded origami treats equipped with strong magnets
-                                for your fridge.</p>
-                            <div class="product-card__footer">
-                                <span class="product-card__price">৳ 600</span>
-                                <button class="btn btn--primary btn--small">Add to Cart</button>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Product 6 -->
-                    <article class="product-card">
-                        <div class="product-card__image">
-                            <img src="goppoguro images/WhatsApp Image 2026-02-07 at 12.49.07 AM (1).jpeg"
-                                alt="Workshop Kit">
-                            <div class="product-card__tag">New</div>
-                        </div>
-                        <div class="product-card__content">
-                            <h3 class="product-card__title">DIY Joy Kit</h3>
-                            <p class="product-card__description">Learn the art of origami with our curated paper and
-                                video guide.</p>
-                            <div class="product-card__footer">
-                                <span class="product-card__price">৳ 1,500</span>
-                                <button class="btn btn--primary btn--small">Add to Cart</button>
-                            </div>
-                        </div>
-                    </article>
+            <div class="container proj-hero__content">
+                <p class="proj-hero__label">The Collection</p>
+                <h1 class="proj-hero__title">
+                    <span class="proj-hero__word" style="animation-delay:0.05s">Paper</span>
+                    <span class="proj-hero__word proj-hero__word--light" style="animation-delay:0.18s">Experiences</span>
+                    <br>
+                    <span class="proj-hero__word" style="animation-delay:0.32s">for</span>
+                    <span class="proj-hero__word proj-hero__word--light" style="animation-delay:0.45s">Every</span>
+                    <span class="proj-hero__word" style="animation-delay:0.58s">Heart.</span>
+                </h1>
+                <p class="proj-hero__description">Handcrafted with love. Designed for play, pause, and connection.</p>
+                <div class="proj-hero__actions">
+                    <a href="#featured" class="btn btn--outline-white btn--large">Featured Product</a>
+                    <a href="#catalogue" class="btn btn--ghost-white btn--large">Browse All</a>
+                </div>
+                <div class="proj-hero__scroll-hint" aria-hidden="true">
+                    <div class="proj-hero__scroll-line"></div>
                 </div>
             </div>
         </section>
+
+        <!-- Marquee Strip -->
+        <div class="marquee-strip" aria-hidden="true">
+            <div class="marquee-strip__track">
+                <div class="marquee-strip__inner">
+                    <span class="marquee-strip__word">Little Joys</span>
+                    <span class="marquee-strip__dot"></span>
+                    <span class="marquee-strip__word">Handcrafted</span>
+                    <span class="marquee-strip__dot"></span>
+                    <span class="marquee-strip__word">RolGol</span>
+                    <span class="marquee-strip__dot"></span>
+                    <span class="marquee-strip__word">Made by Hands</span>
+                    <span class="marquee-strip__dot"></span>
+                    <span class="marquee-strip__word">Golpoka Club Kit</span>
+                    <span class="marquee-strip__dot"></span>
+                    <span class="marquee-strip__word">Shared by Hearts</span>
+                    <span class="marquee-strip__dot"></span>
+                    <span class="marquee-strip__word">Boner Majhe Bonvojon</span>
+                    <span class="marquee-strip__dot"></span>
+                    <span class="marquee-strip__word">Birpurush</span>
+                    <span class="marquee-strip__dot"></span>
+                    <span class="marquee-strip__word">Play · Paper · Pause</span>
+                    <span class="marquee-strip__dot"></span>
+                </div>
+                <div class="marquee-strip__inner" aria-hidden="true">
+                    <span class="marquee-strip__word">Little Joys</span>
+                    <span class="marquee-strip__dot"></span>
+                    <span class="marquee-strip__word">Handcrafted</span>
+                    <span class="marquee-strip__dot"></span>
+                    <span class="marquee-strip__word">RolGol</span>
+                    <span class="marquee-strip__dot"></span>
+                    <span class="marquee-strip__word">Made by Hands</span>
+                    <span class="marquee-strip__dot"></span>
+                    <span class="marquee-strip__word">Golpoka Club Kit</span>
+                    <span class="marquee-strip__dot"></span>
+                    <span class="marquee-strip__word">Shared by Hearts</span>
+                    <span class="marquee-strip__dot"></span>
+                    <span class="marquee-strip__word">Boner Majhe Bonvojon</span>
+                    <span class="marquee-strip__dot"></span>
+                    <span class="marquee-strip__word">Birpurush</span>
+                    <span class="marquee-strip__dot"></span>
+                    <span class="marquee-strip__word">Play · Paper · Pause</span>
+                    <span class="marquee-strip__dot"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ======================================== -->
+        <!-- FEATURED PRODUCT: LITTLE JOYS           -->
+        <!-- ======================================== -->
+        <section class="section" id="featured" aria-label="Featured product: Little Joys">
+            <div class="container">
+
+                <!-- Breadcrumbs -->
+                <nav class="pd__breadcrumbs" aria-label="Breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span class="pd__breadcrumbs-sep">›</span>
+                    <a href="products.html">Products</a>
+                    <span class="pd__breadcrumbs-sep">›</span>
+                    <span class="pd__breadcrumbs-current">Little Joys</span>
+                </nav>
+
+                <div class="pd__grid">
+
+                    <!-- Left: Image Gallery (images injected from products-data.js) -->
+                    <div class="pd__gallery">
+                        <div class="pd__gallery-main" id="pd-gallery-main">
+                            <button class="pd__gallery-nav pd__gallery-nav--prev" id="pd-prev" aria-label="Previous image">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+                            </button>
+                            <button class="pd__gallery-nav pd__gallery-nav--next" id="pd-next" aria-label="Next image">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+                            </button>
+                        </div>
+                        <div class="pd__gallery-footer">
+                            <div class="pd__gallery-dots" id="pd-gallery-dots" role="tablist" aria-label="Product images"></div>
+                            <span class="pd__gallery-counter" id="pd-gallery-counter"></span>
+                        </div>
+                    </div>
+
+                    <!-- Right: Product Details -->
+                    <div class="pd__details">
+                        <p class="pd__collection-label">Little Joys Collection</p>
+                        <h1 class="pd__name">Little Joys</h1>
+                        <p class="pd__tagline">Tiny Folded Happiness</p>
+
+                        <!-- Tags / Badges -->
+                        <div class="pd__badges">
+                            <span class="pd__badge pd__badge--filled">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.09 6.26H21l-5.47 3.97 2.09 6.26L12 14.52l-5.62 3.97 2.09-6.26L3 8.26h6.91z"/></svg>
+                                Best Seller
+                            </span>
+                            <span class="pd__badge">Handmade</span>
+                            <span class="pd__badge">Origami</span>
+                            <span class="pd__badge">Gift-Ready</span>
+                            <span class="pd__badge">Sustainable</span>
+                        </div>
+
+                        <div class="pd__divider"></div>
+
+                        <!-- Description -->
+                        <div class="pd__description">
+                            <p>
+                                Little Joys is a collection of tiny handcrafted paper treasures designed to spread kindness, imagination, and emotional connection through simple acts of giving.
+                            </p>
+                            <p>
+                                A folded star. A paper heart. A tiny bird shared with someone you care about.
+                                Sometimes the smallest things carry the biggest feelings.
+                            </p>
+                        </div>
+
+                        <blockquote class="pd__quote">
+                            "Each fold becomes a small emotional experience."
+                        </blockquote>
+
+                        <div class="pd__divider"></div>
+
+                        <!-- What's Inside -->
+                        <p class="pd__section-label">What's Inside</p>
+                        <div class="pd__chips">
+                            <span class="pd__chip">Origami hearts</span>
+                            <span class="pd__chip">Tiny stars</span>
+                            <span class="pd__chip">Birds & butterflies</span>
+                            <span class="pd__chip">Pocket messages</span>
+                            <span class="pd__chip">Mini story cards</span>
+                            <span class="pd__chip">Giftable surprises</span>
+                        </div>
+
+                        <!-- Perfect For -->
+                        <p class="pd__section-label">Perfect For</p>
+                        <div class="pd__chips">
+                            <span class="pd__chip">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                                Gifts
+                            </span>
+                            <span class="pd__chip">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                                Cafés & Homes
+                            </span>
+                            <span class="pd__chip">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                                Schools
+                            </span>
+                            <span class="pd__chip">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+                                Creative Events
+                            </span>
+                            <span class="pd__chip">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                                Parent–Child Bonding
+                            </span>
+                        </div>
+
+                        <div class="pd__divider"></div>
+
+                        <!-- Women Makers note -->
+                        <div class="pd__maker-note">
+                            <div class="pd__maker-icon" aria-hidden="true">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                            </div>
+                            <div class="pd__maker-text">
+                                <strong>Made by Women Artisans</strong>
+                                <span>Every Little Joy is handcrafted through our Women Makers Programme — supporting flexible, meaningful creative work. Made by Hands. Shared by Hearts.</span>
+                            </div>
+                        </div>
+
+                        <!-- CTA -->
+                        <div class="pd__actions">
+                            <a href="https://www.facebook.com/goppoguro" target="_blank" rel="noopener" class="btn btn--primary btn--large">
+                                Order on Facebook
+                                <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                            </a>
+                            <a href="contact.html" class="btn btn--outline btn--large">Contact Us</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Divider -->
+        <div class="section-divider" aria-hidden="true">
+            <div class="section-divider__line"></div>
+            <span class="section-divider__ornament">· · ·</span>
+            <div class="section-divider__line"></div>
+        </div>
+
+        <!-- ======================================== -->
+        <!-- FULL CATALOGUE                           -->
+        <!-- ======================================== -->
+        <section class="catalogue" id="catalogue" aria-label="Full product catalogue">
+            <div class="container">
+                <header class="section-header">
+                    <span class="section-tagline">All Products</span>
+                    <h2 class="section-title">The Full <span class="gradient-text">Collection</span></h2>
+                    <p class="section-description">
+                        Stories, experiences, and objects designed to bring play, pause, and imagination back into everyday life.
+                    </p>
+                </header>
+
+                <!-- Catalogue grid — rendered from products-data.js -->
+                <div class="catalogue__grid" id="catalogue-grid"></div>
+            </div>
+        </section>
+
+        <!-- Women Makers Banner -->
+        <section class="handmade-banner" aria-label="Women Makers Programme">
+            <div class="container">
+                <div class="handmade-banner__inner">
+                    <div>
+                        <p class="handmade-banner__label">Women Makers Programme</p>
+                        <h2 class="handmade-banner__title">Made by Hands.<br>Shared by Hearts.</h2>
+                        <p class="handmade-banner__body">
+                            Every Little Joy is handcrafted by women who turn simple paper into moments of care.
+                            This work offers flexible income, creative focus, and dignity — without factories or machines.
+                            When you pick a piece, you are participating in a system where care is created by hands that matter.
+                        </p>
+                        <a href="women-empowerment.html" class="btn btn--outline-white btn--large">
+                            Learn About Our Makers
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                    </div>
+                    <div>
+                        <img src="goppoguro%20images/WhatsApp%20Image%202026-02-09%20at%201.12.12%20AM.jpeg"
+                            alt="Women artisans hand-folding Little Joys with care"
+                            class="handmade-banner__img"
+                            loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Scroll to top -->
+        <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20" aria-hidden="true">
+                <path d="M18 15l-6-6-6 6"/>
+            </svg>
+        </button>
+
     </main>
 
     <!-- Footer -->
@@ -238,7 +394,7 @@
         <div class="container">
             <div class="footer__grid">
                 <div class="footer__brand">
-                    <img src="goppoguro images/WhatsApp Image 2026-02-07 at 12.48.10 AM.jpeg" alt="Goppo Guro"
+                    <img src="goppoguro%20images/WhatsApp%20Image%202026-02-07%20at%2012.48.10%20AM.jpeg" alt="Goppo Guro"
                         class="footer__logo">
                     <p class="footer__tagline">A Space for Play, Paper, and Pause</p>
                     <p class="footer__description">
@@ -261,7 +417,7 @@
                     <ul class="footer__nav-list">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="programme.html">Programme</a></li>
-                        <li><a href="creative-studio-network.html">Project</a></li>
+                        <li><a href="projects.html">Project</a></li>
                         <li><a href="products.html">Product</a></li>
                         <li><a href="publications.html">Publications</a></li>
                         <li><a href="about.html">About Us</a></li>

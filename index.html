@@ -21,13 +21,14 @@
     <meta property="og:title" content="Goppo Guro | Play, Paper, and Pause">
     <meta property="og:description"
         content="A space for Play, Paper, and Pause. Small stories and gentle beginnings that invite curiosity and connection.">
-    <meta property="og:image" content="goppoguro images/WhatsApp Image 2026-02-07 at 12.48.10 AM.jpeg">
+    <meta property="og:image" content="goppoguro%20images/WhatsApp Image 2026-02-07 at 12.48.10 AM.jpeg">
     <meta property="og:url" content="https://sifatjahanmahin-tech.github.io/GOPPOGURO-WEB/">
     <meta property="og:type" content="website">
     <meta name="theme-color" content="#ffffff">
 
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
+<link rel="icon" href="goppoguro%20images/WhatsApp%20Image%202026-02-07%20at%2012.48.10%20AM.jpeg" type="image/jpeg">
 </head>
 
 <body>
@@ -35,7 +36,7 @@
     <header class="header" id="header">
         <nav class="nav container">
             <a href="index.html" class="nav__logo">
-                <img src="goppoguro images/WhatsApp Image 2026-02-07 at 12.48.10 AM.jpeg" alt="Goppo Guro Logo"
+                <img src="goppoguro%20images/WhatsApp%20Image%202026-02-07%20at%2012.48.10%20AM.jpeg" alt="Goppo Guro Logo"
                     class="nav__logo-img">
                 <span class="nav__logo-text">Goppo Guro</span>
             </a>
@@ -51,14 +52,16 @@
                     <a href="index.html" class="nav__link active">Home</a>
                 </li>
                 <li class="nav__item nav__item--dropdown" id="nav-dropdown-programme">
-                    <button class="nav__link nav__dropdown-trigger" aria-haspopup="true" aria-expanded="false"
-                        aria-controls="dropdown-programme">
-                        Programme
-                        <svg class="nav__dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" aria-hidden="true">
-                            <path d="M6 9l6 6 6-6" />
-                        </svg>
-                    </button>
+                    <div class="nav__dropdown-wrapper">
+                        <a href="programme.html" class="nav__link">Programme</a>
+                        <button class="nav__dropdown-toggle" aria-expanded="false"
+                            aria-controls="dropdown-programme" aria-label="Open Programme submenu">
+                            <svg class="nav__dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" aria-hidden="true">
+                                <path d="M6 9l6 6 6-6" />
+                            </svg>
+                        </button>
+                    </div>
                                         <ul class="nav__dropdown" id="dropdown-programme" role="menu">
                         <li class="nav__dropdown-item" role="none">
                             <a href="programme.html" class="nav__dropdown-link" role="menuitem">All Programmes</a>
@@ -78,14 +81,16 @@
                     </ul>
                 </li>
                 <li class="nav__item nav__item--dropdown" id="nav-dropdown-project">
-                    <button class="nav__link nav__dropdown-trigger" aria-haspopup="true" aria-expanded="false"
-                        aria-controls="dropdown-project">
-                        Project
-                        <svg class="nav__dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" aria-hidden="true">
-                            <path d="M6 9l6 6 6-6" />
-                        </svg>
-                    </button>
+                    <div class="nav__dropdown-wrapper">
+                        <a href="projects.html" class="nav__link">Project</a>
+                        <button class="nav__dropdown-toggle" aria-expanded="false"
+                            aria-controls="dropdown-project" aria-label="Open Project submenu">
+                            <svg class="nav__dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" aria-hidden="true">
+                                <path d="M6 9l6 6 6-6" />
+                            </svg>
+                        </button>
+                    </div>
                     <ul class="nav__dropdown" id="dropdown-project" role="menu">
                         <li class="nav__dropdown-item" role="none">
                             <a href="creative-studio-network.html" class="nav__dropdown-link" role="menuitem">Goppoguro Studio</a>
@@ -125,26 +130,21 @@
                 <article class="hero__content">
                     <span class="hero__tagline">Small Stories, Gentle Beginnings</span>
                     <h1 class="hero__title">
-                        A Space for Play,
-                        <br>Paper, and <span class="gradient-text">Pause</span>
+                        <span class="proj-hero__word" style="animation-delay:0.05s">A</span>
+                        <span class="proj-hero__word" style="animation-delay:0.15s">Space</span>
+                        <span class="proj-hero__word" style="animation-delay:0.25s">for</span>
+                        <span class="proj-hero__word" style="animation-delay:0.35s">Play,</span>
+                        <br>
+                        <span class="proj-hero__word" style="animation-delay:0.45s">Paper,</span>
+                        <span class="proj-hero__word" style="animation-delay:0.55s">and</span>
+                        <span class="proj-hero__word gradient-text" style="animation-delay:0.65s">Pause</span>
                     </h1>
                     <p class="hero__description">
                         Goppo Guro is a pause for the relationship we've lost with play and paper. We invite you to a
                         space where imagination has no timer, and discovery has no right answers.
                     </p>
-                    <div class="hero__stats">
-                        <div class="hero__stat">
-                            <span class="hero__stat-number">500+</span>
-                            <span class="hero__stat-label">Children Supported</span>
-                        </div>
-                        <div class="hero__stat">
-                            <span class="hero__stat-number">10K+</span>
-                            <span class="hero__stat-label">Joys Shared</span>
-                        </div>
-                        <div class="hero__stat">
-                            <span class="hero__stat-number">50+</span>
-                            <span class="hero__stat-label">Partner Schools</span>
-                        </div>
+                    <div class="hero__stats" id="hero-stats">
+                        <!-- Rendered from data/stats.json by initStatsFromData() -->
                     </div>
                     <div class="hero__actions">
                         <a href="products.html" class="btn btn--primary">
@@ -167,15 +167,67 @@
             </div>
         </section>
 
-        <!-- What is Goppoguro Section -->
+        <!-- Marquee Strip -->
+        <div class="marquee-strip" aria-hidden="true">
+            <div class="marquee-strip__track">
+                <!-- Repeated twice so the loop is seamless -->
+                <div class="marquee-strip__inner">
+                    <span class="marquee-strip__word">Play</span>
+                    <span class="marquee-strip__dot"></span>
+                    <span class="marquee-strip__word">Paper</span>
+                    <span class="marquee-strip__dot"></span>
+                    <span class="marquee-strip__word">Pause</span>
+                    <span class="marquee-strip__dot"></span>
+                    <span class="marquee-strip__word">Origami</span>
+                    <span class="marquee-strip__dot"></span>
+                    <span class="marquee-strip__word">Bangladesh</span>
+                    <span class="marquee-strip__dot"></span>
+                    <span class="marquee-strip__word">Little Joys</span>
+                    <span class="marquee-strip__dot"></span>
+                    <span class="marquee-strip__word">গপ্পো গুঁড়ো</span>
+                    <span class="marquee-strip__dot"></span>
+                    <span class="marquee-strip__word">Storytelling</span>
+                    <span class="marquee-strip__dot"></span>
+                    <span class="marquee-strip__word">Handcrafted</span>
+                    <span class="marquee-strip__dot"></span>
+                    <span class="marquee-strip__word">Connection</span>
+                    <span class="marquee-strip__dot"></span>
+                </div>
+                <!-- Duplicate for seamless loop -->
+                <div class="marquee-strip__inner" aria-hidden="true">
+                    <span class="marquee-strip__word">Play</span>
+                    <span class="marquee-strip__dot"></span>
+                    <span class="marquee-strip__word">Paper</span>
+                    <span class="marquee-strip__dot"></span>
+                    <span class="marquee-strip__word">Pause</span>
+                    <span class="marquee-strip__dot"></span>
+                    <span class="marquee-strip__word">Origami</span>
+                    <span class="marquee-strip__dot"></span>
+                    <span class="marquee-strip__word">Bangladesh</span>
+                    <span class="marquee-strip__dot"></span>
+                    <span class="marquee-strip__word">Little Joys</span>
+                    <span class="marquee-strip__dot"></span>
+                    <span class="marquee-strip__word">গপ্পো গুঁড়ো</span>
+                    <span class="marquee-strip__dot"></span>
+                    <span class="marquee-strip__word">Storytelling</span>
+                    <span class="marquee-strip__dot"></span>
+                    <span class="marquee-strip__word">Handcrafted</span>
+                    <span class="marquee-strip__dot"></span>
+                    <span class="marquee-strip__word">Connection</span>
+                    <span class="marquee-strip__dot"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- What is Goppo Guro Section -->
         <section class="section section--light" id="about">
             <div class="container">
                 <div class="grid-2 align-center">
                     <div class="section__content">
                         <span class="section-tagline">About Us</span>
-                        <h2 class="section-title">What is <span class="gradient-text">Goppoguro</span>?</h2>
+                        <h2 class="section-title">What is <span class="gradient-text">Goppo Guro</span>?</h2>
                         <p class="section-description" style="margin-left: 0; text-align: left;">
-                            Goppoguro is a creative learning initiative designed to nurture curiosity and foster human connection. 
+                            Goppo Guro is a creative learning initiative designed to nurture curiosity and foster human connection. 
                             We believe that small stories (গপ্পো) and gentle beginnings (গুঁড়ো) can spark lifelong journeys of discovery.
                         </p>
                         <p class="section-text" style="margin-top: var(--space-4); color: var(--color-text-secondary);">
@@ -184,7 +236,7 @@
                         </p>
                     </div>
                     <div class="section__visual">
-                        <img src="goppoguro images/WhatsApp Image 2026-02-07 at 12.49.04 AM.jpeg" alt="GOPPOGURO Experience" class="radius-lg">
+                        <img src="goppoguro%20images/WhatsApp%20Image%202026-02-07%20at%2012.49.09%20AM.jpeg" alt="Little Joys origami jar in a classroom setting" class="radius-lg">
                     </div>
                 </div>
             </div>
@@ -226,28 +278,132 @@
         </section>
 
         <!-- 4P Framework Section -->
-        <section class="section section--dim" id="framework">
+        <section class="section fourp" id="framework">
             <div class="container">
-                <div class="grid-2 align-center">
-                    <div class="section__visual">
-                        <div class="framework-diagram">
-                            <!-- Diagram placeholder or visual representation -->
-                            <div class="feature-card" style="border: 2px solid var(--color-gold);">
-                                <h3 class="gradient-text" style="font-size: 2.5rem; text-align: center;">4P</h3>
-                                <p style="text-align: center; font-weight: 600;">Projects • Passion • Peers • Play</p>
+                <header class="section-header">
+                    <span class="section-tagline">Our Approach</span>
+                    <h2 class="section-title">The <span class="gradient-text">4P Framework</span></h2>
+                    <p class="section-description">
+                        We create stories, tools &amp; experiences that spark imagination, nurture creativity and build meaningful connections.
+                    </p>
+                </header>
+
+                <!-- Infographic overview -->
+                <div class="fourp__infographic">
+                    <img src="Home%20Page%20Contents/4p-framework-1.jpeg" alt="4P Framework overview — Publication, Programme, Project, Product" class="fourp__infographic-img" loading="lazy">
+                    <img src="Home%20Page%20Contents/4p-framework-2.jpeg" alt="4P Framework detailed breakdown" class="fourp__infographic-img" loading="lazy">
+                </div>
+
+                <div class="fourp__grid">
+
+                    <!-- 1. Publication -->
+                    <div class="fourp__pillar">
+                        <div class="fourp__pillar-head">
+                            <img src="goppoguro%20images/other%20images/kochi%20oshan%20bhai.jpeg" alt="Publication" class="fourp__pillar-img" loading="lazy">
+                            <div class="fourp__pillar-overlay"></div>
+                            <div class="fourp__pillar-content">
+                                <span class="fourp__badge">Publication</span>
+                                <p class="fourp__pitch">Research-driven publications that inform, inspire and create impact.</p>
                             </div>
                         </div>
-                    </div>
-                    <div class="section__content">
-                        <span class="section-tagline">Our Methodology</span>
-                        <h2 class="section-title">Introduction to the <span class="gradient-text">4P Framework</span></h2>
-                        <ul class="feature-list" style="margin-top: var(--space-4);">
-                            <li style="margin-bottom: var(--space-3);"><strong>Projects:</strong> Learning through meaningful, long-term creation.</li>
-                            <li style="margin-bottom: var(--space-3);"><strong>Passion:</strong> Fueling growth through individual interests.</li>
-                            <li style="margin-bottom: var(--space-3);"><strong>Peers:</strong> Collaborating and sharing in a social context.</li>
-                            <li style="margin-bottom: var(--space-3);"><strong>Play:</strong> Experimenting and taking risks in a safe space.</li>
+                        <ul class="fourp__list">
+                            <li class="fourp__item">
+                                <svg class="fourp__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+                                <div><strong>Research</strong><p>In-depth research on stories, culture, creativity, education and childhood.</p></div>
+                            </li>
+                            <li class="fourp__item">
+                                <svg class="fourp__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+                                <div><strong>Blog</strong><p>Thoughtful articles sharing ideas, insights and creative inspirations.</p></div>
+                            </li>
+                            <li class="fourp__item">
+                                <svg class="fourp__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                                <div><strong>Professional Expertise</strong><p>Conversations and expert perspectives from educators, creators and practitioners.</p></div>
+                            </li>
                         </ul>
                     </div>
+
+                    <!-- 2. Programme -->
+                    <div class="fourp__pillar">
+                        <div class="fourp__pillar-head">
+                            <img src="goppoguro%20images/WhatsApp%20Image%202026-02-07%20at%2012.49.07%20AM%20(1).jpeg" alt="Programme" class="fourp__pillar-img" loading="lazy">
+                            <div class="fourp__pillar-overlay"></div>
+                            <div class="fourp__pillar-content">
+                                <span class="fourp__badge">Programme</span>
+                                <p class="fourp__pitch">Creative learning programmes that nurture imagination, curiosity and confidence.</p>
+                            </div>
+                        </div>
+                        <ul class="fourp__list">
+                            <li class="fourp__item">
+                                <svg class="fourp__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                                <div><strong>GCLP</strong><p>Creative Programme in Primary Education — bringing creativity, storytelling and joy into early learning.</p></div>
+                            </li>
+                            <li class="fourp__item">
+                                <svg class="fourp__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.58-7 8-7s8 3 8 7"/></svg>
+                                <div><strong>Golpoka Creative Club</strong><p>A monthly creative adventure for children to imagine, create and grow.</p></div>
+                            </li>
+                            <li class="fourp__item">
+                                <svg class="fourp__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                                <div><strong>Little Joys Women Empowerment</strong><p>Empowering women through creative work, skills and financial independence.</p></div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- 3. Project -->
+                    <div class="fourp__pillar">
+                        <div class="fourp__pillar-head">
+                            <img src="goppoguro%20images/other%20images/our%20team.jpeg" alt="Project" class="fourp__pillar-img" loading="lazy">
+                            <div class="fourp__pillar-overlay"></div>
+                            <div class="fourp__pillar-content">
+                                <span class="fourp__badge">Project</span>
+                                <p class="fourp__pitch">Community projects that build connection, collaboration and change.</p>
+                            </div>
+                        </div>
+                        <ul class="fourp__list">
+                            <li class="fourp__item">
+                                <svg class="fourp__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                                <div><strong>Goppoguro Community Studio</strong><p>A creative space for collaboration, learning and community engagement.</p></div>
+                            </li>
+                            <li class="fourp__item">
+                                <svg class="fourp__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                <div><strong>Little Joys</strong><p>Handcrafted paper creations that spread happiness and support our women makers.</p></div>
+                            </li>
+                            <li class="fourp__item">
+                                <svg class="fourp__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+                                <div><strong>Goppoguro Boithok – Podcast</strong><p>Conversations around stories, creativity, education and life.</p></div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- 4. Product -->
+                    <div class="fourp__pillar">
+                        <div class="fourp__pillar-head">
+                            <img src="products/little-joys-1.jpg" alt="Product" class="fourp__pillar-img" loading="lazy">
+                            <div class="fourp__pillar-overlay"></div>
+                            <div class="fourp__pillar-content">
+                                <span class="fourp__badge">Product</span>
+                                <p class="fourp__pitch">Thoughtfully designed products that make learning, play and storytelling joyful.</p>
+                            </div>
+                        </div>
+                        <ul class="fourp__list">
+                            <li class="fourp__item">
+                                <svg class="fourp__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                                <div><strong>Activity Books &amp; Play Books</strong><p>Story + play + creativity — engaging experiences that make learning joyful.</p></div>
+                            </li>
+                            <li class="fourp__item">
+                                <svg class="fourp__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                <div><strong>Little Joys</strong><p>Tiny handfolded paper treasures that carry big emotions.</p></div>
+                            </li>
+                            <li class="fourp__item">
+                                <svg class="fourp__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                                <div><strong>RolGol &amp; Graphic Novels</strong><p>Unroll adventure and timeless classics retold through powerful visuals.</p></div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="fourp__tagline">
+                    <p>Stories in our hearts. Creativity in our hands.<br><em>A better world in our imagination. ♥</em></p>
                 </div>
             </div>
         </section>
@@ -356,25 +512,86 @@
 
                 <figure class="features__showcase">
                     <div class="features__showcase-grid">
-                        <img src="goppoguro images/WhatsApp Image 2026-02-07 at 12.49.06 AM.jpeg"
+                        <img src="goppoguro%20images/WhatsApp%20Image%202026-02-07%20at%2012.49.06%20AM.jpeg"
                             alt="Full product line of Little Joys"
                             class="features__showcase-img features__showcase-img--main">
-                        <img src="goppoguro images/WhatsApp Image 2026-02-07 at 12.49.07 AM.jpeg"
+                        <img src="goppoguro%20images/WhatsApp%20Image%202026-02-07%20at%2012.49.07%20AM.jpeg"
                             alt="Children enjoying Little Joys at school" class="features__showcase-img">
-                        <img src="goppoguro images/WhatsApp Image 2026-02-07 at 12.49.07 AM (1).jpeg"
+                        <img src="goppoguro%20images/WhatsApp%20Image%202026-02-07%20at%2012.49.07%20AM%20(1).jpeg"
                             alt="Children in uniform picking origami" class="features__showcase-img">
                     </div>
                 </figure>
             </div>
         </section>
 
+        <!-- Section Divider -->
+        <div class="section-divider" aria-hidden="true">
+            <div class="section-divider__line"></div>
+            <span class="section-divider__ornament">· · ·</span>
+            <div class="section-divider__line"></div>
+        </div>
+
+        <!-- Bento Stats Grid -->
+        <section class="bento section" aria-label="Key numbers">
+            <div class="container">
+                <div class="bento__grid">
+                    <!-- Mission cell — large, dark -->
+                    <div class="bento__cell bento__cell--mission">
+                        <div class="bento__cell-label">Our Mission</div>
+                        <h2 class="bento__cell-title">Play. Paper.<br>Pause.</h2>
+                        <p class="bento__cell-body">A creative learning initiative that brings curiosity, connection, and the quiet joy of making back into everyday life — one fold at a time.</p>
+                        <!-- Origami crane watermark -->
+                        <svg class="bento__cell-corner" viewBox="0 0 64 64" fill="currentColor" aria-hidden="true">
+                            <path d="M32 4L60 32L32 60L4 32L32 4ZM32 14L14 32L32 50L50 32L32 14Z" opacity="0.5"/>
+                        </svg>
+                    </div>
+                    <!-- Stat: children -->
+                    <div class="bento__cell bento__cell--stat1">
+                        <div class="bento__cell-label">Children Reached</div>
+                        <div class="bento__cell-number"><span data-countup="500">500</span>+</div>
+                        <div class="bento__cell-unit">across Bangladesh</div>
+                    </div>
+                    <!-- Stat: joys -->
+                    <div class="bento__cell bento__cell--stat2">
+                        <div class="bento__cell-label">Little Joys</div>
+                        <div class="bento__cell-number"><span data-countup="10">10</span>K+</div>
+                        <div class="bento__cell-unit">shared</div>
+                    </div>
+                    <!-- Tagline cell -->
+                    <div class="bento__cell bento__cell--tagline">
+                        <div class="bento__cell-label">The Tagline</div>
+                        <p class="bento__cell-title" style="font-style:italic; font-size: clamp(1.1rem, 2vw, 1.5rem);">"Small stories, gentle beginnings that invite curiosity and connection."</p>
+                    </div>
+                    <!-- Stat: schools -->
+                    <div class="bento__cell bento__cell--stat3">
+                        <div class="bento__cell-label">Partner Schools</div>
+                        <div class="bento__cell-number"><span data-countup="50">50</span>+</div>
+                        <div class="bento__cell-unit">and growing</div>
+                    </div>
+                    <!-- Stat: artisans -->
+                    <div class="bento__cell bento__cell--stat4">
+                        <div class="bento__cell-label">Women Artisans</div>
+                        <div class="bento__cell-number"><span data-countup="100">100</span>%</div>
+                        <div class="bento__cell-unit">handmade by local makers</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Divider -->
+        <div class="section-divider" aria-hidden="true">
+            <div class="section-divider__line"></div>
+            <span class="section-divider__ornament">· · ·</span>
+            <div class="section-divider__line"></div>
+        </div>
+
         <!-- Our Story Section -->
         <section class="story" id="story">
             <div class="container">
                 <div class="story__grid">
                     <figure class="story__visual">
-                        <img src="goppoguro images/WhatsApp Image 2026-02-07 at 12.49.04 AM.jpeg"
-                            alt="Family photo with origami frog" class="story__image">
+                        <img src="goppoguro%20images/other%20images/kochi%20oshan%20bhai.jpeg"
+                            alt="Goppo Guro founder" class="story__image">
                         <div class="story__visual-accent"></div>
                     </figure>
 
@@ -451,7 +668,7 @@
 
                     <figure class="makers__visual">
                         <div class="makers__image-container">
-                            <img src="goppoguro images/WhatsApp Image 2026-02-09 at 1.12.12 AM.jpeg"
+                            <img src="goppoguro%20images/WhatsApp%20Image%202026-02-09%20at%201.12.12%20AM.jpeg"
                                 alt="Women artisans hand-folding origami with care" class="makers__image">
                             <div class="makers__image-badge">100% Handmade</div>
                         </div>
@@ -473,47 +690,44 @@
                 </header>
 
                 <div class="products-preview__grid">
-                    <article class="product-card-preview">
-                        <div class="product-card-preview__image">
-                            <img src="goppoguro images/WhatsApp Image 2026-02-07 at 12.49.09 AM.jpeg"
-                                alt="Origami Joy Jar">
-                            <div class="product-card-preview__overlay">
-                                <a href="products.html" class="btn btn--small btn--primary">View Details</a>
-                            </div>
+                    <a href="products.html" class="product-card--cinematic" aria-label="View Classic Joy Jar">
+                        <img src="goppoguro%20images/WhatsApp%20Image%202026-02-07%20at%2012.49.09%20AM.jpeg"
+                            alt="Classic Joy Jar — handmade origami jar" class="product-card__img">
+                        <div class="product-card__overlay">
+                            <div class="product-card__tag">Little Joys Collection</div>
+                            <h3 class="product-card__name">Classic Joy Jar</h3>
+                            <span class="product-card__cta">
+                                View Details
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            </span>
                         </div>
-                        <div class="product-card-preview__content">
-                            <h3 class="product-card-preview__title">Classic Joy Jar</h3>
-                            <p class="product-card-preview__price">৳ 450</p>
-                        </div>
-                    </article>
+                    </a>
 
-                    <article class="product-card-preview">
-                        <div class="product-card-preview__image">
-                            <img src="goppoguro images/WhatsApp Image 2026-02-07 at 12.49.06 AM.jpeg"
-                                alt="Signature Crane Collection">
-                            <div class="product-card-preview__overlay">
-                                <a href="products.html" class="btn btn--small btn--primary">View Details</a>
-                            </div>
+                    <a href="products.html" class="product-card--cinematic" aria-label="View Signature Crane Set">
+                        <img src="goppoguro%20images/WhatsApp%20Image%202026-02-07%20at%2012.49.06%20AM.jpeg"
+                            alt="Signature Crane Set — origami cranes" class="product-card__img">
+                        <div class="product-card__overlay">
+                            <div class="product-card__tag">Little Joys Collection</div>
+                            <h3 class="product-card__name">Signature Crane Set</h3>
+                            <span class="product-card__cta">
+                                View Details
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            </span>
                         </div>
-                        <div class="product-card-preview__content">
-                            <h3 class="product-card-preview__title">Signature Crane Set</h3>
-                            <p class="product-card-preview__price">৳ 850</p>
-                        </div>
-                    </article>
+                    </a>
 
-                    <article class="product-card-preview">
-                        <div class="product-card-preview__image">
-                            <img src="goppoguro images/WhatsApp Image 2026-02-07 at 12.49.08 AM (1).jpeg"
-                                alt="Sustainable Gift Box">
-                            <div class="product-card-preview__overlay">
-                                <a href="products.html" class="btn btn--small btn--primary">View Details</a>
-                            </div>
+                    <a href="products.html" class="product-card--cinematic" aria-label="View Sustainable Gift Box">
+                        <img src="goppoguro%20images/WhatsApp%20Image%202026-02-07%20at%2012.49.08%20AM%20(1).jpeg"
+                            alt="Sustainable Gift Box — origami gift set" class="product-card__img">
+                        <div class="product-card__overlay">
+                            <div class="product-card__tag">Gift Sets</div>
+                            <h3 class="product-card__name">Sustainable Gift Box</h3>
+                            <span class="product-card__cta">
+                                View Details
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            </span>
                         </div>
-                        <div class="product-card-preview__content">
-                            <h3 class="product-card-preview__title">Sustainable Gift Box</h3>
-                            <p class="product-card-preview__price">৳ 1,200</p>
-                        </div>
-                    </article>
+                    </a>
                 </div>
 
                 <div class="products-preview__cta">
@@ -526,6 +740,13 @@
                 </div>
             </div>
         </section>
+
+        <!-- Section Divider -->
+        <div class="section-divider" aria-hidden="true">
+            <div class="section-divider__line"></div>
+            <span class="section-divider__ornament">· · ·</span>
+            <div class="section-divider__line"></div>
+        </div>
 
         <!-- Impact Calculator Section -->
         <section class="impact" id="impact">
@@ -550,22 +771,22 @@
 
                     <div class="impact__results">
                         <div class="impact__result-card">
-                            <div class="impact__result-icon">📚</div>
+                            <div class="impact__result-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div>
                             <div class="impact__result-number" id="education-days">15</div>
                             <div class="impact__result-label">Days of Education Funded</div>
                         </div>
                         <div class="impact__result-card">
-                            <div class="impact__result-icon">🍱</div>
+                            <div class="impact__result-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg></div>
                             <div class="impact__result-number" id="meals-provided">10</div>
                             <div class="impact__result-label">Nutritious Meals Provided</div>
                         </div>
                         <div class="impact__result-card">
-                            <div class="impact__result-icon">😊</div>
+                            <div class="impact__result-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg></div>
                             <div class="impact__result-number" id="smiles-spread">25</div>
                             <div class="impact__result-label">Smiles Spread</div>
                         </div>
                         <div class="impact__result-card">
-                            <div class="impact__result-icon">🌱</div>
+                            <div class="impact__result-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 22V12"/><path d="M12 12C12 12 7 10 7 5a5 5 0 0 1 10 0c0 5-5 7-5 7z"/></svg></div>
                             <div class="impact__result-number" id="trees-helped">1</div>
                             <div class="impact__result-label">Trees Worth of Paper Offset</div>
                         </div>
@@ -628,9 +849,9 @@
 
                     <figure class="sdg__visual">
                         <div class="sdg__image-stack">
-                            <img src="goppoguro images/WhatsApp Image 2026-02-07 at 12.49.07 AM.jpeg"
+                            <img src="goppoguro%20images/WhatsApp%20Image%202026-02-07%20at%2012.49.07%20AM.jpeg"
                                 alt="Children enjoying Little Joys at school" class="sdg__image sdg__image--1">
-                            <img src="goppoguro images/WhatsApp Image 2026-02-07 at 12.49.08 AM.jpeg"
+                            <img src="goppoguro%20images/WhatsApp%20Image%202026-02-07%20at%2012.49.08%20AM.jpeg"
                                 alt="Little Joys spreading cheer" class="sdg__image sdg__image--2">
                         </div>
                     </figure>
@@ -639,7 +860,7 @@
         </section>
 
         <!-- Testimonials Section -->
-        <section class="testimonials" id="testimonials">
+        <section class="testimonials testimonials--masonry" id="testimonials">
             <div class="container">
                 <header class="section-header">
                     <span class="section-tagline">Stories of Joy</span>
@@ -728,8 +949,8 @@
                             <span>Follow Us</span>
                         </a>
                     </div>
-                    <img src="goppoguro images/WhatsApp Image 2026-02-07 at 12.49.08 AM (1).jpeg"
-                        alt="Little Joys jar in cozy living room" class="cta__image">
+                    <img src="goppoguro%20images/WhatsApp%20Image%202026-02-07%20at%2012.49.08%20AM%20(1).jpeg"
+                        alt="Little Joys jar in cozy living room" class="cta__image anim-float">
                 </div>
             </div>
         </section>
@@ -746,7 +967,7 @@
                             folded bird or a shared word, we provide the beginning. You create the story.
                         </p>
                         <div class="sparks__visual">
-                            <img src="goppoguro images/WhatsApp Image 2026-02-07 at 12.48.10 AM.jpeg"
+                            <img src="goppoguro%20images/WhatsApp%20Image%202026-02-07%20at%2012.48.10%20AM.jpeg"
                                 alt="Story Spark Mascot" class="sparks__img">
                         </div>
                     </div>
@@ -760,7 +981,7 @@
         <div class="container">
             <div class="footer__grid">
                 <div class="footer__brand">
-                    <img src="goppoguro images/WhatsApp Image 2026-02-07 at 12.48.10 AM.jpeg" alt="Goppo Guro"
+                    <img src="goppoguro%20images/WhatsApp%20Image%202026-02-07%20at%2012.48.10%20AM.jpeg" alt="Goppo Guro"
                         class="footer__logo">
                     <p class="footer__tagline">A Space for Play, Paper, and Pause</p>
                     <p class="footer__description">
@@ -783,7 +1004,7 @@
                     <ul class="footer__nav-list">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="programme.html">Programme</a></li>
-                        <li><a href="creative-studio-network.html">Project</a></li>
+                        <li><a href="projects.html">Project</a></li>
                         <li><a href="products.html">Product</a></li>
                         <li><a href="publications.html">Publications</a></li>
                         <li><a href="about.html">About Us</a></li>
@@ -833,6 +1054,11 @@
         </div>
     </footer>
 
+    <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M18 15l-6-6-6 6"/>
+        </svg>
+    </button>
 </body>
 
 </html>

@@ -1,0 +1,27 @@
+{
+  "_note": "Founder profile and team description shown on about.html. Add individual member cards to 'members' array when ready.",
+  "founder": {
+    "name": "Salman Oshan",
+    "role": "Founder",
+    "image": "goppoguro%20images/other%20images/kochi%20oshan%20bhai.jpeg",
+    "imageAlt": "Salman Oshan, Founder of Goppo Guro",
+    "tagline": "The Inspiration",
+    "heading": "Born from a Quiet Concern",
+    "bio": [
+      "Goppo Guro was created from a quiet concern — that we are losing our relationship with play, with paper, and with pause. In a world driven by speed, screens, and outcomes, we wanted to create space for something more human.",
+      "At the heart of Goppo Guro is story. Our name \"গপ্পো গুঁড়ো\" means small stories — sparks of stories. Gentle beginnings that invite curiosity and connection. Goppo Guro is not only for children. It is for anyone who believes that stories, play, and pause are essential to being human."
+    ],
+    "quote": "There are no right answers here, no timers, no expectations — only moments of presence, imagination, and shared discovery."
+  },
+  "team": {
+    "tagline": "Our Community",
+    "heading": "A Small but Loud Bunch",
+    "image": "goppoguro%20images/other%20images/our%20team.jpeg",
+    "imageAlt": "The Goppo Guro Team",
+    "description": [
+      "GoppoGuro was built by people who believe that a folded piece of paper can change the energy in a room. Our team is a mix of storytellers, designers, educators, and dreamers.",
+      "We work closely with women artisans, schools, and children who remind us why none of this needs to be complicated."
+    ]
+  },
+  "members": []
+}

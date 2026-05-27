@@ -1,0 +1,3 @@
+[     348ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3333/products.html:0
+[    8308ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3333/products.html:0
+[    9451ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3333/products.html:0

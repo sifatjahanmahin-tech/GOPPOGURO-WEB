@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__playwright__browser_navigate",
+      "mcp__playwright__browser_console_messages",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" \"http://localhost:3333/\")",
+      "Bash(pkill -f \"serve\")",
+      "Bash(python3 -m http.server 3333)",
+      "mcp__playwright__browser_take_screenshot",
+      "Bash(pkill -f \"http.server\")",
+      "Bash(pkill -f \"npx serve\")",
+      "Bash(pkill -f \"node.*serve\")",
+      "Bash(python3 -c ' *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" \"http://127.0.0.1:4444/index.html\")",
+      "mcp__playwright__browser_evaluate",
+      "Bash(python -m http.server 4444 --bind 127.0.0.1)",
+      "Bash(python3)",
+      "mcp__magic__21st_magic_component_inspiration",
+      "Bash(mkdir \"d:/GOPPOGURO WEB/data\")",
+      "Bash(npx --yes serve . -l 3333)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3333/products.html)",
+      "Bash(npx --yes serve . -l 4102)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:4102/)",
+      "mcp__playwright__browser_resize"
+    ],
+    "additionalDirectories": [
+      "d:\\GOPPOGURO WEB"
+    ]
+  }
+}

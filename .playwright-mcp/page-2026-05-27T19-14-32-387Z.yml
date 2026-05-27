@@ -1,0 +1,562 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - link "Goppo Guro Logo Goppo Guro" [ref=e4] [cursor=pointer]:
+        - /url: index.html
+        - img "Goppo Guro Logo" [ref=e5]
+        - generic [ref=e6]: Goppo Guro
+      - list [ref=e7]:
+        - listitem [ref=e8]:
+          - link "Home" [ref=e9] [cursor=pointer]:
+            - /url: index.html
+        - listitem [ref=e10]:
+          - generic [ref=e11]:
+            - link "Programme" [ref=e12] [cursor=pointer]:
+              - /url: programme.html
+            - button "Open Programme submenu" [ref=e13] [cursor=pointer]:
+              - img [ref=e14]
+          - menu:
+            - menuitem "All Programmes"
+            - menuitem "Creative Learning Programme"
+            - menuitem "Women Makers Empowerment"
+            - menuitem "Golpoka Club"
+            - menuitem "Podcast"
+        - listitem [ref=e16]:
+          - generic [ref=e17]:
+            - link "Project" [ref=e18] [cursor=pointer]:
+              - /url: projects.html
+            - button "Open Project submenu" [ref=e19] [cursor=pointer]:
+              - img [ref=e20]
+          - menu:
+            - menuitem "Goppoguro Studio"
+            - menuitem "Golpoka Club"
+            - menuitem "Little Joys"
+        - listitem [ref=e22]:
+          - link "Product" [ref=e23] [cursor=pointer]:
+            - /url: products.html
+        - listitem [ref=e24]:
+          - link "Publications" [ref=e25] [cursor=pointer]:
+            - /url: publications.html
+        - listitem [ref=e26]:
+          - link "About Us" [ref=e27] [cursor=pointer]:
+            - /url: about.html
+        - listitem [ref=e28]:
+          - link "Gallery" [ref=e29] [cursor=pointer]:
+            - /url: gallery.html
+        - listitem [ref=e30]:
+          - link "Contact" [ref=e31] [cursor=pointer]:
+            - /url: contact.html
+  - main [ref=e32]:
+    - generic [ref=e33]:
+      - generic [ref=e34]:
+        - article [ref=e35]:
+          - generic [ref=e36]: Small Stories, Gentle Beginnings
+          - heading "A Space for Play, Paper, and Pause" [level=1] [ref=e37]:
+            - generic [ref=e38]: A
+            - generic [ref=e39]: Space
+            - generic [ref=e40]: for
+            - generic [ref=e41]: Play,
+            - generic [ref=e42]: Paper,
+            - generic [ref=e43]: and
+            - generic [ref=e44]: Pause
+          - paragraph [ref=e45]: Goppo Guro is a pause for the relationship we've lost with play and paper. We invite you to a space where imagination has no timer, and discovery has no right answers.
+          - generic [ref=e594]:
+            - generic [ref=e595]:
+              - generic [ref=e596]: 500+
+              - generic [ref=e597]: Children Supported
+            - generic [ref=e598]:
+              - generic [ref=e599]: 10K+
+              - generic [ref=e600]: Joys Shared
+            - generic [ref=e601]:
+              - generic [ref=e602]: 50+
+              - generic [ref=e603]: Partner Schools
+          - generic [ref=e46]:
+            - link "Explore Products" [ref=e47] [cursor=pointer]:
+              - /url: products.html
+              - generic [ref=e48]: Explore Products
+              - img [ref=e49]
+            - link "Our Story" [ref=e51] [cursor=pointer]:
+              - /url: about.html
+        - figure [ref=e52]
+      - generic [ref=e55]: Scroll to explore
+    - generic [ref=e58]:
+      - generic [ref=e59]:
+        - generic [ref=e60]: Play
+        - generic [ref=e62]: Paper
+        - generic [ref=e64]: Pause
+        - generic [ref=e66]: Origami
+        - generic [ref=e68]: Bangladesh
+        - generic [ref=e70]: Little Joys
+        - generic [ref=e72]: গপ্পো গুঁড়ো
+        - generic [ref=e74]: Storytelling
+        - generic [ref=e76]: Handcrafted
+        - generic [ref=e78]: Connection
+      - generic [ref=e80]:
+        - generic [ref=e81]: Play
+        - generic [ref=e83]: Paper
+        - generic [ref=e85]: Pause
+        - generic [ref=e87]: Origami
+        - generic [ref=e89]: Bangladesh
+        - generic [ref=e91]: Little Joys
+        - generic [ref=e93]: গপ্পো গুঁড়ো
+        - generic [ref=e95]: Storytelling
+        - generic [ref=e97]: Handcrafted
+        - generic [ref=e99]: Connection
+    - generic [ref=e103]:
+      - generic [ref=e104]:
+        - generic [ref=e105]: — About Us
+        - heading "What is Goppo Guro?" [level=2] [ref=e106]
+        - paragraph [ref=e107]: Goppo Guro is a creative learning initiative designed to nurture curiosity and foster human connection. We believe that small stories (গপ্পো) and gentle beginnings (গুঁড়ো) can spark lifelong journeys of discovery.
+        - paragraph [ref=e108]: Through handcrafted paper experiences and storytelling, we create a space where imagination knows no bounds. Our mission is to bring play, paper, and pause back into our high-speed lives.
+      - img "Little Joys origami jar in a classroom setting" [ref=e110]
+    - generic [ref=e112]:
+      - generic [ref=e113]:
+        - generic [ref=e114]: — The Process
+        - heading "Creative Learning Cycle" [level=2] [ref=e115]
+        - paragraph [ref=e116]: Our framework follows a natural progression of curiosity and creation.
+      - generic [ref=e117]:
+        - generic [ref=e118]:
+          - generic [ref=e119]: "01"
+          - heading "Spark" [level=3] [ref=e120]
+          - paragraph [ref=e121]: A moment of wonder or a simple question that ignites interest.
+        - generic [ref=e122]:
+          - generic [ref=e123]: "02"
+          - heading "Explore" [level=3] [ref=e124]
+          - paragraph [ref=e125]: Diving deep into paper, story, and play without expectations.
+        - generic [ref=e126]:
+          - generic [ref=e127]: "03"
+          - heading "Create" [level=3] [ref=e128]
+          - paragraph [ref=e129]: Building, folding, and shaping thoughts into tangible forms.
+        - generic [ref=e130]:
+          - generic [ref=e131]: "04"
+          - heading "Connect" [level=3] [ref=e132]
+          - paragraph [ref=e133]: Sharing the journey and its outcomes with the community.
+    - generic [ref=e135]:
+      - generic [ref=e136]:
+        - generic [ref=e137]: — Our Approach
+        - heading "The 4P Framework" [level=2] [ref=e138]
+        - paragraph [ref=e139]: We create stories, tools & experiences that spark imagination, nurture creativity and build meaningful connections.
+      - generic [ref=e140]:
+        - generic [ref=e141]:
+          - generic [ref=e142]:
+            - generic:
+              - img
+            - generic [ref=e143]:
+              - generic [ref=e144]: Publication
+              - paragraph [ref=e145]: Research-driven publications that inform, inspire and create impact.
+          - list [ref=e146]:
+            - listitem [ref=e147]:
+              - img [ref=e148]
+              - generic [ref=e151]:
+                - strong [ref=e152]: Research
+                - paragraph [ref=e153]: In-depth research on stories, culture, creativity, education and childhood.
+            - listitem [ref=e154]:
+              - img [ref=e155]
+              - generic [ref=e157]:
+                - strong [ref=e158]: Blog
+                - paragraph [ref=e159]: Thoughtful articles sharing ideas, insights and creative inspirations.
+            - listitem [ref=e160]:
+              - img [ref=e161]
+              - generic [ref=e166]:
+                - strong [ref=e167]: Professional Expertise
+                - paragraph [ref=e168]: Conversations and expert perspectives from educators, creators and practitioners.
+        - generic [ref=e169]:
+          - generic [ref=e170]:
+            - generic:
+              - img
+            - generic [ref=e171]:
+              - generic [ref=e172]: Programme
+              - paragraph [ref=e173]: Creative learning programmes that nurture imagination, curiosity and confidence.
+          - list [ref=e174]:
+            - listitem [ref=e175]:
+              - img [ref=e176]
+              - generic [ref=e179]:
+                - strong [ref=e180]: GCLP
+                - paragraph [ref=e181]: Creative Programme in Primary Education — bringing creativity, storytelling and joy into early learning.
+            - listitem [ref=e182]:
+              - img [ref=e183]
+              - generic [ref=e186]:
+                - strong [ref=e187]: Golpoka Creative Club
+                - paragraph [ref=e188]: A monthly creative adventure for children to imagine, create and grow.
+            - listitem [ref=e189]:
+              - img [ref=e190]
+              - generic [ref=e192]:
+                - strong [ref=e193]: Little Joys Women Empowerment
+                - paragraph [ref=e194]: Empowering women through creative work, skills and financial independence.
+        - generic [ref=e195]:
+          - generic [ref=e196]:
+            - generic:
+              - img
+            - generic [ref=e197]:
+              - generic [ref=e198]: Project
+              - paragraph [ref=e199]: Community projects that build connection, collaboration and change.
+          - list [ref=e200]:
+            - listitem [ref=e201]:
+              - img [ref=e202]
+              - generic [ref=e205]:
+                - strong [ref=e206]: Goppoguro Community Studio
+                - paragraph [ref=e207]: A creative space for collaboration, learning and community engagement.
+            - listitem [ref=e208]:
+              - img [ref=e209]
+              - generic [ref=e211]:
+                - strong [ref=e212]: Little Joys
+                - paragraph [ref=e213]: Handcrafted paper creations that spread happiness and support our women makers.
+            - listitem [ref=e214]:
+              - img [ref=e215]
+              - generic [ref=e218]:
+                - strong [ref=e219]: Goppoguro Boithok – Podcast
+                - paragraph [ref=e220]: Conversations around stories, creativity, education and life.
+        - generic [ref=e221]:
+          - generic [ref=e222]:
+            - generic:
+              - img
+            - generic [ref=e223]:
+              - generic [ref=e224]: Product
+              - paragraph [ref=e225]: Thoughtfully designed products that make learning, play and storytelling joyful.
+          - list [ref=e226]:
+            - listitem [ref=e227]:
+              - img [ref=e228]
+              - generic [ref=e231]:
+                - strong [ref=e232]: Activity Books & Play Books
+                - paragraph [ref=e233]: Story + play + creativity — engaging experiences that make learning joyful.
+            - listitem [ref=e234]:
+              - img [ref=e235]
+              - generic [ref=e237]:
+                - strong [ref=e238]: Little Joys
+                - paragraph [ref=e239]: Tiny handfolded paper treasures that carry big emotions.
+            - listitem [ref=e240]:
+              - img [ref=e241]
+              - generic [ref=e244]:
+                - strong [ref=e245]: RolGol & Graphic Novels
+                - paragraph [ref=e246]: Unroll adventure and timeless classics retold through powerful visuals.
+      - paragraph [ref=e248]:
+        - text: Stories in our hearts. Creativity in our hands.
+        - emphasis [ref=e249]: A better world in our imagination. ♥
+    - generic [ref=e251]:
+      - generic [ref=e252]:
+        - generic [ref=e253]: — The Art of Presence
+        - heading "Design for Pause & Play" [level=2] [ref=e254]
+        - paragraph [ref=e255]: Our experiences are invitations to slow down. There are no right answers, no timers, and no expectations—only the quiet joy of being present.
+      - generic [ref=e256]:
+        - article [ref=e257]:
+          - img [ref=e259]
+          - heading "The Human Touch" [level=3] [ref=e262]
+          - paragraph [ref=e263]: Every piece is hand-folded by local women artisans, carrying the time, patience, and personal rhythm of the hands that shaped it.
+        - article [ref=e264]:
+          - img [ref=e266]
+          - heading "Meaningful Messages" [level=3] [ref=e268]
+          - paragraph [ref=e269]: "\"Keep it or pass it on\" — every jar comes with heartfelt messages encouraging the chain of kindness to continue spreading joy."
+        - article [ref=e270]:
+          - img [ref=e272]
+          - heading "Collective Care" [level=3] [ref=e276]
+          - paragraph [ref=e277]: Experience a system where kindness ripples outward. Every engagement directly supports children's education and welfare programs across Bangladesh.
+        - article [ref=e278]:
+          - img [ref=e280]
+          - heading "Perfect for Gifting" [level=3] [ref=e283]
+          - paragraph [ref=e284]: From classrooms to coffee shops, homes to hospitals — Little Joys bring smiles everywhere, making them the perfect meaningful gift.
+      - figure [ref=e285]:
+        - generic [ref=e286]:
+          - img "Full product line of Little Joys" [ref=e287]
+          - img "Children enjoying Little Joys at school" [ref=e288]
+          - img "Children in uniform picking origami" [ref=e289]
+    - region "Key numbers" [ref=e291]:
+      - generic [ref=e293]:
+        - generic [ref=e294]:
+          - generic [ref=e295]: Our Mission
+          - heading "Play. Paper. Pause." [level=2] [ref=e296]:
+            - text: Play. Paper.
+            - text: Pause.
+          - paragraph [ref=e297]: A creative learning initiative that brings curiosity, connection, and the quiet joy of making back into everyday life — one fold at a time.
+          - img [ref=e298]
+        - generic [ref=e300]:
+          - generic [ref=e301]: Children Reached
+          - generic [ref=e302]: 500+
+          - generic [ref=e303]: across Bangladesh
+        - generic [ref=e304]:
+          - generic [ref=e305]: Little Joys
+          - generic [ref=e306]: 10K+
+          - generic [ref=e307]: shared
+        - generic [ref=e308]:
+          - generic [ref=e309]: The Tagline
+          - paragraph [ref=e310]: "\"Small stories, gentle beginnings that invite curiosity and connection.\""
+        - generic [ref=e311]:
+          - generic [ref=e312]: Partner Schools
+          - generic [ref=e313]: 50+
+          - generic [ref=e314]: and growing
+        - generic [ref=e315]:
+          - generic [ref=e316]: Women Artisans
+          - generic [ref=e317]: 100%
+          - generic [ref=e318]: handmade by local makers
+    - generic [ref=e322]:
+      - figure [ref=e323]:
+        - img "Goppo Guro founder" [ref=e324]
+      - article [ref=e326]:
+        - generic [ref=e327]: — Our Story
+        - heading "Born from a Quiet Concern" [level=2] [ref=e328]
+        - paragraph [ref=e329]: Goppo Guro was created from a quiet concern — that we are losing our relationship with play, with paper, and with pause. In a world driven by speed, screens, and outcomes, we wanted to create space for something more human.
+        - paragraph [ref=e330]: At the heart of Goppo Guro is story. Our name "গপ্পো গুঁড়ো" means small stories, or sparks of stories — gentle beginnings that invite curiosity and connection. Stories have shaped our world, and they continue to shape us through imagination and memory.
+        - paragraph [ref=e331]: Goppo Guro is not only for children. It is for anyone who believes that stories, play, and pause are essential to being human. We design books, stories, and simple paper experiences that allow these small stories to unfold through play.
+        - blockquote [ref=e332]: "\"There are no right answers here, no timers, no expectations — only moments of presence, imagination, and shared discovery.\""
+        - link "Read Our Full Story" [ref=e333] [cursor=pointer]:
+          - /url: about.html
+          - text: Read Our Full Story
+          - img [ref=e334]
+    - generic [ref=e338]:
+      - article [ref=e339]:
+        - generic [ref=e340]: — Our Community
+        - heading "Women Makers" [level=2] [ref=e341]
+        - paragraph [ref=e342]: Made by Hands. Shared by Hearts.
+        - generic [ref=e343]:
+          - paragraph [ref=e344]:
+            - text: Every Little Joy is hand-folded by women who turn simple paper into moments of care. This work offers
+            - strong [ref=e345]: flexible income
+            - text: ","
+            - strong [ref=e346]: creative focus
+            - text: ", and"
+            - strong [ref=e347]: dignity
+            - text: — without factories or machines.
+          - paragraph [ref=e348]: Each fold carries time, patience, and a personal rhythm. When you pick a piece, you are participating in a system where care is created by hands that matter.
+          - paragraph [ref=e349]: Made by Hands. Shared by Hearts.
+        - generic [ref=e350]:
+          - generic [ref=e352]:
+            - heading "Empowerment" [level=4] [ref=e353]
+            - paragraph [ref=e354]: Supporting local women artisans
+          - generic [ref=e356]:
+            - heading "Flexible Work" [level=4] [ref=e357]
+            - paragraph [ref=e358]: Work from home opportunities
+      - figure [ref=e359]:
+        - generic [ref=e360]:
+          - img "Women artisans hand-folding origami with care" [ref=e361]
+          - generic [ref=e362]: 100% Handmade
+    - generic [ref=e364]:
+      - generic [ref=e365]:
+        - generic [ref=e366]: — The Collection
+        - heading "Simple Paper Experiences" [level=2] [ref=e367]
+        - paragraph [ref=e368]: Discover the hero of our journey—Little Joys—alongside other experiences designed to help you pause and play.
+      - generic [ref=e369]:
+        - link "View Classic Joy Jar" [ref=e370] [cursor=pointer]:
+          - /url: products.html
+          - img "Classic Joy Jar — handmade origami jar" [ref=e371]
+          - generic [ref=e372]:
+            - generic [ref=e373]: Little Joys Collection
+            - heading "Classic Joy Jar" [level=3] [ref=e374]
+            - generic [ref=e375]:
+              - text: View Details
+              - img [ref=e376]
+        - link "View Signature Crane Set" [ref=e378] [cursor=pointer]:
+          - /url: products.html
+          - img "Signature Crane Set — origami cranes" [ref=e379]
+          - generic [ref=e380]:
+            - generic [ref=e381]: Little Joys Collection
+            - heading "Signature Crane Set" [level=3] [ref=e382]
+            - generic [ref=e383]:
+              - text: View Details
+              - img [ref=e384]
+        - link "View Sustainable Gift Box" [ref=e386] [cursor=pointer]:
+          - /url: products.html
+          - img "Sustainable Gift Box — origami gift set" [ref=e387]
+          - generic [ref=e388]:
+            - generic [ref=e389]: Gift Sets
+            - heading "Sustainable Gift Box" [level=3] [ref=e390]
+            - generic [ref=e391]:
+              - text: View Details
+              - img [ref=e392]
+      - link "Explore Full Collection" [ref=e395] [cursor=pointer]:
+        - /url: products.html
+        - text: Explore Full Collection
+        - img [ref=e396]
+    - generic [ref=e400]:
+      - generic [ref=e401]:
+        - generic [ref=e402]: — Your Impact
+        - heading "See How Your Purchase Helps" [level=2] [ref=e403]
+        - paragraph [ref=e404]: Every Little Joy you buy creates a ripple effect of positive change. Use our calculator to see the difference you're making.
+      - generic [ref=e405]:
+        - generic [ref=e406]:
+          - generic [ref=e407]: How many jars would you like to gift?
+          - generic [ref=e408]:
+            - slider "How many jars would you like to gift?" [ref=e409]: "5"
+            - generic [ref=e410]: 5 Jars
+        - generic [ref=e411]:
+          - generic [ref=e412]:
+            - img [ref=e414]
+            - generic [ref=e417]: "15"
+            - generic [ref=e418]: Days of Education Funded
+          - generic [ref=e419]:
+            - img [ref=e421]
+            - generic [ref=e423]: "10"
+            - generic [ref=e424]: Nutritious Meals Provided
+          - generic [ref=e425]:
+            - img [ref=e427]
+            - generic [ref=e430]: "25"
+            - generic [ref=e431]: Smiles Spread
+          - generic [ref=e432]:
+            - img [ref=e434]
+            - generic [ref=e436]: "1"
+            - generic [ref=e437]: Trees Worth of Paper Offset
+    - generic [ref=e440]:
+      - article [ref=e441]:
+        - generic [ref=e442]: — Global Goals
+        - heading "Impact Through Small Stories" [level=2] [ref=e443]
+        - paragraph [ref=e444]: Our mission aligns with the United Nations Sustainable Development Goals. We believe that play, pause, and imagination are essential rights. By creating simple paper experiences, we fund education and dignity, ensuring every child has the space to dream.
+        - generic [ref=e445]:
+          - generic [ref=e446]:
+            - generic [ref=e447]: "1"
+            - generic [ref=e448]:
+              - heading "No Poverty" [level=4] [ref=e449]
+              - paragraph [ref=e450]: Fair wages for artisans
+          - generic [ref=e451]:
+            - generic [ref=e452]: "4"
+            - generic [ref=e453]:
+              - heading "Quality Education" [level=4] [ref=e454]
+              - paragraph [ref=e455]: Funding school programs
+          - generic [ref=e456]:
+            - generic [ref=e457]: "8"
+            - generic [ref=e458]:
+              - heading "Decent Work" [level=4] [ref=e459]
+              - paragraph [ref=e460]: Empowering local talent
+          - generic [ref=e461]:
+            - generic [ref=e462]: "12"
+            - generic [ref=e463]:
+              - heading "Responsible Consumption" [level=4] [ref=e464]
+              - paragraph [ref=e465]: Sustainable materials
+        - link "Partner With Us" [ref=e466] [cursor=pointer]:
+          - /url: contact.html
+          - text: Partner With Us
+          - img [ref=e467]
+      - figure [ref=e469]:
+        - generic [ref=e470]:
+          - img "Children enjoying Little Joys at school" [ref=e471]
+          - img "Little Joys spreading cheer" [ref=e472]
+    - generic [ref=e474]:
+      - generic [ref=e475]:
+        - generic [ref=e476]: — Stories of Joy
+        - heading "Voices from Our Community" [level=2] [ref=e477]
+      - generic [ref=e478]:
+        - article [ref=e479]:
+          - text: “
+          - generic [ref=e480]:
+            - generic [ref=e481]: ★★★★★
+            - paragraph [ref=e482]: "\"I placed a Little Joys jar on my desk at work, and it became a conversation starter that brought my team closer. Such a beautiful concept!\""
+          - generic [ref=e483]:
+            - generic [ref=e484]: S
+            - generic [ref=e485]:
+              - generic [ref=e486]: Sarah Rahman
+              - generic [ref=e487]: Marketing Director, Dhaka
+        - article [ref=e488]:
+          - text: “
+          - generic [ref=e489]:
+            - generic [ref=e490]: ★★★★★
+            - paragraph [ref=e491]: "\"We introduced Little Joys to our Class 4 students, and the impact was magical. Children now write encouraging notes to each other. It's changed our classroom culture completely.\""
+          - generic [ref=e492]:
+            - generic [ref=e493]: F
+            - generic [ref=e494]:
+              - generic [ref=e495]: Fatima Ahmed
+              - generic [ref=e496]: Primary School Teacher
+        - article [ref=e497]:
+          - text: “
+          - generic [ref=e498]:
+            - generic [ref=e499]: ★★★★★
+            - paragraph [ref=e500]: "\"Gave this to my parents on their anniversary. My mother cried happy tears. The 'Love you Papa' bird is now my dad's prized possession.\""
+          - generic [ref=e501]:
+            - generic [ref=e502]: A
+            - generic [ref=e503]:
+              - generic [ref=e504]: Anik Chowdhury
+              - generic [ref=e505]: Customer, Chittagong
+    - generic [ref=e508]:
+      - heading "Ready to Spread Some Joy?" [level=2] [ref=e509]
+      - paragraph [ref=e510]: Join thousands who are making a difference, one Little Joy at a time. Your purchase supports children, empowers artisans, and spreads happiness.
+      - generic [ref=e511]:
+        - link "Shop Little Joys" [ref=e512] [cursor=pointer]:
+          - /url: little-joys.html
+          - generic [ref=e513]: Shop Little Joys
+          - img [ref=e514]
+        - link "Follow Us" [ref=e516] [cursor=pointer]:
+          - /url: https://www.facebook.com/goppoguro
+          - img [ref=e517]
+          - generic [ref=e519]: Follow Us
+      - img "Little Joys jar in cozy living room" [ref=e520]
+    - generic [ref=e524]:
+      - generic [ref=e525]: — The Spark of Story
+      - heading "Small Beginnings, Unlimited Journeys" [level=2] [ref=e526]
+      - paragraph [ref=e527]: Goppo Guro means "sparks of stories" — gentle starts that invite curiosity. Whether it's a folded bird or a shared word, we provide the beginning. You create the story.
+      - img "Story Spark Mascot" [ref=e529]
+  - contentinfo [ref=e530]:
+    - generic [ref=e531]:
+      - generic [ref=e532]:
+        - generic [ref=e533]:
+          - img "Goppo Guro" [ref=e534]
+          - paragraph [ref=e535]: A Space for Play, Paper, and Pause
+          - paragraph [ref=e536]: Creating space for curiosity, connection, and shared discovery through handcrafted paper experiences.
+          - link "Facebook" [ref=e538] [cursor=pointer]:
+            - /url: https://www.facebook.com/goppoguro
+            - img [ref=e539]
+        - navigation [ref=e541]:
+          - heading "Navigate" [level=4] [ref=e542]
+          - list [ref=e543]:
+            - listitem [ref=e544]:
+              - link "Home" [ref=e545] [cursor=pointer]:
+                - /url: index.html
+            - listitem [ref=e546]:
+              - link "Programme" [ref=e547] [cursor=pointer]:
+                - /url: programme.html
+            - listitem [ref=e548]:
+              - link "Project" [ref=e549] [cursor=pointer]:
+                - /url: projects.html
+            - listitem [ref=e550]:
+              - link "Product" [ref=e551] [cursor=pointer]:
+                - /url: products.html
+            - listitem [ref=e552]:
+              - link "Publications" [ref=e553] [cursor=pointer]:
+                - /url: publications.html
+            - listitem [ref=e554]:
+              - link "About Us" [ref=e555] [cursor=pointer]:
+                - /url: about.html
+            - listitem [ref=e556]:
+              - link "Gallery" [ref=e557] [cursor=pointer]:
+                - /url: gallery.html
+            - listitem [ref=e558]:
+              - link "Contact" [ref=e559] [cursor=pointer]:
+                - /url: contact.html
+        - navigation [ref=e560]:
+          - heading "Explore" [level=4] [ref=e561]
+          - paragraph [ref=e562]: Programme
+          - list [ref=e563]:
+            - listitem [ref=e564]:
+              - link "Creative Learning (GCLP)" [ref=e565] [cursor=pointer]:
+                - /url: gclp.html
+            - listitem [ref=e566]:
+              - link "Women Makers" [ref=e567] [cursor=pointer]:
+                - /url: women-empowerment.html
+            - listitem [ref=e568]:
+              - link "Golpoka Club" [ref=e569] [cursor=pointer]:
+                - /url: golpoka-club.html
+            - listitem [ref=e570]:
+              - link "Podcast" [ref=e571] [cursor=pointer]:
+                - /url: podcast.html
+          - paragraph [ref=e572]: Project
+          - list [ref=e573]:
+            - listitem [ref=e574]:
+              - link "Goppoguro Studio" [ref=e575] [cursor=pointer]:
+                - /url: creative-studio-network.html
+            - listitem [ref=e576]:
+              - link "Golpoka Club" [ref=e577] [cursor=pointer]:
+                - /url: golpoka-club.html
+            - listitem [ref=e578]:
+              - link "Little Joys" [ref=e579] [cursor=pointer]:
+                - /url: little-joys.html
+        - generic [ref=e580]:
+          - heading "Stay Connected" [level=4] [ref=e581]
+          - paragraph [ref=e582]: Get updates on new products and impact stories.
+          - generic [ref=e583]:
+            - textbox "Your email" [ref=e584]
+            - button "Subscribe" [ref=e585] [cursor=pointer]
+      - generic [ref=e586]:
+        - generic [ref=e587]: SDG 1
+        - generic [ref=e588]: SDG 4
+        - generic [ref=e589]: SDG 8
+        - generic [ref=e590]: SDG 12
+      - generic [ref=e591]:
+        - paragraph [ref=e592]: Handmade in Bangladesh · © 2026 Goppo Guro. All rights reserved.
+        - paragraph [ref=e593]: Every purchase supports children's welfare.
+  - button "Scroll to top" [ref=e604] [cursor=pointer]:
+    - img [ref=e605]

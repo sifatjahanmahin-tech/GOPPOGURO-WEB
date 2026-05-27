@@ -1,0 +1,95 @@
+{
+  "_note": "Publications page content. 'featured' is the large card at the top. 'articles' is the filterable grid. Valid categories: research, stories, press, zines.",
+  "featured": {
+    "title": "The Case for Slow Learning",
+    "category": "Featured · Research",
+    "excerpt": "In a culture that rewards speed and output, we make the research-backed argument for slowing down in education. Drawing on 200+ workshop observations and the 4P Framework, this is our most complete statement on what creative learning requires.",
+    "date": "March 2026",
+    "image": "goppoguro%20images/WhatsApp%20Image%202026-02-07%20at%2012.49.07%20AM%20(1).jpeg",
+    "imageAlt": "The Case for Slow Learning",
+    "url": "#"
+  },
+  "articles": [
+    {
+      "title": "Creativity in Childhood Education",
+      "category": "research",
+      "excerpt": "Why fostering imagination early is more critical than traditional textbook learning.",
+      "date": "February 2026",
+      "image": "goppoguro%20images/WhatsApp%20Image%202026-02-07%20at%2012.49.07%20AM%20(1).jpeg",
+      "imageAlt": "Creativity in childhood",
+      "url": "#"
+    },
+    {
+      "title": "Storytelling as a Learning Tool",
+      "category": "stories",
+      "excerpt": "How narratives bridge the gap between abstract concepts and real-world understanding.",
+      "date": "January 2026",
+      "image": "goppoguro%20images/WhatsApp%20Image%202026-02-07%20at%2012.49.04%20AM.jpeg",
+      "imageAlt": "Storytelling as learning",
+      "url": "#"
+    },
+    {
+      "title": "Observations from Workshops",
+      "category": "research",
+      "excerpt": "What we've learned from watching children play and explore in different settings.",
+      "date": "December 2025",
+      "image": "goppoguro%20images/WhatsApp%20Image%202026-02-07%20at%2012.49.09%20AM.jpeg",
+      "imageAlt": "Observations from workshops",
+      "url": "#"
+    },
+    {
+      "title": "Creative Parenting",
+      "category": "stories",
+      "excerpt": "Simple ways to nurture your child's innate creativity in everyday life.",
+      "date": "November 2025",
+      "image": "goppoguro%20images/WhatsApp%20Image%202026-02-07%20at%2012.49.06%20AM.jpeg",
+      "imageAlt": "Creative parenting",
+      "url": "#"
+    },
+    {
+      "title": "Goppo Guro Journey",
+      "category": "press",
+      "excerpt": "Reflections on our growth and what's next for the Goppo Guro initiative.",
+      "date": "October 2025",
+      "image": "goppoguro%20images/WhatsApp%20Image%202026-02-09%20at%201.12.12%20AM.jpeg",
+      "imageAlt": "Goppo Guro journey",
+      "url": "#"
+    },
+    {
+      "title": "Paper People Vol. 1",
+      "category": "zines",
+      "excerpt": "Our first community zine — photos, notes, and folded things from workshops across Bangladesh.",
+      "date": "September 2025",
+      "image": "goppoguro%20images/WhatsApp%20Image%202026-02-07%20at%2012.49.05%20AM.jpeg",
+      "imageAlt": "Paper People zine",
+      "url": "#"
+    },
+    {
+      "title": "The 4P Framework Explained",
+      "category": "research",
+      "excerpt": "A deep dive into Projects, Passion, Peers, and Play — the methodology behind our creative learning programme.",
+      "date": "August 2025",
+      "image": "goppoguro%20images/WhatsApp%20Image%202026-02-07%20at%2012.49.08%20AM.jpeg",
+      "imageAlt": "4P Framework deep dive",
+      "url": "#"
+    },
+    {
+      "title": "The Women Who Make the Joy",
+      "category": "press",
+      "excerpt": "A feature on our artisan network — their stories, their work, and what the Little Joys programme means to them.",
+      "date": "July 2025",
+      "image": "goppoguro%20images/WhatsApp%20Image%202026-02-07%20at%2012.49.09%20AM%20(1).jpeg",
+      "imageAlt": "Women artisan feature",
+      "url": "#"
+    },
+    {
+      "title": "Field Notes from Schools",
+      "category": "zines",
+      "excerpt": "Raw observations, sketches, and reflections collected during our first school pilot programmes.",
+      "date": "June 2025",
+      "image": "goppoguro%20images/WhatsApp%20Image%202026-02-07%20at%2012.49.05%20AM%20(1).jpeg",
+      "imageAlt": "Field Notes from Schools",
+      "url": "#"
+    }
+  ]
+}

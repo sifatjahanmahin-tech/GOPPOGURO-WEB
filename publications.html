@@ -19,6 +19,7 @@
 
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
+<link rel="icon" href="goppoguro%20images/WhatsApp%20Image%202026-02-07%20at%2012.48.10%20AM.jpeg" type="image/jpeg">
 </head>
 
 <body>
@@ -26,7 +27,7 @@
     <header class="header" id="header">
         <nav class="nav container">
             <a href="index.html" class="nav__logo">
-                <img src="goppoguro images/WhatsApp Image 2026-02-07 at 12.48.10 AM.jpeg" alt="Goppo Guro Logo"
+                <img src="goppoguro%20images/WhatsApp%20Image%202026-02-07%20at%2012.48.10%20AM.jpeg" alt="Goppo Guro Logo"
                     class="nav__logo-img">
                 <span class="nav__logo-text">Goppo Guro</span>
             </a>
@@ -42,14 +43,16 @@
                     <a href="index.html" class="nav__link">Home</a>
                 </li>
                 <li class="nav__item nav__item--dropdown" id="nav-dropdown-programme">
-                    <button class="nav__link nav__dropdown-trigger" aria-haspopup="true" aria-expanded="false"
-                        aria-controls="dropdown-programme">
-                        Programme
-                        <svg class="nav__dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" aria-hidden="true">
-                            <path d="M6 9l6 6 6-6" />
-                        </svg>
-                    </button>
+                    <div class="nav__dropdown-wrapper">
+                        <a href="programme.html" class="nav__link">Programme</a>
+                        <button class="nav__dropdown-toggle" aria-expanded="false"
+                            aria-controls="dropdown-programme" aria-label="Open Programme submenu">
+                            <svg class="nav__dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" aria-hidden="true">
+                                <path d="M6 9l6 6 6-6" />
+                            </svg>
+                        </button>
+                    </div>
                                         <ul class="nav__dropdown" id="dropdown-programme" role="menu">
                         <li class="nav__dropdown-item" role="none">
                             <a href="programme.html" class="nav__dropdown-link" role="menuitem">All Programmes</a>
@@ -69,14 +72,16 @@
                     </ul>
                 </li>
                 <li class="nav__item nav__item--dropdown" id="nav-dropdown-project">
-                    <button class="nav__link nav__dropdown-trigger" aria-haspopup="true" aria-expanded="false"
-                        aria-controls="dropdown-project">
-                        Project
-                        <svg class="nav__dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" aria-hidden="true">
-                            <path d="M6 9l6 6 6-6" />
-                        </svg>
-                    </button>
+                    <div class="nav__dropdown-wrapper">
+                        <a href="projects.html" class="nav__link">Project</a>
+                        <button class="nav__dropdown-toggle" aria-expanded="false"
+                            aria-controls="dropdown-project" aria-label="Open Project submenu">
+                            <svg class="nav__dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" aria-hidden="true">
+                                <path d="M6 9l6 6 6-6" />
+                            </svg>
+                        </button>
+                    </div>
                     <ul class="nav__dropdown" id="dropdown-project" role="menu">
                         <li class="nav__dropdown-item" role="none">
                             <a href="creative-studio-network.html" class="nav__dropdown-link" role="menuitem">Goppoguro Studio</a>
@@ -120,28 +125,10 @@
             </div>
         </section>
 
-        <!-- Featured Publication -->
+        <!-- Featured Publication — rendered from data/publications.json -->
         <section class="section">
-            <div class="container">
-                <article class="pub-featured">
-                    <div class="pub-featured__image">
-                        <img src="goppoguro images/WhatsApp Image 2026-02-07 at 12.49.07 AM (1).jpeg"
-                            alt="The Case for Slow Learning">
-                    </div>
-                    <div class="pub-featured__content">
-                        <span class="pub-card__category">Featured · Research</span>
-                        <h2 class="pub-featured__title">The Case for Slow Learning</h2>
-                        <p class="pub-featured__excerpt">
-                            In a culture that rewards speed and output, we make the research-backed argument
-                            for slowing down in education. Drawing on 200+ workshop observations and the
-                            4P Framework, this is our most complete statement on what creative learning requires.
-                        </p>
-                        <div class="pub-card__meta">
-                            <time class="pub-card__date">March 2026</time>
-                        </div>
-                        <a href="#" class="btn btn--primary" style="margin-top: var(--space-4);">Read the Full Essay</a>
-                    </div>
-                </article>
+            <div class="container" id="pub-featured-container">
+                <!-- injected by initPublicationsFromData() -->
             </div>
         </section>
 
@@ -156,169 +143,8 @@
                     <button class="pub-filter__btn" data-filter="zines">Zines</button>
                 </div>
 
-                <div class="grid-3" style="margin-top: var(--space-8);">
-                    <article class="pub-card product-card-preview" data-category="research">
-                        <div class="product-card-preview__image">
-                            <img src="goppoguro images/WhatsApp Image 2026-02-07 at 12.49.07 AM (1).jpeg"
-                                alt="Creativity in childhood">
-                        </div>
-                        <div class="product-card-preview__content">
-                            <span class="pub-card__category">Research</span>
-                            <h3 class="product-card-preview__title">Creativity in Childhood Education</h3>
-                            <p class="pub-card__excerpt">
-                                Why fostering imagination early is more critical than traditional textbook learning.
-                            </p>
-                            <div class="pub-card__meta">
-                                <time class="pub-card__date">February 2026</time>
-                            </div>
-                            <a href="#" class="btn btn--text">Read</a>
-                        </div>
-                    </article>
-
-                    <article class="pub-card product-card-preview" data-category="stories">
-                        <div class="product-card-preview__image">
-                            <img src="goppoguro images/WhatsApp Image 2026-02-07 at 12.49.04 AM.jpeg"
-                                alt="Storytelling as learning">
-                        </div>
-                        <div class="product-card-preview__content">
-                            <span class="pub-card__category">Stories</span>
-                            <h3 class="product-card-preview__title">Storytelling as a Learning Tool</h3>
-                            <p class="pub-card__excerpt">
-                                How narratives bridge the gap between abstract concepts and real-world understanding.
-                            </p>
-                            <div class="pub-card__meta">
-                                <time class="pub-card__date">January 2026</time>
-                            </div>
-                            <a href="#" class="btn btn--text">Read</a>
-                        </div>
-                    </article>
-
-                    <article class="pub-card product-card-preview" data-category="research">
-                        <div class="product-card-preview__image">
-                            <img src="goppoguro images/WhatsApp Image 2026-02-07 at 12.49.09 AM.jpeg"
-                                alt="Observations from workshops">
-                        </div>
-                        <div class="product-card-preview__content">
-                            <span class="pub-card__category">Research</span>
-                            <h3 class="product-card-preview__title">Observations from Workshops</h3>
-                            <p class="pub-card__excerpt">
-                                What we've learned from watching children play and explore in different settings.
-                            </p>
-                            <div class="pub-card__meta">
-                                <time class="pub-card__date">December 2025</time>
-                            </div>
-                            <a href="#" class="btn btn--text">Read</a>
-                        </div>
-                    </article>
-
-                    <article class="pub-card product-card-preview" data-category="stories">
-                        <div class="product-card-preview__image">
-                            <img src="goppoguro images/WhatsApp Image 2026-02-07 at 12.49.06 AM.jpeg"
-                                alt="Creative parenting">
-                        </div>
-                        <div class="product-card-preview__content">
-                            <span class="pub-card__category">Stories</span>
-                            <h3 class="product-card-preview__title">Creative Parenting</h3>
-                            <p class="pub-card__excerpt">
-                                Simple ways to nurture your child's innate creativity in everyday life.
-                            </p>
-                            <div class="pub-card__meta">
-                                <time class="pub-card__date">November 2025</time>
-                            </div>
-                            <a href="#" class="btn btn--text">Read</a>
-                        </div>
-                    </article>
-
-                    <article class="pub-card product-card-preview" data-category="press">
-                        <div class="product-card-preview__image">
-                            <img src="goppoguro images/WhatsApp Image 2026-02-09 at 1.12.12 AM.jpeg"
-                                alt="Goppoguro journey">
-                        </div>
-                        <div class="product-card-preview__content">
-                            <span class="pub-card__category">Press</span>
-                            <h3 class="product-card-preview__title">Goppoguro Journey</h3>
-                            <p class="pub-card__excerpt">
-                                Reflections on our growth and what's next for the Goppo Guro initiative.
-                            </p>
-                            <div class="pub-card__meta">
-                                <time class="pub-card__date">October 2025</time>
-                            </div>
-                            <a href="#" class="btn btn--text">Read</a>
-                        </div>
-                    </article>
-
-                    <article class="pub-card product-card-preview" data-category="zines">
-                        <div class="product-card-preview__image">
-                            <img src="goppoguro images/WhatsApp Image 2026-02-07 at 12.49.05 AM.jpeg"
-                                alt="Paper People zine">
-                        </div>
-                        <div class="product-card-preview__content">
-                            <span class="pub-card__category">Zines</span>
-                            <h3 class="product-card-preview__title">Paper People Vol. 1</h3>
-                            <p class="pub-card__excerpt">
-                                Our first community zine — photos, notes, and folded things from workshops across Bangladesh.
-                            </p>
-                            <div class="pub-card__meta">
-                                <time class="pub-card__date">September 2025</time>
-                            </div>
-                            <a href="#" class="btn btn--text">Read</a>
-                        </div>
-                    </article>
-
-                    <article class="pub-card product-card-preview" data-category="research">
-                        <div class="product-card-preview__image">
-                            <img src="goppoguro images/WhatsApp Image 2026-02-07 at 12.49.08 AM.jpeg"
-                                alt="4P Framework deep dive">
-                        </div>
-                        <div class="product-card-preview__content">
-                            <span class="pub-card__category">Research</span>
-                            <h3 class="product-card-preview__title">The 4P Framework Explained</h3>
-                            <p class="pub-card__excerpt">
-                                A deep dive into Projects, Passion, Peers, and Play — the methodology behind our creative learning programme.
-                            </p>
-                            <div class="pub-card__meta">
-                                <time class="pub-card__date">August 2025</time>
-                            </div>
-                            <a href="#" class="btn btn--text">Read</a>
-                        </div>
-                    </article>
-
-                    <article class="pub-card product-card-preview" data-category="press">
-                        <div class="product-card-preview__image">
-                            <img src="goppoguro images/WhatsApp Image 2026-02-07 at 12.49.09 AM (1).jpeg"
-                                alt="Women artisan feature">
-                        </div>
-                        <div class="product-card-preview__content">
-                            <span class="pub-card__category">Press</span>
-                            <h3 class="product-card-preview__title">The Women Who Make the Joy</h3>
-                            <p class="pub-card__excerpt">
-                                A feature on our artisan network — their stories, their work, and what the Little Joys programme means to them.
-                            </p>
-                            <div class="pub-card__meta">
-                                <time class="pub-card__date">July 2025</time>
-                            </div>
-                            <a href="#" class="btn btn--text">Read</a>
-                        </div>
-                    </article>
-
-                    <article class="pub-card product-card-preview" data-category="zines">
-                        <div class="product-card-preview__image">
-                            <img src="goppoguro images/WhatsApp Image 2026-02-07 at 12.49.05 AM (1).jpeg"
-                                alt="Field Notes from Schools">
-                        </div>
-                        <div class="product-card-preview__content">
-                            <span class="pub-card__category">Zines</span>
-                            <h3 class="product-card-preview__title">Field Notes from Schools</h3>
-                            <p class="pub-card__excerpt">
-                                Raw observations, sketches, and reflections collected during our first school pilot programmes.
-                            </p>
-                            <div class="pub-card__meta">
-                                <time class="pub-card__date">June 2025</time>
-                            </div>
-                            <a href="#" class="btn btn--text">Read</a>
-                        </div>
-                    </article>
-                </div>
+                <!-- Articles rendered from data/publications.json by initPublicationsFromData() -->
+                <div class="grid-3" id="pub-grid" style="margin-top: var(--space-8);"></div>
             </div>
         </section>
 
@@ -342,7 +168,7 @@
         <div class="container">
             <div class="footer__grid">
                 <div class="footer__brand">
-                    <img src="goppoguro images/WhatsApp Image 2026-02-07 at 12.48.10 AM.jpeg" alt="Goppo Guro"
+                    <img src="goppoguro%20images/WhatsApp%20Image%202026-02-07%20at%2012.48.10%20AM.jpeg" alt="Goppo Guro"
                         class="footer__logo">
                     <p class="footer__tagline">A Space for Play, Paper, and Pause</p>
                     <p class="footer__description">
@@ -365,7 +191,7 @@
                     <ul class="footer__nav-list">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="programme.html">Programme</a></li>
-                        <li><a href="creative-studio-network.html">Project</a></li>
+                        <li><a href="projects.html">Project</a></li>
                         <li><a href="products.html">Product</a></li>
                         <li><a href="publications.html">Publications</a></li>
                         <li><a href="about.html">About Us</a></li>

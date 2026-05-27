@@ -1,0 +1,184 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - link "Goppo Guro Logo Goppo Guro" [ref=e4] [cursor=pointer]:
+        - /url: index.html
+        - img "Goppo Guro Logo" [ref=e5]
+        - generic [ref=e6]: Goppo Guro
+      - list [ref=e7]:
+        - listitem [ref=e8]:
+          - link "Home" [ref=e9] [cursor=pointer]:
+            - /url: index.html
+        - listitem [ref=e10]:
+          - generic [ref=e11]:
+            - link "Programme" [ref=e12] [cursor=pointer]:
+              - /url: programme.html
+            - button "Open Programme submenu" [ref=e13] [cursor=pointer]:
+              - img [ref=e14]
+          - menu:
+            - menuitem "All Programmes"
+            - menuitem "Creative Learning Programme"
+            - menuitem "Women Makers Empowerment"
+            - menuitem "Golpoka Club"
+            - menuitem "Podcast"
+        - listitem [ref=e16]:
+          - generic [ref=e17]:
+            - link "Project" [ref=e18] [cursor=pointer]:
+              - /url: projects.html
+            - button "Open Project submenu" [ref=e19] [cursor=pointer]:
+              - img [ref=e20]
+          - menu:
+            - menuitem "Goppoguro Studio"
+            - menuitem "Golpoka Club"
+            - menuitem "Little Joys"
+        - listitem [ref=e22]:
+          - link "Product" [ref=e23] [cursor=pointer]:
+            - /url: products.html
+        - listitem [ref=e24]:
+          - link "Publications" [ref=e25] [cursor=pointer]:
+            - /url: publications.html
+        - listitem [ref=e26]:
+          - link "About Us" [ref=e27] [cursor=pointer]:
+            - /url: about.html
+        - listitem [ref=e28]:
+          - link "Gallery" [ref=e29] [cursor=pointer]:
+            - /url: gallery.html
+        - listitem [ref=e30]:
+          - link "Contact" [ref=e31] [cursor=pointer]:
+            - /url: contact.html
+  - main [ref=e32]:
+    - generic [ref=e34]:
+      - generic [ref=e35]: — Start a Conversation
+      - heading "Get in Touch" [level=1] [ref=e36]
+      - paragraph [ref=e37]: Reach out for collaborations, studio inquiries, or simply to share your creative journey.
+    - generic [ref=e39]:
+      - generic [ref=e40]:
+        - generic [ref=e41]: — Ways to Engage
+        - heading "How Would You Like to Contribute?" [level=2] [ref=e42]
+      - generic [ref=e43]:
+        - generic [ref=e44]:
+          - img [ref=e46]
+          - heading "Volunteer with Us" [level=3] [ref=e49]
+          - paragraph [ref=e50]: Bring your skills to our workshops, events, and community programmes. We welcome educators, designers, and storytellers.
+          - link "I Want to Volunteer" [ref=e51] [cursor=pointer]:
+            - /url: contact.html?subject=Volunteer%20Inquiry
+        - generic [ref=e52]:
+          - img [ref=e54]
+          - heading "Work with Us" [level=3] [ref=e57]
+          - paragraph [ref=e58]: Partner with Goppo Guro for school collaborations, corporate gifting, or creative education initiatives.
+          - link "Let's Collaborate" [ref=e59] [cursor=pointer]:
+            - /url: contact.html?subject=Work%20With%20Us
+        - generic [ref=e60]:
+          - img [ref=e62]
+          - heading "Start a Studio" [level=3] [ref=e67]
+          - paragraph [ref=e68]: Bring a Goppoguro Creative Studio to your city. Franchise opportunities are available for passionate community builders.
+          - link "Explore Franchise" [ref=e69] [cursor=pointer]:
+            - /url: contact.html?subject=Start%20a%20Studio
+    - generic [ref=e72]:
+      - generic [ref=e73]:
+        - generic [ref=e74]: — Information
+        - heading "Where to Find Us" [level=2] [ref=e75]
+        - generic [ref=e76]:
+          - generic [ref=e77]:
+            - heading "Email" [level=3] [ref=e78]
+            - paragraph [ref=e79]: hello@goppoguro.com
+          - generic [ref=e80]:
+            - heading "Phone" [level=3] [ref=e81]
+            - paragraph [ref=e82]: +880 1234 567 890
+          - generic [ref=e83]:
+            - heading "Social Media" [level=3] [ref=e84]
+            - link [ref=e86] [cursor=pointer]:
+              - /url: https://www.facebook.com/goppoguro
+              - img [ref=e87]
+      - generic [ref=e90]:
+        - generic [ref=e91]:
+          - generic [ref=e92]: Name
+          - textbox "Name" [ref=e93]
+        - generic [ref=e94]:
+          - generic [ref=e95]: Email
+          - textbox "Email" [ref=e96]
+        - generic [ref=e97]:
+          - generic [ref=e98]: Subject
+          - textbox "Subject" [ref=e99]
+        - generic [ref=e100]:
+          - generic [ref=e101]: Message
+          - textbox "Message" [ref=e102]
+        - button "Send Message" [ref=e103] [cursor=pointer]
+  - contentinfo [ref=e104]:
+    - generic [ref=e105]:
+      - generic [ref=e106]:
+        - generic [ref=e107]:
+          - img "Goppo Guro" [ref=e108]
+          - paragraph [ref=e109]: A Space for Play, Paper, and Pause
+          - paragraph [ref=e110]: Creating space for curiosity, connection, and shared discovery through handcrafted paper experiences.
+          - link "Facebook" [ref=e112] [cursor=pointer]:
+            - /url: https://www.facebook.com/goppoguro
+            - img [ref=e113]
+        - navigation [ref=e115]:
+          - heading "Navigate" [level=4] [ref=e116]
+          - list [ref=e117]:
+            - listitem [ref=e118]:
+              - link "Home" [ref=e119] [cursor=pointer]:
+                - /url: index.html
+            - listitem [ref=e120]:
+              - link "Programme" [ref=e121] [cursor=pointer]:
+                - /url: programme.html
+            - listitem [ref=e122]:
+              - link "Project" [ref=e123] [cursor=pointer]:
+                - /url: projects.html
+            - listitem [ref=e124]:
+              - link "Product" [ref=e125] [cursor=pointer]:
+                - /url: products.html
+            - listitem [ref=e126]:
+              - link "Publications" [ref=e127] [cursor=pointer]:
+                - /url: publications.html
+            - listitem [ref=e128]:
+              - link "About Us" [ref=e129] [cursor=pointer]:
+                - /url: about.html
+            - listitem [ref=e130]:
+              - link "Gallery" [ref=e131] [cursor=pointer]:
+                - /url: gallery.html
+            - listitem [ref=e132]:
+              - link "Contact" [ref=e133] [cursor=pointer]:
+                - /url: contact.html
+        - navigation [ref=e134]:
+          - heading "Explore" [level=4] [ref=e135]
+          - paragraph [ref=e136]: Programme
+          - list [ref=e137]:
+            - listitem [ref=e138]:
+              - link "Creative Learning (GCLP)" [ref=e139] [cursor=pointer]:
+                - /url: gclp.html
+            - listitem [ref=e140]:
+              - link "Women Makers" [ref=e141] [cursor=pointer]:
+                - /url: women-empowerment.html
+            - listitem [ref=e142]:
+              - link "Golpoka Club" [ref=e143] [cursor=pointer]:
+                - /url: golpoka-club.html
+            - listitem [ref=e144]:
+              - link "Podcast" [ref=e145] [cursor=pointer]:
+                - /url: podcast.html
+          - paragraph [ref=e146]: Project
+          - list [ref=e147]:
+            - listitem [ref=e148]:
+              - link "Goppoguro Studio" [ref=e149] [cursor=pointer]:
+                - /url: creative-studio-network.html
+            - listitem [ref=e150]:
+              - link "Golpoka Club" [ref=e151] [cursor=pointer]:
+                - /url: golpoka-club.html
+            - listitem [ref=e152]:
+              - link "Little Joys" [ref=e153] [cursor=pointer]:
+                - /url: little-joys.html
+        - generic [ref=e154]:
+          - heading "Stay Connected" [level=4] [ref=e155]
+          - paragraph [ref=e156]: Get updates on new products and impact stories.
+          - generic [ref=e157]:
+            - textbox "Your email" [ref=e158]
+            - button "Subscribe" [ref=e159] [cursor=pointer]
+      - generic [ref=e160]:
+        - generic [ref=e161]: SDG 1
+        - generic [ref=e162]: SDG 4
+        - generic [ref=e163]: SDG 8
+        - generic [ref=e164]: SDG 12
+      - generic [ref=e165]:
+        - paragraph [ref=e166]: Handmade in Bangladesh · © 2026 Goppo Guro. All rights reserved.
+        - paragraph [ref=e167]: Every purchase supports children's welfare.
