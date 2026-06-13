@@ -1940,31 +1940,55 @@ h6 {
 .csn-hero {
     position: relative;
     min-height: 100vh;
+    min-height: 100dvh;
     display: flex;
     align-items: center;
     padding: var(--space-16) 0 var(--space-12);
     overflow: hidden;
 }
 
-.csn-hero__bg-pattern {
+.csn-hero__bg-img {
     position: absolute;
-    top: 0;
-    left: 0;
+    inset: 0;
     width: 100%;
     height: 100%;
-    background:
-        radial-gradient(ellipse at 20% 20%, rgba(0, 0, 0, 0.02) 0%, transparent 50%),
-        radial-gradient(ellipse at 80% 80%, rgba(0, 0, 0, 0.015) 0%, transparent 50%),
-        radial-gradient(ellipse at 50% 60%, rgba(0, 0, 0, 0.01) 0%, transparent 40%);
-    pointer-events: none;
+    object-fit: cover;
+    object-position: center;
+    z-index: 0;
+}
+
+.csn-hero__overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(
+        135deg,
+        rgba(12, 8, 4, 0.82) 0%,
+        rgba(12, 8, 4, 0.60) 55%,
+        rgba(12, 8, 4, 0.38) 100%
+    );
 }
 
 .csn-hero__container {
+    position: relative;
+    z-index: 2;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: var(--space-8);
     align-items: center;
+    max-width: 720px;
 }
+
+/* Text overrides for photo background */
+.csn-hero .hero__tagline { color: rgba(255,255,255,0.65); }
+.csn-hero .hero__title { color: #fff; }
+.csn-hero .gradient-text { color: rgba(255,255,255,0.75); background: none; -webkit-background-clip: unset; -webkit-text-fill-color: unset; }
+.csn-hero .hero__description { color: rgba(255,255,255,0.80); }
+.csn-hero .csn-hero__distinction { color: rgba(255,255,255,0.70); }
+.csn-hero .csn-hero__distinction--highlight { color: #fff; font-weight: 600; }
+.csn-hero .csn-hero__distinction-cross { background: rgba(255,255,255,0.12); color: rgba(255,255,255,0.65); }
+.csn-hero .btn--outline { border-color: rgba(255,255,255,0.45); color: #fff; }
+.csn-hero .btn--outline:hover { background: rgba(255,255,255,0.12); border-color: #fff; }
 
 .csn-hero__distinctions {
     display: flex;
@@ -2056,16 +2080,8 @@ h6 {
 
 @media (max-width: 968px) {
     .csn-hero__container {
-        grid-template-columns: 1fr;
         text-align: center;
     }
-
-    .csn-hero__visual {
-        order: -1;
-        max-width: 500px;
-        margin: 0 auto;
-    }
-
     .csn-hero__distinctions {
         align-items: center;
     }
