@@ -2226,11 +2226,7 @@ h6 {
     line-height: 1.65;
 }
 
-@media (max-width: 1024px) {
-    .csn-schedule__grid { grid-template-columns: repeat(2, 1fr); }
-}
 @media (max-width: 560px) {
-    .csn-schedule__grid { grid-template-columns: 1fr; }
     .csn-session-card__img-wrap { height: 320px; }
 }
 
@@ -3097,7 +3093,7 @@ h6 {
 
 .csn-schedule__grid {
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: var(--space-3);
 }
 
@@ -3108,6 +3104,8 @@ h6 {
     border-left: 5px solid transparent;
     transition: all var(--transition-base);
     backdrop-filter: blur(10px);
+    min-width: 0;
+    overflow: hidden;
 }
 
 .csn-schedule__day:hover {
@@ -3265,15 +3263,31 @@ h6 {
     transform: scale(1.01);
 }
 
-@media (max-width: 968px) {
-    .csn-schedule__grid {
-        grid-template-columns: repeat(4, 1fr);
-    }
-}
-
 @media (max-width: 640px) {
     .csn-schedule__grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+    .csn-schedule__day {
+        padding: var(--space-2);
+    }
+    .csn-schedule__day-header {
+        gap: var(--space-1);
+    }
+    .csn-schedule__day-name {
+        font-size: 0.65rem;
+        padding: 2px 5px;
+        letter-spacing: 0.04em;
+    }
+    .csn-schedule__day-emoji {
+        display: none;
+    }
+    .csn-schedule__slots {
+        flex-direction: column;
+        gap: 4px;
+    }
+    .csn-schedule__slot {
+        font-size: 0.7rem;
+        padding: 4px 8px;
     }
 }
 
