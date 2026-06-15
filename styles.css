@@ -2098,14 +2098,52 @@ h6 {
    ======================================== */
 
 /* ----------------------------------------
-   CSN Schedule
+   CSN Poster Hero — full-width poster image display
    ---------------------------------------- */
-.csn-schedule__grid {
+.csn-poster-hero {
+    margin-top: var(--space-10);
+    text-align: center;
+}
+
+.csn-poster-hero__img {
+    width: 100%;
+    max-width: 680px;
+    border-radius: var(--radius-xl);
+    box-shadow: 0 24px 64px rgba(0, 0, 0, 0.14);
+    transition: transform var(--transition-slow);
+    display: block;
+    margin: 0 auto;
+}
+
+.csn-poster-hero__img:hover {
+    transform: scale(1.01);
+}
+
+/* ----------------------------------------
+   CSN Days section
+   ---------------------------------------- */
+.csn-days {
+    padding: var(--space-16) 0;
+    background: var(--color-bg-primary);
+}
+
+.csn-days__grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: var(--space-5);
+    gap: var(--space-4);
     margin-top: var(--space-10);
 }
+
+@media (max-width: 1024px) {
+    .csn-days__grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 560px) {
+    .csn-days__grid { grid-template-columns: 1fr; }
+}
+
+/* ----------------------------------------
+   CSN Schedule (legacy, no longer used for the 4-day grid)
+   ---------------------------------------- */
 
 .csn-session-card {
     background: var(--color-bg-secondary);
@@ -2121,8 +2159,29 @@ h6 {
 
 .csn-session-card__img-wrap {
     position: relative;
-    height: 220px;
+    height: 480px;
     overflow: hidden;
+}
+
+.csn-session-card__img-wrap::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 55%;
+    background: linear-gradient(to top, rgba(6,4,2,0.88) 0%, transparent 100%);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.csn-session-card__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: var(--space-4) var(--space-5) var(--space-5);
+    z-index: 2;
 }
 .csn-session-card__img {
     width: 100%;
@@ -2151,14 +2210,14 @@ h6 {
 }
 
 .csn-session-card__body {
-    padding: var(--space-4) var(--space-5) var(--space-5);
+    display: none;
 }
 .csn-session-card__title {
     font-family: var(--font-display);
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: 600;
-    color: var(--color-text-primary);
-    margin-bottom: var(--space-2);
+    color: #fff;
+    margin-bottom: 0;
 }
 .csn-session-card__text {
     font-family: var(--font-body);
@@ -2172,7 +2231,7 @@ h6 {
 }
 @media (max-width: 560px) {
     .csn-schedule__grid { grid-template-columns: 1fr; }
-    .csn-session-card__img-wrap { height: 200px; }
+    .csn-session-card__img-wrap { height: 320px; }
 }
 
 /* ----------------------------------------
@@ -2958,18 +3017,20 @@ h6 {
 /* Themes Poster */
 .csn-themes__poster {
     text-align: center;
+    margin-bottom: var(--space-10);
 }
 
 .csn-themes__poster-img {
-    max-width: 600px;
     width: 100%;
+    max-width: 100%;
     border-radius: var(--radius-xl);
-    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
     transition: transform var(--transition-slow);
+    display: block;
 }
 
 .csn-themes__poster-img:hover {
-    transform: scale(1.02);
+    transform: scale(1.01);
 }
 
 .csn-themes__poster-caption {
@@ -3029,15 +3090,14 @@ h6 {
 }
 
 .csn-schedule__wrapper {
-    display: grid;
-    grid-template-columns: 1.3fr 0.7fr;
-    gap: var(--space-8);
-    align-items: start;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-10);
 }
 
 .csn-schedule__grid {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
     gap: var(--space-3);
 }
 
@@ -3189,30 +3249,31 @@ h6 {
 
 /* Schedule Poster */
 .csn-schedule__poster {
-    position: sticky;
-    top: 100px;
+    width: 100%;
+    text-align: center;
 }
 
 .csn-schedule__poster-img {
     width: 100%;
     border-radius: var(--radius-xl);
-    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
     transition: transform var(--transition-slow);
+    display: block;
 }
 
 .csn-schedule__poster-img:hover {
-    transform: scale(1.02);
+    transform: scale(1.01);
 }
 
 @media (max-width: 968px) {
-    .csn-schedule__wrapper {
-        grid-template-columns: 1fr;
+    .csn-schedule__grid {
+        grid-template-columns: repeat(4, 1fr);
     }
+}
 
-    .csn-schedule__poster {
-        position: static;
-        max-width: 500px;
-        margin: var(--space-8) auto 0;
+@media (max-width: 640px) {
+    .csn-schedule__grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
