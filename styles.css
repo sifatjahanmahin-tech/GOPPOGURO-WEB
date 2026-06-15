@@ -4282,6 +4282,48 @@ h6 {
 }
 
 /* ========================================
+   GOLPOKA CLUB HERO
+   ======================================== */
+.golpoka-hero__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-10);
+    align-items: center;
+}
+
+.golpoka-hero__poster {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.golpoka-hero__poster-img {
+    width: 100%;
+    max-width: 420px;
+    border-radius: var(--radius-xl);
+    box-shadow: 0 24px 64px rgba(0, 0, 0, 0.18);
+    display: block;
+    transition: transform var(--transition-slow);
+}
+
+.golpoka-hero__poster-img:hover {
+    transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+    .golpoka-hero__grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-8);
+    }
+
+    .golpoka-hero__poster-img {
+        max-width: 100%;
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+/* ========================================
    IMAGE STACK (staggered dual-image)
    ======================================== */
 
