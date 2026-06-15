@@ -6949,6 +6949,167 @@ h6 {
     }
 }
 
+/* ========================================
+   CSN PAGE — MOBILE OPTIMIZATIONS
+   ======================================== */
+
+@media (max-width: 768px) {
+    /* Hero: trim height by hiding low-priority content */
+    .csn-hero {
+        min-height: auto;
+        padding: var(--space-8) 0 var(--space-6);
+    }
+    .csn-hero__distinctions {
+        display: none;
+    }
+    .csn-hero .hero__description {
+        font-size: 1rem;
+        margin-bottom: var(--space-3);
+    }
+    .csn-hero .hero__actions {
+        margin-top: var(--space-4);
+    }
+    .csn-hero .hero__title {
+        font-size: clamp(2rem, 8vw, 3rem);
+    }
+    .csn-hero__bg-img {
+        object-position: center 60%;
+    }
+
+    /* All CSN-specific sections bypass .section — override directly */
+    .csn-journey,
+    .csn-difference,
+    .csn-matters,
+    .csn-growth,
+    .csn-schedule,
+    .csn-belief,
+    .csn-books,
+    .csn-days {
+        padding: var(--space-8) 0;
+    }
+
+    /* Poster hero: tighter top margin */
+    .csn-poster-hero {
+        margin-top: var(--space-4);
+    }
+
+    /* Journey: compact step cards, shorter connectors */
+    .csn-journey__step {
+        padding: var(--space-3) var(--space-4);
+    }
+    .csn-journey__connector {
+        height: 20px;
+    }
+
+    /* Difference: stack columns */
+    .csn-difference__grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-6);
+    }
+    .csn-difference__visual {
+        display: none;
+    }
+
+    /* Matters: single column */
+    .csn-matters__grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-3);
+    }
+    .csn-matters__card {
+        padding: var(--space-4);
+    }
+
+    /* Growth: stack columns */
+    .csn-growth__grid {
+        grid-template-columns: 1fr;
+    }
+    .csn-growth__visual {
+        display: none;
+    }
+
+    /* Schedule day grid: 2 columns */
+    .csn-schedule__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Section header inside CSN: tighter spacing */
+    .csn-journey .section-header,
+    .csn-difference .section-header,
+    .csn-matters .section-header,
+    .csn-growth .section-header,
+    .csn-schedule .section-header,
+    .csn-days .section-header,
+    .csn-themes .section-header,
+    .csn-belief .section-header {
+        margin-bottom: var(--space-4);
+    }
+
+    /* Journey: fully collapse connector gaps */
+    .csn-journey__flow {
+        gap: 0;
+    }
+    .csn-journey__connector {
+        height: 16px;
+    }
+    .csn-journey__step-number {
+        font-size: 1.5rem;
+    }
+
+    /* Prevent scroll-animation invisible gaps on mobile —
+       force elements visible regardless of anim-enter state */
+    .csn-journey__step,
+    .csn-matters__card,
+    .csn-difference__feature,
+    .csn-growth__standard,
+    .section-tagline,
+    .section-title,
+    .section-description {
+        opacity: 1 !important;
+        transform: none !important;
+        animation: none !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .csn-hero {
+        padding: var(--space-6) 0 var(--space-4);
+    }
+
+    .csn-journey,
+    .csn-difference,
+    .csn-matters,
+    .csn-growth,
+    .csn-schedule,
+    .csn-belief,
+    .csn-books,
+    .csn-days {
+        padding: var(--space-6) 0;
+    }
+
+    /* Schedule day cards: 2 columns, compact */
+    .csn-schedule__day {
+        padding: var(--space-2) var(--space-3);
+    }
+    .csn-schedule__activity {
+        font-size: 0.875rem;
+    }
+    .csn-schedule__slots {
+        flex-direction: column;
+        gap: var(--space-1);
+    }
+    .csn-schedule__slot {
+        font-size: 0.75rem;
+    }
+
+    /* Books section: stack poster and list */
+    .csn-books__showcase {
+        flex-direction: column;
+    }
+    .csn-books__poster {
+        max-width: 100%;
+    }
+}
+
 /* Touch targets — all interactive elements ≥ 44px */
 .btn,
 .nav__link,
