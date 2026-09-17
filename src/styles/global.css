@@ -1,0 +1,66 @@
+/* ============================================================
+   Goppo Guro — global stylesheet
+   Tailwind v4 + the existing monochrome-luxury design system.
+   The legacy stylesheet is imported unchanged so every existing
+   BEM component keeps rendering pixel-identically while the
+   architecture migrates to Astro components.
+   ============================================================ */
+@import "tailwindcss";
+@import "../../styles.css";
+
+/* Design tokens exposed to Tailwind utilities (8px grid, monochrome). */
+@theme {
+  /* Monochrome-luxury palette */
+  --color-paper: #ffffff;
+  --color-paper-2: #fafafa;
+  --color-paper-3: #f2f2f2;
+  --color-card: rgba(0, 0, 0, 0.04);
+  --color-glass: rgba(255, 255, 255, 0.85);
+  --color-ink: #000000;
+  --color-ink-2: #4a4a4a;
+  --color-ink-3: #888888;
+  --color-line: rgba(0, 0, 0, 0.08);
+
+  /* Typography */
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-numbers: "Outfit", system-ui, sans-serif;
+
+  /* 8px grid as Tailwind's base spacing unit */
+  --spacing: 0.5rem;
+
+  /* Radius */
+  --radius-sm: 0.5rem;
+  --radius-md: 1rem;
+  --radius-lg: 1.5rem;
+  --radius-xl: 2rem;
+
+  /* Shadows */
+  --shadow-soft: 0 8px 32px rgba(0, 0, 0, 0.08);
+}
+
+/* Accessibility: keyboard skip link */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: var(--space-2, 1rem);
+  z-index: 9999;
+  padding: 0.75rem 1.25rem;
+  background: var(--color-text-primary, #000000);
+  color: var(--color-bg-primary, #ffffff);
+  border-radius: var(--radius-sm, 0.5rem);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  transition: top var(--transition-fast, 0.3s ease);
+}
+
+.skip-link:focus {
+  top: var(--space-2, 1rem);
+}
+
+/* Respect users' motion preferences for any Tailwind-driven motion */
+@media (prefers-reduced-motion: reduce) {
+  .skip-link {
+    transition: none;
+  }
+}

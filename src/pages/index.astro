@@ -1,0 +1,90 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { site } from '../data/site';
+---
+
+<BaseLayout title={`${site.name} | ${site.tagline}`} description={site.description}>
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero__bg-pattern"></div>
+    <div class="container hero__container">
+      <article class="hero__content">
+        <span class="hero__tagline">Small Stories, Gentle Beginnings</span>
+        <h1 class="hero__title">
+          <span class="proj-hero__word" style="animation-delay:0.05s">A</span>
+          <span class="proj-hero__word" style="animation-delay:0.15s">Space</span>
+          <span class="proj-hero__word" style="animation-delay:0.25s">for</span>
+          <span class="proj-hero__word" style="animation-delay:0.35s">Play,</span>
+          <br />
+          <span class="proj-hero__word" style="animation-delay:0.45s">Paper,</span>
+          <span class="proj-hero__word" style="animation-delay:0.55s">and</span>
+          <span class="proj-hero__word gradient-text" style="animation-delay:0.65s">Pause</span>
+        </h1>
+        <p class="hero__description">
+          Goppo Guro is a pause for the relationship we've lost with play and paper. We invite you to a space where
+          imagination has no timer, and discovery has no right answers.
+        </p>
+        <div class="hero__actions">
+          <a href="/products/" class="btn btn--primary">
+            <span>Explore Products</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+          <a href="/about/" class="btn btn--outline">Our Story</a>
+        </div>
+      </article>
+
+      <figure class="hero__visual hero__visual--animation">
+        <img
+          src="/brand/logo.jpeg"
+          alt="Goppo Guro story spark mascot"
+          width="640"
+          height="640"
+          fetchpriority="high"
+        />
+      </figure>
+    </div>
+    <div class="hero__scroll">
+      <span>Scroll to explore</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Marquee -->
+  <div class="marquee-strip" aria-hidden="true">
+    <div class="marquee-strip__track">
+      <div class="marquee-strip__inner">
+        {
+          ['Play', 'Paper', 'Pause', 'Origami', 'Bangladesh', 'Little Joys', 'গপ্পো গুঁড়ো', 'Storytelling', 'Handcrafted', 'Connection'].map(
+            (word) => (
+              <>
+                <span class="marquee-strip__word">{word}</span>
+                <span class="marquee-strip__dot" />
+              </>
+            )
+          )
+        }
+      </div>
+    </div>
+  </div>
+
+  <!-- Sparks -->
+  <section class="sparks section section--light">
+    <div class="container">
+      <div class="sparks__grid">
+        <div class="sparks__content">
+          <span class="section-tagline">The Spark of Story</span>
+          <h2 class="section-title">Small Beginnings, <span class="gradient-text">Unlimited</span> Journeys</h2>
+          <p class="sparks__description">
+            Goppo Guro means "sparks of stories" — gentle starts that invite curiosity. Whether it's a folded bird or
+            a shared word, we provide the beginning. You create the story.
+          </p>
+          <div class="sparks__visual">
+            <img src="/brand/logo.jpeg" alt="Story spark mascot" class="sparks__img" width="480" height="480" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

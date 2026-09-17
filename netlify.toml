@@ -1,0 +1,156 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "24"
+
+# ---------------------------------------------------------------------------
+# Security & caching headers
+# ---------------------------------------------------------------------------
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=()"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+    # CSP is permissive for inline styles/scripts now; tightened in hardening phase.
+    Content-Security-Policy = "default-src 'self'; img-src 'self' data: blob:; font-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; frame-ancestors 'self'; base-uri 'self'; form-action 'self'"
+
+[[headers]]
+  for = "/_astro/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/fonts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# ---------------------------------------------------------------------------
+# 301 redirects: legacy pages repurposed during restructure
+# ---------------------------------------------------------------------------
+[[redirects]]
+  from = "/blog.html"
+  to = "/publications/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/platform.html"
+  to = "/creative-studio-network/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/partners.html"
+  to = "/about/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/get-involved.html"
+  to = "/contact/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/team.html"
+  to = "/about/"
+  status = 301
+  force = true
+
+# ---------------------------------------------------------------------------
+# 301 redirects: legacy .html URLs -> clean URLs (appended per migrated page)
+# ---------------------------------------------------------------------------
+[[redirects]]
+  from = "/index.html"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/about.html"
+  to = "/about/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/programme.html"
+  to = "/programme/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/projects.html"
+  to = "/projects/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/products.html"
+  to = "/products/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/publications.html"
+  to = "/publications/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/gallery.html"
+  to = "/gallery/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/contact.html"
+  to = "/contact/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/gclp.html"
+  to = "/gclp/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/golpoka-club.html"
+  to = "/golpoka-club/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/little-joys.html"
+  to = "/little-joys/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/podcast.html"
+  to = "/podcast/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/women-empowerment.html"
+  to = "/women-empowerment/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/creative-studio-network.html"
+  to = "/creative-studio-network/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/goppoguro-corner-little-space-for-children-at-work.html"
+  to = "/publications/goppoguro-corner-little-space-for-children-at-work/"
+  status = 301
+  force = true

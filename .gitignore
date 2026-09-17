@@ -1,0 +1,34 @@
+# dependencies
+node_modules/
+
+# build output
+dist/
+.astro/
+
+# hosting
+.netlify/
+.vercel/
+
+# tests / tooling artifacts
+.playwright-mcp/
+test-results/
+playwright-report/
+blob-report/
+
+# debug screenshots & logs (legacy artifacts)
+audit-*.png
+audit-*.jpeg
+ss-*.jpeg
+mobile-*.jpeg
+verify-*.jpeg
+anim-verify-*.jpeg
+fourp-*.jpeg
+desktop-*.jpeg
+screenshot-index.png
+*.log
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

@@ -1,0 +1,210 @@
+---
+import { nav, site, isActive } from '../data/site';
+
+const pathname = Astro.url.pathname;
+const slug = (label: string) => label.toLowerCase().replace(/\s+/g, '-');
+---
+
+<header class="header" id="header">
+  <nav class="nav container" aria-label="Primary">
+    <a href="/" class="nav__logo" aria-label={`${site.name} — home`}>
+      <img src="/brand/logo.jpeg" alt={`${site.name} logo`} class="nav__logo-img" width="48" height="48" />
+      <span class="nav__logo-text">{site.name}</span>
+    </a>
+
+    <button
+      class="nav__toggle"
+      id="nav-toggle"
+      type="button"
+      aria-label="Toggle navigation"
+      aria-expanded="false"
+      aria-controls="nav-menu"
+    >
+      <span class="nav__toggle-line"></span>
+      <span class="nav__toggle-line"></span>
+      <span class="nav__toggle-line"></span>
+    </button>
+
+    <ul class="nav__menu" id="nav-menu">
+      {
+        nav.map((item) =>
+          item.children ? (
+            <li class="nav__item nav__item--dropdown">
+              <div class="nav__dropdown-wrapper">
+                <a
+                  href={item.href}
+                  class:list={['nav__link', { active: isActive(pathname, item.href) }]}
+                >
+                  {item.label}
+                </a>
+                <button
+                  class="nav__dropdown-toggle"
+                  type="button"
+                  aria-expanded="false"
+                  aria-controls={`dropdown-${slug(item.label)}`}
+                  aria-label={`Open ${item.label} submenu`}
+                >
+                  <svg
+                    class="nav__dropdown-arrow"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    aria-hidden="true"
+                  >
+                    <path d="M6 9l6 6 6-6" />
+                  </svg>
+                </button>
+              </div>
+              <ul class="nav__dropdown" id={`dropdown-${slug(item.label)}`} role="menu">
+                {item.children.map((child) => (
+                  <li class="nav__dropdown-item" role="none">
+                    <a href={child.href} class="nav__dropdown-link" role="menuitem">
+                      {child.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </li>
+          ) : (
+            <li class="nav__item">
+              <a
+                href={item.href}
+                class:list={['nav__link', { active: isActive(pathname, item.href) }]}
+              >
+                {item.label}
+              </a>
+            </li>
+          )
+        )
+      }
+    </ul>
+  </nav>
+</header>
+
+<script>
+  const navToggle = document.getElementById('nav-toggle');
+  const navMenu = document.getElementById('nav-menu');
+  const header = document.getElementById('header');
+
+  function closeAllDropdowns() {
+    document.querySelectorAll('.nav__item--dropdown.is-open').forEach((item) => {
+      item.classList.remove('is-open');
+      const toggle = item.querySelector('.nav__dropdown-toggle');
+      if (toggle) toggle.setAttribute('aria-expanded', 'false');
+    });
+  }
+
+  function closeMobileMenu() {
+    if (!navMenu || !navToggle) return;
+    navMenu.classList.remove('active');
+    navToggle.classList.remove('active');
+    navToggle.setAttribute('aria-expanded', 'false');
+    closeAllDropdowns();
+  }
+
+  if (navToggle && navMenu) {
+    navToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+      navToggle.classList.toggle('active');
+      const isExpanded = navMenu.classList.contains('active');
+      navToggle.setAttribute('aria-expanded', String(isExpanded));
+      if (!isExpanded) closeAllDropdowns();
+    });
+
+    navMenu.querySelectorAll('.nav__link').forEach((link) => {
+      link.addEventListener('click', closeMobileMenu);
+    });
+
+    document.addEventListener('click', (event) => {
+      const target = event.target as Node;
+      if (!navMenu.contains(target) && !navToggle.contains(target)) closeMobileMenu();
+    });
+  }
+
+  const dropdownItems = document.querySelectorAll('.nav__item--dropdown');
+  if (dropdownItems.length) {
+    dropdownItems.forEach((item) => {
+      const toggle = item.querySelector('.nav__dropdown-toggle');
+      const dropdown = item.querySelector('.nav__dropdown');
+      if (!toggle || !dropdown) return;
+      const links = dropdown.querySelectorAll('.nav__dropdown-link');
+
+      toggle.addEventListener('click', (event) => {
+        event.stopPropagation();
+        const isOpen = item.classList.contains('is-open');
+        closeAllDropdowns();
+        if (!isOpen) {
+          item.classList.add('is-open');
+          toggle.setAttribute('aria-expanded', 'true');
+        }
+      });
+
+      toggle.addEventListener('keydown', (event) => {
+        const key = (event as KeyboardEvent).key;
+        if (key === 'ArrowDown') {
+          event.preventDefault();
+          if (!item.classList.contains('is-open')) {
+            closeAllDropdowns();
+            item.classList.add('is-open');
+            toggle.setAttribute('aria-expanded', 'true');
+          }
+          (links[0] as HTMLElement | undefined)?.focus();
+        }
+        if (key === 'Escape') {
+          closeAllDropdowns();
+          (toggle as HTMLElement).focus();
+        }
+      });
+
+      links.forEach((link, index) => {
+        link.addEventListener('keydown', (event) => {
+          const key = (event as KeyboardEvent).key;
+          if (key === 'ArrowDown') {
+            event.preventDefault();
+            (links[index + 1] as HTMLElement | undefined)?.focus();
+          }
+          if (key === 'ArrowUp') {
+            event.preventDefault();
+            if (index === 0) (toggle as HTMLElement).focus();
+            else (links[index - 1] as HTMLElement).focus();
+          }
+          if (key === 'Escape') {
+            closeAllDropdowns();
+            (toggle as HTMLElement).focus();
+          }
+        });
+      });
+    });
+
+    document.addEventListener('click', closeAllDropdowns);
+
+    const mq = window.matchMedia('(min-width: 769px)');
+    const applyHover = () => {
+      if (!mq.matches) return;
+      dropdownItems.forEach((item) => {
+        let timer: ReturnType<typeof setTimeout>;
+        item.addEventListener('mouseenter', () => {
+          clearTimeout(timer);
+          closeAllDropdowns();
+          item.classList.add('is-open');
+          item.querySelector('.nav__dropdown-toggle')?.setAttribute('aria-expanded', 'true');
+        });
+        item.addEventListener('mouseleave', () => {
+          timer = setTimeout(() => {
+            item.classList.remove('is-open');
+            item.querySelector('.nav__dropdown-toggle')?.setAttribute('aria-expanded', 'false');
+          }, 120);
+        });
+      });
+    };
+    applyHover();
+    mq.addEventListener('change', applyHover);
+  }
+
+  if (header) {
+    const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 50);
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+  }
+</script>
