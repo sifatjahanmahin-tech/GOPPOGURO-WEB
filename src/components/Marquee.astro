@@ -1,0 +1,39 @@
+---
+const words = [
+  'Play',
+  'Paper',
+  'Pause',
+  'Origami',
+  'Bangladesh',
+  'Little Joys',
+  'গপ্পো গুঁড়ো',
+  'Storytelling',
+  'Handcrafted',
+  'Connection',
+];
+---
+
+<div class="marquee-strip" aria-hidden="true">
+  <div class="marquee-strip__track">
+    <div class="marquee-strip__inner">
+      {
+        words.map((word) => (
+          <>
+            <span class="marquee-strip__word">{word}</span>
+            <span class="marquee-strip__dot" />
+          </>
+        ))
+      }
+    </div>
+    <div class="marquee-strip__inner" aria-hidden="true">
+      {
+        words.map((word) => (
+          <>
+            <span class="marquee-strip__word">{word}</span>
+            <span class="marquee-strip__dot" />
+          </>
+        ))
+      }
+    </div>
+  </div>
+</div>

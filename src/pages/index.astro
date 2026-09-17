@@ -1,73 +1,679 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import Marquee from '../components/Marquee.astro';
+import ImpactCalculator from '../components/ImpactCalculator.astro';
+import { Image } from 'astro:assets';
 import { site } from '../data/site';
+
+import aboutImg from '../assets/home/about.jpg';
+import founderImg from '../assets/home/founder.jpg';
+import programmeImg from '../assets/home/programme.jpg';
+import projectImg from '../assets/home/project.jpg';
+import littleJoysImg from '../assets/home/little-joys.jpg';
+import showcaseMainImg from '../assets/home/showcase-main.jpg';
+import showcaseKidsImg from '../assets/home/showcase-kids.jpg';
+import makersImg from '../assets/home/makers.jpg';
+import giftBoxImg from '../assets/home/gift-box.jpg';
+import cheerImg from '../assets/home/cheer.jpg';
+import framework1Img from '../assets/home/4p-framework-1.jpg';
+import framework2Img from '../assets/home/4p-framework-2.jpg';
+import mascotImg from '../assets/home/mascot.jpg';
+
+const PORTRAIT = { widths: [400, 640, 900], sizes: '(max-width: 768px) 100vw, 40vw' };
+const LANDSCAPE = { widths: [480, 768, 1100], sizes: '(max-width: 768px) 100vw, 55vw' };
+const SQUARE = { widths: [320, 480, 640], sizes: '(max-width: 768px) 100vw, 30vw' };
+const PRODUCT = { widths: [480, 800, 1200], sizes: '(max-width: 768px) 100vw, 33vw' };
+
+const cycleCards = [
+  { number: '01', title: 'Spark', description: 'A moment of wonder or a simple question that ignites interest.' },
+  { number: '02', title: 'Explore', description: 'Diving deep into paper, story, and play without expectations.' },
+  { number: '03', title: 'Create', description: 'Building, folding, and shaping thoughts into tangible forms.' },
+  { number: '04', title: 'Connect', description: 'Sharing the journey and its outcomes with the community.' },
+];
+
+const fourpPillars = [
+  {
+    badge: 'Publication',
+    image: founderImg,
+    pitch: 'Research-driven publications that inform, inspire and create impact.',
+    items: [
+      {
+        icon: '<circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>',
+        title: 'Research',
+        description: 'In-depth research on stories, culture, creativity, education and childhood.',
+      },
+      {
+        icon: '<path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4Z"/>',
+        title: 'Blog',
+        description: 'Thoughtful articles sharing ideas, insights and creative inspirations.',
+      },
+      {
+        icon: '<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>',
+        title: 'Professional Expertise',
+        description: 'Conversations and expert perspectives from educators, creators and practitioners.',
+      },
+    ],
+  },
+  {
+    badge: 'Programme',
+    image: programmeImg,
+    pitch: 'Creative learning programmes that nurture imagination, curiosity and confidence.',
+    items: [
+      {
+        icon: '<path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>',
+        title: 'GCLP',
+        description: 'Creative Programme in Primary Education — bringing creativity, storytelling and joy into early learning.',
+      },
+      {
+        icon: '<circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.58-7 8-7s8 3 8 7"/>',
+        title: 'Golpoka Creative Club',
+        description: 'A monthly creative adventure for children to imagine, create and grow.',
+      },
+      {
+        icon: '<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>',
+        title: 'Little Joys Women Empowerment',
+        description: 'Empowering women through creative work, skills and financial independence.',
+      },
+    ],
+  },
+  {
+    badge: 'Project',
+    image: projectImg,
+    pitch: 'Community projects that build connection, collaboration and change.',
+    items: [
+      {
+        icon: '<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>',
+        title: 'Goppoguro Community Studio',
+        description: 'A creative space for collaboration, learning and community engagement.',
+      },
+      {
+        icon: '<polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>',
+        title: 'Little Joys',
+        description: 'Handcrafted paper creations that spread happiness and support our women makers.',
+      },
+      {
+        icon: '<path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/>',
+        title: 'Goppoguro Boithok – Podcast',
+        description: 'Conversations around stories, creativity, education and life.',
+      },
+    ],
+  },
+  {
+    badge: 'Product',
+    image: littleJoysImg,
+    pitch: 'Thoughtfully designed products that make learning, play and storytelling joyful.',
+    items: [
+      {
+        icon: '<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>',
+        title: 'Activity Books & Play Books',
+        description: 'Story + play + creativity — engaging experiences that make learning joyful.',
+      },
+      {
+        icon: '<polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>',
+        title: 'Little Joys',
+        description: 'Tiny handfolded paper treasures that carry big emotions.',
+      },
+      {
+        icon: '<rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/>',
+        title: 'RolGol & Graphic Novels',
+        description: 'Unroll adventure and timeless classics retold through powerful visuals.',
+      },
+    ],
+  },
+];
+
+const bentoStats = [
+  { cell: 'stat1', label: 'Children Reached', count: 500, suffix: '+', unit: 'across Bangladesh' },
+  { cell: 'stat2', label: 'Little Joys', count: 10, suffix: 'K+', unit: 'shared' },
+  { cell: 'stat3', label: 'Partner Schools', count: 50, suffix: '+', unit: 'and growing' },
+  { cell: 'stat4', label: 'Women Artisans', count: 100, suffix: '%', unit: 'handmade by local makers' },
+];
+
+const productCards = [
+  { image: aboutImg, tag: 'Little Joys Collection', name: 'Classic Joy Jar', alt: 'Classic Joy Jar — handmade origami jar' },
+  { image: showcaseMainImg, tag: 'Little Joys Collection', name: 'Signature Crane Set', alt: 'Signature Crane Set — origami cranes' },
+  { image: giftBoxImg, tag: 'Gift Sets', name: 'Sustainable Gift Box', alt: 'Sustainable Gift Box — origami gift set' },
+];
+
+const sdgGoals = [
+  { number: '1', title: 'No Poverty', description: 'Fair wages for artisans' },
+  { number: '4', title: 'Quality Education', description: 'Funding school programs' },
+  { number: '8', title: 'Decent Work', description: 'Empowering local talent' },
+  { number: '12', title: 'Responsible Consumption', description: 'Sustainable materials' },
+];
+
+const testimonials = [
+  {
+    text: 'I placed a Little Joys jar on my desk at work, and it became a conversation starter that brought my team closer. Such a beautiful concept!',
+    name: 'Sarah Rahman',
+    role: 'Marketing Director, Dhaka',
+    initial: 'S',
+    featured: false,
+  },
+  {
+    text: "We introduced Little Joys to our Class 4 students, and the impact was magical. Children now write encouraging notes to each other. It's changed our classroom culture completely.",
+    name: 'Fatima Ahmed',
+    role: 'Primary School Teacher',
+    initial: 'F',
+    featured: true,
+  },
+  {
+    text: "Gave this to my parents on their anniversary. My mother cried happy tears. The 'Love you Papa' bird is now my dad's prized possession.",
+    name: 'Anik Chowdhury',
+    role: 'Customer, Chittagong',
+    initial: 'A',
+    featured: false,
+  },
+];
 ---
 
 <BaseLayout title={`${site.name} | ${site.tagline}`} description={site.description}>
-  <!-- Hero -->
-  <section class="hero" id="home">
-    <div class="hero__bg-pattern"></div>
-    <div class="container hero__container">
-      <article class="hero__content">
-        <span class="hero__tagline">Small Stories, Gentle Beginnings</span>
-        <h1 class="hero__title">
-          <span class="proj-hero__word" style="animation-delay:0.05s">A</span>
-          <span class="proj-hero__word" style="animation-delay:0.15s">Space</span>
-          <span class="proj-hero__word" style="animation-delay:0.25s">for</span>
-          <span class="proj-hero__word" style="animation-delay:0.35s">Play,</span>
-          <br />
-          <span class="proj-hero__word" style="animation-delay:0.45s">Paper,</span>
-          <span class="proj-hero__word" style="animation-delay:0.55s">and</span>
-          <span class="proj-hero__word gradient-text" style="animation-delay:0.65s">Pause</span>
-        </h1>
-        <p class="hero__description">
-          Goppo Guro is a pause for the relationship we've lost with play and paper. We invite you to a space where
-          imagination has no timer, and discovery has no right answers.
+  <Hero />
+  <Marquee />
+
+  <!-- What is Goppo Guro -->
+  <section class="section section--light" id="about">
+    <div class="container">
+      <div class="grid-2 align-center">
+        <div class="section__content">
+          <span class="section-tagline">About Us</span>
+          <h2 class="section-title">What is <span class="gradient-text">Goppo Guro</span>?</h2>
+          <p class="section-description" style="margin-left: 0; text-align: left;">
+            Goppo Guro is a creative learning initiative designed to nurture curiosity and foster human connection. We
+            believe that small stories (গপ্পো) and gentle beginnings (গুঁড়ো) can spark lifelong journeys of discovery.
+          </p>
+          <p class="section-text" style="margin-top: var(--space-4); color: var(--color-text-secondary);">
+            Through handcrafted paper experiences and storytelling, we create a space where imagination knows no bounds.
+            Our mission is to bring play, paper, and pause back into our high-speed lives.
+          </p>
+        </div>
+        <div class="section__visual">
+          <Image src={aboutImg} alt="Little Joys origami jar in a classroom setting" class="radius-lg" loading="lazy" {...PORTRAIT} />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Creative Learning Cycle -->
+  <section class="section" id="cycle">
+    <div class="container">
+      <header class="section-header">
+        <span class="section-tagline">The Process</span>
+        <h2 class="section-title">Creative <span class="gradient-text">Learning Cycle</span></h2>
+        <p class="section-description">Our framework follows a natural progression of curiosity and creation.</p>
+      </header>
+      <div class="grid-4">
+        {
+          cycleCards.map((card) => (
+            <div class="feature-card text-center">
+              <div class="feature-card__number">{card.number}</div>
+              <h3 class="feature-card__title">{card.title}</h3>
+              <p class="feature-card__description">{card.description}</p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- 4P Framework -->
+  <section class="section fourp" id="framework">
+    <div class="container">
+      <header class="section-header">
+        <span class="section-tagline">Our Approach</span>
+        <h2 class="section-title">The <span class="gradient-text">4P Framework</span></h2>
+        <p class="section-description">
+          We create stories, tools &amp; experiences that spark imagination, nurture creativity and build meaningful
+          connections.
         </p>
-        <div class="hero__actions">
-          <a href="/products/" class="btn btn--primary">
-            <span>Explore Products</span>
+      </header>
+
+      <div class="fourp__infographic">
+        <Image src={framework1Img} alt="4P Framework overview — Publication, Programme, Project, Product" class="fourp__infographic-img" loading="lazy" widths={[600, 1000, 1400]} sizes="(max-width: 768px) 100vw, 48vw" />
+        <Image src={framework2Img} alt="4P Framework detailed breakdown" class="fourp__infographic-img" loading="lazy" widths={[600, 1000, 1400]} sizes="(max-width: 768px) 100vw, 48vw" />
+      </div>
+
+      <div class="fourp__grid">
+        {
+          fourpPillars.map((pillar) => (
+            <div class="fourp__pillar">
+              <div class="fourp__pillar-head">
+                <Image src={pillar.image} alt={pillar.badge} class="fourp__pillar-img" loading="lazy" {...PORTRAIT} />
+                <div class="fourp__pillar-overlay" />
+                <div class="fourp__pillar-content">
+                  <span class="fourp__badge">{pillar.badge}</span>
+                  <p class="fourp__pitch">{pillar.pitch}</p>
+                </div>
+              </div>
+              <ul class="fourp__list">
+                {pillar.items.map((item) => (
+                  <li class="fourp__item">
+                    <svg class="fourp__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" set:html={item.icon} />
+                    <div>
+                      <strong>{item.title}</strong>
+                      <p>{item.description}</p>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))
+        }
+      </div>
+
+      <div class="fourp__tagline">
+        <p>Stories in our hearts. Creativity in our hands.<br /><em>A better world in our imagination. ♥</em></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features" id="features">
+    <div class="container">
+      <header class="section-header">
+        <span class="section-tagline">The Art of Presence</span>
+        <h2 class="section-title">Design for <span class="gradient-text">Pause</span> &amp; Play</h2>
+        <p class="section-description">
+          Our experiences are invitations to slow down. There are no right answers, no timers, and no expectations—only
+          the quiet joy of being present.
+        </p>
+      </header>
+
+      <div class="features__grid">
+        <article class="feature-card">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+              <circle cx="24" cy="24" r="20" stroke="url(#grad1)" stroke-width="2"></circle>
+              <path d="M24 14v20M14 24h20" stroke="url(#grad1)" stroke-width="2" stroke-linecap="round"></path>
+              <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:var(--color-pink)"></stop>
+                  <stop offset="100%" style="stop-color:var(--color-blue)"></stop>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <h3 class="feature-card__title">The Human Touch</h3>
+          <p class="feature-card__description">
+            Every piece is hand-folded by local women artisans, carrying the time, patience, and personal rhythm of the
+            hands that shaped it.
+          </p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+              <path d="M24 4L30 16L44 18L34 28L36 42L24 36L12 42L14 28L4 18L18 16L24 4Z" stroke="url(#grad2)" stroke-width="2" stroke-linejoin="round"></path>
+              <defs>
+                <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:var(--color-green)"></stop>
+                  <stop offset="100%" style="stop-color:var(--color-blue)"></stop>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <h3 class="feature-card__title">Meaningful Messages</h3>
+          <p class="feature-card__description">
+            "Keep it or pass it on" — every jar comes with heartfelt messages encouraging the chain of kindness to
+            continue spreading joy.
+          </p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+              <path d="M24 44C35.046 44 44 35.046 44 24C44 12.954 35.046 4 24 4C12.954 4 4 12.954 4 24C4 35.046 12.954 44 24 44Z" stroke="url(#grad3)" stroke-width="2"></path>
+              <path d="M24 14C18.477 14 14 18.477 14 24C14 29.523 18.477 34 24 34C29.523 34 34 29.523 34 24" stroke="url(#grad3)" stroke-width="2" stroke-linecap="round"></path>
+              <circle cx="24" cy="24" r="4" fill="url(#grad3)"></circle>
+              <defs>
+                <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:var(--color-pink)"></stop>
+                  <stop offset="100%" style="stop-color:var(--color-green)"></stop>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <h3 class="feature-card__title">Collective Care</h3>
+          <p class="feature-card__description">
+            Experience a system where kindness ripples outward. Every engagement directly supports children's education
+            and welfare programs across Bangladesh.
+          </p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+              <path d="M24 4C24 4 4 14 4 28C4 38 14 44 24 44C34 44 44 38 44 28C44 14 24 4 24 4Z" stroke="url(#grad4)" stroke-width="2"></path>
+              <path d="M24 14V34M14 24H34" stroke="url(#grad4)" stroke-width="2" stroke-linecap="round"></path>
+              <defs>
+                <linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:var(--color-blue)"></stop>
+                  <stop offset="100%" style="stop-color:var(--color-pink)"></stop>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <h3 class="feature-card__title">Perfect for Gifting</h3>
+          <p class="feature-card__description">
+            From classrooms to coffee shops, homes to hospitals — Little Joys bring smiles everywhere, making them the
+            perfect meaningful gift.
+          </p>
+        </article>
+      </div>
+
+      <figure class="features__showcase">
+        <div class="features__showcase-grid">
+          <Image src={showcaseMainImg} alt="Full product line of Little Joys" class="features__showcase-img features__showcase-img--main" loading="lazy" {...LANDSCAPE} />
+          <Image src={showcaseKidsImg} alt="Children enjoying Little Joys at school" class="features__showcase-img" loading="lazy" {...PORTRAIT} />
+          <Image src={programmeImg} alt="Children in uniform picking origami" class="features__showcase-img" loading="lazy" {...PORTRAIT} />
+        </div>
+      </figure>
+    </div>
+  </section>
+
+  <div class="section-divider" aria-hidden="true">
+    <div class="section-divider__line"></div>
+    <span class="section-divider__ornament">· · ·</span>
+    <div class="section-divider__line"></div>
+  </div>
+
+  <!-- Bento stats -->
+  <section class="bento section" aria-label="Key numbers">
+    <div class="container">
+      <div class="bento__grid">
+        <div class="bento__cell bento__cell--mission">
+          <div class="bento__cell-label">Our Mission</div>
+          <h2 class="bento__cell-title">Play. Paper.<br />Pause.</h2>
+          <p class="bento__cell-body">
+            A creative learning initiative that brings curiosity, connection, and the quiet joy of making back into
+            everyday life — one fold at a time.
+          </p>
+          <svg class="bento__cell-corner" viewBox="0 0 64 64" fill="currentColor" aria-hidden="true">
+            <path d="M32 4L60 32L32 60L4 32L32 4ZM32 14L14 32L32 50L50 32L32 14Z" opacity="0.5"></path>
+          </svg>
+        </div>
+        {
+          bentoStats.slice(0, 2).map((stat) => (
+            <div class={`bento__cell bento__cell--${stat.cell}`}>
+              <div class="bento__cell-label">{stat.label}</div>
+              <div class="bento__cell-number">
+                <span data-countup={stat.count}>{stat.count}</span>{stat.suffix}
+              </div>
+              <div class="bento__cell-unit">{stat.unit}</div>
+            </div>
+          ))
+        }
+        <div class="bento__cell bento__cell--tagline">
+          <div class="bento__cell-label">The Tagline</div>
+          <p class="bento__cell-text" style="font-style:italic; font-size: clamp(1.1rem, 2vw, 1.5rem);">
+            "Small stories, gentle beginnings that invite curiosity and connection."
+          </p>
+        </div>
+        {
+          bentoStats.slice(2).map((stat) => (
+            <div class={`bento__cell bento__cell--${stat.cell}`}>
+              <div class="bento__cell-label">{stat.label}</div>
+              <div class="bento__cell-number">
+                <span data-countup={stat.count}>{stat.count}</span>{stat.suffix}
+              </div>
+              <div class="bento__cell-unit">{stat.unit}</div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider" aria-hidden="true">
+    <div class="section-divider__line"></div>
+    <span class="section-divider__ornament">· · ·</span>
+    <div class="section-divider__line"></div>
+  </div>
+
+  <!-- Our Story -->
+  <section class="story" id="story">
+    <div class="container">
+      <div class="story__grid">
+        <figure class="story__visual">
+          <Image src={founderImg} alt="Goppo Guro founder" class="story__image" loading="lazy" {...SQUARE} />
+          <div class="story__visual-accent"></div>
+        </figure>
+
+        <article class="story__content">
+          <span class="section-tagline">Our Story</span>
+          <h2 class="section-title">Born from a <span class="gradient-text">Quiet Concern</span></h2>
+          <p class="story__text">
+            Goppo Guro was created from a quiet concern — that we are losing our relationship with play, with paper, and
+            with pause. In a world driven by speed, screens, and outcomes, we wanted to create space for something more
+            human.
+          </p>
+          <p class="story__text">
+            At the heart of Goppo Guro is story. Our name "গপ্পো গুঁড়ো" means small stories, or sparks of stories —
+            gentle beginnings that invite curiosity and connection. Stories have shaped our world, and they continue to
+            shape us through imagination and memory.
+          </p>
+          <p class="story__text">
+            Goppo Guro is not only for children. It is for anyone who believes that stories, play, and pause are
+            essential to being human. We design books, stories, and simple paper experiences that allow these small
+            stories to unfold through play.
+          </p>
+          <blockquote class="story__quote">
+            "There are no right answers here, no timers, no expectations — only moments of presence, imagination, and
+            shared discovery."
+          </blockquote>
+          <a href="/about/" class="btn btn--text">
+            Read Our Full Story
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
               <path d="M5 12h14M12 5l7 7-7 7"></path>
             </svg>
           </a>
-          <a href="/about/" class="btn btn--outline">Our Story</a>
-        </div>
-      </article>
-
-      <figure class="hero__visual hero__visual--animation">
-        <img
-          src="/brand/logo.jpeg"
-          alt="Goppo Guro story spark mascot"
-          width="640"
-          height="640"
-          fetchpriority="high"
-        />
-      </figure>
-    </div>
-    <div class="hero__scroll">
-      <span>Scroll to explore</span>
-      <div class="hero__scroll-line"></div>
+        </article>
+      </div>
     </div>
   </section>
 
-  <!-- Marquee -->
-  <div class="marquee-strip" aria-hidden="true">
-    <div class="marquee-strip__track">
-      <div class="marquee-strip__inner">
+  <!-- Women Makers -->
+  <section class="makers" id="makers">
+    <div class="container">
+      <div class="makers__grid">
+        <article class="makers__content">
+          <span class="section-tagline">Our Community</span>
+          <h2 class="section-title">Women <span class="gradient-text">Makers</span></h2>
+          <p class="makers__highlight">Made by Hands. Shared by Hearts.</p>
+          <div class="makers__text-group">
+            <p class="makers__text">
+              Every Little Joy is hand-folded by women who turn simple paper into moments of care. This work offers
+              <strong>flexible income</strong>, <strong>creative focus</strong>, and <strong>dignity</strong> — without
+              factories or machines.
+            </p>
+            <p class="makers__text">
+              Each fold carries time, patience, and a personal rhythm. When you pick a piece, you are participating in a
+              system where care is created by hands that matter.
+            </p>
+            <p class="makers__footer">Made by Hands. Shared by Hearts.</p>
+          </div>
+          <div class="makers__stats">
+            <div class="makers__stat">
+              <span class="makers__stat-icon">✨</span>
+              <div>
+                <h4>Empowerment</h4>
+                <p>Supporting local women artisans</p>
+              </div>
+            </div>
+            <div class="makers__stat">
+              <span class="makers__stat-icon">🏠</span>
+              <div>
+                <h4>Flexible Work</h4>
+                <p>Work from home opportunities</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <figure class="makers__visual">
+          <div class="makers__image-container">
+            <Image src={makersImg} alt="Women artisans hand-folding origami with care" class="makers__image" loading="lazy" {...PORTRAIT} />
+            <div class="makers__image-badge">100% Handmade</div>
+          </div>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured products -->
+  <section class="products-preview" id="products">
+    <div class="container">
+      <header class="section-header">
+        <span class="section-tagline">The Collection</span>
+        <h2 class="section-title">Simple <span class="gradient-text">Paper Experiences</span></h2>
+        <p class="section-description">
+          Discover the hero of our journey—Little Joys—alongside other experiences designed to help you pause and play.
+        </p>
+      </header>
+
+      <div class="products-preview__grid">
         {
-          ['Play', 'Paper', 'Pause', 'Origami', 'Bangladesh', 'Little Joys', 'গপ্পো গুঁড়ো', 'Storytelling', 'Handcrafted', 'Connection'].map(
-            (word) => (
-              <>
-                <span class="marquee-strip__word">{word}</span>
-                <span class="marquee-strip__dot" />
-              </>
-            )
-          )
+          productCards.map((product) => (
+            <a href="/products/" class="product-card--cinematic" aria-label={`View ${product.name}`}>
+              <Image src={product.image} alt={product.alt} class="product-card__img" loading="lazy" {...PRODUCT} />
+              <div class="product-card__overlay">
+                <div class="product-card__tag">{product.tag}</div>
+                <h3 class="product-card__name">{product.name}</h3>
+                <span class="product-card__cta">
+                  View Details
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" aria-hidden="true">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </span>
+              </div>
+            </a>
+          ))
+        }
+      </div>
+
+      <div class="products-preview__cta">
+        <a href="/products/" class="btn btn--outline btn--large">
+          Explore Full Collection
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider" aria-hidden="true">
+    <div class="section-divider__line"></div>
+    <span class="section-divider__ornament">· · ·</span>
+    <div class="section-divider__line"></div>
+  </div>
+
+  <ImpactCalculator />
+
+  <!-- SDG alignment -->
+  <section class="sdg" id="partnerships">
+    <div class="container">
+      <div class="sdg__grid">
+        <article class="sdg__content">
+          <span class="section-tagline">Global Goals</span>
+          <h2 class="section-title">Impact Through <span class="gradient-text">Small Stories</span></h2>
+          <p class="sdg__text">
+            Our mission aligns with the United Nations Sustainable Development Goals. We believe that play, pause, and
+            imagination are essential rights. By creating simple paper experiences, we fund education and dignity,
+            ensuring every child has the space to dream.
+          </p>
+
+          <div class="sdg__goals">
+            {
+              sdgGoals.map((goal) => (
+                <div class="sdg__goal">
+                  <div class="sdg__goal-number">{goal.number}</div>
+                  <div class="sdg__goal-info">
+                    <h4>{goal.title}</h4>
+                    <p>{goal.description}</p>
+                  </div>
+                </div>
+              ))
+            }
+          </div>
+
+          <a href="/contact/" class="btn btn--primary">
+            Partner With Us
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </article>
+
+        <figure class="sdg__visual">
+          <div class="sdg__image-stack">
+            <Image src={showcaseKidsImg} alt="Children enjoying Little Joys at school" class="sdg__image sdg__image--1" loading="lazy" {...PORTRAIT} />
+            <Image src={cheerImg} alt="Little Joys spreading cheer" class="sdg__image sdg__image--2" loading="lazy" {...PORTRAIT} />
+          </div>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials testimonials--masonry" id="testimonials">
+    <div class="container">
+      <header class="section-header">
+        <span class="section-tagline">Stories of Joy</span>
+        <h2 class="section-title">Voices from Our <span class="gradient-text">Community</span></h2>
+      </header>
+
+      <div class="testimonials__grid">
+        {
+          testimonials.map((t) => (
+            <article class:list={['testimonial-card', { 'testimonial-card--featured': t.featured }]}>
+              <div class="testimonial-card__content">
+                <div class="testimonial-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+                <p class="testimonial-card__text">"{t.text}"</p>
+              </div>
+              <footer class="testimonial-card__author">
+                <div class="testimonial-card__avatar">{t.initial}</div>
+                <div class="testimonial-card__info">
+                  <span class="testimonial-card__name">{t.name}</span>
+                  <span class="testimonial-card__role">{t.role}</span>
+                </div>
+              </footer>
+            </article>
+          ))
         }
       </div>
     </div>
-  </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="cta">
+    <div class="cta__bg-pattern"></div>
+    <div class="container">
+      <div class="cta__content">
+        <h2 class="cta__title">Ready to Spread Some <span class="gradient-text">Joy</span>?</h2>
+        <p class="cta__description">
+          Join thousands who are making a difference, one Little Joy at a time. Your purchase supports children,
+          empowers artisans, and spreads happiness.
+        </p>
+        <div class="cta__actions">
+          <a href="/little-joys/" class="btn btn--primary btn--large">
+            <span>Shop Little Joys</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+          <a href={site.social.facebook} target="_blank" rel="noopener noreferrer" class="btn btn--outline btn--large">
+            <svg viewBox="0 0 24 24" fill="currentColor" class="btn__icon" aria-hidden="true">
+              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path>
+            </svg>
+            <span>Follow Us</span>
+          </a>
+        </div>
+        <Image src={giftBoxImg} alt="Little Joys jar in cozy living room" class="cta__image anim-float" loading="lazy" {...PORTRAIT} />
+      </div>
+    </div>
+  </section>
 
   <!-- Sparks -->
   <section class="sparks section section--light">
@@ -77,11 +683,11 @@ import { site } from '../data/site';
           <span class="section-tagline">The Spark of Story</span>
           <h2 class="section-title">Small Beginnings, <span class="gradient-text">Unlimited</span> Journeys</h2>
           <p class="sparks__description">
-            Goppo Guro means "sparks of stories" — gentle starts that invite curiosity. Whether it's a folded bird or
-            a shared word, we provide the beginning. You create the story.
+            Goppo Guro means "sparks of stories" — gentle starts that invite curiosity. Whether it's a folded bird or a
+            shared word, we provide the beginning. You create the story.
           </p>
           <div class="sparks__visual">
-            <img src="/brand/logo.jpeg" alt="Story spark mascot" class="sparks__img" width="480" height="480" />
+            <Image src={mascotImg} alt="Story Spark Mascot" class="sparks__img" loading="lazy" {...SQUARE} />
           </div>
         </div>
       </div>

@@ -1,0 +1,115 @@
+---
+const results = [
+  {
+    id: 'education-days',
+    value: 15,
+    label: 'Days of Education Funded',
+    icon: '<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>',
+  },
+  {
+    id: 'meals-provided',
+    value: 10,
+    label: 'Nutritious Meals Provided',
+    icon: '<path d="M3 11l19-9-9 19-2-8-8-2z"/>',
+  },
+  {
+    id: 'smiles-spread',
+    value: 25,
+    label: 'Smiles Spread',
+    icon: '<circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/>',
+  },
+  {
+    id: 'trees-helped',
+    value: 1,
+    label: 'Trees Worth of Paper Offset',
+    icon: '<path d="M12 22V12"/><path d="M12 12C12 12 7 10 7 5a5 5 0 0 1 10 0c0 5-5 7-5 7z"/>',
+  },
+];
+---
+
+<section class="impact" id="impact">
+  <div class="container">
+    <header class="section-header">
+      <span class="section-tagline">Your Impact</span>
+      <h2 class="section-title">See How Your <span class="gradient-text">Purchase</span> Helps</h2>
+      <p class="section-description">
+        Every Little Joy you buy creates a ripple effect of positive change. Use our calculator to see the difference
+        you're making.
+      </p>
+    </header>
+
+    <div class="impact__calculator">
+      <div class="impact__input-group">
+        <label for="jar-count" class="impact__label">How many jars would you like to gift?</label>
+        <div class="impact__slider-container">
+          <input type="range" id="jar-count" class="impact__slider" min="1" max="50" value="5" />
+          <div class="impact__slider-value"><span id="jar-display">5</span> Jars</div>
+        </div>
+      </div>
+
+      <div class="impact__results">
+        {
+          results.map((result) => (
+            <div class="impact__result-card">
+              <div class="impact__result-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" set:html={result.icon} />
+              </div>
+              <div class="impact__result-number" id={result.id}>
+                {result.value}
+              </div>
+              <div class="impact__result-label">{result.label}</div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  const jarSlider = document.getElementById('jar-count') as HTMLInputElement | null;
+  const jarDisplay = document.getElementById('jar-display');
+  const educationDays = document.getElementById('education-days');
+  const mealsProvided = document.getElementById('meals-provided');
+  const smilesSpread = document.getElementById('smiles-spread');
+  const treesHelped = document.getElementById('trees-helped');
+
+  if (jarSlider) {
+    const EDUCATION_DAYS_PER_JAR = 3;
+    const MEALS_PER_JAR = 2;
+    const SMILES_PER_JAR = 5;
+    const JARS_PER_TREE = 10;
+
+    const animateNumber = (element: HTMLElement | null, targetValue: number) => {
+      if (!element) return;
+      const currentValue = parseInt(element.textContent || '0', 10) || 0;
+      const steps = 20;
+      const duration = 300;
+      const increment = (targetValue - currentValue) / steps;
+      let step = 0;
+
+      const animation = setInterval(() => {
+        step++;
+        element.textContent = String(Math.round(currentValue + increment * step));
+        if (step >= steps) {
+          clearInterval(animation);
+          element.textContent = String(targetValue);
+        }
+      }, duration / steps);
+    };
+
+    const updateImpact = (jarCount: number) => {
+      animateNumber(jarDisplay, jarCount);
+      animateNumber(educationDays, jarCount * EDUCATION_DAYS_PER_JAR);
+      animateNumber(mealsProvided, jarCount * MEALS_PER_JAR);
+      animateNumber(smilesSpread, jarCount * SMILES_PER_JAR);
+      animateNumber(treesHelped, Math.ceil(jarCount / JARS_PER_TREE));
+    };
+
+    jarSlider.addEventListener('input', (event) => {
+      updateImpact(parseInt((event.target as HTMLInputElement).value, 10));
+    });
+
+    updateImpact(parseInt(jarSlider.value, 10));
+  }
+</script>

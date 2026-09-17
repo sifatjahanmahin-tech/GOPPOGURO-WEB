@@ -88,6 +88,91 @@ const { title, description, image, type, noindex } = Astro.props;
           window.scrollTo({ top, behavior: reduce ? 'auto' : 'smooth' });
         });
       });
+
+      // Scroll-reveal animations (ported from the legacy script).
+      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+      if (!reduceMotion.matches && 'IntersectionObserver' in window) {
+        const ANIM_GROUPS: Array<[string, string, number]> = [
+          ['.section-tagline', 'anim-ink-reveal', 0],
+          ['.section-title', 'anim-title-rise', 0],
+          ['.section-description', 'anim-blur-fade', 0],
+          ['.story__text', 'anim-blur-fade', 0.1],
+          ['.story__quote', 'anim-title-rise', 0],
+          ['.fourp__pillar', 'anim-stamp', 0.1],
+          ['.feature-card', 'anim-paper-fold', 0.07],
+          ['.testimonial-card', 'anim-paper-fold', 0.08],
+          ['.product-card--cinematic', 'anim-scale-reveal', 0.1],
+          ['.bento__cell', 'anim-stamp', 0.08],
+          ['.sdg__goal', 'anim-stamp', 0.1],
+          ['.makers__stat', 'anim-stamp', 0.15],
+          ['.story__visual', 'anim-slide-left', 0],
+          ['.sdg__image', 'anim-scale-reveal', 0.12],
+          ['.section__visual img', 'anim-scale-reveal', 0],
+          ['.makers__image', 'anim-scale-reveal', 0],
+          ['.cta__title', 'anim-title-rise', 0],
+          ['.features__showcase-img', 'anim-scale-reveal', 0.08],
+        ];
+
+        const revealObserver = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('anim-enter');
+                revealObserver.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.08, rootMargin: '0px 0px -20px 0px' }
+        );
+
+        ANIM_GROUPS.forEach(([selector, animClass, stagger]) => {
+          document.querySelectorAll(selector).forEach((el, index) => {
+            el.classList.add(animClass);
+            if (stagger > 0) {
+              (el as HTMLElement).style.animationDelay = `${Math.min(index * stagger, 0.5)}s`;
+            }
+            revealObserver.observe(el);
+          });
+        });
+
+        const dividerObserver = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                dividerObserver.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.5 }
+        );
+        document.querySelectorAll('.section-divider').forEach((el) => dividerObserver.observe(el));
+
+        // Count-up numbers (bento stats).
+        const countObserver = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (!entry.isIntersecting) return;
+              const el = entry.target as HTMLElement;
+              const target = parseInt(el.dataset.countup || '0', 10) || 0;
+              const duration = 1200;
+              const start = performance.now();
+              const tick = (now: number) => {
+                const progress = Math.min((now - start) / duration, 1);
+                const eased = 1 - Math.pow(1 - progress, 3);
+                el.textContent = String(Math.round(target * eased));
+                if (progress < 1) requestAnimationFrame(tick);
+                else el.textContent = String(target);
+              };
+              requestAnimationFrame(tick);
+              countObserver.unobserve(el);
+            });
+          },
+          { threshold: 0.4 }
+        );
+        document.querySelectorAll('[data-countup]').forEach((el) => countObserver.observe(el));
+      }
     </script>
   </body>
 </html>

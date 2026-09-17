@@ -1,0 +1,110 @@
+---
+const words = [
+  { text: 'A', delay: '0.05s' },
+  { text: 'Space', delay: '0.15s' },
+  { text: 'for', delay: '0.25s' },
+  { text: 'Play,', delay: '0.35s' },
+];
+const wordsLine2 = [
+  { text: 'Paper,', delay: '0.45s' },
+  { text: 'and', delay: '0.55s' },
+];
+---
+
+<section class="hero" id="home">
+  <div class="hero__bg-pattern"></div>
+  <div class="container hero__container">
+    <article class="hero__content">
+      <span class="hero__tagline">Small Stories, Gentle Beginnings</span>
+      <h1 class="hero__title">
+        {
+          words.map((word) => (
+            <>
+              <span class="proj-hero__word" style={`animation-delay:${word.delay}`}>
+                {word.text}
+              </span>{' '}
+            </>
+          ))
+        }
+        <br />
+        {
+          wordsLine2.map((word) => (
+            <>
+              <span class="proj-hero__word" style={`animation-delay:${word.delay}`}>
+                {word.text}
+              </span>{' '}
+            </>
+          ))
+        }
+        <span class="proj-hero__word gradient-text" style="animation-delay:0.65s">Pause</span>
+      </h1>
+      <p class="hero__description">
+        Goppo Guro is a pause for the relationship we've lost with play and paper. We invite you to a space where
+        imagination has no timer, and discovery has no right answers.
+      </p>
+      <div class="hero__actions">
+        <a href="/products/" class="btn btn--primary">
+          <span>Explore Products</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </a>
+        <a href="/about/" class="btn btn--outline">Our Story</a>
+      </div>
+    </article>
+
+    <figure class="hero__visual hero__visual--animation">
+      <video
+        class="hero__video"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="metadata"
+        poster="/media/hero-poster.webp"
+        width="1280"
+        height="720"
+        aria-label="Paper folding animation"
+      >
+        <source src="/media/hero.webm" type="video/webm" />
+        <source src="/media/hero.mp4" type="video/mp4" />
+      </video>
+    </figure>
+  </div>
+
+  <div class="hero__scroll">
+    <span>Scroll to explore</span>
+    <div class="hero__scroll-line"></div>
+  </div>
+</section>
+
+<script>
+  const heroVideo = document.querySelector<HTMLVideoElement>('.hero__video');
+  if (heroVideo) {
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+    const applyMotionPreference = () => {
+      if (reduceMotion.matches) {
+        heroVideo.pause();
+      } else {
+        heroVideo.play().catch(() => {});
+      }
+    };
+    applyMotionPreference();
+    reduceMotion.addEventListener('change', applyMotionPreference);
+
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (reduceMotion.matches) return;
+            if (entry.isIntersecting) heroVideo.play().catch(() => {});
+            else heroVideo.pause();
+          });
+        },
+        { threshold: 0.15 }
+      );
+      observer.observe(heroVideo);
+    }
+  }
+</script>
