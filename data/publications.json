@@ -1,15 +1,25 @@
 {
   "_note": "Publications page content. 'featured' is the large card at the top. 'articles' is the filterable grid. Valid categories: research, stories, press, zines.",
   "featured": {
-    "title": "The Case for Slow Learning",
-    "category": "Featured · Research",
-    "excerpt": "In a culture that rewards speed and output, we make the research-backed argument for slowing down in education. Drawing on 200+ workshop observations and the 4P Framework, this is our most complete statement on what creative learning requires.",
-    "date": "March 2026",
-    "image": "goppoguro%20images/WhatsApp%20Image%202026-02-07%20at%2012.49.07%20AM%20(1).jpeg",
-    "imageAlt": "The Case for Slow Learning",
-    "url": "#"
+    "title": "A Little Space for Children at Work",
+    "category": "Insights & Ideas · Goppoguro",
+    "excerpt": "Most offices are designed almost entirely for adults. Goppoguro Corner explores a smaller, more achievable idea — an ordinary corner of an office that transforms, in minutes, into a little world for a child.",
+    "date": "September 2026",
+    "image": "goppoguro-corner/hero-current-scenario.jpg",
+    "imageAlt": "A Little Space for Children at Work",
+    "url": "goppoguro-corner-little-space-for-children-at-work.html",
+    "readTime": "6 min read"
   },
   "articles": [
+    {
+      "title": "The Case for Slow Learning",
+      "category": "research",
+      "excerpt": "In a culture that rewards speed and output, we make the research-backed argument for slowing down in education. Drawing on 200+ workshop observations and the 4P Framework, this is our most complete statement on what creative learning requires.",
+      "date": "March 2026",
+      "image": "goppoguro%20images/WhatsApp%20Image%202026-02-07%20at%2012.49.07%20AM%20(1).jpeg",
+      "imageAlt": "The Case for Slow Learning",
+      "url": "#"
+    },
     {
       "title": "Creativity in Childhood Education",
       "category": "research",

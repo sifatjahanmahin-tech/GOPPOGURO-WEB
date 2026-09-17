@@ -1182,7 +1182,7 @@ function initPublicationsFromData() {
                         <div class="pub-card__meta">
                             <time class="pub-card__date">${f.date}</time>
                         </div>
-                        <a href="${f.url}" class="btn btn--primary" style="margin-top: var(--space-4);">Read the Full Essay</a>
+                        <a href="${f.url}" class="btn btn--primary" style="margin-top: var(--space-4);">Learn More</a>
                     </div>
                 </article>`;
         }
@@ -1201,7 +1201,7 @@ function initPublicationsFromData() {
                         <div class="pub-card__meta">
                             <time class="pub-card__date">${a.date}</time>
                         </div>
-                        <a href="${a.url}" class="btn btn--text">Read</a>
+                        <a href="${a.url}" class="btn btn--text">Learn More</a>
                     </div>
                 </article>`).join('');
 
